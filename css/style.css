@@ -1,21 +1,25 @@
-body{
+body {
 	/*background: #242d36;*/
 	/*background: #999999; */
 	/*line-height: 1.4;*/
 	padding-top: 60px; // This works regardless of display size.
 	font-family: Asap, sans-serif;
 	/*font-size: 13px;*/
+
 }
 
-.h2color{
-	color: #112868;
+.h2color {
+	color: #142249;
+
 }
 
-.anchor{
-  display: block;
-  height: 60px; /*same height as header*/
-  margin-top: -60px; /*same height as header*/
-  visibility: hidden;
+.anchor {
+	display: block;
+	height: 60px;
+	/*same height as header*/
+	margin-top: -60px;
+	/*same height as header*/
+	visibility: hidden;
 }
 
 .bottom {
@@ -23,11 +27,37 @@ body{
 	border-bottom: 2px solid #ccc;
 }
 
-/* #photo {
-	width: 50px !important;
-} */
-
 #intro {
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.nav-item {
+	padding-left: 20px;
+}
+
+.title {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left {
+	text-align: left;
+	font-size: large;
+	font-weight: bold;
+}
+
+.right {
+	text-align: right;
+}
+
+.related {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20;
+}
+
+#contents {
+	font-weight: bold;
+	font-size: medium;
 }

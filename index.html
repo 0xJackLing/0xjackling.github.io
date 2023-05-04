@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175824318-1"></script>
-    <script>
+    <!-- <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -13,10 +13,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-175824318-1');
-    </script>
-
-
-
+    </script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -27,7 +24,6 @@
     <script src="js/bootstrap.min.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>K's Homepage</title>
-
 </head>
 
 <body>
@@ -39,139 +35,161 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <!-- <li class="nav-item">  
-		        <a class="nav-link" href="#news">News</a>
-		      </li> -->
-                <!-- <li class="nav-item">
-		        <a class="nav-link" href="#awards">Awards</a>
-		      </li>  -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#pub">Publication</a>
+                    <a class="nav-link" href="#intro">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#service">Service</a>
+                    <a class="nav-link" href="#research">Research</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#teach">Teaching</a>
+                    <a class="nav-link" href="#project">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#misc">Misc</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./blockchain.html">A Walk into Blockchain</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./related.html">Related Links</a>
                 </li>
             </ul>
         </div>
     </nav>
+
     <div class="container" id="wrapper">
 
-        <div id="intro" class="row">
-            <div id="photo" class="col-sm-3">
-                <a href="#">
-                    <img src="https://github.githubassets.com/images/mona-loading-default.gif" class="img-rounded"
-                        alt="Photo" width=220>
-                </a>
+        <div id="intro" class="row" id="intro">
+            <div class="col-sm-3">
+                <img src="https://github.githubassets.com/images/mona-loading-default.gif" class="img-rounded"
+                    alt="Photo broken" width=220>
             </div>
-            <div class="col-sm-4">
-                <br>
-                <h1 id="name">
-                    K
-                </h1>
-                <br>
-                <h5>
-                    <i>Department of Computer Science </i> <br>
-                    City University of Hong Kong
-                </h5>
-                <br>
-                <!-- <div id="contact">
-                    <p>
-                        Office: <b>Y6427, Yeung Kin Man Academic Building (AC1)</b><br>
-
-                    </p>
-                </div> -->
+            <div class="col-sm-9">
+                <h1 id="name"> LING </h1>
+                <h5><i>Department of Computer Science </i> <br> City University of Hong Kong </h5>
+                I got my B.E. in Computer Science and Technology from <a href="http://www.neu.edu.cn/"> Northeastern
+                        University </a> in 2022, and M.S. in Electronic Commerce from <a
+                        href="https://www.cityu.edu.hk/"> City University of Hong Kong </a> in 2023. <br>
+                I am interested in blockchain security and privacy, including consensus mechanism, distributed storage, and zero-knowledge. 
             </div>
-
         </div>
 
-        <div id="content">
+        <div id="content">  
             <div>
-                <span class="anchor" id="about"></span>
-                <h2 class="bg-light h2color">About Me</h2>
-                <p>In one word, I am a 废物. Before I came to CityU for the Master program, I graduated from <a
-                        href="http://www.neu.edu.cn/"> Northeastern University </a> in 2022. </p>
-
-                <!-- <p>
-					I am interested in different areas of security and privacy, including mobile security, IoT security, BLE security, Vehicle security, etc.
-					</p> -->
-            </div>
-
-            <div>
-                <span class="anchor" id="pub"></span>
-                <h2 class="bg-light  h2color">Research</h2>
+                <span class="anchor" id="research"></span>
+                <h2 class="bg-light  h2color">Research Experience</h2>
                 <ul>
                     <li>
-                        <font size="4"><b><a href="https://www.tree-graph.org.cn/">Shanghai Tree-Graph Blockchain
+                        <div class="title">
+                            <div class="left"><a href="https://www.tree-graph.org.cn/">Shanghai Tree-Graph Blockchain
                                     Research Instutite</a> <a href="https://confluxnetwork.org/"> (Conflux Network)
-                                </a></b>
-                        </font>
-                        <br>test
+                                </a>
+                            </div>
+                            <div class="right">2021.08 - 2022.08</div>
+                        </div>
+                        Research & Operation in <a
+                            href="https://forum.conflux.fun/t/conflux-v2-0-0-fix-network-hardfork-upgrade-announcement/13473">Conflux
+                            Hydra hard fork</a> and Mainnet routine maintenance.
+                        <ul>
+                            <li>Organized 24 rounds of tests (alpha/beta/rc) for the hard fork binaries and gave
+                                feedbacks. The hard fork is mainly for 1) introducing finality via voting on a parallel
+                                PoS chain to protect against potential 51% attacks from PoW and 2) introducing a fully
+                                EVM compatible space inside the current blockchain.</li>
+                            <li>Assisted in providing technical support to developer community, especially in technical
+                                documentations, tutorials, and translations. Assisted in reviewing and incubating
+                                ecosystem projects on Conflux.</li>
+                        </ul>
                     </li><br>
+
                     <li>
-                        <font size="4"><b>Shanghai Jiao Tong University</b></font><br>
-                        Research Intern in Institute of Engineering Management
-                    </li><br>
+                        <div class="title">
+                            <div class="left"><a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>
+                            </div>
+                            <div class="right">2021.06 - 2021.08</div>
+                        </div>
+                        Research Intern in <a href="https://iem.sjtu.edu.cn/">Institute of Engineering Management</a>,
+                        in the project <i>The Whole-Process Supply-Chain Quality Management of Engineering Materials
+                            Based on Information Flow</i>.
+                        <ul>
+                            <li> <b>Problems solved:</b> 1) different components of the traditional engineering material
+                                supply chain are separated from each other, which is infeasible to achieve real-time
+                                information sharing and traceability, 2) information is usually stored in one
+                                centralized database owned by one participant in the supply chain, resulting in material
+                                quality information easy to be tampered with.</li>
+                            <li> <b>Solutions:</b> studied on Hyperledger Fabric blockchain and IPFS to apply to
+                                supply-chain quality management especially for the on-chain proof of quality inspection
+                                reports, designed a customized structure based on production demands among parties
+                                (construction, transportation, supplier, and supervisor), and implemented a demo of
+                                private chain while using smart contracts for quality compliance reviews.</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-
-            <!-- <div>
-                <span class="anchor" id="pub"></span>
-                <h2 class="bg-light  h2color">Publications</h2>
-                <ul>
-                    <li>
-                        <font size="4"><b>test</b>
-                        </font>
-                        <br>test
-                    </li><br>
-                </ul>
-            </div> -->
 
             <div>
-                <span class="anchor" id="pub"></span>
-                <h2 class="bg-light  h2color">Projects</h2>
+                <span class="anchor" id="project"></span>
+                <h2 class="bg-light  h2color">Project Experience</h2>
                 <ul>
                     <li>
-                        <font size="4"><b>test</b>
-                        </font>
-                        <br>test
-                    </li><br>
+                        <div class="title">
+                            <div class="left">A Secure Data Sharing Platform Based on Blockchain+IPFS+SM2 Algorithm
+                            </div>
+                            <div class="right">2020.09 - 2021.05</div>
+                        </div>
+                        National Innovation Project, No.202119145011X.
+                        <ul>
+                            <li>Research on implementation of a secure backup system via IPFS, uploading proof of backup
+                                on a private
+                                chain to ensure tamper-proof and traceability, and encrypts the objectives via
+                                asymmetric encryption
+                                algorithm SM2. Individually mainly focus on topic selection, node establishment, and
+                                cryptography research.
+                            </li>
+                            <li>Derivative Publication: Zhengyu Hu, Wenrui Liu, <b>Shengchen Ling</b>, Kuan Fan,
+                                <i>“Research on
+                                    multi-objective optimal scheduling considering the balance of labor workload
+                                    distribution”</i>, PLOS ONE, 2021. Individually
+                                mainly focus on formal analysis, verifications, and writing & reviewing.</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
 
-
-            <!-- <div>
-                <span class="anchor" id="service"></span>
-                <h2 class="bg-light h2color">Professional Services</h2>
-                <h5>Conference Organization</h5>
+            <div>
+                <span class="anchor" id="misc"></span>
+                <h2 class="bg-light  h2color">Misc Experience</h2>
                 <ul>
-                    <li>Local organization co-chair: International Symposium on Research in Attacks, Intrusions and
-                        Defenses (RAID) <span style="float:right">2023</span></li>
+                    <li>
+                        <div class="title">
+                            <div class="left">A Book to Understand Web3.0 (ISBN: 9787121432354)</div>
+                            <div class="right">2021.12 - 2022.03</div>
+                        </div>
+                        Author on Chapter 3 <i>“The core technology of Web3.0 – Blockchain”</i> and Chapter 4.1 <i>“NFT
+                            standards”</i>, including introductions on consensus mechanisms, typical blockchains,
+                        cross-chain bridges & oracles, decentralized storage, blockchain security and NFT standards.
+                    </li>
+                    <li>
+                        <div class="title">
+                            <div class="left">Member of Technical Committee of Conflux Community</div>
+                            <div class="right">2022.08 - present</div>
+                        </div>
+                        TBA.<br>
+                        TBA.
+                    </li>
                 </ul>
-            </div> -->
+            </div>
 
-            <!-- <div>
-                <span class="anchor" id="teach"></span>
-                <h2 class="bg-light h2color">Teaching</h2>
-                <ul>
-                    <li>CS 4293: Topics in Cybersecurity <span style="float:right">Semester B, 2022-23</span>
-                </ul>
-            </div> -->
 
             <footer>
                 <span id="updated" style="float:right"></span>
                 <script>
                     var d = document.lastModified.split(" ")[0];
-                    document.getElementById("updated").innerHTML = "<small>Last Updated: " + d + "</small>";
+                    document.getElementById("updated").innerHTML = "<small>Last updated: " + d + "</small>";
                 </script>
             </footer>
 
         </div>
     </div>
+
 </body>
 
 </html>

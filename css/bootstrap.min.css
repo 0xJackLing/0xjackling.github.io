@@ -4118,7 +4118,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-left: 0;
+    padding-left: 30px;
     margin-bottom: 0;
     list-style: none
 }
@@ -6506,7 +6506,7 @@ a.bg-danger:focus,a.bg-danger:hover,button.bg-danger:focus,button.bg-danger:hove
 }
 
 .bg-light {
-    background-color: #f8f9fa!important
+    background-color: #f8f9fa !important
 }
 
 a.bg-light:focus,a.bg-light:hover,button.bg-light:focus,button.bg-light:hover {
