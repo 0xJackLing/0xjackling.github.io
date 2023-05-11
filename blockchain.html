@@ -42,12 +42,12 @@
             <div class="related">
                 <h3>A Treasure Cave for Blockchain. </h3>
                 <div id="contents">
-                    <a href="#begin">Begin</a> . <a href="#paper">Papers</a> . <a href="#code">Source codes</a> . <a href="#cross">Cross-chain</a> . <a href="#zk">Zero-knowledge</a> . <a href="#scaling">Scaling</a> . <a href="#new">Emerging blockchains</a> . <a href="#defi">DeFi</a> . <a href="#sec">Security</a> ...
+                    <a href="#begin">Begin</a> . <a href="#consensus">Consensus mechanism</a> . <a href="#zk">Zero-knowledge</a> . <a href="#sec">Security</a> . <a href="#storage">Distributed storage</a> . <a href="#cross">Cross-chain</a> . <a href="#scaling">Scaling</a> . <a href="#new">Emerging blockchains</a> . <a href="#defi">DeFi</a> ...
                 </div>
             </div><br>
 
             <div id="begin">
-                <h3 class="bg-light  h2color">To begin with: </h3>
+                <h3 class="bg-light  h2color">To begin with</h3>
                 <ul>
                     <li><b><a href="http://zhenxiao.com/index.php">XIAO Zhen</a>'s class</b> on Bilibili, PKU, 2018, in Chinese: <a href="https://www.bilibili.com/video/BV1Vt411X7JF?p=1">Blockchain technology and application</a>
                         <br>Mainly focus on Bitcoin and Ethereum. <b><i>This is how I walk into this facinating new world!</i></b>
@@ -55,34 +55,67 @@
                 </ul>
             </div>
 
-            <div id="paper">
-                <h3 class="bg-light  h2color">Papers: </h3>
+            <div id="consensus">
+                <h3 class="bg-light  h2color">Consensus machanism</h3>
                 <ul>
-                    <li><b>Bitcoin: </b><a href="https://bitcoin.org/bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System</a></li>
-                    <li><b>Ethereum: </b>
+                    <li><b>Nakamoto consensus</b>
                         <ul>
-                            <li><a href="https://ethereum.org/en/whitepaper/">A next-generation smart contract and decentralized application platform (white paper)</a></li>
-                            <li><a href="https://ethereum.github.io/yellowpaper/paper.pdf">Ethereum: A secure decentralised generalised transaction ledger (yellow paper)</a></li>
+                            <li><b>Bitcoin: </b>
+                                <ul>
+                                    <li>Paper: <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System</a></li>
+                                    <li>Source code: <a href="https://github.com/bitcoin/bitcoin">Bitcoin Core</a></li>
+                                </ul>
+                            </li>
+                            <li><b>Bitcoin-NG: </b></li>
+                            <li><b>GHOST: </b></li>
+                            <li><b>Ethereum: </b>
+                                <ul>
+                                    <li>White paper: <a href="https://ethereum.org/en/whitepaper/">A next-generation smart contract and decentralized application platform</a></li>
+                                    <li>Yellow paper: <a href="https://ethereum.github.io/yellowpaper/paper.pdf">Ethereum: A secure decentralised generalised transaction ledger</a></li>
+                                    <li>Source code: <a href="https://github.com/ethereum/go-ethereum">Ethereum (go-ethereum)</a></li>
+                                    <li>GO language: <a href="https://tour.go-zh.org/list">GO language tutorial (in Chinese)</a></li>
+                                    <li>Code analysis: <a href="https://github.com/ZtesoftCS/go-ethereum-code-analysis">go-ethereum-code-analysis</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><b>Ouroboros: </b><a href="https://eprint.iacr.org/2016/889.pdf">Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol</a></li>
+                            <li><b>Conflux: </b>
+                                <ul>
+                                    <li><a href="https://arxiv.org/pdf/1805.03870.pdf">Scaling Nakamoto Consensus to Thousands of Transactions per Second</a></li>
+                                    <li><a href="https://www.usenix.org/system/files/atc20-li-chenxing.pdf">A Decentralized Blockchain with High Throughput and Fast Confirmation</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                    <li><b>Hyperledger Fabric: </b><a href="https://dl.acm.org/doi/pdf/10.1145/3190508.3190538">Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains</a></li>
-                    <li><b>Ouroboros: </b><a href="https://eprint.iacr.org/2016/889.pdf">Ouroboros: A Provably Secure Proof-of-Stake Blockchain Protocol</a></li>
-                    <li><b>Algorand: </b><a href="https://dl.acm.org/doi/pdf/10.1145/3132747.3132757">Algorand: Scaling Byzantine Agreements for Cryptocurrencies</a></li>
-                    <li><b>Avalanche: </b>
+                    
+                    <li><b>Byzantine Fault Tolerance (BFT)</b>
                         <ul>
-                            <li><a href="https://ipfs.io/ipfs/QmUy4jh5mGNZvLkjies1RWM4YuvJh5o2FYopNPVYwrRVGV">Snowflake to Avalanche: A Novel Metastable Consensus Protocol Family for Cryptocurrencies</a></li>
-                            <li><a href="https://arxiv.org/pdf/1906.08936.pdf?">Scalable and Probabilistic Leaderless BFT Consensus through Metastability</a></li>
+                            <li><b>BGP: </b></li>
+                            <li><b>PBFT: </b></li>
+                            <li><b>Hyperledger Fabric: </b>
+                                <ul>
+                                    <li>Paper: <a href="https://dl.acm.org/doi/pdf/10.1145/3190508.3190538">Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains</a></li>
+                                    <li>Source code: <a href="https://github.com/hyperledger/fabric">https://github.com/hyperledger/fabric</a></li>
+                                </ul>
+                            </li>
+                            <li><b>Algorand: </b><a href="https://dl.acm.org/doi/pdf/10.1145/3132747.3132757">Algorand: Scaling Byzantine Agreements for Cryptocurrencies</a></li>
+                            <li><b>EOS.IO: </b><a href="https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md">EOS.IO Technical White Paper v2</a></li>
+                            <li><b>Avalanche: </b>
+                                <ul>
+                                    <li><a href="https://ipfs.io/ipfs/QmUy4jh5mGNZvLkjies1RWM4YuvJh5o2FYopNPVYwrRVGV">Snowflake to Avalanche: A Novel Metastable Consensus Protocol Family for Cryptocurrencies</a></li>
+                                    <li><a href="https://arxiv.org/pdf/1906.08936.pdf?">Scalable and Probabilistic Leaderless BFT Consensus through Metastability</a></li>
+                                </ul>
+                            </li>
+                            <li><b>Dfinity: </b><a href="https://arxiv.org/pdf/1805.04548.pdf">DFINITY Technology Overview Series, Consensus System</a></li>
                         </ul>
                     </li>
-                    <li><b>EOS.IO: </b><a href="https://github.com/EOSIO/Documentation/blob/master/TechnicalWhitePaper.md">EOS.IO Technical White Paper v2</a></li>
+                    
+                    
+                    
+                    
                     <li><b>Blockstack: </b><a href="https://www.usenix.org/system/files/conference/atc16/atc16_paper-ali.pdf">Blockstack: A Global Naming and Storage System Secured by Blockchains</a></li>
-                    <li><b>Dfinity: </b><a href="https://arxiv.org/pdf/1805.04548.pdf">DFINITY Technology Overview Series, Consensus System</a></li>
-                    <li><b>Conflux: </b>
-                        <ul>
-                            <li><a href="https://arxiv.org/pdf/1805.03870.pdf">Scaling Nakamoto Consensus to Thousands of Transactions per Second</a></li>
-                            <li><a href="https://www.usenix.org/system/files/atc20-li-chenxing.pdf">A Decentralized Blockchain with High Throughput and Fast Confirmation</a></li>
-                        </ul>
-                    </li>
+                    
+                    
                     <li><b>Reading list</b> from <a href="https://ceng.usc.edu/~bkrishna/">Bhaskar Krishnamachari</a>, Professor, USC: 
                         <a href="https://medium.com/@bhaskark2/blockchain-and-distributed-ledger-protocols-a-reading-list-3c00dfc66404">2019 version</a>,  
                         <a href="http://blockchain.usc.edu/index.php/blockchain-research-reading-group-fall-2017/">2017 version</a>
@@ -93,22 +126,47 @@
                 </ul>
             </div>
 
-            <div id="code">
-                <h3 class="bg-light  h2color">Source codes: </h3>
+            <div id="zk">
+                <h3 class="bg-light  h2color">Zero-knowledge</h3>
                 <ul>
-                    <li><b>Bitcoin: </b><a href="https://github.com/bitcoin/bitcoin">Bitcoin Core</a></li>
-                    <li><b>Ethereum: </b>
+                    <li><b>Zerocoin: </b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6547123">Zerocoin: Anonymous Distributed E-Cash from Bitcoin</a></li>
+                    <li><b>Zerocash: </b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6956581">Zerocash: Decentralized Anonymous Payments from Bitcoin</a></li>
+                    <li><b>Collection: </b><a href="https://github.com/0xJackLing/awesome-zero-knowledge-proofs">Awesome zero knowledge proofs (zkp)</a></li>
+                    <li><b>Study on YouTube: </b><a href="https://www.youtube.com/playlist?list=PLj80z0cJm8QHm_9BdZ1BqcGbgE-BEn-3Y">zkStudyClub</a></li>
+                </ul>
+            </div>
+
+            <div id="sec">
+                <h3 class="bg-light  h2color">Security</h3>
+                <ul>
+                    <li><b>CertiK: </b><a href="https://www.certik.com">Securing The Web3 World</a></li>
+                    <li><b>BlockSec: </b><a href="https://blocksec.com">Building BlockChain Security Infrastructure</a></li>
+                    <li><b>SlowMist: </b><a href="https://www.slowmist.com/#home">Focusing on Blockchain Ecosystem Security</a></li>
+                </ul>
+            </div>
+
+            <div id="storage">
+                <h3 class="bg-light  h2color">Distributed storage</h3>
+                <ul>
+                    <li><b>IPFS: </b>
                         <ul>
-                            <li><a href="https://github.com/ethereum/go-ethereum">Ethereum (go-ethereum)</a></li>
-                            <li><a href="https://tour.go-zh.org/list">GO language tutorial (in Chinese)</a></li>
-                            <li><a href="https://github.com/ZtesoftCS/go-ethereum-code-analysis">go-ethereum-code-analysis</a></li>
-                        </ul>   
-                    <li><b>Hyperledger Fabric: </b><a href="https://github.com/hyperledger/fabric">https://github.com/hyperledger/fabric</a></li>
+                            <li>BitTorrent paper: <a href="https://stuker.com/wp-content/uploads/import/i-1fd3ae7c5502dfddfe8b2c7acdefaa5e-bittorrentecon.pdf">Incentives Build Robustness in BitTorrent</a></li>
+                            <li>IPFS paper: <a href="https://arxiv.org/pdf/1407.3561.pdf">IPFS - Content Addressed, Versioned, P2P File System</a></li>
+                            <li>Documentation: <a href="https://docs.ipfs.tech">A peer-to-peer hypermedia protocol</a></li>
+                            <li>Filecoin: <a href="https://filecoin.io">Decentralized storage network</a></li>
+                        </ul>
+                    </li>
+                    <li><b>Arweave: </b>
+                        <ul>
+                            <li>Yellow paper: <a href="https://www.arweave.org/yellow-paper.pdf">Arweave: A Protocol for Economically Sustainable Information Permanence</a></li>
+                            <li>Documentation: <a href="https://docs.arweave.org/info/">Getting Started</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
 
             <div id="cross">
-                <h3 class="bg-light  h2color">Interoperability (cross-chain): </h3>
+                <h3 class="bg-light  h2color">Cross-chain</h3>
                 <ul>
                     <li>Centralized or multisig notary schemes</li>
                     <li>Sidechains/relays</li>
@@ -120,9 +178,9 @@
             </div>
 
             <div id="scaling">
-                <h3 class="bg-light  h2color">Scalability (layer-2, sharding): </h3>
+                <h3 class="bg-light  h2color">Scaling</h3>
 
-                <h5>Layer-2: </h5>
+                <h6><b>Layer-2: </b></h6>
                 <ul>
                     <li><b>Plasma</b>
                         <ul>
@@ -144,7 +202,7 @@
                     </li>
                 </ul>
 
-                <h5>Sharding: </h5>
+                <h6><b>Sharding: </b></h6>
                 <ul>
                     <li><b>Zilliqa Elastico: </b><a href="https://docs.zilliqa.com/sharding.pdf">A Secure Sharding Protocol For Open Blockchains</a></li>
                     <li><b>RapidChain: </b><a href="https://dl.acm.org/doi/pdf/10.1145/3243734.3243853">RapidChain: Scaling Blockchain via Full Sharding</a></li>
@@ -152,18 +210,8 @@
                 </ul>
             </div>
 
-            <div id="zk">
-                <h3 class="bg-light  h2color">Zero-knowledge: </h3>
-                <ul>
-                    <li><b>Zerocoin: </b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6547123">Zerocoin: Anonymous Distributed E-Cash from Bitcoin</a></li>
-                    <li><b>Zerocash: </b><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6956581">Zerocash: Decentralized Anonymous Payments from Bitcoin</a></li>
-                    <li><b>Data collection: </b><a href="https://github.com/0xJackLing/awesome-zero-knowledge-proofs">Awesome zero knowledge proofs (zkp)</a></li>
-                    <li><b>Study on YouTube: </b><a href="https://www.youtube.com/playlist?list=PLj80z0cJm8QHm_9BdZ1BqcGbgE-BEn-3Y">zkStudyClub</a></li>
-                </ul>
-            </div>
-
             <div id="new">
-                <h3 class="bg-light  h2color">Emerging blockchains: </h3>
+                <h3 class="bg-light  h2color">Emerging blockchains</h3>
                 <ul>
                     <li><b>Solana: </b><a href="https://docs.solana.com/cluster/overview">A Solana Cluster | Solana Docs</a></li>
                     <li><b>Aptos: </b>
@@ -190,23 +238,17 @@
             </div>
 
             <div id="defi">
-                <h3 class="bg-light  h2color">DeFi: </h3>
+                <h3 class="bg-light  h2color">DeFi</h3>
                 <ul>
-                    <li>Web3 wallets: Metamask (plugin & mobile), Token Pocket (mobile), imToken (mobile)</li>
-                    <li>Centralized Exchanges (CEX): Binance, OKX, Huobi</li>
-                    <li>Decentralized Exchanges (DEX): Uniswap, SushiSwap</li>
-                    <li>Concepts of `IXO` series (in Chinese): <a
-                            href="https://zhuanlan.zhihu.com/p/460531727">https://zhuanlan.zhihu.com/p/460531727</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div id="sec">
-                <h3 class="bg-light  h2color">Security: </h3>
-                <ul>
-                    <li><b>CertiK: </b><a href="https://www.certik.com">Securing The Web3 World</a></li>
-                    <li><b>BlockSec: </b><a href="https://blocksec.com">Building BlockChain Security Infrastructure</a></li>
-                    <li><b>SlowMist: </b><a href="https://www.slowmist.com/#home">Focusing on Blockchain Ecosystem Security</a></li>
+                    <b><i>Learn by Playing! </i></b>
+                    <li><b>Reading: </b><a href="https://github.com/0xJackLing/blockchainer-roadmap/blob/master/defi/How_to_DeFi_CHN.pdf"><i>How to DeFi</i></a></li>
+                    <li><b>Web3 wallets: </b><a href="https://metamask.io">Metamask</a> (plugin & mobile), <a href="https://www.tokenpocket.pro">Token Pocket</a> (mobile), <a href="https://token.im">imToken</a> (mobile)</li>
+                    <li><b>Centralized Exchanges (CEX): </b><a href="https://www.binance.com/">Binance</a>, <a href="https://www.okx.com/">OKX</a>, <a href="https://www.huobi.com/en-us/">Huobi</a></li>
+                    <li><b>Decentralized Exchanges (DEX): </b><a href="https://uniswap.org">Uniswap</a>, <a href="https://www.sushi.com">Sushi</a>, <a href="https://curve.fi/">Curve</a>, <a href="https://1inch.io">1inch</a>, <a href="https://dydx.exchange">dYdX</a>, <a href="https://balancer.fi">Balancer</a></li>
+                    <li><b>Lending: </b><a href="https://aave.com">Aave</a>, <a href="https://compound.finance">Compound</a>, <a href="https://dforce.network">dForce</a></li>
+                    <li><b>Stablecoin: </b><a href="https://tether.to/en/">Tether</a>(USDT), <a href="https://www.circle.com/en/">Circle</a>(USDC), <a href="https://makerdao.com/en/">MakerDAO</a>(DAI)</li>
+                    <li><b>Cross-chain Bridge: </b><a href="https://multichain.xyz">Multichain</a>, <a href="https://cbridge.celer.network/">cBridge</a></li>
+                    <li><b>DeFi Dashboard: </b><a href="https://defillama.com">DefiLlama</a></li>
                 </ul>
             </div>
 
