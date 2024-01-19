@@ -1,0 +1,72 @@
+﻿Category,Sub-Category,Type,Request,Network,Consensus,Application,Tx Workload,Simulation
+Performance,Transaction throughput: Measure the number of transactions per second (TPS) that the protocol can handle.,Single,Benchmark the throughput of Ethereum,default,eth,default,historical,Yes
+,,Single,Benchmark the throughput of PBFT,default,pbft,default,historical,Yes
+,,Comparison,Compare the throughput of Ethereum and PBFT,default,"eth,pbft",default,historical,Yes
+,Transaction latency (finality): Measure the time it takes for a transaction to be confirmed and added to the blockchain.,Single,Benchmark the latency of Ethereum,default,eth,default,historical,Yes
+,,Single,Benchmark the latency of PBFT,default,pbft,default,historical,Yes
+,,Comparison,Compare the latency of Ethereum and PBFT,default,"eth,pbft",default,historical,Yes
+,"Resource Utilization: Computational resources (CPU, memory), network bandwidth, and energy consumption (especially for PoW).",Single,Benchmark the CPU usage of nodes in Ethereum,default,eth,default,historical,Yes
+,,Single,Benchmark the CPU usage of nodes in PBFT,default,pbft,default,historical,Yes
+,,Comparison,Compare the CPU usage of nodes in Ethereum and PBFT,default,"eth,pbft",default,historical,Yes
+,,Single,Benchmark the memory usage of nodes in Ethereum,default,eth,default,historical,Yes
+,,Single,Benchmark the memory usage of nodes in PBFT,default,pbft,default,historical,Yes
+,,Comparison,Compare the memory usage of nodes in Ethereum and PBFT,default,"eth,pbft",default,historical,Yes
+Scalability,Node scalability: Measure the protocol's ability to handle an increasing number of nodes and transactions.,Single,Benchmark the node scalability of Ethereum ,add node# from 3 to 5 to 7,eth,default,historical,Yes
+,,Single,Benchmark the node scalability of PBFT,add node# from 3 to 5 to 7,pbft,default,historical,Yes
+,,Comparison,Compare the node scalability of Ethereum and PBFT,add node# from 3 to 5 to 7,"eth,pbft",default,historical,Yes
+,,Extreme,Benchmark the extreme node scalability of Ethereum ,add node# from 3 to 7 to 15,eth,default,historical,Yes
+,,Extreme,Benchmark the extreme node scalability of PBFT,add node# from 3 to 7 to 15,pbft,default,historical,Yes
+,"Network scalability: Evaluate the protocol's ability to handle a growing number of users, transactions, and data.",Single,Benchmark the network scalability of Ethereum,inject tx with higher speed,eth,default,historical,Yes
+,,Single,Benchmark the network scalability of PBFT,inject tx with higher speed,pbft,default,historical,Yes
+,,Comparison,Compare the network scalability of Ethereum and PBFT,inject tx with higher speed,"eth,pbft",default,historical,Yes
+,Network Resilience: The ability of the consensus algorithm to adapt to changing network conditions.,Single,Benchmark the network resilience of Ethereum with dynamic nodes,dynamic node* from 5 to 3 to 7,eth,default,historical,Yes
+,,Single,Benchmark the network resilience of PBFT with dynamic nodes,dynamic node* from 5 to 3 to 7,pbft,default,historical,Yes
+,,Comparison,Compare the network resilience of Ethereum and PBFT with dynamic nodes,dynamic node* from 5 to 3 to 7,"eth,pbft",default,historical,Yes
+,,Single,Benchmark the network resilience of Ethereum with dynamic tx speed,dynamic tx injection speed,eth,default,historical,Yes
+,,Single,Benchmark the network resilience of PBFT with dynamic tx speed,dynamic tx injection speed,pbft,default,historical,Yes
+,,Comparison,Compare the network resilience of Ethereum and PBFT with dynamic tx speed,dynamic tx injection speed,"eth,pbft",default,historical,Yes
+Security,Fault Tolerance: The ability of the network to continue functioning even if some nodes fail.,Single,Benchmark the fault tolerance of Ethereum,more nodes fail starting from 1,eth,default,historical,Yes
+,,Single,Benchmark the fault tolerance of PBFT,more nodes fail starting from 1,pbft,default,historical,Yes
+,,Comparison,Compare the fault tolerance of Ethereum and PBFT,more nodes fail starting from 1,"eth,pbft",default,historical,Yes
+,"Attack Resistance: Robustness against common threats (51% attacks, Sybil, DDoS).",Single,Benchmark the 51% attack in Ethereum,nodes with another state from 49% to 51%,eth,default,historical,Yes
+,,Single,Benchmark the sybil attack in Ethereum,unauthorized nodes interact with the network,eth,default,historical,Yes
+,,Single,Benchmark the DDoS attack in Ethereum,inject tx with higher speed,eth,default,historical,Yes
+,,Single,Benchmark the nothing-at-stake attack in Ethereum,nodes stake on more than 1 forks,eth,default,historical,Yes
+,,Single,Benchmark the 51% attack in PBFT,nodes with another state from 49% to 51%,pbft,default,historical,Yes
+,,Single,Benchmark the sybil attack in PBFT,unauthorized nodes interact with the network,pbft,default,historical,Yes
+,,Single,Benchmark the DDoS attack in PBFT,inject tx with higher speed,pbft,default,historical,Yes
+,Cryptography: Strength of cryptographic implementations and overall security of the consensus mechanism.,Theorem,Analyze the cryptography security of Ethereum,,,,,No
+,,Theorem,Analyze the cryptography security of PBFT,,,,,No
+,Security auditing: Conduct a thorough security audit to identify any security weaknesses.,Theorem,Analyze the security auditing of Ethereum ,,,,,No
+,,Theorem,Analyze the security auditing of PBFT ,,,,,No
+,,Theorem,Analyze the security auditing of DApp ,,,,,No
+,Formal verification: ensure the correctness of key logic,Theorem,Analyze the formal verification of Ethereum,,,,,No
+,,Theorem,Analyze the formal verification of PBFT,,,,,No
+,"Security incident response: including incident detection, response, and recovery.",Theorem,Analyze the security incident response of DApp ,,,,,No
+,Programming Paradigms and Templates,Theorem,Analyze the programming paradigms and templates of Ethereum,,,,,No
+,,Theorem,Analyze the programming paradigms and templates of Hyperledger Fabric,,,,,No
+,,Theorem,Analyze the programming paradigms and templates of DApp,,,,,No
+Data and Privacy,"Data storage capacity: Measure the protocol's data storage capacity, including data size, storage efficiency, and retrieval speed.",Single,Benchmark the data storage capability of Ethereum ,default,eth,default,historical,Yes
+,,Single,Benchmark the data storage capability of Hyperledger Fabric ,default,pbft,default,historical,Yes
+,,Comparison,Compare the data storage capability of Ethereum and Hyperledger Fabric,default,"eth,pbft",default,historical,Yes
+,"Privacy Features: including support for anonymous transactions, zero-knowledge proofs, or confidential smart contracts.",Theorem,Analyze the privacy features of Ethereum,,,,,No
+,,Theorem,Analyze the privacy features of Hyperledger Fabric,,,,,No
+Governance,Node Distribution and Diversity: Evaluating the spread and control of nodes.,Theorem,Analyze the node distribution and diversity of Ethereum,,,,,No
+,"Decentralized governance: including voting, consensus, and decision-making",Theorem,Analyze the decentralized governance capability of Ethereum,,,,,No
+,,Theorem,Analyze the decentralized governance capability of Hyperledger Fabric,,,,,No
+,"Centralized governance: including decision-making, dispute resolution, and regulatory compliance.",Theorem,Analyze the centralized governance capability of Ethereum,,,,,No
+,,Theorem,Analyze the centralized governance capability of Hyperledger Fabric,,,,,No
+,Adaptability and Upgradeability: Ease of implementing updates and responding to evolving technological and regulatory landscapes.,Theorem,Analyze the adaptability and upgradeability of Ethereum,,,,,No
+,,Theorem,Analyze the adaptability and upgradeability of Hyperledger Fabric,,,,,No
+Interoperability,Cross-Chain Communication: Ability to interact and integrate with other blockchains.,Theorem,Analyze the cross-chain communication capability of Ethereum,,,,,No
+,,Theorem,Analyze the cross-chain communication capability of Hyperledger Fabric,,,,,No
+,Standardization: Compliance with established protocols and best practices.,Theorem,Analyze the interoperability standardization of Ethereum,,,,,No
+,,Theorem,Analyze the interoperability standardization of Hyperledger Fabric,,,,,No
+,Cross-chain bridge security verification,Theorem,Analyze the security of cross-chain bridges of Ethereum,,,,,No
+,,Theorem,Analyze the security of cross-chain bridges of Hyperledger Fabric,,,,,No
+Usability,Application Functionality,Theorem,Analyze the application source codes as functionality testing,,,,,No
+,"Developer and User Experience: Assessing tooling, documentation, and ease of use.",Theorem,Analyze the developer and user experience of Ethereum,,,,,No
+,,Theorem,Analyze the developer and user experience of Hyperledger Fabric,,,,,No
+Economy,"Transaction costs: Measure the costs associated with transactions, including fees, gas, and other expenses.",Theorem,Analyze the transaction cost of Ethereum,,,,,No
+,"Incentive mechanisms: mining and staking mechanisms, including their efficiency, security, and reward structures.",Theorem,Analyze the incentive mechanism of Ethereum,,,,,No
+,"Tokenomics: Evaluate the protocol's token economics, including token supply, distribution, and pricing.",Theorem,Analyze the tokenomics of native token of Ethereum,,,,,No
