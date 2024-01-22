@@ -43,7 +43,6 @@ async function main() {
   )
 
   const inputAmount = 0.001
-  // .001 => 1 000 000 000 000 000
   const amountIn = ethers.utils.parseUnits(
     inputAmount.toString(),
     decimals0
