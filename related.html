@@ -21,12 +21,12 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>LING's Homepage</title>
+    <title>Related Links – Shengchen Ling</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">LING's Homepage</a>
+        <a class="navbar-brand" href="./index.html">LING's Homepage</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,37 +36,27 @@
                     <a class="nav-link" href="./index.html">Homepage</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./blockchain.html">A Walk into Blockchain</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="./related.html">Related Links</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container" id="wrapper">
+    <div class="container" id="wrapper" style="max-width: 720px;">
 
         <div id="content">
             <div>
-                <h3 class="related">Related Links </h3>
+                <h3 class="related">Useful Links</h3>
                 <ul>
-                    <li>Cyberspace Security Association (NEUQCSA/NEUQRO): <a href="http://neuqcsa.cn/">http://neuqcsa.cn/</a></li>
-                    <li>Blockchains Association (NEUBA): <a href="http://neublockchain.xyz">http://neublockchain.xyz</a> (alternative: <a href="https://jov7m-cqaaa-aaaan-qau4a-cai.raw.ic0.app/">https://jov7m-cqaaa-aaaan-qau4a-cai.raw.ic0.app/)</a></li>
-                    <li>0xU Hong Kong Blockchain Club: <a href="https://www.0xu.club/">https://www.0xu.club/</a></li>
-                </ul>
-                
-                <h3 class="related">Useful Links </h3>
-                <ul>
-                    <li>How to write a research statement, from <a href="https://people.epfl.ch/george.candea">Prof. George Candea</a>, EPFL: <a href="https://dslab.epfl.ch/people/candea/sop.html">https://dslab.epfl.ch/people/candea/sop.html</a></li>
-                    <li><a href="https://zhuanlan.zhihu.com/p/298343066">How to write a research proposal</a>, from Biowood, CUHK. </li>
+                    <li>How to write a research statement, from <a href="https://people.epfl.ch/george.candea" class="ext" target="_blank" rel="noopener noreferrer" title="外部链接">Prof. George Candea</a> (EPFL): <a href="https://dslab.epfl.ch/people/candea/sop.html" class="ext" target="_blank" rel="noopener noreferrer" title="外部链接">Statement of Purpose</a></li>
+                    <li><a href="https://zhuanlan.zhihu.com/p/298343066" class="ext" target="_blank" rel="noopener noreferrer" title="外部链接">How to write a research proposal</a>, Biowood, CUHK.</li>
                 </ul>
             </div>
 
             <footer>
-                <span id="updated" style="float:right"></span>
+                <span id="updated"></span>
                 <script>
                     var d = document.lastModified.split(" ")[0];
-                    document.getElementById("updated").innerHTML = "<small>Last Updated: " + d + "</small>";
+                    document.getElementById("updated").innerHTML = "<small>Last updated: " + d + "</small>";
                 </script>
             </footer>
 
