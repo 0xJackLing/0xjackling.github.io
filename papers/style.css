@@ -148,6 +148,28 @@ h1 {
     font-size: 0.7rem;
 }
 
+.tag-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.3rem;
+}
+
+.tag-chip {
+    display: inline-block;
+    padding: 0.25rem 0.7rem;
+    background: #21262d;
+    color: #8b949e;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tag-chip:hover { color: #58a6ff; border-color: #58a6ff; }
+.tag-chip.active { background: #1f6feb33; color: #58a6ff; border-color: #58a6ff; }
+
 .no-results {
     text-align: center;
     color: #8b949e;
