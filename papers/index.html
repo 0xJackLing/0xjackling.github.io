@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Security Papers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blockchain Security Paper Tracker</h1>
+            <p class="subtitle">Auto-updated weekly &mdash; tracking top security venues & research groups</p>
+            <div class="stats">
+                <span class="stat"><strong id="total-count">0</strong> papers</span>
+                <span class="stat"><strong id="source-count">0</strong> sources</span>
+                <span class="stat">Last updated: <strong id="last-updated"></strong></span>
+            </div>
+        </header>
+
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search papers..." />
+            <div class="filters">
+                <select id="venue-filter">
+                    <option value="">All Venues</option>
+                </select>
+                <select id="source-filter">
+                    <option value="">All Sources</option>
+                </select>
+                <select id="year-filter">
+                    <option value="">All Years</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="papers-container"></div>
+    </div>
+
+    <script>
+    let allPapers = [];
+
+    async function loadPapers() {
+        const resp = await fetch('papers.json');
+        allPapers = await resp.json();
+        allPapers.sort((a, b) => (b.date_published || '').localeCompare(a.date_published || ''));
+
+        document.getElementById('total-count').textContent = allPapers.length;
+        const sources = new Set(allPapers.map(p => p.source));
+        document.getElementById('source-count').textContent = sources.size;
+        document.getElementById('last-updated').textContent = new Date().toISOString().slice(0, 10);
+
+        // Populate filters
+        const venues = [...new Set(allPapers.map(p => p.venue).filter(Boolean))].sort();
+        const venueFilter = document.getElementById('venue-filter');
+        venues.forEach(v => {
+            const opt = document.createElement('option');
+            opt.value = v; opt.textContent = v;
+            venueFilter.appendChild(opt);
+        });
+
+        const sourceFilter = document.getElementById('source-filter');
+        sources.forEach(s => {
+            const opt = document.createElement('option');
+            opt.value = s; opt.textContent = s;
+            sourceFilter.appendChild(opt);
+        });
+
+        const years = [...new Set(allPapers.map(p => p.year).filter(Boolean))].sort((a,b) => b-a);
+        const yearFilter = document.getElementById('year-filter');
+        years.forEach(y => {
+            const opt = document.createElement('option');
+            opt.value = y; opt.textContent = y;
+            yearFilter.appendChild(opt);
+        });
+
+        renderPapers(allPapers);
+    }
+
+    function renderPapers(papers) {
+        const container = document.getElementById('papers-container');
+        if (papers.length === 0) {
+            container.innerHTML = '<p class="no-results">No papers found.</p>';
+            return;
+        }
+
+        // Group by week
+        const groups = {};
+        papers.forEach(p => {
+            const d = p.date_published || 'Unknown';
+            const weekKey = d.slice(0, 7) || 'Unknown';
+            if (!groups[weekKey]) groups[weekKey] = [];
+            groups[weekKey].push(p);
+        });
+
+        let html = '';
+        Object.keys(groups).sort().reverse().forEach(week => {
+            html += '<div class="week-group">';
+            html += '<h2 class="week-header">' + week + ' (' + groups[week].length + ' papers)</h2>';
+            groups[week].forEach(p => {
+                const tags = (p.relevance_tags || []).map(t => '<span class="tag">' + t + '</span>').join('');
+                const pdfLink = p.pdf_url ? '<a href="' + p.pdf_url + '" target="_blank" class="pdf-link">PDF</a>' : '';
+                const paperLink = p.url ? '<a href="' + p.url + '" target="_blank" class="paper-link">Link</a>' : '';
+                html += '<div class="paper-card">';
+                html += '<h3 class="paper-title">' + (p.url ? '<a href="' + p.url + '" target="_blank">' + p.title + '</a>' : p.title) + '</h3>';
+                html += '<div class="paper-meta">';
+                html += '<span class="authors">' + (p.authors || []).join(', ') + '</span>';
+                if (p.venue) html += ' &mdash; <span class="venue">' + p.venue + '</span>';
+                if (p.year) html += ' (' + p.year + ')';
+                html += ' ' + pdfLink;
+                if (p.citation_count) html += ' <span class="citations">' + p.citation_count + ' citations</span>';
+                html += '</div>';
+                if (p.abstract) {
+                    const shortAbstract = p.abstract.length > 300 ? p.abstract.slice(0, 300) + '...' : p.abstract;
+                    html += '<p class="abstract">' + shortAbstract + '</p>';
+                }
+                if (tags) html += '<div class="tags">' + tags + '</div>';
+                html += '</div>';
+            });
+            html += '</div>';
+        });
+        container.innerHTML = html;
+    }
+
+    function applyFilters() {
+        const search = document.getElementById('search').value.toLowerCase();
+        const venue = document.getElementById('venue-filter').value;
+        const source = document.getElementById('source-filter').value;
+        const year = document.getElementById('year-filter').value;
+
+        let filtered = allPapers;
+        if (search) {
+            filtered = filtered.filter(p =>
+                (p.title || '').toLowerCase().includes(search) ||
+                (p.abstract || '').toLowerCase().includes(search) ||
+                (p.authors || []).join(' ').toLowerCase().includes(search)
+            );
+        }
+        if (venue) filtered = filtered.filter(p => p.venue === venue);
+        if (source) filtered = filtered.filter(p => p.source === source);
+        if (year) filtered = filtered.filter(p => String(p.year) === year);
+
+        renderPapers(filtered);
+    }
+
+    document.getElementById('search').addEventListener('input', applyFilters);
+    document.getElementById('venue-filter').addEventListener('change', applyFilters);
+    document.getElementById('source-filter').addEventListener('change', applyFilters);
+    document.getElementById('year-filter').addEventListener('change', applyFilters);
+
+    loadPapers();
+    </script>
+</body>
+</html>
