@@ -53,8 +53,7 @@
         allPapers.sort((a, b) => (b.date_published || '').localeCompare(a.date_published || ''));
 
         document.getElementById('total-count').textContent = allPapers.length;
-        const venues = new Set(allPapers.map(p => p.venue).filter(Boolean));
-        document.getElementById('source-count').textContent = venues.size;
+        document.getElementById('source-count').textContent = new Set(allPapers.map(p => p.venue).filter(Boolean)).size;
         document.getElementById('last-updated').textContent = new Date().toISOString().slice(0, 10);
 
         // Populate filters
