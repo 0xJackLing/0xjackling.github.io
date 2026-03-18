@@ -5641,7 +5641,9 @@
     "pdf_url": "https://arxiv.org/pdf/2402.00220",
     "url": "https://doi.org/10.4230/LIPIcs.AFT.2024.8",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "DeFi"
+    ],
     "analyzed": false
   },
   {
@@ -5756,7 +5758,9 @@
     "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/gritti",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "DeFi",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -5823,7 +5827,9 @@
     "url": "https://www.ndss-symposium.org/ndss-paper/smarter-contracts-detecting-vulnerabilities-in-smart-contracts-with-deep-transfer-learning/",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "DeFi",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -5872,6 +5878,7 @@
     "citation_count": null,
     "relevance_tags": [
       "smart-contract",
+      "DeFi",
       "reentrancy"
     ],
     "analyzed": false
@@ -6930,7 +6937,8 @@
     "url": "https://doi.org/10.1109/TSC.2025.3562323",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "DeFi"
     ],
     "analyzed": false
   },
@@ -6951,7 +6959,9 @@
     "url": "https://doi.org/10.1109/TSC.2025.3622902",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "oracle",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -6972,7 +6982,9 @@
     "url": "https://doi.org/10.1109/TSC.2025.3609833",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "consensus",
+      "TEE"
     ],
     "analyzed": false
   },
@@ -6995,7 +7007,8 @@
     "url": "https://doi.org/10.1145/3719004",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -7086,7 +7099,9 @@
     "url": "https://doi.org/10.1145/3772367",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "privacy",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -7158,7 +7173,8 @@
     "citation_count": null,
     "relevance_tags": [
       "DeFi",
-      "eCrime"
+      "eCrime",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -7175,7 +7191,7 @@
       "Hyoungshick Kim",
       "Taesoo Kim"
     ],
-    "abstract": "",
+    "abstract": "Decentralized Finance (DeFi) offers a whole new investment experience and has quickly emerged as an enticing alternative to Centralized Finance (CeFi). Rapidly growing market size and active users, however, have also made DeFi a lucrative target for scams and hacks, with 1.95 billion USD lost in 2023. Unfortunately, no prior research thoroughly investigates DeFi users' security risk awareness levels and the adequacy of their risk mitigation strategies. Based on a semi-structured interview study (N = 14) and a follow-up survey (N = 493), this paper investigates DeFi users' security perceptions and commonly adopted practices, and how those affected by previous scams or hacks (DeFi victims) respond and try to recover their losses. Our analysis shows that users often prefer DeFi over CeFi due to their decentralized nature and strong profitability. Despite being aware that DeFi, compared to CeFi, is prone to more severe attacks, users are willing to take those risks to explore new investment opportunities. Worryingly, most victims do not learn from previous experiences; unlike victims studied through traditional systems, DeFi victims tend to find new services, without revising their security practices, to recover their losses quickly. The abundance of various DeFi services and opportunities allows victims to continuously explore new financial opportunities, and this reality seems to cloud their security priorities. Indeed, our results indicate that DeFi users' strong financial motivations outweigh their security concerns - much like those who are addicted to gambling. Our observations about victims' post-incident behaviors suggest that stronger control in the form of industry regulations would be necessary to protect DeFi users from future breaches.",
     "venue": "USENIX Security",
     "year": 2024,
     "date_published": "2024-06-01",
@@ -7233,7 +7249,11 @@
     "url": "https://doi.org/10.1109/ASE63991.2025.00054",
     "citation_count": null,
     "relevance_tags": [
-      "DeFi"
+      "smart-contract",
+      "DeFi",
+      "formal-verification",
+      "token",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -7258,6 +7278,7 @@
     "url": "https://doi.org/10.1109/ASE56229.2023.00110",
     "citation_count": null,
     "relevance_tags": [
+      "smart-contract",
       "DeFi",
       "token"
     ],
@@ -7282,7 +7303,8 @@
     "citation_count": null,
     "relevance_tags": [
       "DeFi",
-      "oracle"
+      "oracle",
+      "token"
     ],
     "analyzed": false
   },
@@ -7418,7 +7440,8 @@
     "url": "https://doi.org/10.1016/j.cose.2024.104109",
     "citation_count": null,
     "relevance_tags": [
-      "DeFi"
+      "DeFi",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -7437,7 +7460,11 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1109/SP61157.2025.00157",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "oracle",
+      "MEV",
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -7480,7 +7507,8 @@
     "url": "https://doi.org/10.1109/SP54263.2024.00230",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -7545,7 +7573,10 @@
     "pdf_url": null,
     "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-mingfei",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "consensus",
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -7589,6 +7620,8 @@
     "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/wang-yibo",
     "citation_count": null,
     "relevance_tags": [
+      "consensus",
+      "oracle",
       "fuzzing"
     ],
     "analyzed": false
@@ -7629,7 +7662,10 @@
     "url": "https://www.usenix.org/conference/usenixsecurity24/presentation/zhang-mingfei",
     "citation_count": null,
     "relevance_tags": [
-      "consensus"
+      "consensus",
+      "ZKP",
+      "smart-contract",
+      "privacy"
     ],
     "analyzed": false
   },
@@ -7651,8 +7687,10 @@
     "citation_count": null,
     "relevance_tags": [
       "DeFi",
+      "bridge",
       "token",
-      "eCrime"
+      "eCrime",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -7671,7 +7709,10 @@
     "pdf_url": null,
     "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/mclaughlin",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "MEV",
+      "DeFi"
+    ],
     "analyzed": false
   },
   {
@@ -7712,7 +7753,8 @@
     "url": "https://www.usenix.org/conference/usenixsecurity23/presentation/wang-wansen",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "privacy"
     ],
     "analyzed": false
   },
@@ -7758,6 +7800,9 @@
     "url": "https://doi.org/10.1145/3719027.3744852",
     "citation_count": null,
     "relevance_tags": [
+      "consensus",
+      "DeFi",
+      "privacy",
       "DAO"
     ],
     "analyzed": false
@@ -7785,6 +7830,7 @@
     "url": "https://doi.org/10.1145/3658644.3690234",
     "citation_count": null,
     "relevance_tags": [
+      "DeFi",
       "token",
       "eCrime"
     ],
@@ -7804,7 +7850,10 @@
     "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3690277",
     "url": "https://doi.org/10.1145/3658644.3690277",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "token",
+      "eCrime"
+    ],
     "analyzed": false
   },
   {
@@ -7829,6 +7878,7 @@
     "url": "https://doi.org/10.1145/3576915.3623210",
     "citation_count": null,
     "relevance_tags": [
+      "DeFi",
       "eCrime"
     ],
     "analyzed": false
@@ -7848,7 +7898,9 @@
     "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3576915.3616674",
     "url": "https://doi.org/10.1145/3576915.3616674",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "consensus"
+    ],
     "analyzed": false
   },
   {
@@ -7920,7 +7972,9 @@
     "url": "https://www.ndss-symposium.org/ndss-paper/not-your-type-detecting-storage-collision-vulnerabilities-in-ethereum-smart-contracts/",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "DeFi",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -8145,7 +8199,9 @@
     "url": "https://doi.org/10.4230/LIPIcs.AFT.2025.9",
     "citation_count": null,
     "relevance_tags": [
-      "token"
+      "DeFi",
+      "token",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -8254,7 +8310,10 @@
     "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3696410.3714754",
     "url": "https://doi.org/10.1145/3696410.3714754",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "MEV",
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -8276,7 +8335,10 @@
     "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3696410.3714682",
     "url": "https://doi.org/10.1145/3696410.3714682",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "DeFi",
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -8298,7 +8360,8 @@
     "url": "https://doi.org/10.1145/3589334.3645692",
     "citation_count": null,
     "relevance_tags": [
-      "eCrime"
+      "eCrime",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -8341,7 +8404,8 @@
     "url": "https://doi.org/10.1145/3589334.3645640",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -8382,7 +8446,10 @@
     "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3589335.3651573",
     "url": "https://doi.org/10.1145/3589335.3651573",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "eCrime",
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -8400,7 +8467,9 @@
     "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3543873.3587555",
     "url": "https://doi.org/10.1145/3543873.3587555",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "consensus"
+    ],
     "analyzed": false
   },
   {
@@ -8476,6 +8545,7 @@
     "url": "https://doi.org/10.1109/ICSE55347.2025.00083",
     "citation_count": null,
     "relevance_tags": [
+      "smart-contract",
       "measurement"
     ],
     "analyzed": false
@@ -8500,6 +8570,8 @@
     "url": "https://doi.org/10.1145/3597503.3623318",
     "citation_count": null,
     "relevance_tags": [
+      "smart-contract",
+      "DeFi",
       "eCrime"
     ],
     "analyzed": false
@@ -8522,7 +8594,10 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1145/3597503.3639131",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "smart-contract",
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -8545,7 +8620,9 @@
     "citation_count": null,
     "relevance_tags": [
       "smart-contract",
-      "reentrancy"
+      "MEV",
+      "reentrancy",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -8566,7 +8643,8 @@
     "url": "https://doi.org/10.1109/ASE63991.2025.00303",
     "citation_count": null,
     "relevance_tags": [
-      "MEV"
+      "MEV",
+      "DeFi"
     ],
     "analyzed": false
   },
@@ -8779,6 +8857,11 @@
     "url": "https://doi.org/10.1109/TIFS.2025.3612149",
     "citation_count": null,
     "relevance_tags": [
+      "smart-contract",
+      "DeFi",
+      "privacy",
+      "NFT",
+      "token",
       "eCrime"
     ],
     "analyzed": false
@@ -9024,6 +9107,7 @@
     "url": "https://doi.org/10.1109/TSC.2025.3568277",
     "citation_count": null,
     "relevance_tags": [
+      "DeFi",
       "eCrime"
     ],
     "analyzed": false
@@ -9044,7 +9128,9 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1109/TSC.2024.3390433",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "smart-contract"
+    ],
     "analyzed": false
   },
   {
@@ -9066,7 +9152,8 @@
     "url": "https://doi.org/10.1109/TSC.2024.3411449",
     "citation_count": null,
     "relevance_tags": [
-      "eCrime"
+      "eCrime",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -9090,7 +9177,9 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1109/TSC.2023.3281430",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "TEE"
+    ],
     "analyzed": false
   },
   {
@@ -9115,7 +9204,10 @@
     "url": "https://doi.org/10.1145/3707458",
     "citation_count": null,
     "relevance_tags": [
-      "eCrime"
+      "smart-contract",
+      "DeFi",
+      "eCrime",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -9136,7 +9228,8 @@
     "url": "https://doi.org/10.1145/3548683",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "formal-verification"
     ],
     "analyzed": false
   },
@@ -9163,7 +9256,12 @@
     "url": "https://doi.org/10.1145/3560264",
     "citation_count": null,
     "relevance_tags": [
-      "token"
+      "smart-contract",
+      "formal-verification",
+      "privacy",
+      "token",
+      "access-control",
+      "fuzzing"
     ],
     "analyzed": false
   },
@@ -9184,6 +9282,7 @@
     "url": "https://doi.org/10.1145/3549542",
     "citation_count": null,
     "relevance_tags": [
+      "smart-contract",
       "measurement"
     ],
     "analyzed": false
@@ -9206,7 +9305,10 @@
     "url": "https://doi.org/10.1145/3571847",
     "citation_count": null,
     "relevance_tags": [
-      "eCrime"
+      "smart-contract",
+      "DeFi",
+      "eCrime",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -9317,7 +9419,9 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1109/SP46215.2023.10179456",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -9336,6 +9440,7 @@
     "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/lubbertsen",
     "citation_count": null,
     "relevance_tags": [
+      "DeFi",
       "eCrime"
     ],
     "analyzed": false
@@ -9358,7 +9463,9 @@
     "pdf_url": null,
     "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/xiao-danlei",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "consensus"
+    ],
     "analyzed": false
   },
   {
@@ -9375,6 +9482,8 @@
     "url": "https://doi.org/10.1145/3719027.3765574",
     "citation_count": null,
     "relevance_tags": [
+      "bridge",
+      "privacy",
       "eCrime"
     ],
     "analyzed": false
@@ -9415,7 +9524,10 @@
     "url": "https://www.ndss-symposium.org/ndss-paper/double-and-nothing-understanding-and-detecting-cryptocurrency-giveaway-scams/",
     "citation_count": null,
     "relevance_tags": [
-      "eCrime"
+      "DeFi",
+      "DAO",
+      "eCrime",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -9497,7 +9609,9 @@
     "pdf_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol354-aft2025/LIPIcs.AFT.2025.11/LIPIcs.AFT.2025.11.pdf",
     "url": "https://doi.org/10.4230/LIPIcs.AFT.2025.11",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "DeFi"
+    ],
     "analyzed": false
   },
   {
@@ -9516,7 +9630,10 @@
     "pdf_url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol316-aft2024/LIPIcs.AFT.2024.24/LIPIcs.AFT.2024.24.pdf",
     "url": "https://doi.org/10.4230/LIPIcs.AFT.2024.24",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "DeFi",
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -9595,6 +9712,7 @@
     "url": "https://doi.org/10.1145/3696410.3714588",
     "citation_count": null,
     "relevance_tags": [
+      "DeFi",
       "eCrime",
       "measurement"
     ],
@@ -9615,7 +9733,10 @@
     "pdf_url": "https://doi.org/10.1145/3589334.3645475",
     "url": "https://doi.org/10.1145/3589334.3645475",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "privacy",
+      "eCrime"
+    ],
     "analyzed": false
   },
   {
@@ -9631,7 +9752,9 @@
     "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3589335.3651268",
     "url": "https://doi.org/10.1145/3589335.3651268",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "consensus"
+    ],
     "analyzed": false
   },
   {
@@ -9651,6 +9774,9 @@
     "url": "https://doi.org/10.1145/3589334.3645348",
     "citation_count": null,
     "relevance_tags": [
+      "smart-contract",
+      "DeFi",
+      "token",
       "eCrime"
     ],
     "analyzed": false
@@ -9669,7 +9795,9 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1145/3543873.3587603",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "DeFi"
+    ],
     "analyzed": false
   },
   {
@@ -9790,7 +9918,11 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1109/TDSC.2022.3152937",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "consensus",
+      "DeFi",
+      "access-control"
+    ],
     "analyzed": false
   },
   {
@@ -9904,7 +10036,11 @@
     "pdf_url": "https://ieeexplore.ieee.org/ielx7/4629386/4629387/09894089.pdf",
     "url": "https://doi.org/10.1109/TSC.2022.3207224",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "consensus",
+      "privacy",
+      "access-control"
+    ],
     "analyzed": false
   },
   {
@@ -9922,7 +10058,9 @@
     "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3596906",
     "url": "https://doi.org/10.1145/3596906",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "privacy"
+    ],
     "analyzed": false
   },
   {
@@ -9960,7 +10098,9 @@
     "url": "https://doi.org/10.1109/SP54263.2024.00256",
     "citation_count": null,
     "relevance_tags": [
-      "DeFi"
+      "MEV",
+      "DeFi",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -9981,7 +10121,8 @@
     "citation_count": null,
     "relevance_tags": [
       "DeFi",
-      "oracle"
+      "oracle",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -10008,7 +10149,9 @@
     "url": "https://doi.org/10.1109/SP46215.2023.10179435",
     "citation_count": null,
     "relevance_tags": [
-      "DeFi"
+      "smart-contract",
+      "DeFi",
+      "oracle"
     ],
     "analyzed": false
   },
@@ -10028,7 +10171,9 @@
     "url": "https://doi.org/10.1145/3719027.3767671",
     "citation_count": null,
     "relevance_tags": [
-      "DeFi"
+      "DeFi",
+      "privacy",
+      "token"
     ],
     "analyzed": false
   },
@@ -10114,7 +10259,12 @@
     "url": "https://doi.org/10.4230/LIPIcs.AFT.2024.7",
     "citation_count": null,
     "relevance_tags": [
-      "DeFi"
+      "smart-contract",
+      "DeFi",
+      "formal-verification",
+      "token",
+      "eCrime",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -10136,8 +10286,13 @@
     "url": "https://doi.org/10.1145/3717062",
     "citation_count": null,
     "relevance_tags": [
+      "smart-contract",
+      "MEV",
       "DeFi",
-      "DAO"
+      "DAO",
+      "token",
+      "TEE",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -10160,6 +10315,7 @@
     "url": "https://doi.org/10.1145/3705296",
     "citation_count": null,
     "relevance_tags": [
+      "MEV",
       "DeFi",
       "eCrime"
     ],
@@ -10506,6 +10662,7 @@
     "citation_count": null,
     "relevance_tags": [
       "smart-contract",
+      "ZKP",
       "privacy"
     ],
     "analyzed": false
@@ -10527,6 +10684,9 @@
     "citation_count": null,
     "relevance_tags": [
       "smart-contract",
+      "DeFi",
+      "formal-verification",
+      "privacy",
       "eCrime"
     ],
     "analyzed": false
@@ -10550,6 +10710,7 @@
     "citation_count": null,
     "relevance_tags": [
       "smart-contract",
+      "privacy",
       "eCrime"
     ],
     "analyzed": false
@@ -10572,7 +10733,8 @@
     "url": "https://doi.org/10.1109/INFOCOM55648.2025.11044590",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -10594,7 +10756,8 @@
     "url": "https://doi.org/10.1109/ICDCS63083.2025.00110",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "bridge"
     ],
     "analyzed": false
   },
@@ -10615,7 +10778,10 @@
     "url": "https://doi.org/10.1109/ICDCS63083.2025.00039",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "DeFi",
+      "bridge",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -10656,7 +10822,8 @@
     "url": "https://doi.org/10.1145/3611643.3616341",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract"
+      "smart-contract",
+      "TEE"
     ],
     "analyzed": false
   },
@@ -10677,7 +10844,11 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1109/EuroSP63326.2025.00036",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "consensus",
+      "MEV",
+      "access-control"
+    ],
     "analyzed": false
   },
   {
@@ -10724,7 +10895,10 @@
     "url": "https://doi.org/10.1145/3730567.3764476",
     "citation_count": null,
     "relevance_tags": [
-      "eCrime"
+      "DeFi",
+      "token",
+      "eCrime",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -10744,7 +10918,10 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1145/3618257.3624824",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "consensus",
+      "MEV"
+    ],
     "analyzed": false
   },
   {
@@ -10765,7 +10942,9 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1109/INFOCOM52122.2024.10621236",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -10813,7 +10992,9 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1109/INFOCOM52122.2024.10621281",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "measurement"
+    ],
     "analyzed": false
   },
   {
@@ -10851,6 +11032,7 @@
     "citation_count": null,
     "relevance_tags": [
       "NFT",
+      "token",
       "eCrime"
     ],
     "analyzed": false
@@ -10875,7 +11057,10 @@
     "url": "https://doi.org/10.1109/ICDCS57875.2023.00078",
     "citation_count": null,
     "relevance_tags": [
-      "flash-loan"
+      "DeFi",
+      "flash-loan",
+      "oracle",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -10893,7 +11078,9 @@
     "pdf_url": null,
     "url": "https://doi.org/10.1145/3611643.3616251",
     "citation_count": null,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "smart-contract"
+    ],
     "analyzed": false
   },
   {
@@ -11805,7 +11992,9 @@
     "pdf_url": "https://arxiv.org/pdf/2405.04994",
     "url": "https://doi.org/10.1007/s10515-025-00579-5",
     "citation_count": 1,
-    "relevance_tags": [],
+    "relevance_tags": [
+      "DeFi"
+    ],
     "analyzed": false
   },
   {
@@ -21101,6 +21290,813 @@
     "url": "https://doi.org/10.1145/3659944",
     "citation_count": 9,
     "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ieees&p:p2c2t__preserving_the_privacy_of_cross_c",
+    "title": "P2C2T: Preserving the Privacy of Cross-Chain Transfer",
+    "authors": [
+      "Panpan Han",
+      "Zheng Yan",
+      "Laurence T. Yang",
+      "Elisa Bertino"
+    ],
+    "abstract": "",
+    "venue": "IEEE S&P",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": null,
+    "url": null,
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ieees&p:liquefaction__privately_liquefying_block",
+    "title": "Liquefaction: Privately Liquefying Blockchain Assets",
+    "authors": [
+      "James Austgen",
+      "Mahimna Kelkar",
+      "Andrés Fábrega",
+      "Dani Vilardell",
+      "Sarah Allen",
+      "Kushal Babel",
+      "Jay Yu",
+      "Ari Juels"
+    ],
+    "abstract": "Inherent in the world of cryptocurrency systems and their security models is the notion that private keys, and thus assets, are controlled by individuals or individual entities.\n  We present Liquefaction, a wallet platform that demonstrates the dangerous fragility of this foundational assumption by systemically breaking it. Liquefaction uses trusted execution environments (TEEs) to encumber private keys, i.e., attach rich, multi-user policies to their use. In this way, it enables the cryptocurrency credentials and assets of a single end-user address to be freely rented, shared, or pooled. It accomplishes these things privately, with no direct on-chain traces.\n  Liquefaction demonstrates the sweeping consequences of TEE-based key encumbrance for the cryptocurrency landscape. Liquefaction can undermine the security and economic models of many applications and resources, such as locked tokens, DAO voting, airdrops, loyalty points, soulbound tokens, and quadratic voting. It can do so with no on-chain and minimal off-chain visibility. Conversely, we also discuss beneficial applications of Liquefaction, such as privacy-preserving, cost-efficient DAOs and a countermeasure to dusting attacks. Importantly, we describe an existing TEE-based tool that applications can use as a countermeasure to Liquefaction.\n  Our work prompts a wholesale rethinking of existing models and enforcement of key and asset ownership in the cryptocurrency ecosystem.",
+    "venue": "IEEE S&P",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": "https://arxiv.org/pdf/2412.02634",
+    "url": "https://arxiv.org/abs/2412.02634",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy",
+      "DAO",
+      "token",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ieees&p:vitarit__paying_for_threshold_services_o",
+    "title": "VITARIT: Paying for Threshold Services on Bitcoin and Friends",
+    "authors": [
+      "Easwar Vivek Mangipudi",
+      "Sri AravindaKrishnan Thyagarajan",
+      "Pratyay Mukherjee",
+      "Lucjan Hanzlik",
+      "Aniket Kate"
+    ],
+    "abstract": "",
+    "venue": "IEEE S&P",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": null,
+    "url": null,
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ieees&p:pipeswap__forcing_the_timely_release_of_",
+    "title": "PipeSwap: Forcing the Timely Release of a Secret for Atomic Cross-Chain Swaps",
+    "authors": [
+      "Peifang Ni",
+      "Anqi Tian",
+      "Jing Xu"
+    ],
+    "abstract": "Atomic cross-chain swaps mitigate the interoper-ability challenges faced by current cryptocurrencies, thereby facilitating inter-currency exchange and trading between the distrusting users. Although numerous atomic swaps protocols utilizing Hash Timelock Contracts have been deployed and put into practice, they are substantially far from universality due to their inherent dependence of rich scripting language supported by the underlying blockchains. The recently proposed Universal Atomic Swaps protocol [IEEE S&P'22] represents a significant advancement in the field of scriptless cross-chain swaps by ingeniously delegating scripting functionalities to cryptographic locking mechanisms, particularly the adaptor signatures and timed commitment schemes. However, we identify a new form of attack termed the double-claiming attack that leverages these scriptless functionalities to undermine atomicity with a high probability. This attack is inherent to the designs adopted by the existing scriptless cross-chain swaps protocols as well as the payment channel networks. We further quantify the severity of this attack based on real-word swap transactions processed by the most widely deployed decentralized exchange platforms, highlighting the critical challenges in designing universal atomic swaps. To address the double-claiming attack while ensuring both security and practical universality, we also present a cross-chain swaps protocol called PipeSwap. Specifically, PipeSwap protects the frozen coins from being double-claimed by a novelly designed paradigm of pipelined coins flow that utilizes the techniques of two-hop swap and two-hop refund. In addition to a comprehensive security analysis in the Universal Composability framework, we develop a proof-of-concept implementation of PipeSwap with Schnorr/ECDSA signatures, and conduct extensive experiments to evaluate the overhead. The experimental results show that PipeSwap can be performed in less than 1.7 seconds while maintaining less than 7 kb of communication overhead on commodity machines.",
+    "venue": "IEEE S&P",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/sp61157.2025.00245",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ieees&p:permissionless_verifiable_information_di",
+    "title": "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)",
+    "authors": [
+      "Ben Fisch",
+      "Arthur Lazzaretti",
+      "Zeyu Liu",
+      "Lei Yang"
+    ],
+    "abstract": "Rollups are special applications on distributed state machines (aka blockchains) for which the underlying state machine only logs, but does not execute, transactions. Rollups scale throughput by using auxiliary machines that have higher throughput and lower cost of executing transactions than the underlying blockchain. State updates are periodically posted to the underlying blockchain and either verified directly through succinct cryptographic proofs (zk rollups) or can be challenged for a defined period of time in a verifiable way by third parties (optimistic rollups). However, once computation is reduced, communication quickly becomes the new bottleneck. The critical service that the underlying blockchain provides, in addition to verification, is data availability: that necessary data can always be recovered upon request. However, directly broadcasting data requires communication per participant that is linear in the data size. Verifiable information dispersal (VID) systems achieve sublinear blowup in the Ethereum's security and same participation model, where all nodes have a strong public-key identity. However, it is not known how to do so in the permissionless model (the Bitcoin model), where participants are unauthenticated and participation is dynamic. We construct a VID system that is secure under the same model as Bitcoin, with one minimal additional requirement on the existence of reliable participants. Our system uses a state machine replication (SMR) protocol (e.g., Bitcoin) as a black box, and is therefore backward compatible. We implemented the system on top of Bitcoin core with the Regression Test Network (regtest), and our analysis shows that it can reduce communication costs and latency up to more than <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$1, 000\\times$</tex> and <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$10\\times$</tex>, respectively, for certain parameter choices.",
+    "venue": "IEEE S&P",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/sp61157.2025.00248",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP",
+      "layer2",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ieees&p:asymmetric_mempool_dos_security__formal_",
+    "title": "Asymmetric Mempool DoS Security: Formal Definitions and Provable Secure Designs",
+    "authors": [
+      "Wanning Ding",
+      "Yuzhe Tang",
+      "Yibo Wang"
+    ],
+    "abstract": "The mempool plays a crucial role in blockchain systems as a buffer zone for pending transactions before they are executed and included in a block. However, existing works primarily focus on mitigating defenses against already identified real-world attacks. This paper introduces secure blockchain-mempool designs capable of defending against any form of asymmetric eviction DoS attacks. We establish formal security definitions for mempools under the eviction-based attack vector. Our proposed secure transaction admission algorithm, named \\textsc{saferAd-CP}, ensures eviction-security by providing a provable lower bound on the cost of executing eviction DoS attacks. Through evaluation with real transaction trace replays, \\textsc{saferAd-CP} demonstrates negligible latency and significantly high lower bounds against any eviction attack, highlighting its effectiveness and robustness in securing blockchain mempools.",
+    "venue": "IEEE S&P",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": "https://arxiv.org/pdf/2407.03543",
+    "url": "https://arxiv.org/abs/2407.03543",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ieees&p:security_perceptions_of_users_in_stablec",
+    "title": "Security Perceptions of Users in Stablecoins",
+    "authors": [
+      "Maggie Yongqi Guan",
+      "Yaman Yu",
+      "Tanusree Sharma",
+      "Molly Z. Huang",
+      "Kaihua Qin",
+      "Yang Wang",
+      "Kanye Ye Wang"
+    ],
+    "abstract": "Stablecoins, a type of cryptocurrency pegged to another asset to maintain a stable price, have become an important part of the cryptocurrency ecosystem. Prior studies have primarily focused on examining the security of stablecoins from technical and theoretical perspectives, with limited investigation into users' risk perceptions and security behaviors in stablecoin practices. To address this research gap, we conducted a mixed-method study that included constructing a stablecoin interaction framework based on the literature, which informed the design of our interview protocol, semi-structured interviews (n=21), and Reddit data analysis (9,326 posts). We found that participants see stable value and regulatory compliance as key security advantages of stablecoins over other cryptocurrencies. However, participants also raised concerns about centralization risks in fiat-backed stablecoins, perceived challenges in crypto-backed stablecoins due to limited reliance on fully automated execution, and confusion regarding the complex mechanisms of algorithmic stablecoins. We proposed improving user education and optimizing mechanisms to address these concerns and promote the safer use of stablecoins.",
+    "venue": "IEEE S&P",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/sp61157.2025.00042",
+    "citation_count": null,
+    "relevance_tags": [
+      "token"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:derecho__privacy_pools_with_proof_carryi",
+    "title": "Derecho: Privacy Pools with Proof-Carrying Disclosures",
+    "authors": [
+      "Josh Beal",
+      "Ben Fisch"
+    ],
+    "abstract": "A privacy pool enables clients to deposit units of a cryptocurrency into a shared pool where ownership of deposited currency is tracked via a system of cryptographically hidden records. Clients may later withdraw from the pool without linkage to previous deposits. Some privacy pools also support hidden transfer of currency ownership within the pool. In August 2022, the U.S. Department of Treasury sanctioned Tornado Cash, the largest Ethereum privacy pool, on the premise that it enables illicit actors to hide the origin of funds, citing its usage by the DPRK-sponsored Lazarus Group to launder over $455 million dollars worth of stolen cryptocurrency. This ruling effectively made it illegal for U.S. persons/institutions to use or accept funds that went through Tornado Cash, sparking a global debate among privacy rights activists and lawmakers. Against this backdrop, we present Derecho, a system that institutions could use to request cryptographic attestations of fund origins rather than naively rejecting all funds coming from privacy pools. Derecho is a novel application of proof-carrying data, which allows users to propagate allowlist membership proofs through a privacy pool's transaction graph. Derecho is backwards-compatible with existing Ethereum privacy pool designs, adds no overhead in gas costs, and costs users only a few seconds to produce attestations.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3670270",
+    "url": "https://doi.org/10.1145/3658644.3670270",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy",
+      "eCrime"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:lutris__a_blockchain_combining_broadcast",
+    "title": "Lutris: A Blockchain Combining Broadcast and Consensus",
+    "authors": [
+      "Sam Blackshear",
+      "Andrey Chursin",
+      "George Danezis",
+      "Anastasios Kichidis",
+      "Lefteris Kokoris-Kogias"
+    ],
+    "abstract": "Sui Lutris is the first smart-contract platform to sustainably achieve sub-second finality. It achieves this significant decrease by employing consensusless agreement not only for simple payments but for a large variety of transactions. Unlike prior work, Sui Lutris neither compromises expressiveness nor throughput and can run perpetually without restarts. Sui Lutris achieves this by safely integrating consensuless agreement with a high-throughput consensus protocol that is invoked out of the critical finality path but ensures that when a transaction is at risk of inconsistent concurrent accesses, its settlement is delayed until the total ordering is resolved. Building such a hybrid architecture is especially delicate during reconfiguration events, where the system needs to preserve the safety of the consensusless path without compromising the long-term liveness of potentially misconfigured clients. We thus develop a novel reconfiguration protocol, the first to provably show the safe and efficient reconfiguration of a consensusless blockchain. Sui Lutris is currently running in production and underpins the Sui smart-contract platform. Combined with the use of Objects instead of accounts it enables the safe execution of smart contracts that expose objects as a first-class resource. In our experiments Sui Lutris achieves latency lower than 0.5 seconds for throughput up to 5,000 certificates per second (150k ops/s with transaction blocks), compared to the state-of-the-art real-world consensus latencies of 3 seconds. Furthermore, it gracefully handles validators crash-recovery and does not suffer visible performance degradation during reconfiguration.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://arxiv.org/pdf/2310.18042",
+    "url": "https://doi.org/10.48550/arxiv.2310.18042",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:payout_races_and_congested_channels__a_f",
+    "title": "Payout Races and Congested Channels: A Formal Analysis of Security in the Lightning Network",
+    "authors": [
+      "Ben Weintraub",
+      "Satwik Prabhu Kumble",
+      "Cristina Nita-Rotaru",
+      "Stefanie Roos"
+    ],
+    "abstract": "The Lightning Network, a payment channel network with a market cap of over 192M USD, is designed to resolve Bitcoin's scalability issues through fast off-chain transactions. There are multiple Lightning Network client implementations, all of which conform to the same textual specifications known as BOLTs. Several vulnerabilities have been manually discovered, but to-date there have been few works systematically analyzing the security of the Lightning Network.\n  In this work, we take a foundational approach to analyzing the security of the Lightning Network with the help of formal methods. Based on the BOLTs' specifications, we build a detailed formal model of the Lightning Network's single-hop payment protocol and verify it using the Spin model checker. Our model captures both concurrency and error semantics of the payment protocol. We then define several security properties which capture the correct intermediate operation of the protocol, ensuring that the outcome is always certain to both channel peers, and using them we re-discover a known attack previously reported in the literature along with a novel attack, referred to as a Payout Race. A Payout Race consists of a particular sequence of events that can lead to an ambiguity in the protocol in which innocent users can unwittingly lose funds. We confirm the practicality of this attack by reproducing it in a local testbed environment.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://arxiv.org/pdf/2405.02147",
+    "url": "https://arxiv.org/abs/2405.02147",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "formal-verification",
+      "layer2"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:random_beacons_in_monte_carlo__efficient",
+    "title": "Random Beacons in Monte Carlo: Efficient Asynchronous Random Beacon without Threshold Cryptography",
+    "authors": [
+      "Akhil Bandarupalli",
+      "Adithya Bhat",
+      "Saurabh Bagchi",
+      "Aniket Kate",
+      "Michael K. Reiter"
+    ],
+    "abstract": "Regular access to unpredictable and bias-resistant randomness is important for applications such as blockchains, voting, and secure distributed computing. Distributed random beacon protocols address this need by distributing trust across multiple nodes, with the majority of them assumed to be honest. Numerous applications across the blockchain space have led to the proposal of several distributed random beacon protocols, with some already implemented. However, many current random beacon systems rely on threshold cryptographic setups or exhibit high computational costs, while others expect the network to be partial or bounded synchronous. To overcome these limitations, we propose HashRand, a computation and communication-efficient asynchronous random beacon protocol that only demands secure hash and pairwise secure channels to generate beacons. HashRand has a per-node amortized communication complexity of O (λn log(n)) bits per beacon. The computational efficiency of HashRand is attributed to the two orders of magnitude lower time of a one-way Hash computation compared to discrete log exponentiation. Interestingly, besides reduced overhead, HashRand achieves Post-Quantum security by leveraging the secure Hash function against quantum adversaries, setting it apart from other random beacon protocols that use discrete log cryptography. In a geo-distributed testbed of n = 136 nodes, HashRand produces 78 beacons per minute, which is at least 5× higher than Spurt [IEEE S&P'22]. We also demonstrate the practical utility of HashRand by implementing a Post-Quantum secure Asynchronous SMR protocol, which has a response rate of over 135k transactions per second at a latency of 2.3 seconds over a WAN for n = 16 nodes.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3670326",
+    "url": "https://doi.org/10.1145/3658644.3670326",
+    "citation_count": null,
+    "relevance_tags": [
+      "DAO"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:asynchronous_consensus_without_trusted_s",
+    "title": "Asynchronous Consensus without Trusted Setup or Public-Key Cryptography",
+    "authors": [
+      "Sourav Das",
+      "Sisi Duan",
+      "Shengqi Liu",
+      "Atsuki Momose",
+      "Ling Ren",
+      "Victor Shoup"
+    ],
+    "abstract": "Byzantine consensus is a fundamental building block in distributed cryptographic problems. Despite decades of research, most existing asynchronous consensus protocols require a strong trusted setup and expensive public-key cryptography. In this paper, we study asynchronous Byzantine consensus protocols that do not rely on a trusted setup and do not use public-key cryptography such as digital signatures. We give an Asynchronous Common Subset (ACS) protocol whose security is only based on cryptographic hash functions modeled as a random oracle. Our protocol has O(κn3) total communication and runs in expected O(1) rounds. The fact that we use only cryptographic hash functions also means that our protocol is post-quantum secure. The minimal use of cryptography and the small number of rounds make our protocol practical. We implement our protocol and evaluate it in a geo-distributed setting with up to 128 machines. Our experimental evaluation shows that our protocol is more efficient than the only other setup-free consensus protocol that has been implemented to date. En route to our asynchronous consensus protocols, we also introduce new primitives called asynchronous secret key sharing and cover gather, which may be of independent interest.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3670327",
+    "url": "https://doi.org/10.1145/3658644.3670327",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:blockchain_bribing_attacks_and_the_effic",
+    "title": "Blockchain Bribing Attacks and the Efficacy of Counterincentives",
+    "authors": [
+      "Dimitris Karakostas",
+      "Aggelos Kiayias",
+      "Thomas Zacharias"
+    ],
+    "abstract": "We analyze bribing attacks in Proof-of-Stake distributed ledgers from a game theoretic perspective. In bribing attacks, an adversary offers participants a reward in exchange for instructing them how to behave, with the goal of attacking the protocol's properties. Specifically, our work focuses on adversaries that target blockchain safety. We consider two types of bribing, depending on how the bribes are awarded: i) guided bribing, where the bribe is given as long as the bribed party behaves as instructed; ii) effective bribing, where bribes are conditional on the attack's success, w.r.t. well-defined metrics. We analyze each type of attack in a game theoretic setting and identify relevant equilibria. In guided bribing, we show that the protocol is not an equilibrium and then describe good equilibria, where the attack is unsuccessful, and a negative one, where all parties are bribed such that the attack succeeds. In effective bribing, we show that both the protocol and the \"all bribed\" setting are equilibria. Using the identified equilibria, we then compute bounds on the Prices of Stability and Anarchy. Our results indicate that additional mitigations are needed for guided bribing, so our analysis concludes with incentive-based mitigation techniques, namely slashing and dilution. Here, we present two positive results, that both render the protocol an equilibrium and achieve maximal welfare for all parties, and a negative result, wherein an attack becomes more plausible if it severely affects the ledger's token's market price.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://arxiv.org/pdf/2402.06352",
+    "url": "https://arxiv.org/abs/2402.06352",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "token"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:defying_the_odds__solana_s_unexpected_re",
+    "title": "Defying the Odds: Solana's Unexpected Resilience in Spite of the Security Challenges Faced by Developers",
+    "authors": [
+      "Sebastien Andreina"
+    ],
+    "abstract": "Solana gained considerable attention as one of the most popular blockchain platforms for deploying decentralized applications. Compared to Ethereum, however, we observe a lack of research on how Solana smart contract developers handle security, what challenges they encounter, and how this affects the overall security of the ecosystem. To address this, we conducted the first comprehensive study on the Solana platform consisting of a 90-minute Solana smart contract code review task with 35 participants followed by interviews with a subset of seven participants. Our study shows, quite alarmingly, that none of the participants could detect all important security vulnerabilities in a code review task and that 83% of the participants are likely to release vulnerable smart contracts. Our study also sheds light on the root causes of developers' challenges with Solana smart contract development, suggesting the need for better security guidance and resources. In spite of these challenges, our automated analysis on currently deployed Solana smart contracts surprisingly suggests that the prevalence of vulnerabilities - especially those pointed out as the most challenging in our developer study - is below 0.3%. We explore the causes of this counter-intuitive resilience and show that frameworks, such as Anchor, are aiding Solana developers in deploying secure contracts.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3670333",
+    "url": "https://doi.org/10.1145/3658644.3670333",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:securing_lightning_channels_against_rati",
+    "title": "Securing Lightning Channels against Rational Miners",
+    "authors": [
+      "Lukas Aumayr",
+      "Zeta Avarikioti",
+      "Matteo Maffei",
+      "Subhra Mazumdar"
+    ],
+    "abstract": "Payment channel networks (e.g., the Lightning Network in Bitcoin) constitute one of the most popular scalability solutions for blockchains. Their safety relies on parties being online to detect fraud attempts on-chain and being able to timely react by publishing certain transactions on-chain. However, a cheating party may bribe miners in order to censor those transactions, resulting in loss of funds for the cheated party: these attacks are known in the literature as timelock bribing attacks. In this work, we present the first channel construction that does not require parties to be online and, at the same time, is resistant to timelock bribing attacks.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3670373",
+    "url": "https://doi.org/10.1145/3658644.3670373",
+    "citation_count": null,
+    "relevance_tags": [
+      "layer2",
+      "eCrime"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:rolling_in_the_shadows__analyzing_the_ex",
+    "title": "Rolling in the Shadows: Analyzing the Extraction of MEV Across Layer-2 Rollups",
+    "authors": [
+      "Christof Ferreira Torres",
+      "Albin Mamuti",
+      "Ben Weintraub",
+      "Cristina Nita-Rotaru",
+      "Shweta Shinde"
+    ],
+    "abstract": "The emergence of decentralized finance has transformed asset trading on the blockchain, making traditional financial instruments more accessible while also introducing a series of exploitative economic practices known as Maximal Extractable Value (MEV). Concurrently, decentralized finance has embraced rollup-based Layer-2 solutions to facilitate asset trading at reduced transaction costs compared to Layer-1 solutions such as Ethereum. However, rollups lack a public mempool like Ethereum, making the extraction of MEV more challenging. In this paper, we investigate the prevalence and impact of MEV on Ethereum and prominent rollups such as Arbitrum, Optimism, and zkSync over a nearly three-year period. Our analysis encompasses various metrics including volume, profits, costs, competition, and response time to MEV opportunities. We discover that MEV is widespread on rollups, with trading volume comparable to Ethereum. We also find that, although MEV costs are lower on rollups, profits are also significantly lower compared to Ethereum. Additionally, we examine the prevalence of sandwich attacks on rollups. While our findings did not detect any sandwiching activity on popular rollups, we did identify the potential for cross-layer sandwich attacks facilitated by transactions that are sent across rollups and Ethereum. Consequently, we propose and evaluate the feasibility of three novel attacks that exploit cross-layer transactions, revealing that attackers could have already earned approximately 2 million USD through cross-layer sandwich attacks.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://arxiv.org/pdf/2405.00138",
+    "url": "https://arxiv.org/abs/2405.00138",
+    "citation_count": null,
+    "relevance_tags": [
+      "MEV",
+      "DeFi",
+      "layer2"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:doubleup_roll__double_spending_in_arbitr",
+    "title": "DoubleUp Roll: Double-spending in Arbitrum by Rolling It Back",
+    "authors": [
+      "Zhiyuan Sun",
+      "Zihao Li",
+      "Xinghao Peng",
+      "Xiapu Luo",
+      "Muhui Jiang",
+      "Hao Zhou",
+      "Yinqian Zhang"
+    ],
+    "abstract": "Optimistic rollup protocols are widely adopted as the most popular blockchain scaling solutions. As a dominant implementation, Arbitrum has boasted a total locked value exceeding 18 billion USD, highlighting the significance of optimistic rollups in blockchain ecosystem. Despite their popularity, little research has been done on the security of optimistic rollup protocols, and potential vulnerabilities on them remain unknown.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3690256",
+    "url": "https://doi.org/10.1145/3658644.3690256",
+    "citation_count": null,
+    "relevance_tags": [
+      "layer2"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:foray__towards_effective_attack_synthesi",
+    "title": "FORAY: Towards Effective Attack Synthesis against Deep Logical Vulnerabilities in DeFi Protocols",
+    "authors": [
+      "Hongbo Wen",
+      "Hanzhi Liu",
+      "Jiaxin Song",
+      "Yanju Chen",
+      "Wenbo Guo",
+      "Yu Feng"
+    ],
+    "abstract": "Blockchain adoption has surged with the rise of Decentralized Finance (DeFi) applications. However, the significant value of digital assets managed by DeFi protocols makes them prime targets for attacks. Current smart contract vulnerability detection tools struggle with DeFi protocols due to deep logical bugs arising from complex financial interactions between multiple smart contracts. These tools primarily analyze individual contracts and resort to brute-force methods for DeFi protocols crossing numerous smart contracts, leading to inefficiency.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3690293",
+    "url": "https://doi.org/10.1145/3658644.3690293",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:atomic_and_fair_data_exchange_via_blockc",
+    "title": "Atomic and Fair Data Exchange via Blockchain",
+    "authors": [
+      "Ertem Nusret Tas",
+      "István András Seres",
+      "Yinuo Zhang",
+      "Márk Melczer",
+      "Mahimna Kelkar",
+      "Joseph Bonneau",
+      "Valeria Nikolaenko"
+    ],
+    "abstract": "We introduce a blockchain Fair Data Exchange (FDE) protocol, enabling a storage server to transfer a data file to a client atomically: the client receives the file if and only if the server receives an agreed-upon payment. We put forth a new definition for a cryptographic scheme that we name verifiable encryption under committed key (VECK), and we propose two instantiations for this scheme. Our protocol relies on a blockchain to enforce the atomicity of the exchange and uses VECK to ensure that the client receives the correct data (matching an agreed-upon commitment) before releasing the payment for the decrypting key. Our protocol is trust-minimized and requires only constant-sized on-chain communication, concretely 3 signatures, 1 verification key, and 1 secret key, with most of the data stored and communicated off-chain. It also supports exchanging only a subset of the data, can amortize the server's work across multiple clients, and offers a general framework to design alternative FDE protocols using different commitment schemes. A prominent application of our protocol is the Danksharding data availability scheme on Ethereum, which commits to data via KZG polynomial commitments. We also provide an open-source implementation for our protocol with both instantiations for VECK, demonstrating our protocol's efficiency and practicality on Ethereum.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3690248",
+    "url": "https://doi.org/10.1145/3658644.3690248",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:towards_automatic_discovery_of_denial_of",
+    "title": "Towards Automatic Discovery of Denial of Service Weaknesses in Blockchain Resource Models",
+    "authors": [
+      "Feng Luo",
+      "Huangkun Lin",
+      "Zihao Li",
+      "Xiapu Luo",
+      "Ruijie Luo",
+      "Zheyuan He",
+      "Shuwei Song",
+      "Ting Chen",
+      "Wenxuan Luo"
+    ],
+    "abstract": "nial-of-Service (DoS) attacks at the execution layer represent one of the most severe threats to blockchain systems, compromising availability by depleting the resources of victims. To counteract these attacks, many blockchains have implemented unique resource models that incorporate transaction fees. Nevertheless, historical incidents of DoS attacks demonstrate that these resource model designs remain inadequate. Although there are studies that manually craft DoS attacks on specific blockchains in isolation, none of them can discover DoS weaknesses in blockchains automatically. In this paper, we provide an insight into DoS weaknesses in blockchain resource models, and present a generic and systematic approach to uncover these weaknesses. In our approach, we first identify DoS weaknesses by DoSVER, a novel tool that reasons feasible DoS weaknesses against blockchain resource models by formal verification. The identified DoS weaknesses will be further validated by DoSDET, a new framework that automates the attack synthesis in exploiting the identified DoS weaknesses. We conduct a comprehensive and systematic evaluation by extensive experiments on nine diverse and widely-used blockchains, and discovered 12 DoS weaknesses with corresponding exploitation across the nine blockchains, 10 of which were unveiled for the first time.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/3658644.3690329",
+    "url": "https://doi.org/10.1145/3658644.3690329",
+    "citation_count": null,
+    "relevance_tags": [
+      "formal-verification"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:acmccs:zklogin__privacy_preserving_blockchain_a",
+    "title": "zkLogin: Privacy-Preserving Blockchain Authentication with Existing Credentials",
+    "authors": [
+      "Foteini Baldimtsi",
+      "Konstantinos Chalkias",
+      "Yan Ji",
+      "Jonas Lindstrom",
+      "Deepak Maram",
+      "Ben Riva",
+      "Arnab Roy",
+      "Mahdi Sedaghat",
+      "Joy Wang"
+    ],
+    "abstract": "For many users, a private key based wallet serves as the primary entry point to blockchains. Commonly recommended wallet authentication methods, such as mnemonics or hardware wallets, can be cumbersome. This difficulty in user onboarding has significantly hindered the adoption of blockchain-based applications.\n  We develop zkLogin, a novel technique that leverages identity tokens issued by popular platforms (any OpenID Connect enabled platform e.g., Google, Facebook, etc.) to authenticate transactions. At the heart of zkLogin lies a signature scheme allowing the signer to sign using their existing OpenID accounts and nothing else. This improves the user experience significantly as users do not need to remember a new secret and can reuse their existing accounts.\n  zkLogin provides strong security and privacy guarantees. Unlike prior works, zkLogin's security relies solely on the underlying platform's authentication mechanism without the need for any additional trusted parties (e.g., trusted hardware or oracles). As the name suggests, zkLogin leverages zero-knowledge proofs (ZKP) to ensure that the sensitive link between a user's off-chain and on-chain identities is hidden, even from the platform itself.\n  zkLogin enables a number of important applications outside blockchains. It allows billions of users to produce \\textit{verifiable digital content leveraging their existing digital identities}, e.g., email address. For example, a journalist can use zkLogin to sign a news article with their email address, allowing verification of the article's authorship by any party.\n  We have implemented and deployed zkLogin on the Sui blockchain as an additional alternative to traditional digital signature-based addresses.",
+    "venue": "ACM CCS",
+    "year": 2024,
+    "date_published": "2024-06-01",
+    "pdf_url": "https://arxiv.org/pdf/2401.11735",
+    "url": "https://arxiv.org/abs/2401.11735",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "ZKP",
+      "privacy",
+      "token",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ndss:alba__the_dawn_of_scalable_bridges_for_b",
+    "title": "Alba: The Dawn of Scalable Bridges for Blockchains",
+    "authors": [
+      "Giulia Scaffino",
+      "Lukas Aumayr",
+      "Mahsa Bastankhah",
+      "Zeta Avarikioti",
+      "Matteo Maffei"
+    ],
+    "abstract": "",
+    "venue": "NDSS",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": "https://doi.org/10.14722/ndss.2025.241286",
+    "url": "https://doi.org/10.14722/ndss.2025.241286",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ndss:kronos__a_secure_and_generic_sharding_bl",
+    "title": "Kronos: A Secure and Generic Sharding Blockchain Consensus with Optimized Overhead",
+    "authors": [
+      "Yizhong Liu",
+      "Andi Liu",
+      "Yuan Lu",
+      "Zhuocheng Pan",
+      "Yinuo Li",
+      "Jianwei Liu",
+      "Song Bian",
+      "Mauro Conti"
+    ],
+    "abstract": "",
+    "venue": "NDSS",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": "https://doi.org/10.14722/ndss.2025.230472",
+    "url": "https://doi.org/10.14722/ndss.2025.230472",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ndss:manifoldchain__maximizing_blockchain_thr",
+    "title": "Manifoldchain: Maximizing Blockchain Throughput via Bandwidth-Clustered Sharding",
+    "authors": [
+      "Chunjiang Che",
+      "Songze Li",
+      "Xuechao Wang"
+    ],
+    "abstract": "Bandwidth limitation is the major bottleneck that hinders scaling throughput of proof-of-work blockchains. To guarantee security, the mining rate of the blockchain is determined by the miners with the lowest bandwidth, resulting in an inefficient bandwidth utilization among fast miners. We propose Manifoldchain, an innovative blockchain sharding protocol that alleviates the impact of slow miners to maximize blockchain throughput. Manifoldchain utilizes a bandwidth-clustered shard formation mechanism that groups miners with similar bandwidths into the same shard. Consequently, this approach enables us to set an optimal mining rate for each shard based on its bandwidth, effectively reducing the waiting time caused by slow miners. Nevertheless, the adversary could corrupt miners with similar bandwidths, thereby concentrating hashing power and potentially creating an adversarial majority within a single shard. To counter this adversarial strategy, we introduce sharing mining, allowing the honest mining power of the entire network to participate in the secure ledger formation of each shard, thereby achieving the same level of security as an unsharded blockchain. Additionally, we introduce an asynchronous atomic commitment mechanism to ensure transaction atomicity across shards with various mining rates. Our theoretical analysis demonstrates that Manifoldchain scales linearly in throughput with the increase in shard numbers and inversely with network delay in each shard. We implement a full system prototype of Manifoldchain, comprehensively evaluated on both simulated and real-world testbeds. These experiments validate its vertical scalability with network bandwidth and horizontal scalability with network size, achieving a substantial improvement of 186% in throughput over baseline sharding protocols, for scenarios where bandwidths of miners range from 5Mbps to 60Mbps.",
+    "venue": "NDSS",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": "https://arxiv.org/pdf/2407.16295",
+    "url": "https://arxiv.org/abs/2407.16295",
+    "citation_count": null,
+    "relevance_tags": [
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ndss:mysticeti__reaching_the_latency_limits_w",
+    "title": "Mysticeti: Reaching the Latency Limits with Uncertified DAGs",
+    "authors": [
+      "Kushal Babel",
+      "Andrey Chursin",
+      "George Danezis",
+      "Anastasios Kichidis",
+      "Lefteris Kokoris-Kogias",
+      "Arun Koshy",
+      "Alberto Sonnino",
+      "Mingwei Tian"
+    ],
+    "abstract": "We introduce Mysticeti-C, the first DAG-based Byzantine consensus protocol to achieve the lower bounds of latency of 3 message rounds.Since Mysticeti-C is built over DAGs it also achieves high resource efficiency and censorship resistance.Mysticeti-C achieves this latency improvement by avoiding explicit certification of the DAG blocks and by proposing a novel commit rule such that every block can be committed without delays, resulting in optimal latency in the steady state and under crash failures.We further extend Mysticeti-C to Mysticeti-FPC, which incorporates a fast commit path that achieves even lower latency for transferring assets.Unlike prior fast commit path protocols, Mysticeti-FPC minimizes the number of signatures and messages by weaving the fast path transactions into the DAG.This frees up resources, which subsequently result in better performance.We prove the safety and liveness in a Byzantine context.We evaluate both Mysticeti protocols and compare them with state-of-the-art consensus and fast path protocols to demonstrate their low latency and resource efficiency, as well as their more graceful degradation under crash failures.Mysticeti-C is the first Byzantine consensus protocol to achieve WAN latency of 0.5s for consensus commit while simultaneously maintaining state-of-the-art throughput of over 200k TPS.Finally, we report on integrating Mysticeti-C as the consensus protocol into the Sui blockchain [1], resulting in over 4x latency reduction.",
+    "venue": "NDSS",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": "https://doi.org/10.14722/ndss.2025.240929",
+    "url": "https://doi.org/10.14722/ndss.2025.240929",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ndss:horcrux__synthesize__split__shift_and_st",
+    "title": "Horcrux: Synthesize, Split, Shift and Stay Alive; Preventing Channel Depletion via Universal and Enhanced Multi-hop Payments",
+    "authors": [
+      "Anqi Tian",
+      "Peifang Ni",
+      "Yingzi Gao",
+      "Jing Xu"
+    ],
+    "abstract": "",
+    "venue": "NDSS",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": "https://doi.org/10.14722/ndss.2025.230495",
+    "url": "https://doi.org/10.14722/ndss.2025.230495",
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "conf:ndss:eclipse_attacks_on_monero_s_peer_to_peer",
+    "title": "Eclipse Attacks on Monero's Peer-to-Peer Network",
+    "authors": [
+      "Ruisheng Shi",
+      "Zhiyuan Peng",
+      "Lina Lan",
+      "Yulian Ge",
+      "Peng Liu",
+      "Qin Wang",
+      "Juan Wang"
+    ],
+    "abstract": "Eclipse attack is a major threat to the blockchain network layer, wherein an attacker isolates a target node by monopolizing all its connections, cutting it off from the rest of the network.Despite the attack's demonstrated effectiveness in Bitcoin (Usenix'15, SP'20, Usenix'21, CCS'21, SP'23) and partially in Ethereum (NDSS'23, SP'23), its applicability to a wider range of blockchain systems remains uncertain.In this paper, we investigate eclipse attacks against Monero, a blockchain system known for its strong anonymity and pioneering the use of Dandelion++ (the state-of-the-art blockchain network layer protocol for transaction privacy protection).Our analysis of Monero's connection management mechanism reveals that existing eclipse attacks are surprisingly ineffective against Monero.We accordingly introduce the first practical eclipse attack against Monero by proposing a connection reset approach, which forces the target node to drop all benign connections and reconnect with malicious nodes.Specifically, we outline two methods for executing such an attack.The first one exploits the private transaction mechanisms, while the second method leverages the differences in propagation between stem transactions and fluff transactions under Dandelion++.Our attack is not only applicable to Monero but to all blockchain systems utilizing Dandelion++ and similar connection management strategies.We conduct experiments on the Monero mainnet.Evaluation results confirm the feasibility of our attack.Unlike existing eclipse attacks, our connection reset-based approach does not require restarting the target node, significantly accelerating the attack process and making it more controllable.We also provide countermeasures to mitigate the proposed eclipse attack while minimizing the impact on Monero.In addition, we have ethically reported our investigation to Monero official team.",
+    "venue": "NDSS",
+    "year": 2025,
+    "date_published": "2025-06-01",
+    "pdf_url": "https://doi.org/10.14722/ndss.2025.240095",
+    "url": "https://doi.org/10.14722/ndss.2025.240095",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:usenixsecurity:2025:auspex__unveiling_inconsistency_bugs_of_",
+    "title": "Auspex: Unveiling Inconsistency Bugs of Transaction Fee Mechanism in Blockchain",
+    "authors": [
+      "Zheyuan He",
+      "Zihao Li",
+      "Jiahao Luo",
+      "Feng Luo",
+      "Junhan Duan",
+      "Jingwei Li",
+      "Shuwei Song",
+      "Xiapu Luo",
+      "Ting Chen",
+      "Xiaosong Zhang"
+    ],
+    "abstract": "",
+    "venue": "USENIX Security",
+    "year": 2025,
+    "date_published": "2025-08-01",
+    "pdf_url": null,
+    "url": null,
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "conf:usenixsecurity:2025:blockchain_address_poisoning",
+    "title": "Blockchain Address Poisoning",
+    "authors": [
+      "Taro Tsuchiya",
+      "Jin-Dong Dong",
+      "Kyle Soska",
+      "Nicolas Christin"
+    ],
+    "abstract": "In many blockchains, e.g., Ethereum, Binance Smart Chain (BSC), the primary representation used for wallet addresses is a hardly memorable 40-digit hexadecimal string. As a result, users often select addresses from their recent transaction history, which enables blockchain address poisoning. The adversary first generates lookalike addresses similar to one with which the victim has previously interacted, and then engages with the victim to ``poison'' their transaction history. The goal is to have the victim mistakenly send tokens to the lookalike address, as opposed to the intended recipient. Compared to contemporary studies, this paper provides four notable contributions. First, we develop a detection system and perform measurements over two years on both Ethereum and BSC. We identify 13~times more attack attempts than reported previously -- totaling 270M on-chain attacks targeting 17M victims. 6,633 incidents have caused at least 83.8M USD in losses, which makes blockchain address poisoning one of the largest cryptocurrency phishing schemes observed in the wild. Second, we analyze a few large attack entities using improved clustering techniques, and model attacker profitability and competition. Third, we reveal attack strategies -- targeted populations, success conditions (address similarity, timing), and cross-chain attacks. Fourth, we mathematically define and simulate the lookalike address generation process across various software- and hardware-based implementations, and identify a large-scale attacker group that appears to use GPUs. We also discuss defensive countermeasures.",
+    "venue": "USENIX Security",
+    "year": 2025,
+    "date_published": "2025-08-01",
+    "pdf_url": "https://arxiv.org/pdf/2501.16681",
+    "url": "https://arxiv.org/abs/2501.16681",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "bridge",
+      "token",
+      "eCrime",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:usenixsecurity:2025:approve_once__regret_forever__on_the_exp",
+    "title": "Approve Once, Regret Forever: On the Exploitation of Ethereum's Approve-TransferFrom Ecosystem",
+    "authors": [
+      "Andrea Ruaro"
+    ],
+    "abstract": "Smart contracts operate in a highly adversarial environment, where vulnerabilities can lead to substantial financial losses. Thus, smart contracts are subject to security audits. In auditing, proof-of-concept (PoC) exploits play a critical role by demonstrating to the stakeholders that the reported vulnerabilities are genuine, reproducible, and actionable. However, manually creating PoCs is time-consuming, error-prone, and often constrained by tight audit schedules. We introduce PoCo, an agentic framework that automatically generates executable PoC exploits from natural-language vulnerability descriptions written by auditors. PoCo autonomously generates PoC exploits in an agentic manner by interacting with a set of codeexecution tools in a Reason-Act-Observe loop. It produces fully executable exploits compatible with the Foundry testing framework, ready for integration into audit reports and other security tools. We evaluate PoCo on a dataset of 23 real-world vulnerability reports. PoCo consistently outperforms the Zero-shot and Workflow baselines, generating well-formed and logically correct PoCs. Our results demonstrate that agentic frameworks can significantly reduce the effort required for high-quality PoCs in smart contract audits. Our contribution provides actionable knowledge for the smart contract security community.",
+    "venue": "USENIX Security",
+    "year": 2025,
+    "date_published": "2025-08-01",
+    "pdf_url": null,
+    "url": null,
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:usenixsecurity:2025:towards_evading_the_attacks_from_front_r",
+    "title": "Towards Evading the Attacks from Front-Running Bots in Blockchain",
+    "authors": [
+      "Zuchao Ma"
+    ],
+    "abstract": "Cyber attacks are currently blooming, as the attackers reap significant profits from them and face a limited risk when compared to committing the “classical” crimes. One of the major components that leads to the successful compromising of the targeted system is malicious software. It allows using the victim’s machine for various nefarious purposes, e.g., making it a part of the botnet, mining cryptocurrencies, or holding hostage the data stored there. At present, the complexity, proliferation, and variety of malware pose a real challenge for the existing countermeasures and require their constant improvements. That is why, in this paper we first perform a detailed meta-review of the existing surveys related to malware and its detection techniques, showing an arms race between these two sides of a barricade. On this basis, we review the evolution of modern threats in the communication networks, with a particular focus on the techniques employing information hiding. Next, we present the bird’s eye view portraying the main development trends in detection methods with a special emphasis on the machine learning techniques. The survey is concluded with the description of potential future research directions in the field of malware detection.",
+    "venue": "USENIX Security",
+    "year": 2025,
+    "date_published": "2025-08-01",
+    "pdf_url": null,
+    "url": null,
+    "citation_count": null,
+    "relevance_tags": [
+      "MEV"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:usenixsecurity:2025:thunderdome__timelock_free_rationally_se",
+    "title": "Thunderdome: Timelock-Free Rationally-Secure Virtual Channels",
+    "authors": [
+      "Zeta Avarikioti",
+      "Yuheng Wang",
+      "Yuyi Wang"
+    ],
+    "abstract": "Payment channel networks (PCNs) offer a promising solution to address the limited transaction throughput of deployed blockchains. However, several attacks have recently been proposed that stress the vulnerability of PCNs to timelock and censoring attacks. To address such attacks, we introduce Thunderdome, the first timelock-free PCN. Instead, Thunderdome leverages the design rationale of virtual channels to extend a timelock-free payment channel primitive, thereby enabling multi-hop transactions without timelocks. Previous works either utilize timelocks or do not accommodate transactions between parties that do not share a channel.\n  At its core, Thunderdome relies on a committee of non-trusted watchtowers, known as wardens, who ensure that no honest party loses funds, even when offline, during the channel closure process. We introduce tailored incentive mechanisms to ensure that all participants follow the protocol's correct execution. Besides a traditional security proof that assumes an honest majority of the committee, we conduct a formal game-theoretic analysis to demonstrate the security of Thunderdome when all participants, including wardens, act rationally. We implement a proof of concept of Thunderdome on Ethereum to validate its feasibility and evaluate its costs. Our evaluation shows that deploying Thunderdome, including opening the underlying payment channel, costs approximately \\$15 (0.0089 ETH), while the worst-case cost for closing a channel is about \\$7 (0.004 ETH).",
+    "venue": "USENIX Security",
+    "year": 2025,
+    "date_published": "2025-08-01",
+    "pdf_url": "https://arxiv.org/pdf/2501.14418",
+    "url": "https://arxiv.org/abs/2501.14418",
+    "citation_count": null,
+    "relevance_tags": [
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:usenixsecurity:2025:bulletct__towards_more_scalable_ring_con",
+    "title": "BulletCT: Towards More Scalable Ring Confidential Transactions With Transparent Setup",
+    "authors": [
+      "Nan Wang",
+      "Qianhui Wang",
+      "Dongxi Liu",
+      "Muhammed F. Esgin",
+      "Alsharif Abuadbba"
+    ],
+    "abstract": "",
+    "venue": "USENIX Security",
+    "year": 2025,
+    "date_published": "2025-08-01",
+    "pdf_url": null,
+    "url": null,
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:usenixsecurity:2023:the_blockchain_imitation_game",
+    "title": "The Blockchain Imitation Game",
+    "authors": [
+      "Kaihua Qin",
+      "Stefanos Chaliasos",
+      "Liyi Zhou",
+      "Benjamin Livshits",
+      "Dawn Song",
+      "Arthur Gervais"
+    ],
+    "abstract": "The use of blockchains for automated and adversarial trading has become commonplace. However, due to the transparent nature of blockchains, an adversary is able to observe any pending, not-yet-mined transactions, along with their execution logic. This transparency further enables a new type of adversary, which copies and front-runs profitable pending transactions in real-time, yielding significant financial gains.\n  Shedding light on such \"copy-paste\" malpractice, this paper introduces the Blockchain Imitation Game and proposes a generalized imitation attack methodology called Ape. Leveraging dynamic program analysis techniques, Ape supports the automatic synthesis of adversarial smart contracts. Over a timeframe of one year (1st of August, 2021 to 31st of July, 2022), Ape could have yielded 148.96M USD in profit on Ethereum, and 42.70M USD on BNB Smart Chain (BSC).\n  Not only as a malicious attack, we further show the potential of transaction and contract imitation as a defensive strategy. Within one year, we find that Ape could have successfully imitated 13 and 22 known Decentralized Finance (DeFi) attacks on Ethereum and BSC, respectively. Our findings suggest that blockchain validators can imitate attacks in real-time to prevent intrusions in DeFi.",
+    "venue": "USENIX Security",
+    "year": 2023,
+    "date_published": "2023-08-01",
+    "pdf_url": "https://arxiv.org/pdf/2303.17877",
+    "url": "https://arxiv.org/abs/2303.17877",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "DeFi",
+      "formal-verification"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:usenixsecurity:2023:automated_inference_on_financial_securit",
+    "title": "Automated Inference on Financial Security of Ethereum Smart Contracts",
+    "authors": [],
+    "abstract": "Federated learning (FL) is a machine learning setting where many clients (e.g., mobile devices or whole organizations) collaboratively train a model under the orchestration of a central server (e.g., service provider), while keeping the training data decentralized. FL embodies the principles of focused data collection and minimization, and can mitigate many of the systemic privacy risks and costs resulting from traditional, centralized machine learning and data science approaches. Motivated by the explosive growth in FL research, this monograph discusses recent advances and presents an extensive collection of open problems and challenges.",
+    "venue": "USENIX Security",
+    "year": 2023,
+    "date_published": "2023-08-01",
+    "pdf_url": null,
+    "url": null,
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "conf:usenixsecurity:2023:a_mixed_methods_study_of_security_practi",
+    "title": "A Mixed-Methods Study of Security Practices of Smart Contract Developers",
+    "authors": [
+      "Tanusree Sharma"
+    ],
+    "abstract": "",
+    "venue": "USENIX Security",
+    "year": 2023,
+    "date_published": "2023-08-01",
+    "pdf_url": null,
+    "url": null,
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract"
+    ],
     "analyzed": false
   }
 ]
