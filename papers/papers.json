@@ -1108,7 +1108,7 @@
       "Klaus Pohl"
     ],
     "abstract": "Abstract The more critical infrastructures (CIs) being digitized, the more vulnerable they are regarding cyber security attacks. Digitisation-leveraging technologies in the Internet of Things (IoT) and Cyber-Physical Systems (CPS) have been largely adopted for CIs, along with the Digital Twin (DT) paradigm. However, the distributed and heterogeneous nature of IoT or CPS poses significant challenges in safeguarding against diverse attack surfaces, including physical devices, network infrastructures, and third-party integration. To tackle these challenges, we propose an AI-driven DT-based security orchestration automation and response framework (SOAR4BC). Gathering system contexts from the DT in combination with security intelligence from the security tools gives us a holistic context for SOAR, which has not been seen in the existing approaches. We leverage this holistic context into the decision-making core, which utilizes advanced algorithms, like deep reinforcement learning, to generate adaptation recommendations based on incident alerts, risk assessments, and system state observations. By rigorously evaluating tampered data and distributed denial of service (DDoS) scenarios, we validate the SOAR4BC framework’s efficacy in handling security incidents leveraging digital twin environments. We further demonstrate real-world applicability through false-data injection and DoS attacks on an operational electric-vehicle charging testbed, confirming the practical effectiveness of SOAR4BC in securing critical infrastructures. Together, these results establish SOAR4BC as a robust and explainable AI-driven SOAR framework that advances the use of digital twins for cybersecurity in IoT and CPS ecosystems, offering actionable contributions for both research and industrial deployment.",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2026,
     "date_published": "2026-03-09",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10515-026-00612-1.pdf",
@@ -9542,11 +9542,11 @@
       "Enrico Mariconti",
       "Marie Vasek"
     ],
-    "abstract": "",
+    "abstract": "DeFi has attracted legitimate investors and scammers alike. The paper presents an empirical investigation into the prevalence of rugpulls, a scam where cryptocurrency project developers exit without fully delivering and leave investors in the wind. Using forum data, 101 rug- pulls from 6 different types of DeFi services are documented. ICOs form the majority of the rugpulls, most of which were active for less than six months before scamming out. ICOs rugpulled in 2021 were active for a much longer time than those that were rugpulled later on, perhaps pointing to new entrants intending to pull the rug. Through qualitative thematic analysis, we discover that these schemes primarily use authoritative and financial lures at the announcement stage of the project to mimic legitimate projects.",
     "venue": "FC",
     "year": 2023,
     "date_published": "2023-06-01",
-    "pdf_url": null,
+    "pdf_url": "https://doi.org/10.7910/dvn/smgmw8",
     "url": "https://doi.org/10.1007/978-3-031-47754-6_21",
     "citation_count": null,
     "relevance_tags": [
@@ -10207,12 +10207,12 @@
       "Sanjeev Kulkarni",
       "Pramod Viswanath"
     ],
-    "abstract": "",
+    "abstract": "Automated Market Makers (AMMs) are major centers of matching liquidity supply and demand in Decentralized Finance. Their functioning relies primarily on the presence of liquidity providers (LPs) incentivized to invest their assets into a liquidity pool. However, the prices at which a pooled asset is traded is often more stale than the prices on centralized and more liquid exchanges. This leads to the LPs suffering losses to arbitrage. This problem is addressed by adapting market prices to trader behavior, captured via the classical market microstructure model of Glosten and Milgrom. In this paper, we propose the first optimal Bayesian and the first model-free data-driven algorithm to optimally track the external price of the asset. The notion of optimality that we use enforces a zero-profit condition on the prices of the market maker, hence the name ZeroSwap. This ensures that the market maker balances losses to informed traders with profits from noise traders. The key property of our approach is the ability to estimate the external market price without the need for price oracles or loss oracles. Our theoretical guarantees on the performance of both these algorithms, ensuring the stability and convergence of their price recommendations, are of independent interest in the theory of reinforcement learning. We empirically demonstrate the robustness of our algorithms to changing market conditions.",
     "venue": "FC",
     "year": 2024,
     "date_published": "2024-06-01",
-    "pdf_url": null,
-    "url": "https://doi.org/10.1007/978-3-031-78676-1_12",
+    "pdf_url": "https://arxiv.org/pdf/2310.09413",
+    "url": "https://arxiv.org/abs/2310.09413",
     "citation_count": null,
     "relevance_tags": [
       "DeFi"
@@ -11362,7 +11362,7 @@
       "George Y. Yuan"
     ],
     "abstract": "",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2023,
     "date_published": "2023-05-08",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-023-01172-0.pdf",
@@ -11387,7 +11387,7 @@
       "Thamer Mecharnia"
     ],
     "abstract": "",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2024,
     "date_published": "2024-09-01",
     "pdf_url": null,
@@ -11410,7 +11410,7 @@
       "Huang Fanglei"
     ],
     "abstract": "In the Web3.0 era, which does not rely on any centralized organization and emphasizes user control, security, trustworthiness and the importance of data privacy, blockchain plays a key role. Its decentralization, security and trustworthiness and other characteristics have become Building the infrastructure of trusted interconnection and value interconnection in the Web3.0 era has laid the foundation for the development of Web3.0. With the development of Web3.0, blockchain technology itself is also continuing to develop. There are more and more researches on the integration and innovative development of blockchain technology with big data, artificial intelligence, metaverse, Internet of Things and privacy computing. In this context, the basic principles and characteristics of Web3.0 and blockchain technology are first explained, focusing on the decentralization, traceability and non-tampering characteristics of blockchain, and then an overview of the relationship between blockchain and The advantages of the integrated innovation and development of big data, artificial intelligence, metaverse, Internet of Things and privacy computing are analyzed.The standardization construction situation and future work prospects of the integrated innovation and development of blockchain technology under Web3.0 are analyzed.",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2024,
     "date_published": "2024-12-13",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-024-01319-7.pdf",
@@ -11430,7 +11430,7 @@
       "Wei Cui"
     ],
     "abstract": "",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2024,
     "date_published": "2024-09-30",
     "pdf_url": null,
@@ -11451,7 +11451,7 @@
       "Muhammad Ali Babar"
     ],
     "abstract": "Abstract With Bitcoin being universally recognized as the most popular cryptocurrency, more Bitcoin transactions are expected to be populated to the Bitcoin blockchain system. As a result, many transactions can encounter different confirmation delays. Concerned about this, it becomes vital to help a user understand (if possible) how long it may take for a transaction to be confirmed in the Bitcoin blockchain. In this work, we address the issue of predicting confirmation time within a block interval rather than pinpointing a specific timestamp. After dividing the future into a set of block intervals (i.e., classes), the prediction of a transaction’s confirmation is treated as a classification problem. To solve it, we propose a framework, Hybrid Confirmation Time Estimation Network ( Hybrid-CTEN ), based on neural networks and XGBoost to predict transaction confirmation time in the Bitcoin blockchain system using three different sources of information: historical transactions in the blockchain, unconfirmed transactions in the mempool, as well as the estimated transaction itself. Finally, experiments on real-world blockchain data demonstrate that, other than XGBoost excelling in the binary classification case (to predict whether a transaction will be confirmed in the next generated block), our proposed framework Hybrid-CTEN outperforms state-of-the-art methods on precision, recall and f1-score on all the multiclass classification cases (4-class, 6-class and 8-class) to predict in which future block interval a transaction will be confirmed.",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2023,
     "date_published": "2023-11-01",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-023-01212-9.pdf",
@@ -11470,7 +11470,7 @@
       "Qingzhong Li"
     ],
     "abstract": "",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2024,
     "date_published": "2024-12-27",
     "pdf_url": null,
@@ -11491,7 +11491,7 @@
       "Hamid Turab Mirza"
     ],
     "abstract": "",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2026,
     "date_published": "2026-01-07",
     "pdf_url": null,
@@ -11512,7 +11512,7 @@
       "Keshen Zhou"
     ],
     "abstract": "Abstract The proliferation of high-performance personal devices and the widespread deployment of machine learning (ML) applications have led to two consequences: the volume of private data from individuals or groups has exploded over the past few years; and the traditional central servers for training ML models have experienced communication and performance bottlenecks in the face of massive amounts of data. However, this reality also provides the possibility of keeping data local for ML training and fusing models on a broader scale. As a new branch of ML application, Federated Learning (FL) aims to solve the problem of multi-party joint learning on the premise of protecting personal data privacy. However, due to the heterogeneity of devices, including network connection, network bandwidth, computing resources, etc., it is unrealistic to train, update and aggregate models in all devices in parallel, while personal data is often not independent and identically distributed (Non-IID) due to multiple reasons. This reality poses a challenge to the speed and convergence of FL. In this paper, we propose the pFedCAM algorithm, which aims to improve the robustness of the FL system to device heterogeneity and Non-IID data, while achieving some degree of federation model personalization. pFedCAM is based on the idea of clustering and model interpolation by classifying heterogeneous clients and performing FedAvg algorithm in parallel, and then combining them into personalized federated global models by inter-cluster model interpolation. Experiments show that the accuracy of pFedCAM improves 10.3% on Fashion-MNIST and 11.3% on CIFAR-10 compared to the benchmark in the case of Non-IID data. In the end, we applied pFedCAM in HomeProtect, a smart home privacy protection framework we designed, and achieved good practical results in the case of flame recognition.",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2023,
     "date_published": "2023-01-16",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-022-01132-0.pdf",
@@ -11534,7 +11534,7 @@
       "Sui Lin"
     ],
     "abstract": "",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2023,
     "date_published": "2023-05-09",
     "pdf_url": null,
@@ -11554,7 +11554,7 @@
       "Botao Peng"
     ],
     "abstract": "",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2025,
     "date_published": "2025-04-11",
     "pdf_url": null,
@@ -11573,7 +11573,7 @@
       "Amani Abusafia"
     ],
     "abstract": "Abstract Social media platforms usually contain several modified versions of an image. This proliferation of versions questions the trust of social media images. We propose a novel framework to find modified versions of social media images using only their metadata. We consider several aspects to determine if an image is a modified version of another image. These aspects include topic of an image, spatio-temporal information, and semantic similarity. We first do topic modeling to find images linked to the same context. Secondly, we perform spatio-temporal clustering to group spatio-temporally close images. Finally, we perform hierarchical clustering to form more precise clusters of versions. Notably, the proposed framework also considers modifications introduced in an image’s metadata while determining versions of the image. Modifications in social media images pose a significant challenge to correctly cluster versions together as a version may exhibit significant deviations from its original image. We address this issue by exploring inconsistencies in the image metadata. These inconsistencies are reflective of the changes in an image. We validate our model on a fact-checked image verification corpus and the Multimodal C4 dataset. We achieve around 95% accuracy, validating the effectiveness of the proposed approach.",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2025,
     "date_published": "2025-04-15",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-025-01335-1.pdf",
@@ -11582,45 +11582,6 @@
     "relevance_tags": [
       "measurement"
     ],
-    "analyzed": false
-  },
-  {
-    "id": "doi:10.1007/s11280-024-01284-1",
-    "title": "Editorial on the Special Issue of the World Wide Web journal with selected papers from the 22nd International Conference on Web Information Systems Engineering (WISE)",
-    "authors": [
-      "Richard Chbeir",
-      "He Huang",
-      "Yannis Manolopoulos",
-      "Fabrizio Silvestri"
-    ],
-    "abstract": "",
-    "venue": "ACM WWW",
-    "year": 2024,
-    "date_published": "2024-07-01",
-    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-024-01284-1.pdf",
-    "url": "https://doi.org/10.1007/s11280-024-01284-1",
-    "citation_count": 0,
-    "relevance_tags": [],
-    "analyzed": false
-  },
-  {
-    "id": "doi:10.1007/s11280-024-01321-z",
-    "title": "Special issue on the 15th International Conference on Management of Digital EcoSystems (MEDES 2023) and the 27th International Database Engineered Applications Symposium (IDEAS 2023)",
-    "authors": [
-      "Joe Tekli",
-      "Hang Li",
-      "Richard Chbeir",
-      "Yannis Manolopoulos",
-      "Ngoc Thanh Nguyên"
-    ],
-    "abstract": "",
-    "venue": "ACM WWW",
-    "year": 2024,
-    "date_published": "2024-12-12",
-    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-024-01321-z.pdf",
-    "url": "https://doi.org/10.1007/s11280-024-01321-z",
-    "citation_count": 0,
-    "relevance_tags": [],
     "analyzed": false
   },
   {
@@ -11634,7 +11595,7 @@
       "Zi Huang"
     ],
     "abstract": "Legal case retrieval (LCR) is a specialised information retrieval task aimed at identifying relevant cases given a query case. LCR holds pivotal significance in facilitating legal practitioners to locate legal precedents. Existing LCR methods predominantly rely on traditional lexical models or language models; however, they typically overlook the domain-specific structural information embedded in legal documents. Our previous work CaseGNN (Tang et al., In: ECIR, 2024) successfully harnesses text-attributed graphs and graph neural networks to incorporate structural legal information. Nonetheless, three key challenges remain in enhancing the representational capacity of CaseGNN: (1) The under-utilisation of rich edge information in text-attributed case graph (TACG). (2) The insufficiency of training signals for graph contrastive learning. (3) The lack of contextualised legal information in node and edge features. In this paper, the LEXA model, an extension of CaseGNN, is proposed to overcome these limitations by jointly leveraging rich edge information, enhanced training signals, and contextualised embeddings derived from large language models (LLMs). Specifically, an edge-updated graph attention layer (EUGAT) is proposed to comprehensively update node and edge features during graph modelling, resulting in a full utilisation of structural information of legal cases. Moreover, LEXA incorporates a novel graph contrastive learning objective with graph augmentation to provide additional training signals, thereby strengthening the model’s legal comprehension capabilities. What’s more, given the remarkable contextualised understanding capabilities of LLMs for text encoding, LLMs are employed to generate node and edge features for the text-attributed case graph (TACG). Extensive experiments on two benchmark datasets from COLIEE 2022 and COLIEE 2023 demonstrate that LEXA not only significantly improves CaseGNN but also achieves supreme performance compared to state-of-the-art LCR methods. Code has been released on https://github.com/yanran-tang/CaseGNN .",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2026,
     "date_published": "2026-03-01",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-026-01407-w.pdf",
@@ -11653,7 +11614,7 @@
       "Keishi Tajima"
     ],
     "abstract": "Abstract We study the Revenue Maximization (RM) problem in a two-phase marketing scenario consisting of a presale phase and an official sale phase. In the presale phase, users are influenced through social diffusion and are offered discounts. In the official phase, mass-media influence is modeled as a community-based stochastic process, incorporating conformity effects within communities. This scenario better reflects real-world marketing practices. However, the resulting RM problem is NP-hard and non-submodular, rendering traditional greedy approaches ineffective. To address this, we employ the sandwich approximation (SA) strategy to provide theoretical guarantees. Furthermore, we propose the Community-Based Greedy Algorithm (CBGA), which incorporates a general improvement strategy applicable to greedy selection methods based on Monte Carlo simulation or Reverse Influence Sampling. CBGA adopts a divide-and-conquer approach by performing greedy selection within each community, thereby improving the runtime efficiency. The integration of CBGA with the SA strategy yields a structure-dependent theoretical guarantee, with the approximation quality determined by the number of boundary nodes between communities. We further extend our model to more general settings. We experimentally validate that CBGA matches the performance of all baselines but runs faster on six real-world datasets.",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2025,
     "date_published": "2025-11-01",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-025-01385-5.pdf",
@@ -11675,7 +11636,7 @@
       "Charith Perera"
     ],
     "abstract": "Smart buildings remain heterogeneous across sensing infrastructure, metadata quality, legacy protocols, and analytics requirements, hindering reusable human–building natural language interfaces. We present OntoSage, a modular framework for ontologically grounded question answering (QA) and fulfillment of analytic intents over smart building data. The framework (i) leverages Brick Schema-based RDF model with reasoning capabilities, (ii) translates natural language (NL) questions into executable SPARQL via a fine-tuned seq2seq model (T5-Base), and (iii) orchestrates portable analytics microservices that operate on time-series sensor data referenced through ontology-linked UUIDs. A summarization component (open-weights Mistral-7B, zero-shot) converts structured SPARQL/SQL/analytic outputs into concise stakeholder-aware responses without requiring task-specific fine-tuning. We categorize QA complexity into four reasoning classes and report component-level execution metrics supporting these categories. To address portability, we formalize a lightweight adaptation workflow (ontology ingestion $$\\rightarrow $$ entity enrichment for NLU $$\\rightarrow $$ NL2SPARQL validity checks $$\\rightarrow $$ analytics binding) designed to minimize per-building retraining. Reproducibility is enabled through public source code, synthetic and ontology-derived datasets, Docker/Compose service descriptors, and documented supporting scripts “( https://github.com/suhasdevmane/OntoBot )”. The developers’ documentation is publicly accessible “( https://ontosage-docs.github.io )”.",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2026,
     "date_published": "2026-01-20",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-026-01403-0.pdf",
@@ -11700,7 +11661,7 @@
       "Ian Horrocks"
     ],
     "abstract": "Automating ontology construction and curation is an important but challenging task in knowledge engineering and artificial intelligence. Prediction by machine learning techniques such as contextual semantic embedding is a promising direction, but the relevant research is still preliminary especially for expressive ontologies in Web Ontology Language (OWL). In this paper, we present a new subsumption prediction method named BERTSubs for classes of OWL ontology. It exploits the pre-trained language model BERT to compute contextual embeddings of a class, where customized templates are proposed to incorporate the class context (e.g., neighbouring classes) and the logical existential restriction. BERTSubs is able to predict multiple kinds of subsumers including named classes from the same ontology or another ontology, and existential restrictions from the same ontology. Extensive evaluation on five real-world ontologies for three different subsumption tasks has shown the effectiveness of the templates and that BERTSubs can dramatically outperform the baselines that use (literal-aware) knowledge graph embeddings, non-contextual word embeddings and the state-of-the-art OWL ontology embeddings.",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2023,
     "date_published": "2023-05-02",
     "pdf_url": "https://doi.org/10.1007/s11280-023-01169-9",
@@ -11717,7 +11678,7 @@
       "Nouhayla Majdoubi"
     ],
     "abstract": "Abstract Humanity needs to deliberate effectively at scale about highly complex and contentious problems. Current online deliberation tools—such as email, chatrooms, and forums—are however plagued by levels of discussion toxicity that deeply undercut the willingness and ability of the participants to engage in thoughtful, meaningful, deliberations. This has led many organizations to either shut down their forums or invest in expensive, frequently unreliable, and ethically fraught moderation of people's contributions in their forums. This paper includes a comprehensive review on online toxicity, and describes how a structured deliberation process can substantially reduce toxicity compared to current approaches. The key underlying insight is that unstructured conversations create, especially at scale, an “attention wars” dynamic wherein people are often incented to resort to extremified language in order to get visibility for their postings. A structured deliberation process wherein people collaboratively create a compact organized collection of answers and arguments removes this underlying incentive, and results, in our evaluation, in a 50% reduction of high-toxicity posts.",
-    "venue": "ACM WWW",
+    "venue": "World Wide Web (Journal)",
     "year": 2024,
     "date_published": "2024-05-01",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11280-024-01269-0.pdf",
@@ -11735,7 +11696,7 @@
       "Yan Ma"
     ],
     "abstract": "",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2024,
     "date_published": "2024-03-01",
     "pdf_url": null,
@@ -11755,7 +11716,7 @@
       "Muhammmad Umar Janjua"
     ],
     "abstract": "",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2024,
     "date_published": "2024-02-29",
     "pdf_url": null,
@@ -11779,7 +11740,7 @@
       "Ting Chen"
     ],
     "abstract": "",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2024,
     "date_published": "2024-07-29",
     "pdf_url": null,
@@ -11801,7 +11762,7 @@
       "Zheng Wei"
     ],
     "abstract": "",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2024,
     "date_published": "2024-12-31",
     "pdf_url": null,
@@ -11823,7 +11784,7 @@
       "Leyuan Liu"
     ],
     "abstract": "",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2025,
     "date_published": "2025-08-07",
     "pdf_url": null,
@@ -11849,7 +11810,7 @@
       "Tegawendé F. Bissyandé"
     ],
     "abstract": "",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2023,
     "date_published": "2023-09-13",
     "pdf_url": "https://orbilu.uni.lu/bitstream/10993/58037/1/2023-ASEJ-tips.pdf",
@@ -11877,7 +11838,7 @@
       "Haoyu Wang"
     ],
     "abstract": "Cryptocurrency wallets, acting as fundamental infrastructure to the blockchain ecosystem, have seen significant user growth, particularly among browser-based wallets (i.e., browser extensions). However, this expansion accompanies security challenges, making these wallets prime targets for malicious activities. Despite a substantial user base, there is not only a significant gap in comprehensive security analysis but also a pressing need for specialized tools that can aid developers in reducing vulnerabilities during the development process. To fill the void, we present a comprehensive security analysis of browser-based wallets in this paper, along with the development of an automated tool designed for this purpose. We first compile a taxonomy of security vulnerabilities resident in cryptocurrency wallets by harvesting historical security reports. Based on this, we design WALLETRADAR, an automated detection framework that can accurately identify security issues based on static and dynamic analysis. Evaluation of 96 popular browser-based wallets shows WALLETRADAR's effectiveness, by successfully automating the detection process in 90% of these wallets with high precision. This evaluation has led to the discovery of 116 security vulnerabilities corresponding to 70 wallets. By the time of this paper, we have received confirmations of 10 vulnerabilities from 8 wallet developers, with over $2,000 bug bounties. Further, we observed that 12 wallet developers have silently fixed 16 vulnerabilities after our disclosure. WALLETRADAR can effectively automate the identification of security risks in cryptocurrency wallets, thereby enhancing software development quality and safety in the blockchain ecosystem.",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2024,
     "date_published": "2024-03-31",
     "pdf_url": null,
@@ -11894,8 +11855,8 @@
       "Arif Ali Khan",
       "Saima Rafi"
     ],
-    "abstract": "",
-    "venue": "IEEE/ACM ASE",
+    "abstract": "AbstractQuantum computing systems harness the power of quantum mechanics to execute computationally demanding tasks more effectively than their classical counterparts. This has led to the emergence of Quantum Software Engineering (QSE), which focuses on unlocking the full potential of quantum computing systems. As QSE gains prominence, it seeks to address the evolving challenges of quantum software development by offering comprehensive concepts, principles, and guidelines. This paper aims to identify, prioritize, and develop a systematic decision-making framework of the challenging factors associated with QSE process execution. We conducted a literature survey to identify the challenging factors associated with QSE process and mapped them into 7 core categories. Additionally, we used a questionnaire survey to collect insights from practitioners regarding these challenges. To examine the relationships between core categories of challenging factors, we applied Interpretive Structure Modeling (ISM). Lastly, we applied fuzzy TOPSIS to rank the identified challenging factors concerning to their criticality for QSE process. We have identified 22 challenging factors of QSE process and mapped them to 7 core categories. The ISM results indicate that the ‘resources’ category has the most decisive influence on the other six core categories of the identified challenging factors. Moreover, the fuzzy TOPSIS indicates that ‘complex programming’, ‘limited software libraries’, ‘maintenance complexity’, ‘lack of training and workshops’, and ‘data encoding issues’ are the highest priority challenging factor for QSE process execution. Organizations using QSE could consider the identified challenging factors and their prioritization to improve their QSE process.",
+    "venue": "ASE (Journal)",
     "year": 2023,
     "date_published": "2023-07-26",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10515-023-00389-7.pdf",
@@ -11916,7 +11877,7 @@
       "Ye Lu"
     ],
     "abstract": "Smart contract vulnerability detection has attracted increasing attention due to billions of economic losses caused by vulnerabilities. Existing smart contract vulnerability detection methods have high false negative and high false positive rates. To address these issues, we present ByteEye, a bytecode level smart contract vulnerability detection framework with Graph Neural Networks (GNNs). ByteEye first constructs an edge-enhanced Control Flow Graph (CFG) to maintain rich information from the low-level bytecode with low latency. ByteEye also designs and incorporates both general information and vulnerability-specific information into its detection method as bytecode level features. Furthermore, ByteEye flexibly supports machine/deep learning models, especially with graph neural networks, which can facilitate vulnerability detection precisely. The extensive experimental results highlight that ByteEye outperforms the state-of-the-art approaches on all three types of vulnerability detection. ByteEye can achieve an average of 35.29%, 43.95%, and 6.38% higher on F1 than the bytecode level best-performed baseline on reentrancy vulnerability, timestamp dependency vulnerability, and integer overflow/underflow vulnerability, respectively. Moreover, ByteEye can detect 361 new vulnerabilities in real-world smart contracts, which are reported for the first time. ByteEye enhances control flow information, designs general bytecode-level features with expert knowledge, and flexibly supports deep learning models, particularly GNNs, thus achieving high detection effectiveness.",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2025,
     "date_published": "2025-10-22",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10515-025-00559-9.pdf",
@@ -11937,7 +11898,7 @@
       "Xiangfu Zhao"
     ],
     "abstract": "",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2024,
     "date_published": "2024-10-23",
     "pdf_url": null,
@@ -11961,7 +11922,7 @@
       "Jianling Sun"
     ],
     "abstract": "Smart contracts have revolutionized the credit landscape. However, their security remains intensely scrutinized due to numerous hacking incidents and inherent logical challenges. One well-known issue is reentrancy vulnerability, exemplified by DAO attacks that lead to substantial economic losses. Previous approaches have employed rule-based and deep learning-based (DL) algorithms to detect and repair reentrancy vulnerability. Large language models (LLM) have been distinguished in recent years for their excellent understanding of text and code. However, less attention has been paid to LLM-based reentrancy vulnerability detection and repair, and direct prompt-based approaches often suffer from inefficiencies and high false positives. To overcome the above shortcomings, this paper proposes a hybrid model framework combining LLM with DL to enhance the detection and repair of reentrancy vulnerabilities. This unified framework comprises three crucial phases: the data processing phase, the vulnerability detection phase, and the vulnerability repair phase. Extensive experimental results validate the superiority of our approach over state-of-the-art baselines, and ablation studies demonstrate the effectiveness of each component. Our approach demonstrates significant improvements in vulnerability detection, with increases of 3.51% in accuracy, 2.31% in recall, 0.42% in precision, and 0.85% in F1-score. Furthermore, our approach can achieve a notable 9.62% enhancement in the repair rate. Finally, we also conducted a user study to emphasize its potential to fortify the security of smart contracts.",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2025,
     "date_published": "2025-09-13",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10515-025-00546-0.pdf",
@@ -11986,7 +11947,7 @@
       "Xuan Wang"
     ],
     "abstract": "Purpose: In the field of vulnerability repair, previous research has leveraged pretrained models and LLM-based prompt engineering, among which LLM-based approaches show better generalizability and achieve the best performance. However, the LLM-based approaches generally regard vulnerability repair as a sequence-to-sequence task, and do not explicitly capture the syntax patterns for different vulnerability types, leading to limited accuracy. We aim to create a method that ensures the specificity of prompts targeting vulnerable code while also leveraging the generative capabilities of Large Language Models. Methods: We propose SPVR (Syntax-to-Prompt Vulnerability Repair), a novel framework that collects information from syntax trees, and generates corresponding prompts. Our method consists of three steps: rule design, prompt generation, and patch generation. In the rule design step, our method parses code patches and designs rules to extract relevant contextual information. These rules aid in identifying vulnerability-related issues. In the prompt generation step, our method extracts information from vulnerable code with pre-defined rules, automatically converting them into prompts. We also incorporate the description of CWE (Common Weakness Enumeration) as known information into the prompts. Finally, in the patch generation step, this prompt will serve as input to any conversational LLM to obtain code patches. Results: Extensive experiments validate that our method achieves excellent results in assisting LLMs to fix vulnerabilities accurately. We utilize multiple Large Language Models to validate the effectiveness of our work, repairing 143 of 547 vulnerable code using ChatGPT-4. We conducted a comparison of our approach against several existing vulnerability repair approaches (including fine-tuning-based and prompt-based), across multiple metrics.",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2025,
     "date_published": "2025-12-18",
     "pdf_url": "https://arxiv.org/pdf/2405.04994",
@@ -12006,7 +11967,7 @@
       "Donghwan Shin"
     ],
     "abstract": "Abstract Extended Reality (XR) is an emerging technology spanning diverse application domains and offering immersive user experiences. However, its unique characteristics, such as six degrees of freedom interactions, present significant testing challenges distinct from traditional 2D GUI applications, demanding novel testing techniques to build high-quality XR applications. This paper presents the first systematic mapping study on software testing for XR applications. We selected 34 studies focusing on techniques and empirical approaches in XR software testing for detailed examination. The studies are classified and reviewed to address the current research landscape, test facets, and evaluation methodologies in the XR testing domain. Additionally, we provide a repository summarising the mapping study, including datasets and tools referenced in the selected studies, to support future research and practical applications. Our study highlights open challenges in XR testing and proposes actionable future research directions to address the gaps and advance the field of XR software testing.",
-    "venue": "IEEE/ACM ASE",
+    "venue": "ASE (Journal)",
     "year": 2025,
     "date_published": "2025-06-02",
     "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10515-025-00523-7.pdf",
@@ -18468,12 +18429,12 @@
       "Yongxin Wen",
       "Zhiming Zheng"
     ],
-    "abstract": "",
+    "abstract": "With the rapid advancement of Web 3.0 technologies, public blockchain platforms are witnessing the emergence of novel services designed to enhance user privacy and anonymity. However, the powerful untraceability features inherent in these services inadvertently make them attractive tools for criminals seeking to launder illicit funds. Notably, existing de-anonymization methods face three major challenges when dealing with such transactions: highly homogenized transactional semantics, limited ability to model temporal discontinuities, and insufficient consideration of structural sparsity in account association graphs. To address these, we propose GradWATCH, designed to track anonymous accounts in Ethereum privacy-preserving services. Specifically, we first design a learnable account feature mapping module to extract informative transactional semantics from raw on-chain data. We then incorporate transaction relations into the account association graph to alleviate the adverse effects of structural sparsity. To capture temporal evolution, we further propose an edge-aware sliding-window mechanism that propagates and updates gradients at three granularities. Finally, we identify accounts controlled by the same entity by measuring their embedding distances in the learned representation space. Experimental results show that even under the conditions of unbalanced labels and sparse transactions, GradWATCH still achieves significant performance gains, with relative improvements ranging from 1.62% to 15. 22% in the MRR and from 3. 85% to 7. 31% in the F_1.",
     "venue": "IEEE TIFS",
     "year": 2026,
     "date_published": "2026-01-01",
-    "pdf_url": null,
-    "url": "https://doi.org/10.1109/tifs.2026.3674425",
+    "pdf_url": "https://arxiv.org/pdf/2603.14208",
+    "url": "https://arxiv.org/abs/2603.14208",
     "citation_count": 0,
     "relevance_tags": [
       "privacy"
@@ -21301,7 +21262,7 @@
       "Laurence T. Yang",
       "Elisa Bertino"
     ],
-    "abstract": "",
+    "abstract": "Blockchain-enabled digital currency systems have typically operated in isolation, lacking necessary mechanisms for seamless interconnection. Consequently, transferring assets across distinct currency systems remains a complex challenge, with existing schemes often falling short in ensuring security, privacy, and practicality. This paper proposes P2C2T - a privacy-preserving cross-chain transfer scheme. It is the first scheme to address atomicity, unlinkability, indistinguishability, non-collateralization, and required functionalities across diverse currency systems. P2C2T is based on threshold anonymous atomic locks (TA <sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup>L), also proposed by us, serving as the cornerstone for guaranteeing atomic cross-chain transfer while obscuring the payment relationships between users. By combining TA<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup>L with verifiable timed discrete logarithm schemes, P2C2T renders cross-chain transactions indistinguishable from regular intra-chain ones. Notably, P2C2T eliminates the collateralization of senders and imposes minimal requirements on underlying blockchains, specifically on the ability to verify signatures. We substantiate the security of TA <sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sup>L based on a proposed cryptographic notion called threshold blind conditional signatures and demonstrate the security of P2C2T through necessary proofs. Additionally, we compare the performance of P2C2T with an existing scheme that has properties closest to P2C2T. The comparison reveals that P2C2T reduces overhead by at least 85.488% in terms of running time, communication cost, and storage cost when completing a cross-chain transfer. We further conduct cross-chain transfers and intra-chain payments using the Bitcoin testnet and Litecoin testnet to illustrate the privacy and practicality of P2C2T.",
     "venue": "IEEE S&P",
     "year": 2025,
     "date_published": "2025-06-01",
@@ -21810,12 +21771,12 @@
       "Song Bian",
       "Mauro Conti"
     ],
-    "abstract": "",
+    "abstract": "Sharding enhances blockchain scalability by dividing the network into shards, each managing specific unspent transaction outputs or accounts. As an introduced new transaction type, cross-shard transactions pose a critical challenge to the security and efficiency of sharding blockchains. Currently, there is a lack of a generic sharding consensus pattern that achieves both security and low overhead. In this paper, we present Kronos, a secure sharding blockchain consensus achieving optimized overhead. In particular, we propose a new secure sharding consensus pattern, based on a buffer managed jointly by shard members. Valid transactions are transferred to the payee via the buffer, while invalid ones are rejected through happy or unhappy paths. Kronos is proved to achieve security with atomicity under malicious clients with optimal intra-shard overhead $kB$ ($k$ for involved shard number and $B$ for a Byzantine fault tolerance (BFT) cost). Besides, we propose secure cross-shard certification methods based on batch certification and reliable cross-shard transfer. The former combines hybrid trees or vector commitments, while the latter integrates erasure coding. Handling $b$ transactions, Kronos is proved to achieve reliability with low cross-shard overhead $O(n b λ)$ ($n$ for shard size and $λ$ for the security parameter). Notably, Kronos imposes no restrictions on BFT and does not rely on time assumptions, offering optional constructions in various modules. We implement Kronos using two prominent BFT protocols: asynchronous Speeding Dumbo and partial synchronous Hotstuff. Extensive experiments demonstrate Kronos scales the consensus nodes to thousands, achieving a substantial throughput of 320 ktx/sec with 2.0 sec latency. Compared with the past solutions, Kronos outperforms, achieving up to a 12* improvement in throughput and a 50% reduction in latency.",
     "venue": "NDSS",
     "year": 2025,
     "date_published": "2025-06-01",
-    "pdf_url": "https://doi.org/10.14722/ndss.2025.230472",
-    "url": "https://doi.org/10.14722/ndss.2025.230472",
+    "pdf_url": "https://arxiv.org/pdf/2403.03655",
+    "url": "https://arxiv.org/abs/2403.03655",
     "citation_count": null,
     "relevance_tags": [
       "consensus"
