@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Dashboard</title>
+    <style>
+:root, [data-theme="dark"] {
+    --bg: #0d1117; --bg2: #161b22; --bg3: #21262d;
+    --border: #30363d; --border-m: #21262d;
+    --text: #c9d1d9; --text2: #8b949e;
+    --accent: #58a6ff; --accent-m: rgba(31,111,235,0.13);
+    --green: #3fb950; --yellow: #d29922; --red: #f85149; --purple: #bc8cff;
+    --green-bg: rgba(63,185,80,0.12); --yellow-bg: rgba(210,153,34,0.12);
+    --red-bg: rgba(248,81,73,0.12); --purple-bg: rgba(188,140,255,0.12);
+    --blue-bg: rgba(88,166,255,0.12);
+}
+[data-theme="light"] {
+    --bg: #fff; --bg2: #f6f8fa; --bg3: #e8ecf0;
+    --border: #d0d7de; --border-m: #d8dee4;
+    --text: #1f2328; --text2: #656d76;
+    --accent: #0969da; --accent-m: rgba(9,105,218,0.1);
+    --green: #1a7f37; --yellow: #9a6700; --red: #cf222e; --purple: #8250df;
+    --green-bg: rgba(26,127,55,0.08); --yellow-bg: rgba(154,103,0,0.08);
+    --red-bg: rgba(207,34,46,0.08); --purple-bg: rgba(130,80,223,0.08);
+    --blue-bg: rgba(9,105,218,0.08);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height:1.6; transition: background .3s, color .3s; }
+.container { max-width:960px; margin:0 auto; padding:2rem 1rem; }
+header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:2rem; padding-bottom:1.5rem; border-bottom:1px solid var(--border-m); }
+h1 { font-size:1.8rem; color:var(--accent); }
+.subtitle { color:var(--text2); font-size:.9rem; margin-top:.2rem; }
+.header-actions { display:flex; gap:.6rem; align-items:center; }
+.icon-link { color:var(--text2); transition:color .2s; }
+.icon-link:hover { color:var(--accent); }
+.theme-btn { background:none; border:1px solid var(--border); border-radius:6px; padding:.3rem; cursor:pointer; color:var(--text2); display:flex; align-items:center; transition: color .2s, border-color .2s; }
+.theme-btn:hover { color:var(--accent); border-color:var(--accent); }
+
+/* Status badges */
+.badge { display:inline-block; padding:.15rem .55rem; border-radius:12px; font-size:.72rem; font-weight:500; }
+.badge-submitted { background:var(--yellow-bg); color:var(--yellow); }
+.badge-preparing { background:var(--blue-bg); color:var(--accent); }
+.badge-active { background:var(--green-bg); color:var(--green); }
+.badge-review { background:var(--purple-bg); color:var(--purple); }
+.badge-accepted { background:var(--green-bg); color:var(--green); border:1px solid var(--green); }
+.badge-rejected { background:var(--red-bg); color:var(--red); }
+.badge-paused { background:var(--bg3); color:var(--text2); }
+.badge-completed { background:var(--green-bg); color:var(--green); }
+.badge-idea { background:var(--purple-bg); color:var(--purple); }
+
+/* Category tabs */
+.tabs { display:flex; gap:.5rem; margin-bottom:1.5rem; flex-wrap:wrap; }
+.tab { padding:.4rem 1rem; border-radius:20px; font-size:.85rem; cursor:pointer; border:1px solid var(--border); background:var(--bg2); color:var(--text2); transition:all .2s; }
+.tab:hover { border-color:var(--accent); color:var(--accent); }
+.tab.active { background:var(--accent-m); color:var(--accent); border-color:var(--accent); }
+.tab .count { margin-left:.3rem; opacity:.7; }
+
+/* Project cards */
+.project-list { display:flex; flex-direction:column; gap:.8rem; }
+.project-card { background:var(--bg2); border:1px solid var(--border-m); border-radius:8px; padding:1rem 1.2rem; transition: border-color .2s, background .3s; }
+.project-card:hover { border-color:var(--border); }
+.project-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:.4rem; }
+.project-title { font-size:1rem; font-weight:600; }
+.project-meta { font-size:.8rem; color:var(--text2); margin-bottom:.4rem; }
+.project-meta span { margin-right:1rem; }
+.project-desc { font-size:.85rem; color:var(--text2); margin-bottom:.5rem; }
+.project-tags { display:flex; gap:.3rem; flex-wrap:wrap; }
+.project-tag { font-size:.7rem; padding:.1rem .5rem; background:var(--accent-m); color:var(--accent); border-radius:10px; }
+.project-actions { display:flex; gap:.4rem; margin-top:.6rem; }
+.btn-sm { padding:.2rem .6rem; font-size:.75rem; border-radius:5px; border:1px solid var(--border); background:var(--bg3); color:var(--text2); cursor:pointer; transition:all .2s; }
+.btn-sm:hover { border-color:var(--accent); color:var(--accent); }
+.btn-add { padding:.5rem 1.2rem; border-radius:6px; border:1px solid var(--accent); background:var(--accent-m); color:var(--accent); cursor:pointer; font-size:.9rem; transition:all .2s; margin-bottom:1.5rem; }
+.btn-add:hover { background:var(--accent); color:#fff; }
+.btn-danger:hover { border-color:var(--red); color:var(--red); }
+
+/* Modal */
+.modal-overlay { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.6); z-index:100; align-items:center; justify-content:center; }
+.modal-overlay.show { display:flex; }
+.modal { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:1.5rem; width:90%; max-width:520px; max-height:90vh; overflow-y:auto; }
+.modal h2 { font-size:1.2rem; color:var(--accent); margin-bottom:1rem; }
+.form-group { margin-bottom:.8rem; }
+.form-group label { display:block; font-size:.82rem; color:var(--text2); margin-bottom:.3rem; }
+.form-group input, .form-group select, .form-group textarea {
+    width:100%; padding:.5rem .7rem; background:var(--bg); border:1px solid var(--border);
+    border-radius:6px; color:var(--text); font-size:.9rem; font-family:inherit;
+    transition: background .3s, border-color .3s, color .3s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline:none; border-color:var(--accent); }
+.form-group textarea { resize:vertical; min-height:60px; }
+.modal-actions { display:flex; gap:.5rem; justify-content:flex-end; margin-top:1rem; }
+.btn-primary { padding:.5rem 1rem; border-radius:6px; border:none; background:var(--accent); color:#fff; cursor:pointer; font-size:.9rem; }
+.btn-primary:hover { opacity:.9; }
+.btn-cancel { padding:.5rem 1rem; border-radius:6px; border:1px solid var(--border); background:var(--bg3); color:var(--text2); cursor:pointer; font-size:.9rem; }
+
+.empty-state { text-align:center; color:var(--text2); padding:3rem; font-size:.95rem; }
+footer { margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--border-m); text-align:center; font-size:.8rem; color:var(--text2); }
+footer a { color:var(--accent); text-decoration:none; }
+
+/* Data management */
+.data-actions { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--border-m); display:flex; gap:.5rem; justify-content:center; }
+
+@media (max-width:600px) {
+    .tabs { gap:.3rem; }
+    .tab { padding:.3rem .7rem; font-size:.8rem; }
+    header { flex-direction:column; }
+    .header-actions { margin-top:.5rem; }
+}
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div>
+            <h1>Research Dashboard</h1>
+            <p class="subtitle">Projects, papers, and things in progress</p>
+        </div>
+        <div class="header-actions">
+            <a href="../" class="icon-link" title="Homepage"><svg height="22" width="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+            <a href="../papers/" class="icon-link" title="Paper Tracker"><svg height="22" width="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></a>
+            <button id="theme-toggle" class="theme-btn" title="Toggle theme">
+                <svg id="icon-moon" height="20" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg id="icon-sun" height="20" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <button class="btn-add" onclick="openModal()">+ New Project</button>
+
+    <div class="tabs" id="tabs"></div>
+    <div class="project-list" id="project-list"></div>
+
+    <div class="data-actions">
+        <button class="btn-sm" onclick="exportData()">Export JSON</button>
+        <button class="btn-sm" onclick="document.getElementById('import-file').click()">Import JSON</button>
+        <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
+    </div>
+
+    <footer>
+        <p><a href="../">Shengchen Ling</a> &middot; Data stored locally in your browser</p>
+    </footer>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal">
+    <div class="modal">
+        <h2 id="modal-title">New Project</h2>
+        <input type="hidden" id="edit-id">
+        <div class="form-group">
+            <label>Title *</label>
+            <input type="text" id="f-title" placeholder="Paper title or project name">
+        </div>
+        <div class="form-group">
+            <label>Category</label>
+            <select id="f-category">
+                <option value="paper">Paper</option>
+                <option value="project">Project</option>
+                <option value="opensource">Open Source</option>
+                <option value="idea">Idea / Exploration</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Status</label>
+            <select id="f-status">
+                <option value="preparing">Preparing</option>
+                <option value="submitted">Submitted / Under Review</option>
+                <option value="review">Revision / Rebuttal</option>
+                <option value="accepted">Accepted</option>
+                <option value="rejected">Rejected</option>
+                <option value="active">Active / In Progress</option>
+                <option value="paused">Paused</option>
+                <option value="completed">Completed</option>
+                <option value="idea">Idea / Brainstorming</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Target Venue / Platform</label>
+            <input type="text" id="f-venue" placeholder="e.g., IEEE S&P 2026, GitHub, etc.">
+        </div>
+        <div class="form-group">
+            <label>Collaborators</label>
+            <input type="text" id="f-collaborators" placeholder="e.g., Alice, Bob, Prof. Wang">
+        </div>
+        <div class="form-group">
+            <label>Deadline / ETA</label>
+            <input type="date" id="f-deadline">
+        </div>
+        <div class="form-group">
+            <label>Description / Notes</label>
+            <textarea id="f-desc" placeholder="What's the current state? What's blocking?"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Tags (comma-separated)</label>
+            <input type="text" id="f-tags" placeholder="e.g., DeFi, smart-contract, MEV">
+        </div>
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+            <button class="btn-primary" onclick="saveProject()">Save</button>
+        </div>
+    </div>
+</div>
+
+<script>
+// Theme
+(function(){const s=localStorage.getItem('theme');if(s)document.documentElement.setAttribute('data-theme',s)})();
+document.getElementById('theme-toggle').addEventListener('click',()=>{
+    const h=document.documentElement,c=h.getAttribute('data-theme'),n=c==='dark'?'light':'dark';
+    h.setAttribute('data-theme',n);localStorage.setItem('theme',n);
+    document.getElementById('icon-moon').style.display=n==='dark'?'block':'none';
+    document.getElementById('icon-sun').style.display=n==='light'?'block':'none';
+});
+
+const STORAGE_KEY = 'research_dashboard_projects';
+let projects = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+let activeTab = 'all';
+
+const CATEGORIES = {paper:'Paper',project:'Project',opensource:'Open Source',idea:'Idea'};
+const STATUS_LABELS = {
+    preparing:'Preparing',submitted:'Submitted',review:'In Review',
+    accepted:'Accepted',rejected:'Rejected',active:'Active',
+    paused:'Paused',completed:'Completed',idea:'Idea'
+};
+
+function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify(projects)); }
+
+function render() {
+    // Tabs
+    const cats = {all: projects.length};
+    projects.forEach(p => { cats[p.category] = (cats[p.category]||0)+1; });
+    const tabsEl = document.getElementById('tabs');
+    tabsEl.innerHTML = Object.entries({all:'All',...CATEGORIES}).map(([k,v]) =>
+        cats[k] ? `<span class="tab ${activeTab===k?'active':''}" onclick="setTab('${k}')">${v}<span class="count">${cats[k]}</span></span>` : ''
+    ).join('');
+
+    // Filter
+    let filtered = activeTab === 'all' ? projects : projects.filter(p => p.category === activeTab);
+    // Sort: active/preparing/submitted first, then by deadline
+    const statusOrder = {active:0,preparing:1,submitted:2,review:3,idea:4,paused:5,completed:6,accepted:7,rejected:8};
+    filtered.sort((a,b) => (statusOrder[a.status]||5) - (statusOrder[b.status]||5) || (a.deadline||'z').localeCompare(b.deadline||'z'));
+
+    const listEl = document.getElementById('project-list');
+    if (filtered.length === 0) {
+        listEl.innerHTML = '<div class="empty-state">No projects yet. Click "+ New Project" to get started.</div>';
+        return;
+    }
+
+    listEl.innerHTML = filtered.map(p => {
+        const tags = (p.tags||[]).map(t => `<span class="project-tag">${t}</span>`).join('');
+        const deadline = p.deadline ? `<span>Deadline: ${p.deadline}</span>` : '';
+        const collabs = p.collaborators ? `<span>w/ ${p.collaborators}</span>` : '';
+        const venue = p.venue ? `<span>${p.venue}</span>` : '';
+        const daysLeft = p.deadline ? getDaysLeft(p.deadline) : '';
+        return `<div class="project-card">
+            <div class="project-header">
+                <span class="project-title">${p.title}</span>
+                <span class="badge badge-${p.status}">${STATUS_LABELS[p.status]||p.status}${daysLeft}</span>
+            </div>
+            <div class="project-meta">${venue}${collabs}${deadline}</div>
+            ${p.desc ? `<div class="project-desc">${p.desc}</div>` : ''}
+            ${tags ? `<div class="project-tags">${tags}</div>` : ''}
+            <div class="project-actions">
+                <button class="btn-sm" onclick="editProject('${p.id}')">Edit</button>
+                <button class="btn-sm btn-danger" onclick="deleteProject('${p.id}')">Delete</button>
+            </div>
+        </div>`;
+    }).join('');
+}
+
+function getDaysLeft(deadline) {
+    const diff = Math.ceil((new Date(deadline) - new Date()) / 86400000);
+    if (diff < 0) return ` (${-diff}d overdue)`;
+    if (diff === 0) return ' (today!)';
+    if (diff <= 7) return ` (${diff}d left)`;
+    return '';
+}
+
+function setTab(t) { activeTab = t; render(); }
+
+function openModal(id) {
+    document.getElementById('modal').classList.add('show');
+    document.getElementById('modal-title').textContent = id ? 'Edit Project' : 'New Project';
+    if (id) {
+        const p = projects.find(x => x.id === id);
+        if (!p) return;
+        document.getElementById('edit-id').value = p.id;
+        document.getElementById('f-title').value = p.title;
+        document.getElementById('f-category').value = p.category;
+        document.getElementById('f-status').value = p.status;
+        document.getElementById('f-venue').value = p.venue || '';
+        document.getElementById('f-collaborators').value = p.collaborators || '';
+        document.getElementById('f-deadline').value = p.deadline || '';
+        document.getElementById('f-desc').value = p.desc || '';
+        document.getElementById('f-tags').value = (p.tags||[]).join(', ');
+    } else {
+        document.getElementById('edit-id').value = '';
+        ['f-title','f-venue','f-collaborators','f-deadline','f-desc','f-tags'].forEach(id => document.getElementById(id).value = '');
+        document.getElementById('f-category').value = 'paper';
+        document.getElementById('f-status').value = 'preparing';
+    }
+}
+
+function closeModal() { document.getElementById('modal').classList.remove('show'); }
+
+function saveProject() {
+    const title = document.getElementById('f-title').value.trim();
+    if (!title) return alert('Title is required');
+    const editId = document.getElementById('edit-id').value;
+    const data = {
+        id: editId || Date.now().toString(36) + Math.random().toString(36).slice(2,6),
+        title,
+        category: document.getElementById('f-category').value,
+        status: document.getElementById('f-status').value,
+        venue: document.getElementById('f-venue').value.trim(),
+        collaborators: document.getElementById('f-collaborators').value.trim(),
+        deadline: document.getElementById('f-deadline').value,
+        desc: document.getElementById('f-desc').value.trim(),
+        tags: document.getElementById('f-tags').value.split(',').map(t=>t.trim()).filter(Boolean),
+        updated: new Date().toISOString().slice(0,10),
+    };
+    if (editId) {
+        const idx = projects.findIndex(p => p.id === editId);
+        if (idx >= 0) projects[idx] = {...projects[idx], ...data};
+    } else {
+        data.created = data.updated;
+        projects.push(data);
+    }
+    save(); closeModal(); render();
+}
+
+function editProject(id) { openModal(id); }
+
+function deleteProject(id) {
+    if (!confirm('Delete this project?')) return;
+    projects = projects.filter(p => p.id !== id);
+    save(); render();
+}
+
+function exportData() {
+    const blob = new Blob([JSON.stringify(projects, null, 2)], {type:'application/json'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+    a.download = 'research_dashboard_' + new Date().toISOString().slice(0,10) + '.json';
+    a.click();
+}
+
+function importData(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+        try {
+            const data = JSON.parse(e.target.result);
+            if (Array.isArray(data)) {
+                if (confirm(`Import ${data.length} projects? This will replace current data.`)) {
+                    projects = data; save(); render();
+                }
+            }
+        } catch(e) { alert('Invalid JSON file'); }
+    };
+    reader.readAsText(file);
+    event.target.value = '';
+}
+
+render();
+</script>
+</body>
+</html>
