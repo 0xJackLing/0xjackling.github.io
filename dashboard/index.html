@@ -14,6 +14,7 @@
     --green-bg: rgba(63,185,80,0.12); --yellow-bg: rgba(210,153,34,0.12);
     --red-bg: rgba(248,81,73,0.12); --purple-bg: rgba(188,140,255,0.12);
     --blue-bg: rgba(88,166,255,0.12);
+    --lv1: #161b22; --lv2: #0e4429; --lv3: #006d32; --lv4: #26a641;
 }
 [data-theme="light"] {
     --bg: #fff; --bg2: #f6f8fa; --bg3: #e8ecf0;
@@ -24,9 +25,10 @@
     --green-bg: rgba(26,127,55,0.08); --yellow-bg: rgba(154,103,0,0.08);
     --red-bg: rgba(207,34,46,0.08); --purple-bg: rgba(130,80,223,0.08);
     --blue-bg: rgba(9,105,218,0.08);
+    --lv1: #ebedf0; --lv2: #9be9a8; --lv3: #40c463; --lv4: #216e39;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height:1.6; transition: background .3s, color .3s; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; transition: background .3s, color .3s; }
 .container { max-width:960px; margin:0 auto; padding:2rem 1rem; }
 header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:2rem; padding-bottom:1.5rem; border-bottom:1px solid var(--border-m); }
 h1 { font-size:1.8rem; color:var(--accent); }
@@ -37,44 +39,55 @@ h1 { font-size:1.8rem; color:var(--accent); }
 .theme-btn { background:none; border:1px solid var(--border); border-radius:6px; padding:.3rem; cursor:pointer; color:var(--text2); display:flex; align-items:center; transition: color .2s, border-color .2s; }
 .theme-btn:hover { color:var(--accent); border-color:var(--accent); }
 
-/* Status badges */
-.badge { display:inline-block; padding:.15rem .55rem; border-radius:12px; font-size:.72rem; font-weight:500; }
+.badge { display:inline-block; padding:.15rem .55rem; border-radius:12px; font-size:.72rem; font-weight:500; white-space:nowrap; }
 .badge-submitted { background:var(--yellow-bg); color:var(--yellow); }
-.badge-preparing { background:var(--blue-bg); color:var(--accent); }
 .badge-active { background:var(--green-bg); color:var(--green); }
-.badge-review { background:var(--purple-bg); color:var(--purple); }
-.badge-accepted { background:var(--green-bg); color:var(--green); border:1px solid var(--green); }
-.badge-rejected { background:var(--red-bg); color:var(--red); }
-.badge-paused { background:var(--bg3); color:var(--text2); }
-.badge-completed { background:var(--green-bg); color:var(--green); }
-.badge-idea { background:var(--purple-bg); color:var(--purple); }
 
-/* Category tabs */
 .tabs { display:flex; gap:.5rem; margin-bottom:1.5rem; flex-wrap:wrap; }
 .tab { padding:.4rem 1rem; border-radius:20px; font-size:.85rem; cursor:pointer; border:1px solid var(--border); background:var(--bg2); color:var(--text2); transition:all .2s; }
 .tab:hover { border-color:var(--accent); color:var(--accent); }
 .tab.active { background:var(--accent-m); color:var(--accent); border-color:var(--accent); }
 .tab .count { margin-left:.3rem; opacity:.7; }
 
-/* Project cards */
 .project-list { display:flex; flex-direction:column; gap:.8rem; }
 .project-card { background:var(--bg2); border:1px solid var(--border-m); border-radius:8px; padding:1rem 1.2rem; transition: border-color .2s, background .3s; }
 .project-card:hover { border-color:var(--border); }
-.project-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:.4rem; }
-.project-title { font-size:1rem; font-weight:600; }
+.project-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:.4rem; gap:.5rem; }
+.project-title { font-size:1rem; font-weight:600; flex:1; }
 .project-meta { font-size:.8rem; color:var(--text2); margin-bottom:.4rem; }
 .project-meta span { margin-right:1rem; }
 .project-desc { font-size:.85rem; color:var(--text2); margin-bottom:.5rem; }
-.project-tags { display:flex; gap:.3rem; flex-wrap:wrap; }
-.project-tag { font-size:.7rem; padding:.1rem .5rem; background:var(--accent-m); color:var(--accent); border-radius:10px; }
-.project-actions { display:flex; gap:.4rem; margin-top:.6rem; }
+
+/* Activity heatmap (GitHub-style) */
+.activity-section { margin-top:.6rem; }
+.activity-label { font-size:.72rem; color:var(--text2); margin-bottom:.3rem; }
+.heatmap { display:flex; gap:2px; flex-wrap:wrap; }
+.heatmap-cell { width:12px; height:12px; border-radius:2px; background:var(--lv1); cursor:default; position:relative; }
+.heatmap-cell[data-level="1"] { background:var(--lv2); }
+.heatmap-cell[data-level="2"] { background:var(--lv3); }
+.heatmap-cell[data-level="3"] { background:var(--lv4); }
+.heatmap-cell[title]:hover::after {
+    content:attr(title); position:absolute; bottom:18px; left:50%; transform:translateX(-50%);
+    background:var(--bg3); color:var(--text); padding:2px 6px; border-radius:4px;
+    font-size:.7rem; white-space:nowrap; z-index:10; border:1px solid var(--border);
+}
+
+/* Log buttons */
+.log-btns { display:flex; gap:.3rem; margin-top:.5rem; }
+.log-btn { padding:.25rem .6rem; font-size:.73rem; border-radius:5px; border:1px solid var(--border); background:var(--bg3); color:var(--text2); cursor:pointer; transition:all .15s; }
+.log-btn:hover { border-color:var(--accent); color:var(--accent); }
+.log-btn.l1:hover { border-color:var(--lv2); color:var(--lv2); }
+.log-btn.l2:hover { border-color:var(--lv3); color:var(--lv3); }
+.log-btn.l3:hover { border-color:var(--lv4); color:var(--lv4); }
+.log-btn.done { opacity:.5; cursor:default; }
+
+.project-actions { display:flex; gap:.4rem; margin-top:.6rem; border-top:1px solid var(--border-m); padding-top:.5rem; }
 .btn-sm { padding:.2rem .6rem; font-size:.75rem; border-radius:5px; border:1px solid var(--border); background:var(--bg3); color:var(--text2); cursor:pointer; transition:all .2s; }
 .btn-sm:hover { border-color:var(--accent); color:var(--accent); }
 .btn-add { padding:.5rem 1.2rem; border-radius:6px; border:1px solid var(--accent); background:var(--accent-m); color:var(--accent); cursor:pointer; font-size:.9rem; transition:all .2s; margin-bottom:1.5rem; }
 .btn-add:hover { background:var(--accent); color:#fff; }
 .btn-danger:hover { border-color:var(--red); color:var(--red); }
 
-/* Modal */
 .modal-overlay { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.6); z-index:100; align-items:center; justify-content:center; }
 .modal-overlay.show { display:flex; }
 .modal { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:1.5rem; width:90%; max-width:520px; max-height:90vh; overflow-y:auto; }
@@ -83,8 +96,7 @@ h1 { font-size:1.8rem; color:var(--accent); }
 .form-group label { display:block; font-size:.82rem; color:var(--text2); margin-bottom:.3rem; }
 .form-group input, .form-group select, .form-group textarea {
     width:100%; padding:.5rem .7rem; background:var(--bg); border:1px solid var(--border);
-    border-radius:6px; color:var(--text); font-size:.9rem; font-family:inherit;
-    transition: background .3s, border-color .3s, color .3s;
+    border-radius:6px; color:var(--text); font-size:.9rem; font-family:inherit; transition: background .3s, border-color .3s, color .3s;
 }
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline:none; border-color:var(--accent); }
 .form-group textarea { resize:vertical; min-height:60px; }
@@ -96,8 +108,6 @@ h1 { font-size:1.8rem; color:var(--accent); }
 .empty-state { text-align:center; color:var(--text2); padding:3rem; font-size:.95rem; }
 footer { margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--border-m); text-align:center; font-size:.8rem; color:var(--text2); }
 footer a { color:var(--accent); text-decoration:none; }
-
-/* Data management */
 .data-actions { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--border-m); display:flex; gap:.5rem; justify-content:center; }
 
 @media (max-width:600px) {
@@ -105,6 +115,7 @@ footer a { color:var(--accent); text-decoration:none; }
     .tab { padding:.3rem .7rem; font-size:.8rem; }
     header { flex-direction:column; }
     .header-actions { margin-top:.5rem; }
+    .heatmap-cell { width:10px; height:10px; }
 }
     </style>
 </head>
@@ -113,7 +124,7 @@ footer a { color:var(--accent); text-decoration:none; }
     <header>
         <div>
             <h1>Research Dashboard</h1>
-            <p class="subtitle">Projects, papers, and things in progress</p>
+            <p class="subtitle">Papers, projects, and things in progress</p>
         </div>
         <div class="header-actions">
             <a href="../" class="icon-link" title="Homepage"><svg height="22" width="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
@@ -155,22 +166,13 @@ footer a { color:var(--accent); text-decoration:none; }
             <select id="f-category">
                 <option value="paper">Paper</option>
                 <option value="project">Project</option>
-                <option value="opensource">Open Source</option>
-                <option value="idea">Idea / Exploration</option>
             </select>
         </div>
         <div class="form-group">
             <label>Status</label>
             <select id="f-status">
-                <option value="preparing">Preparing</option>
-                <option value="submitted">Submitted / Under Review</option>
-                <option value="review">Revision / Rebuttal</option>
-                <option value="accepted">Accepted</option>
-                <option value="rejected">Rejected</option>
                 <option value="active">Active / In Progress</option>
-                <option value="paused">Paused</option>
-                <option value="completed">Completed</option>
-                <option value="idea">Idea / Brainstorming</option>
+                <option value="submitted">Submitted / Under Review</option>
             </select>
         </div>
         <div class="form-group">
@@ -183,15 +185,18 @@ footer a { color:var(--accent); text-decoration:none; }
         </div>
         <div class="form-group">
             <label>Deadline / ETA</label>
-            <input type="date" id="f-deadline">
+            <div style="display:flex;gap:.4rem;align-items:center;">
+                <input type="date" id="f-deadline" style="flex:1;">
+                <button type="button" class="btn-sm" onclick="setDeadlineOffset(7)">1w</button>
+                <button type="button" class="btn-sm" onclick="setDeadlineOffset(14)">2w</button>
+                <button type="button" class="btn-sm" onclick="setDeadlineOffset(30)">1m</button>
+                <button type="button" class="btn-sm" onclick="setDeadlineOffset(60)">2m</button>
+                <button type="button" class="btn-sm" onclick="setDeadlineOffset(90)">3m</button>
+            </div>
         </div>
         <div class="form-group">
             <label>Description / Notes</label>
-            <textarea id="f-desc" placeholder="What's the current state? What's blocking?"></textarea>
-        </div>
-        <div class="form-group">
-            <label>Tags (comma-separated)</label>
-            <input type="text" id="f-tags" placeholder="e.g., DeFi, smart-contract, MEV">
+            <textarea id="f-desc" placeholder="Current state, blockers, next steps..."></textarea>
         </div>
         <div class="modal-actions">
             <button class="btn-cancel" onclick="closeModal()">Cancel</button>
@@ -210,18 +215,49 @@ document.getElementById('theme-toggle').addEventListener('click',()=>{
     document.getElementById('icon-sun').style.display=n==='light'?'block':'none';
 });
 
-const STORAGE_KEY = 'research_dashboard_projects';
+const STORAGE_KEY = 'research_dashboard_v2';
 let projects = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
 let activeTab = 'all';
 
-const CATEGORIES = {paper:'Paper',project:'Project',opensource:'Open Source',idea:'Idea'};
-const STATUS_LABELS = {
-    preparing:'Preparing',submitted:'Submitted',review:'In Review',
-    accepted:'Accepted',rejected:'Rejected',active:'Active',
-    paused:'Paused',completed:'Completed',idea:'Idea'
-};
+const CATEGORIES = {paper:'Paper', project:'Project'};
+const STATUS_LABELS = {active:'Active', submitted:'Submitted'};
+const LEVEL_LABELS = ['Glanced', 'Worked on', 'Major progress'];
 
 function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify(projects)); }
+
+function today() { return new Date().toISOString().slice(0,10); }
+
+// Get last N days as array of date strings
+function lastNDays(n) {
+    const days = [];
+    for (let i = n - 1; i >= 0; i--) {
+        const d = new Date(); d.setDate(d.getDate() - i);
+        days.push(d.toISOString().slice(0,10));
+    }
+    return days;
+}
+
+function renderHeatmap(project) {
+    const logs = project.activity || {};
+    const days = lastNDays(28); // 4 weeks
+    return days.map(d => {
+        const lv = logs[d] || 0;
+        const label = lv ? `${d}: ${LEVEL_LABELS[lv-1]}` : d;
+        return `<div class="heatmap-cell" data-level="${lv}" title="${label}"></div>`;
+    }).join('');
+}
+
+function logActivity(id, level) {
+    const p = projects.find(x => x.id === id);
+    if (!p) return;
+    if (!p.activity) p.activity = {};
+    p.activity[today()] = level;
+    save(); render();
+}
+
+function todayLogged(project) {
+    return (project.activity || {})[today()] || 0;
+}
 
 function render() {
     // Tabs
@@ -232,11 +268,10 @@ function render() {
         cats[k] ? `<span class="tab ${activeTab===k?'active':''}" onclick="setTab('${k}')">${v}<span class="count">${cats[k]}</span></span>` : ''
     ).join('');
 
-    // Filter
     let filtered = activeTab === 'all' ? projects : projects.filter(p => p.category === activeTab);
-    // Sort: active/preparing/submitted first, then by deadline
-    const statusOrder = {active:0,preparing:1,submitted:2,review:3,idea:4,paused:5,completed:6,accepted:7,rejected:8};
-    filtered.sort((a,b) => (statusOrder[a.status]||5) - (statusOrder[b.status]||5) || (a.deadline||'z').localeCompare(b.deadline||'z'));
+    // Sort: active first, submitted last (waiting for result)
+    const statusOrder = {active:0, submitted:1};
+    filtered.sort((a,b) => (statusOrder[a.status]??2) - (statusOrder[b.status]??2) || (a.deadline||'z').localeCompare(b.deadline||'z'));
 
     const listEl = document.getElementById('project-list');
     if (filtered.length === 0) {
@@ -245,19 +280,28 @@ function render() {
     }
 
     listEl.innerHTML = filtered.map(p => {
-        const tags = (p.tags||[]).map(t => `<span class="project-tag">${t}</span>`).join('');
-        const deadline = p.deadline ? `<span>Deadline: ${p.deadline}</span>` : '';
+        const deadline = p.deadline ? `<span>Deadline: ${p.deadline}${getDaysLeft(p.deadline)}</span>` : '';
         const collabs = p.collaborators ? `<span>w/ ${p.collaborators}</span>` : '';
         const venue = p.venue ? `<span>${p.venue}</span>` : '';
-        const daysLeft = p.deadline ? getDaysLeft(p.deadline) : '';
+        const logged = todayLogged(p);
+
         return `<div class="project-card">
             <div class="project-header">
                 <span class="project-title">${p.title}</span>
-                <span class="badge badge-${p.status}">${STATUS_LABELS[p.status]||p.status}${daysLeft}</span>
+                <span class="badge badge-${p.status}">${STATUS_LABELS[p.status]||p.status}</span>
             </div>
             <div class="project-meta">${venue}${collabs}${deadline}</div>
             ${p.desc ? `<div class="project-desc">${p.desc}</div>` : ''}
-            ${tags ? `<div class="project-tags">${tags}</div>` : ''}
+            <div class="activity-section">
+                <div class="activity-label">Last 4 weeks</div>
+                <div class="heatmap">${renderHeatmap(p)}</div>
+                <div class="log-btns">
+                    <span style="font-size:.73rem;color:var(--text2);margin-right:.2rem;">Log today:</span>
+                    <button class="log-btn l1 ${logged>=1?'done':''}" onclick="logActivity('${p.id}',1)">${logged===1?'Glanced':'Glanced'}</button>
+                    <button class="log-btn l2 ${logged>=2?'done':''}" onclick="logActivity('${p.id}',2)">${logged===2?'Worked':'Worked on'}</button>
+                    <button class="log-btn l3 ${logged>=3?'done':''}" onclick="logActivity('${p.id}',3)">${logged===3?'Major':'Major progress'}</button>
+                </div>
+            </div>
             <div class="project-actions">
                 <button class="btn-sm" onclick="editProject('${p.id}')">Edit</button>
                 <button class="btn-sm btn-danger" onclick="deleteProject('${p.id}')">Delete</button>
@@ -270,7 +314,7 @@ function getDaysLeft(deadline) {
     const diff = Math.ceil((new Date(deadline) - new Date()) / 86400000);
     if (diff < 0) return ` (${-diff}d overdue)`;
     if (diff === 0) return ' (today!)';
-    if (diff <= 7) return ` (${diff}d left)`;
+    if (diff <= 14) return ` (${diff}d)`;
     return '';
 }
 
@@ -290,16 +334,20 @@ function openModal(id) {
         document.getElementById('f-collaborators').value = p.collaborators || '';
         document.getElementById('f-deadline').value = p.deadline || '';
         document.getElementById('f-desc').value = p.desc || '';
-        document.getElementById('f-tags').value = (p.tags||[]).join(', ');
     } else {
         document.getElementById('edit-id').value = '';
-        ['f-title','f-venue','f-collaborators','f-deadline','f-desc','f-tags'].forEach(id => document.getElementById(id).value = '');
+        ['f-title','f-venue','f-collaborators','f-deadline','f-desc'].forEach(id => document.getElementById(id).value = '');
         document.getElementById('f-category').value = 'paper';
-        document.getElementById('f-status').value = 'preparing';
+        document.getElementById('f-status').value = 'active';
     }
 }
 
 function closeModal() { document.getElementById('modal').classList.remove('show'); }
+
+function setDeadlineOffset(days) {
+    const d = new Date(); d.setDate(d.getDate() + days);
+    document.getElementById('f-deadline').value = d.toISOString().slice(0, 10);
+}
 
 function saveProject() {
     const title = document.getElementById('f-title').value.trim();
@@ -314,13 +362,13 @@ function saveProject() {
         collaborators: document.getElementById('f-collaborators').value.trim(),
         deadline: document.getElementById('f-deadline').value,
         desc: document.getElementById('f-desc').value.trim(),
-        tags: document.getElementById('f-tags').value.split(',').map(t=>t.trim()).filter(Boolean),
-        updated: new Date().toISOString().slice(0,10),
+        updated: today(),
     };
     if (editId) {
         const idx = projects.findIndex(p => p.id === editId);
-        if (idx >= 0) projects[idx] = {...projects[idx], ...data};
+        if (idx >= 0) { data.activity = projects[idx].activity || {}; projects[idx] = data; }
     } else {
+        data.activity = {};
         data.created = data.updated;
         projects.push(data);
     }
@@ -338,7 +386,7 @@ function deleteProject(id) {
 function exportData() {
     const blob = new Blob([JSON.stringify(projects, null, 2)], {type:'application/json'});
     const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
-    a.download = 'research_dashboard_' + new Date().toISOString().slice(0,10) + '.json';
+    a.download = 'research_dashboard_' + today() + '.json';
     a.click();
 }
 
@@ -359,6 +407,9 @@ function importData(event) {
     reader.readAsText(file);
     event.target.value = '';
 }
+
+// Close modal on overlay click
+document.getElementById('modal').addEventListener('click', e => { if (e.target === e.currentTarget) closeModal(); });
 
 render();
 </script>
