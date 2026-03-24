@@ -29,63 +29,63 @@
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; transition: background .3s, color .3s; }
-.container { max-width:960px; margin:0 auto; padding:2rem 1rem; }
-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:2rem; padding-bottom:1.5rem; border-bottom:1px solid var(--border-m); }
-h1 { font-size:1.8rem; color:var(--accent); }
-.subtitle { color:var(--text2); font-size:.9rem; margin-top:.2rem; }
+.container { max-width:960px; margin:0 auto; padding:1.5rem 1rem; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:1.2rem; padding-bottom:1rem; border-bottom:1px solid var(--border-m); }
+h1 { font-size:1.5rem; color:var(--accent); }
+.subtitle { color:var(--text2); font-size:.85rem; }
 .header-actions { display:flex; gap:.6rem; align-items:center; }
 .icon-link { color:var(--text2); transition:color .2s; }
 .icon-link:hover { color:var(--accent); }
 .theme-btn { background:none; border:1px solid var(--border); border-radius:6px; padding:.3rem; cursor:pointer; color:var(--text2); display:flex; align-items:center; transition: color .2s, border-color .2s; }
 .theme-btn:hover { color:var(--accent); border-color:var(--accent); }
 
-.badge { display:inline-block; padding:.15rem .55rem; border-radius:12px; font-size:.72rem; font-weight:500; white-space:nowrap; }
-.badge-submitted { background:var(--yellow-bg); color:var(--yellow); }
-.badge-active { background:var(--green-bg); color:var(--green); }
-
-.tabs { display:flex; gap:.5rem; margin-bottom:1.5rem; flex-wrap:wrap; }
-.tab { padding:.4rem 1rem; border-radius:20px; font-size:.85rem; cursor:pointer; border:1px solid var(--border); background:var(--bg2); color:var(--text2); transition:all .2s; }
+.toolbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; }
+.tabs { display:flex; gap:.4rem; flex-wrap:wrap; }
+.tab { padding:.3rem .8rem; border-radius:20px; font-size:.82rem; cursor:pointer; border:1px solid var(--border); background:var(--bg2); color:var(--text2); transition:all .2s; }
 .tab:hover { border-color:var(--accent); color:var(--accent); }
 .tab.active { background:var(--accent-m); color:var(--accent); border-color:var(--accent); }
 .tab .count { margin-left:.3rem; opacity:.7; }
+.btn-add { padding:.3rem .9rem; border-radius:6px; border:1px solid var(--accent); background:var(--accent-m); color:var(--accent); cursor:pointer; font-size:.82rem; transition:all .2s; }
+.btn-add:hover { background:var(--accent); color:#fff; }
 
-.project-list { display:flex; flex-direction:column; gap:.8rem; }
-.project-card { background:var(--bg2); border:1px solid var(--border-m); border-radius:8px; padding:1rem 1.2rem; transition: border-color .2s, background .3s; }
+.badge { display:inline-block; padding:.1rem .5rem; border-radius:12px; font-size:.7rem; font-weight:500; white-space:nowrap; }
+.badge-submitted { background:var(--yellow-bg); color:var(--yellow); }
+.badge-active { background:var(--green-bg); color:var(--green); }
+
+.project-list { display:flex; flex-direction:column; gap:.5rem; }
+.project-card { background:var(--bg2); border:1px solid var(--border-m); border-radius:8px; padding:.8rem 1rem; transition: border-color .2s, background .3s; }
 .project-card:hover { border-color:var(--border); }
-.project-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:.4rem; gap:.5rem; }
-.project-title { font-size:1rem; font-weight:600; flex:1; }
-.project-meta { font-size:.8rem; color:var(--text2); margin-bottom:.4rem; }
-.project-meta span { margin-right:1rem; }
-.project-desc { font-size:.85rem; color:var(--text2); margin-bottom:.5rem; }
+.project-header { display:flex; justify-content:space-between; align-items:center; gap:.5rem; }
+.project-title { font-size:.95rem; font-weight:600; flex:1; }
+.project-meta { font-size:.78rem; color:var(--text2); display:flex; flex-wrap:wrap; gap:0; }
+.project-meta span { margin-right:.8rem; }
+.project-desc { font-size:.82rem; color:var(--text2); margin-top:.2rem; }
 
-/* Activity heatmap (GitHub-style) */
-.activity-section { margin-top:.6rem; }
-.activity-label { font-size:.72rem; color:var(--text2); margin-bottom:.3rem; }
-.heatmap { display:flex; gap:2px; flex-wrap:wrap; }
-.heatmap-cell { width:12px; height:12px; border-radius:2px; background:var(--lv1); cursor:default; position:relative; }
+.activity-row { display:flex; align-items:center; gap:.5rem; margin-top:.4rem; flex-wrap:wrap; }
+.heatmap { display:flex; gap:2px; }
+.heatmap-cell { width:11px; height:11px; border-radius:2px; background:var(--lv1); cursor:default; position:relative; }
 .heatmap-cell[data-level="1"] { background:var(--lv2); }
 .heatmap-cell[data-level="2"] { background:var(--lv3); }
 .heatmap-cell[data-level="3"] { background:var(--lv4); }
 .heatmap-cell[title]:hover::after {
-    content:attr(title); position:absolute; bottom:18px; left:50%; transform:translateX(-50%);
+    content:attr(title); position:absolute; bottom:16px; left:50%; transform:translateX(-50%);
     background:var(--bg3); color:var(--text); padding:2px 6px; border-radius:4px;
-    font-size:.7rem; white-space:nowrap; z-index:10; border:1px solid var(--border);
+    font-size:.68rem; white-space:nowrap; z-index:10; border:1px solid var(--border);
 }
-
-/* Log buttons */
-.log-btns { display:flex; gap:.3rem; margin-top:.5rem; }
-.log-btn { padding:.25rem .6rem; font-size:.73rem; border-radius:5px; border:1px solid var(--border); background:var(--bg3); color:var(--text2); cursor:pointer; transition:all .15s; }
+.log-btns { display:flex; gap:.25rem; align-items:center; }
+.log-btn { padding:.15rem .5rem; font-size:.7rem; border-radius:4px; border:1px solid var(--border); background:var(--bg3); color:var(--text2); cursor:pointer; transition:all .15s; }
 .log-btn:hover { border-color:var(--accent); color:var(--accent); }
 .log-btn.l1:hover { border-color:var(--lv2); color:var(--lv2); }
 .log-btn.l2:hover { border-color:var(--lv3); color:var(--lv3); }
 .log-btn.l3:hover { border-color:var(--lv4); color:var(--lv4); }
 .log-btn.done { opacity:.5; cursor:default; }
 
-.project-actions { display:flex; gap:.4rem; margin-top:.6rem; border-top:1px solid var(--border-m); padding-top:.5rem; }
-.btn-sm { padding:.2rem .6rem; font-size:.75rem; border-radius:5px; border:1px solid var(--border); background:var(--bg3); color:var(--text2); cursor:pointer; transition:all .2s; }
+.card-actions { display:flex; gap:.3rem; margin-left:auto; }
+.card-actions .btn-sm { opacity:0; transition: opacity .2s, border-color .2s, color .2s; }
+.project-card:hover .card-actions .btn-sm { opacity:1; }
+
+.btn-sm { padding:.15rem .5rem; font-size:.72rem; border-radius:4px; border:1px solid var(--border); background:var(--bg3); color:var(--text2); cursor:pointer; transition:all .2s; }
 .btn-sm:hover { border-color:var(--accent); color:var(--accent); }
-.btn-add { padding:.5rem 1.2rem; border-radius:6px; border:1px solid var(--accent); background:var(--accent-m); color:var(--accent); cursor:pointer; font-size:.9rem; transition:all .2s; margin-bottom:1.5rem; }
-.btn-add:hover { background:var(--accent); color:#fff; }
 .btn-danger:hover { border-color:var(--red); color:var(--red); }
 
 .modal-overlay { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.6); z-index:100; align-items:center; justify-content:center; }
@@ -106,16 +106,18 @@ h1 { font-size:1.8rem; color:var(--accent); }
 .btn-cancel { padding:.5rem 1rem; border-radius:6px; border:1px solid var(--border); background:var(--bg3); color:var(--text2); cursor:pointer; font-size:.9rem; }
 
 .empty-state { text-align:center; color:var(--text2); padding:3rem; font-size:.95rem; }
-footer { margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--border-m); text-align:center; font-size:.8rem; color:var(--text2); }
+footer { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--border-m); text-align:center; font-size:.78rem; color:var(--text2); }
 footer a { color:var(--accent); text-decoration:none; }
-.data-actions { margin-top:2rem; padding-top:1rem; border-top:1px solid var(--border-m); display:flex; gap:.5rem; justify-content:center; }
+.data-actions { margin-top:1.5rem; padding-top:.8rem; border-top:1px solid var(--border-m); display:flex; gap:.5rem; justify-content:center; }
 
 @media (max-width:600px) {
+    .toolbar { flex-direction:column; align-items:flex-start; gap:.5rem; }
     .tabs { gap:.3rem; }
-    .tab { padding:.3rem .7rem; font-size:.8rem; }
-    header { flex-direction:column; }
+    .tab { padding:.25rem .6rem; font-size:.78rem; }
+    header { flex-direction:column; align-items:flex-start; }
     .header-actions { margin-top:.5rem; }
-    .heatmap-cell { width:10px; height:10px; }
+    .heatmap-cell { width:9px; height:9px; }
+    .activity-row { flex-direction:column; align-items:flex-start; }
 }
     </style>
 </head>
@@ -136,9 +138,11 @@ footer a { color:var(--accent); text-decoration:none; }
         </div>
     </header>
 
-    <button class="btn-add" onclick="openModal()">+ New Project</button>
+    <div class="toolbar">
+        <div class="tabs" id="tabs"></div>
+        <button class="btn-add" onclick="openModal()">+ New Project</button>
+    </div>
 
-    <div class="tabs" id="tabs"></div>
     <div class="project-list" id="project-list"></div>
 
     <div class="data-actions">
@@ -227,7 +231,6 @@ function save() { localStorage.setItem(STORAGE_KEY, JSON.stringify(projects)); }
 
 function today() { return new Date().toISOString().slice(0,10); }
 
-// Get last N days as array of date strings
 function lastNDays(n) {
     const days = [];
     for (let i = n - 1; i >= 0; i--) {
@@ -239,7 +242,7 @@ function lastNDays(n) {
 
 function renderHeatmap(project) {
     const logs = project.activity || {};
-    const days = lastNDays(28); // 4 weeks
+    const days = lastNDays(28);
     return days.map(d => {
         const lv = logs[d] || 0;
         const label = lv ? `${d}: ${LEVEL_LABELS[lv-1]}` : d;
@@ -260,7 +263,6 @@ function todayLogged(project) {
 }
 
 function render() {
-    // Tabs
     const cats = {all: projects.length};
     projects.forEach(p => { cats[p.category] = (cats[p.category]||0)+1; });
     const tabsEl = document.getElementById('tabs');
@@ -269,7 +271,6 @@ function render() {
     ).join('');
 
     let filtered = activeTab === 'all' ? projects : projects.filter(p => p.category === activeTab);
-    // Sort: active first, submitted last (waiting for result)
     const statusOrder = {active:0, submitted:1};
     filtered.sort((a,b) => (statusOrder[a.status]??2) - (statusOrder[b.status]??2) || (a.deadline||'z').localeCompare(b.deadline||'z'));
 
@@ -292,19 +293,17 @@ function render() {
             </div>
             <div class="project-meta">${venue}${collabs}${deadline}</div>
             ${p.desc ? `<div class="project-desc">${p.desc}</div>` : ''}
-            <div class="activity-section">
-                <div class="activity-label">Last 4 weeks</div>
+            <div class="activity-row">
                 <div class="heatmap">${renderHeatmap(p)}</div>
                 <div class="log-btns">
-                    <span style="font-size:.73rem;color:var(--text2);margin-right:.2rem;">Log today:</span>
-                    <button class="log-btn l1 ${logged>=1?'done':''}" onclick="logActivity('${p.id}',1)">${logged===1?'Glanced':'Glanced'}</button>
-                    <button class="log-btn l2 ${logged>=2?'done':''}" onclick="logActivity('${p.id}',2)">${logged===2?'Worked':'Worked on'}</button>
-                    <button class="log-btn l3 ${logged>=3?'done':''}" onclick="logActivity('${p.id}',3)">${logged===3?'Major':'Major progress'}</button>
+                    <button class="log-btn l1 ${logged>=1?'done':''}" onclick="logActivity('${p.id}',1)" title="Glanced">G</button>
+                    <button class="log-btn l2 ${logged>=2?'done':''}" onclick="logActivity('${p.id}',2)" title="Worked on">W</button>
+                    <button class="log-btn l3 ${logged>=3?'done':''}" onclick="logActivity('${p.id}',3)" title="Major progress">M</button>
                 </div>
-            </div>
-            <div class="project-actions">
-                <button class="btn-sm" onclick="editProject('${p.id}')">Edit</button>
-                <button class="btn-sm btn-danger" onclick="deleteProject('${p.id}')">Delete</button>
+                <div class="card-actions">
+                    <button class="btn-sm" onclick="editProject('${p.id}')">Edit</button>
+                    <button class="btn-sm btn-danger" onclick="deleteProject('${p.id}')">Delete</button>
+                </div>
             </div>
         </div>`;
     }).join('');
@@ -408,7 +407,6 @@ function importData(event) {
     event.target.value = '';
 }
 
-// Close modal on overlay click
 document.getElementById('modal').addEventListener('click', e => { if (e.target === e.currentTarget) closeModal(); });
 
 render();
