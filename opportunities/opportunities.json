@@ -126,6 +126,20 @@
     "fetched": "2026-03-28"
   },
   {
+    "id": "dorahacks_ethoxford",
+    "title": "ETH Oxford 2026",
+    "category": "hackathon",
+    "platform": "DoraHacks",
+    "url": "https://dorahacks.io/hackathon/ethoxford26",
+    "prize": "~$100,000 (est.)",
+    "deadline": "",
+    "start_date": "",
+    "location": "Oxford, UK",
+    "description": "3-day in-person hackathon at the University of Oxford. Builders, researchers, and founders collaborate on blockchain, AI, and technology. 2025 edition had $100K prize pool.",
+    "tags": ["Ethereum", "AI", "In-person"],
+    "fetched": "2026-03-28"
+  },
+  {
     "id": "ethglobal_newyork_2026",
     "title": "ETHGlobal New York",
     "category": "hackathon",
