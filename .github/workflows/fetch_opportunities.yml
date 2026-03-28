@@ -1,0 +1,32 @@
+name: Weekly Opportunity Fetch
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'  # Every Monday at UTC 02:00
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch opportunities
+        run: python3 opportunities/fetch.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add opportunities/opportunities.json
+          git diff --staged --quiet || git commit -m "Auto-fetch: update opportunities $(date -u +%Y-%m-%d)"
+          git push
