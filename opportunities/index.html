@@ -6,20 +6,16 @@
     <title>Web3 &amp; AI Opportunities</title>
     <style>
 :root,[data-theme="dark"]{
-    --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;
-    --border:#30363d;--border-m:#21262d;
-    --text:#c9d1d9;--text2:#8b949e;
-    --accent:#58a6ff;--accent-m:rgba(31,111,235,0.13);
+    --bg:#0d1117;--bg2:#161b22;--bg3:#21262d;--border:#30363d;--border-m:#21262d;
+    --text:#c9d1d9;--text2:#8b949e;--accent:#58a6ff;--accent-m:rgba(31,111,235,0.13);
     --green:#3fb950;--yellow:#d29922;--red:#f85149;--purple:#bc8cff;--cyan:#39d2c0;
     --green-bg:rgba(63,185,80,0.12);--yellow-bg:rgba(210,153,34,0.12);
     --red-bg:rgba(248,81,73,0.12);--purple-bg:rgba(188,140,255,0.12);
     --cyan-bg:rgba(57,210,192,0.12);--blue-bg:rgba(88,166,255,0.12);
 }
 [data-theme="light"]{
-    --bg:#fff;--bg2:#f6f8fa;--bg3:#e8ecf0;
-    --border:#d0d7de;--border-m:#d8dee4;
-    --text:#1f2328;--text2:#656d76;
-    --accent:#0969da;--accent-m:rgba(9,105,218,0.1);
+    --bg:#fff;--bg2:#f6f8fa;--bg3:#e8ecf0;--border:#d0d7de;--border-m:#d8dee4;
+    --text:#1f2328;--text2:#656d76;--accent:#0969da;--accent-m:rgba(9,105,218,0.1);
     --green:#1a7f37;--yellow:#9a6700;--red:#cf222e;--purple:#8250df;--cyan:#0e8a7a;
     --green-bg:rgba(26,127,55,0.08);--yellow-bg:rgba(154,103,0,0.08);
     --red-bg:rgba(207,34,46,0.08);--purple-bg:rgba(130,80,223,0.08);
@@ -27,51 +23,44 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background .3s,color .3s}
-.container{max-width:1060px;margin:0 auto;padding:1.5rem 1rem}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
+.container{max-width:960px;margin:0 auto;padding:1.5rem 1rem}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 
-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.2rem;padding-bottom:1rem;border-bottom:1px solid var(--border-m)}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;padding-bottom:.8rem;border-bottom:1px solid var(--border-m)}
 h1{font-size:1.5rem;color:var(--accent)}
-.subtitle{color:var(--text2);font-size:.85rem}
+.subtitle{color:var(--text2);font-size:.82rem}
 .header-actions{display:flex;gap:.6rem;align-items:center}
-.icon-link{color:var(--text2);transition:color .2s}
-.icon-link:hover{color:var(--accent)}
+.icon-link{color:var(--text2);transition:color .2s}.icon-link:hover{color:var(--accent)}
 .theme-btn{background:none;border:1px solid var(--border);border-radius:6px;padding:.3rem;cursor:pointer;color:var(--text2);display:flex;align-items:center;transition:color .2s,border-color .2s}
 .theme-btn:hover{color:var(--accent);border-color:var(--accent)}
 
-/* Toolbar */
-.toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem;gap:.5rem;flex-wrap:wrap}
-.tabs{display:flex;gap:.35rem;flex-wrap:wrap}
-.tab{padding:.25rem .7rem;border-radius:16px;font-size:.8rem;cursor:pointer;border:1px solid var(--border);background:var(--bg2);color:var(--text2);transition:all .2s}
+.stats{display:flex;gap:1.5rem;font-size:.82rem;color:var(--text2);margin-bottom:.8rem}
+.stats strong{color:var(--accent)}
+
+.toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem;gap:.5rem;flex-wrap:wrap}
+.tabs{display:flex;gap:.3rem;flex-wrap:wrap}
+.tab{padding:.22rem .65rem;border-radius:14px;font-size:.78rem;cursor:pointer;border:1px solid var(--border);background:var(--bg2);color:var(--text2);transition:all .2s}
 .tab:hover{border-color:var(--accent);color:var(--accent)}
 .tab.active{background:var(--accent-m);color:var(--accent);border-color:var(--accent)}
-.tab .count{margin-left:.25rem;opacity:.7}
-.toolbar-right{display:flex;gap:.4rem;align-items:center}
-.btn-add{padding:.25rem .8rem;border-radius:6px;border:1px solid var(--accent);background:var(--accent-m);color:var(--accent);cursor:pointer;font-size:.8rem;transition:all .2s}
-.btn-add:hover{background:var(--accent);color:#fff}
+.tab .ct{margin-left:.2rem;opacity:.7}
 
-/* Search */
-.search-row{margin-bottom:.8rem}
-#search{width:100%;padding:.4rem .8rem;background:var(--bg2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:.85rem;transition:background .3s,border-color .3s,color .3s}
+#search{width:100%;padding:.4rem .8rem;background:var(--bg2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:.85rem;margin-bottom:.6rem;transition:background .3s,border-color .3s,color .3s}
 #search:focus{outline:none;border-color:var(--accent)}
 
 /* Cards */
-.opp-list{display:flex;flex-direction:column;gap:.5rem}
-.opp-card{background:var(--bg2);border:1px solid var(--border-m);border-radius:8px;padding:.7rem 1rem;transition:border-color .2s,background .3s;display:grid;grid-template-columns:1fr auto;gap:.3rem .8rem}
-.opp-card:hover{border-color:var(--border)}
-.opp-top{display:flex;align-items:center;gap:.5rem;min-width:0}
-.opp-title{font-size:.92rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.opp-title a{color:var(--text);text-decoration:none}
-.opp-title a:hover{color:var(--accent)}
-.opp-right{display:flex;align-items:center;gap:.4rem;justify-self:end}
-.opp-meta{grid-column:1/-1;font-size:.76rem;color:var(--text2);display:flex;flex-wrap:wrap;gap:0}
-.opp-meta span{margin-right:.8rem}
-.opp-desc{grid-column:1/-1;font-size:.8rem;color:var(--text2)}
-.opp-bottom{grid-column:1/-1;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.feed{display:flex;flex-direction:column;gap:.5rem}
+.card{background:var(--bg2);border:1px solid var(--border-m);border-radius:8px;padding:.7rem 1rem;transition:border-color .2s;display:grid;grid-template-columns:1fr auto;gap:.15rem .6rem}
+.card:hover{border-color:var(--border)}
+.card-top{display:flex;align-items:center;gap:.4rem;min-width:0}
+.card-title{font-size:.9rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-title a{color:var(--text);text-decoration:none}.card-title a:hover{color:var(--accent)}
+.card-right{display:flex;align-items:center;gap:.5rem;justify-self:end;white-space:nowrap}
+.card-meta{grid-column:1/-1;font-size:.75rem;color:var(--text2);display:flex;flex-wrap:wrap;gap:0}
+.card-meta span{margin-right:.7rem}
+.card-desc{grid-column:1/-1;font-size:.78rem;color:var(--text2);line-height:1.5}
+.card-tags{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:.2rem;margin-top:.15rem}
 
-/* Badges */
-.badge{display:inline-block;padding:.1rem .5rem;border-radius:12px;font-size:.68rem;font-weight:500;white-space:nowrap}
+.badge{display:inline-block;padding:.08rem .45rem;border-radius:10px;font-size:.66rem;font-weight:500;white-space:nowrap}
 .badge-hackathon{background:var(--green-bg);color:var(--green)}
 .badge-grant{background:var(--purple-bg);color:var(--purple)}
 .badge-bounty{background:var(--red-bg);color:var(--red)}
@@ -79,78 +68,24 @@ h1{font-size:1.5rem;color:var(--accent)}
 .badge-quest{background:var(--yellow-bg);color:var(--yellow)}
 .badge-ai{background:var(--blue-bg);color:var(--accent)}
 
-/* Status */
-.status{padding:.1rem .5rem;border-radius:12px;font-size:.68rem;font-weight:500;cursor:pointer;transition:opacity .2s;white-space:nowrap}
-.status:hover{opacity:.8}
-.status-watching{background:var(--blue-bg);color:var(--accent)}
-.status-applying{background:var(--yellow-bg);color:var(--yellow)}
-.status-submitted{background:var(--purple-bg);color:var(--purple)}
-.status-won{background:var(--green-bg);color:var(--green)}
-.status-skipped{background:var(--bg3);color:var(--text2)}
-
-/* Tags */
-.tag{display:inline-block;padding:.05rem .4rem;background:var(--bg3);border-radius:10px;font-size:.65rem;color:var(--text2);margin-right:.2rem}
-
-/* Action buttons */
-.btn-sm{padding:.15rem .5rem;font-size:.7rem;border-radius:4px;border:1px solid var(--border);background:var(--bg3);color:var(--text2);cursor:pointer;transition:all .2s}
-.btn-sm:hover{border-color:var(--accent);color:var(--accent)}
-.btn-danger:hover{border-color:var(--red);color:var(--red)}
-.card-actions{display:flex;gap:.25rem}
-.card-actions .btn-sm{opacity:0;transition:opacity .2s,border-color .2s,color .2s}
-.opp-card:hover .card-actions .btn-sm{opacity:1}
-
-/* Prize highlight */
 .prize{color:var(--green);font-weight:600;font-size:.78rem}
+.dl{font-size:.72rem}.dl.urgent{color:var(--red);font-weight:500}.dl.soon{color:var(--yellow)}
+.tag{display:inline-block;padding:.04rem .38rem;background:var(--bg3);border-radius:10px;font-size:.64rem;color:var(--text2)}
+.loc{font-size:.72rem;color:var(--text2)}
+.platform{font-size:.72rem;color:var(--accent);opacity:.8}
 
-/* Deadline */
-.deadline{font-size:.72rem}
-.deadline.urgent{color:var(--red)}
-.deadline.soon{color:var(--yellow)}
+.section-hd{font-size:.88rem;color:var(--accent);margin:1.2rem 0 .5rem;padding-bottom:.25rem;border-bottom:1px solid var(--border-m);display:flex;justify-content:space-between;align-items:center}
+.section-hd .ct{font-size:.75rem;color:var(--text2);font-weight:400}
 
-/* Section headers */
-.section-sep{font-size:.82rem;color:var(--accent);margin:1rem 0 .5rem;padding-bottom:.3rem;border-bottom:1px solid var(--border-m)}
-
-/* Modal */
-.modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:100;align-items:center;justify-content:center}
-.modal-overlay.show{display:flex}
-.modal{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.5rem;width:92%;max-width:560px;max-height:90vh;overflow-y:auto}
-.modal h2{font-size:1.1rem;color:var(--accent);margin-bottom:1rem}
-.form-row{display:flex;gap:.6rem;margin-bottom:.7rem}
-.form-row>.form-group{flex:1}
-.form-group{margin-bottom:.7rem}
-.form-group label{display:block;font-size:.8rem;color:var(--text2);margin-bottom:.2rem}
-.form-group input,.form-group select,.form-group textarea{
-    width:100%;padding:.4rem .6rem;background:var(--bg);border:1px solid var(--border);
-    border-radius:6px;color:var(--text);font-size:.85rem;font-family:inherit;transition:background .3s,border-color .3s,color .3s}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--accent)}
-.form-group textarea{resize:vertical;min-height:50px}
-.modal-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.8rem}
-.btn-primary{padding:.4rem .9rem;border-radius:6px;border:none;background:var(--accent);color:#fff;cursor:pointer;font-size:.85rem}
-.btn-primary:hover{opacity:.9}
-.btn-cancel{padding:.4rem .9rem;border-radius:6px;border:1px solid var(--border);background:var(--bg3);color:var(--text2);cursor:pointer;font-size:.85rem}
-
-.empty-state{text-align:center;color:var(--text2);padding:2.5rem;font-size:.9rem}
-footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border-m);text-align:center;font-size:.78rem;color:var(--text2)}
+.empty{text-align:center;color:var(--text2);padding:2.5rem;font-size:.9rem}
+footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--border-m);text-align:center;font-size:.76rem;color:var(--text2)}
 footer a{color:var(--accent);text-decoration:none}
-.data-actions{margin-top:1.5rem;padding-top:.8rem;border-top:1px solid var(--border-m);display:flex;gap:.5rem;justify-content:center}
-
-/* Preloaded directory toggle */
-.dir-toggle{margin-bottom:1rem}
-.dir-toggle summary{cursor:pointer;font-size:.85rem;color:var(--accent);padding:.4rem 0}
-.dir-toggle summary:hover{text-decoration:underline}
-.dir-table{width:100%;border-collapse:collapse;font-size:.78rem;margin-top:.5rem}
-.dir-table th{text-align:left;color:var(--text2);border-bottom:1px solid var(--border);padding:.3rem .5rem;font-weight:500}
-.dir-table td{padding:.3rem .5rem;border-bottom:1px solid var(--border-m);color:var(--text)}
-.dir-table td a{color:var(--accent)}
-.dir-table tr:hover{background:var(--bg3)}
-.btn-track{padding:.1rem .4rem;font-size:.65rem;border-radius:4px;border:1px solid var(--border);background:var(--bg3);color:var(--text2);cursor:pointer;transition:all .15s}
-.btn-track:hover{border-color:var(--green);color:var(--green)}
 
 @media(max-width:640px){
     .toolbar{flex-direction:column;align-items:flex-start}
-    .form-row{flex-direction:column;gap:0}
-    .opp-card{grid-template-columns:1fr}
-    .opp-right{justify-self:start}
+    .card{grid-template-columns:1fr}
+    .card-right{justify-self:start;flex-wrap:wrap}
+    .stats{flex-direction:column;gap:.2rem}
 }
     </style>
 </head>
@@ -159,11 +94,11 @@ footer a{color:var(--accent);text-decoration:none}
     <header>
         <div>
             <h1>Web3 &amp; AI Opportunities</h1>
-            <p class="subtitle">Hackathons, grants, bounties &amp; funding tracker</p>
+            <p class="subtitle">Hackathons, grants, bounties &amp; funding &mdash; auto-updated weekly</p>
         </div>
         <div class="header-actions">
             <a href="../" class="icon-link" title="Homepage"><svg height="22" width="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
-            <a href="../dashboard/" class="icon-link" title="Research Dashboard"><svg height="22" width="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></a>
+            <a href="../dashboard/" class="icon-link" title="Dashboard"><svg height="22" width="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></a>
             <a href="../papers/" class="icon-link" title="Paper Tracker"><svg height="22" width="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></a>
             <button id="theme-toggle" class="theme-btn" title="Toggle theme">
                 <svg id="icon-moon" height="20" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -172,117 +107,26 @@ footer a{color:var(--accent);text-decoration:none}
         </div>
     </header>
 
-    <div class="search-row"><input type="text" id="search" placeholder="Search opportunities..."></div>
+    <div class="stats">
+        <span><strong id="total-ct">0</strong> opportunities</span>
+        <span><strong id="upcoming-ct">0</strong> with deadlines</span>
+        <span>Last updated: <strong id="last-updated">-</strong></span>
+    </div>
+
+    <input type="text" id="search" placeholder="Search by name, platform, tag...">
 
     <div class="toolbar">
         <div class="tabs" id="tabs"></div>
-        <div class="toolbar-right">
-            <select id="status-filter" class="btn-sm" style="padding:.25rem .5rem;font-size:.78rem;background:var(--bg2);color:var(--text)">
-                <option value="">All Status</option>
-                <option value="watching">Watching</option>
-                <option value="applying">Applying</option>
-                <option value="submitted">Submitted</option>
-                <option value="won">Won</option>
-                <option value="skipped">Skipped</option>
-            </select>
-            <button class="btn-add" onclick="openModal()">+ Add</button>
-        </div>
     </div>
 
-    <div class="opp-list" id="opp-list"></div>
-
-    <!-- Directory of known platforms -->
-    <details class="dir-toggle">
-        <summary>Platform Directory (quick-add from known sources)</summary>
-        <table class="dir-table" id="dir-table"></table>
-    </details>
-
-    <div class="data-actions">
-        <button class="btn-sm" onclick="exportData()">Export JSON</button>
-        <button class="btn-sm" onclick="document.getElementById('import-file').click()">Import JSON</button>
-        <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
-    </div>
+    <div class="feed" id="feed"></div>
 
     <footer>
-        <p><a href="../">Shengchen Ling</a> &middot; Data stored locally in your browser</p>
+        <p><a href="../">Shengchen Ling</a> &middot; Auto-fetched from ETHGlobal, DoraHacks, Devpost, Lablab.ai, Superteam &amp; more</p>
     </footer>
 </div>
 
-<!-- Modal -->
-<div class="modal-overlay" id="modal">
-    <div class="modal">
-        <h2 id="modal-title">New Opportunity</h2>
-        <input type="hidden" id="edit-id">
-        <div class="form-group">
-            <label>Title *</label>
-            <input type="text" id="f-title" placeholder="e.g., ETHGlobal Bangkok 2026">
-        </div>
-        <div class="form-row">
-            <div class="form-group">
-                <label>Category</label>
-                <select id="f-category">
-                    <option value="hackathon">Hackathon</option>
-                    <option value="grant">Grant</option>
-                    <option value="bounty">Bounty</option>
-                    <option value="accelerator">Accelerator</option>
-                    <option value="quest">Quest / Task</option>
-                    <option value="ai">AI Competition</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Status</label>
-                <select id="f-status">
-                    <option value="watching">Watching</option>
-                    <option value="applying">Applying</option>
-                    <option value="submitted">Submitted</option>
-                    <option value="won">Won</option>
-                    <option value="skipped">Skipped</option>
-                </select>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group">
-                <label>Platform / Organizer</label>
-                <input type="text" id="f-platform" placeholder="e.g., ETHGlobal, DoraHacks">
-            </div>
-            <div class="form-group">
-                <label>Prize / Reward</label>
-                <input type="text" id="f-prize" placeholder="e.g., $50K, 10K USDC">
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group">
-                <label>Deadline</label>
-                <div style="display:flex;gap:.3rem;align-items:center">
-                    <input type="date" id="f-deadline" style="flex:1">
-                    <button type="button" class="btn-sm" onclick="setDL(7)">1w</button>
-                    <button type="button" class="btn-sm" onclick="setDL(14)">2w</button>
-                    <button type="button" class="btn-sm" onclick="setDL(30)">1m</button>
-                    <button type="button" class="btn-sm" onclick="setDL(60)">2m</button>
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <label>URL</label>
-            <input type="url" id="f-url" placeholder="https://...">
-        </div>
-        <div class="form-group">
-            <label>Tags (comma-separated)</label>
-            <input type="text" id="f-tags" placeholder="e.g., DeFi, Solana, ZK, AI Agent">
-        </div>
-        <div class="form-group">
-            <label>Notes</label>
-            <textarea id="f-notes" placeholder="Ideas, requirements, team..."></textarea>
-        </div>
-        <div class="modal-actions">
-            <button class="btn-cancel" onclick="closeModal()">Cancel</button>
-            <button class="btn-primary" onclick="saveItem()">Save</button>
-        </div>
-    </div>
-</div>
-
 <script>
-// Theme
 (function(){const s=localStorage.getItem('theme');if(s){document.documentElement.setAttribute('data-theme',s);
 if(s==='light'){document.getElementById('icon-moon').style.display='none';document.getElementById('icon-sun').style.display='block'}}})();
 document.getElementById('theme-toggle').addEventListener('click',()=>{
@@ -292,239 +136,117 @@ document.getElementById('theme-toggle').addEventListener('click',()=>{
     document.getElementById('icon-sun').style.display=n==='light'?'block':'none';
 });
 
-const STORAGE_KEY='web3_opportunities';
-let items=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');
-let activeTab='all';
-
 const CATS={hackathon:'Hackathon',grant:'Grant',bounty:'Bounty',accelerator:'Accelerator',quest:'Quest',ai:'AI'};
 const CAT_CLS={hackathon:'badge-hackathon',grant:'badge-grant',bounty:'badge-bounty',accelerator:'badge-accelerator',quest:'badge-quest',ai:'badge-ai'};
-const STATUS_LABELS={watching:'Watching',applying:'Applying',submitted:'Submitted',won:'Won',skipped:'Skipped'};
-const STATUS_CLS={watching:'status-watching',applying:'status-applying',submitted:'status-submitted',won:'status-won',skipped:'status-skipped'};
-const STATUS_ORDER={applying:0,watching:1,submitted:2,won:3,skipped:4};
 
-function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(items))}
+let allItems=[];
+let activeTab='all';
+
 function today(){return new Date().toISOString().slice(0,10)}
 
-// Platform directory (curated from research)
-const DIRECTORY=[
-    {name:'ETHGlobal',url:'https://ethglobal.com',cat:'hackathon',prize:'$250K-$1M',focus:'Ethereum, L2, DeFi'},
-    {name:'DoraHacks',url:'https://dorahacks.io',cat:'hackathon',prize:'$50K-$500K',focus:'Multi-chain, public goods'},
-    {name:'Colosseum (Solana)',url:'https://www.colosseum.org',cat:'hackathon',prize:'$600K-$1M',focus:'Solana ecosystem'},
-    {name:'Devfolio',url:'https://devfolio.co',cat:'hackathon',prize:'$10K-$200K',focus:'Web3, India/Asia'},
-    {name:'Encode Club',url:'https://www.encode.club',cat:'hackathon',prize:'$50K-$200K',focus:'Multi-chain + education'},
-    {name:'Chainlink Hackathon',url:'https://chain.link/hackathon',cat:'hackathon',prize:'$300K-$500K',focus:'Oracles, CCIP, cross-chain'},
-    {name:'Lablab.ai',url:'https://lablab.ai',cat:'ai',prize:'$10K-$50K',focus:'AI/LLM hackathons'},
-    {name:'Devpost',url:'https://devpost.com/hackathons',cat:'hackathon',prize:'Varies',focus:'All hackathons aggregator'},
-    {name:'Ethereum ESP',url:'https://esp.ethereum.foundation',cat:'grant',prize:'$5K-$500K',focus:'Protocol R&D, security, tooling'},
-    {name:'Optimism RPGF',url:'https://retrofunding.optimism.io',cat:'grant',prize:'Up to $500K',focus:'Public goods, Superchain'},
-    {name:'Arbitrum DAO Grants',url:'https://forum.arbitrum.foundation',cat:'grant',prize:'$10K-$500K+',focus:'DeFi, gaming, tooling'},
-    {name:'Base Grants',url:'https://base.org/grants',cat:'grant',prize:'$5K-$100K',focus:'Consumer, DeFi, onchain'},
-    {name:'Solana Foundation',url:'https://solana.org/grants',cat:'grant',prize:'$5K-$250K',focus:'DeFi, DePIN, payments'},
-    {name:'Sui Foundation',url:'https://sui.io/grants',cat:'grant',prize:'$10K-$500K',focus:'Move ecosystem'},
-    {name:'Uniswap Foundation',url:'https://uniswapfoundation.org/grants',cat:'grant',prize:'$5K-$250K',focus:'DeFi research, MEV, security'},
-    {name:'Starknet Foundation',url:'https://starknet.io/grants',cat:'grant',prize:'$10K-$250K',focus:'Cairo, ZK ecosystem'},
-    {name:'Gitcoin Grants',url:'https://grants.gitcoin.co',cat:'grant',prize:'$500-$50K+',focus:'Quadratic funding, public goods'},
-    {name:'W3F (Polkadot)',url:'https://grants.web3.foundation',cat:'grant',prize:'Up to $100K',focus:'Substrate, Polkadot'},
-    {name:'NEAR Grants',url:'https://near.org/grants',cat:'grant',prize:'$5K-$150K',focus:'AI x Crypto, chain abstraction'},
-    {name:'TON Foundation',url:'https://ton.org/grants',cat:'grant',prize:'$5K-$150K',focus:'Telegram Mini Apps, payments'},
-    {name:'Immunefi',url:'https://immunefi.com',cat:'bounty',prize:'$1K-$10M',focus:'Smart contract bug bounties'},
-    {name:'Code4rena',url:'https://code4rena.com',cat:'bounty',prize:'$5K-$500K',focus:'Competitive audits'},
-    {name:'Sherlock',url:'https://sherlock.xyz',cat:'bounty',prize:'$10K-$500K',focus:'Audit contests + coverage'},
-    {name:'Hats Finance',url:'https://hats.finance',cat:'bounty',prize:'$500-$500K',focus:'On-chain bug bounty vaults'},
-    {name:'Cantina',url:'https://cantina.xyz',cat:'bounty',prize:'$10K-$500K',focus:'Managed audits + bounties'},
-    {name:'Alliance DAO',url:'https://alliance.xyz',cat:'accelerator',prize:'$250K-$500K',focus:'Crypto-native startups'},
-    {name:'Longhash Ventures',url:'https://www.longhash.vc',cat:'accelerator',prize:'$100K-$300K',focus:'Asia-focused Web3'},
-    {name:'Binance Labs',url:'https://labs.binance.com',cat:'accelerator',prize:'$100K-$500K',focus:'Broad Web3, BNB Chain'},
-    {name:'Outlier Ventures',url:'https://outlierventures.io/base-camp/',cat:'accelerator',prize:'$50K-$100K',focus:'AI x Web3, various chains'},
-    {name:'Layer3',url:'https://layer3.xyz',cat:'quest',prize:'XP + tokens',focus:'Protocol quests, user onboarding'},
-    {name:'Galxe',url:'https://galxe.com',cat:'quest',prize:'NFTs + points',focus:'Credential campaigns'},
-    {name:'Bittensor',url:'https://bittensor.com',cat:'ai',prize:'TAO emissions',focus:'Decentralized AI subnets'},
-    {name:'Kaggle',url:'https://kaggle.com',cat:'ai',prize:'Up to $1M',focus:'ML competitions'},
-    {name:'Superteam Earn',url:'https://earn.superteam.fun',cat:'quest',prize:'$50-$5K',focus:'Solana bounties + grants'},
-    {name:'OnlyDust',url:'https://onlydust.com',cat:'quest',prize:'$100-$5K',focus:'Open-source contributions, Starknet'},
-];
+function dlInfo(d){
+    if(!d)return{text:'Rolling / Open',cls:'dl',sort:'9999'};
+    const diff=Math.ceil((new Date(d)-new Date())/86400000);
+    let cls='dl';
+    if(diff<0)return{text:`Ended ${-diff}d ago`,cls:'dl',sort:d};
+    if(diff<=7){cls='dl urgent';return{text:`${d} (${diff}d left)`,cls,sort:d}}
+    if(diff<=30){cls='dl soon';return{text:`${d} (${diff}d)`,cls,sort:d}}
+    return{text:d,cls:'dl',sort:d};
+}
 
 function render(){
-    // Tabs
-    const cats={all:items.length};
-    items.forEach(p=>{cats[p.category]=(cats[p.category]||0)+1});
-    const tabsEl=document.getElementById('tabs');
-    tabsEl.innerHTML=Object.entries({all:'All',...CATS}).map(([k,v])=>
-        (k==='all'||cats[k])?`<span class="tab ${activeTab===k?'active':''}" onclick="setTab('${k}')">${v}<span class="count">${cats[k]||0}</span></span>`:''
-    ).join('');
-
     const search=document.getElementById('search').value.toLowerCase();
-    const statusF=document.getElementById('status-filter').value;
-
-    let filtered=activeTab==='all'?items:items.filter(p=>p.category===activeTab);
-    if(statusF)filtered=filtered.filter(p=>p.status===statusF);
-    if(search)filtered=filtered.filter(p=>
-        (p.title||'').toLowerCase().includes(search)||
-        (p.platform||'').toLowerCase().includes(search)||
-        (p.tags||[]).join(' ').toLowerCase().includes(search)||
-        (p.notes||'').toLowerCase().includes(search)
+    let filtered=activeTab==='all'?allItems:allItems.filter(i=>i.category===activeTab);
+    if(search)filtered=filtered.filter(i=>
+        (i.title||'').toLowerCase().includes(search)||
+        (i.platform||'').toLowerCase().includes(search)||
+        (i.description||'').toLowerCase().includes(search)||
+        (i.tags||[]).join(' ').toLowerCase().includes(search)
     );
 
-    // Sort: applying first, then watching, then by deadline
-    filtered.sort((a,b)=>(STATUS_ORDER[a.status]??9)-(STATUS_ORDER[b.status]??9)||(a.deadline||'z').localeCompare(b.deadline||'z'));
+    // Tabs
+    const cats={all:allItems.length};
+    allItems.forEach(i=>{cats[i.category]=(cats[i.category]||0)+1});
+    document.getElementById('tabs').innerHTML=Object.entries({all:'All',...CATS}).map(([k,v])=>
+        (k==='all'||cats[k])?`<span class="tab ${activeTab===k?'active':''}" onclick="setTab('${k}')">${v}<span class="ct">${cats[k]||0}</span></span>`:''
+    ).join('');
 
-    const listEl=document.getElementById('opp-list');
-    if(filtered.length===0){
-        listEl.innerHTML='<div class="empty-state">No opportunities tracked yet.<br>Add one or pick from the Platform Directory below.</div>';
-        return;
-    }
+    // Stats
+    document.getElementById('total-ct').textContent=allItems.length;
+    document.getElementById('upcoming-ct').textContent=allItems.filter(i=>i.deadline&&i.deadline>=today()).length;
+    const dates=allItems.map(i=>i.fetched).filter(Boolean).sort().reverse();
+    document.getElementById('last-updated').textContent=dates[0]||'-';
 
-    listEl.innerHTML=filtered.map(p=>{
-        const tags=(p.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
-        const dl=p.deadline?deadlineLabel(p.deadline):'';
-        const prize=p.prize?`<span class="prize">${p.prize}</span>`:'';
-        const platform=p.platform?`<span>${p.platform}</span>`:'';
-        const titleHtml=p.url?`<a href="${p.url}" target="_blank">${p.title}</a>`:p.title;
-
-        return `<div class="opp-card">
-            <div class="opp-top">
-                <span class="badge ${CAT_CLS[p.category]||''}">${CATS[p.category]||p.category}</span>
-                <span class="opp-title">${titleHtml}</span>
-            </div>
-            <div class="opp-right">
-                ${prize}${dl}
-                <span class="status ${STATUS_CLS[p.status]||''}" onclick="cycleStatus('${p.id}')" title="Click to change">${STATUS_LABELS[p.status]||p.status}</span>
-                <div class="card-actions">
-                    <button class="btn-sm" onclick="editItem('${p.id}')">Edit</button>
-                    <button class="btn-sm btn-danger" onclick="deleteItem('${p.id}')">Del</button>
-                </div>
-            </div>
-            <div class="opp-meta">${platform}<span>${tags}</span></div>
-            ${p.notes?`<div class="opp-desc">${p.notes}</div>`:''}
-        </div>`;
-    }).join('');
-}
-
-function deadlineLabel(d){
-    const diff=Math.ceil((new Date(d)-new Date())/86400000);
-    let cls='deadline';
-    let text=d;
-    if(diff<0){cls+=' urgent';text=`${d} (${-diff}d ago)`}
-    else if(diff<=7){cls+=' urgent';text=`${d} (${diff}d)`}
-    else if(diff<=30){cls+=' soon';text=`${d} (${diff}d)`}
-    return `<span class="${cls}">${text}</span>`;
-}
-
-function cycleStatus(id){
-    const order=['watching','applying','submitted','won','skipped'];
-    const p=items.find(x=>x.id===id);if(!p)return;
-    const i=order.indexOf(p.status);
-    p.status=order[(i+1)%order.length];
-    save();render();
-}
-
-function setTab(t){activeTab=t;render()}
-
-function openModal(id){
-    document.getElementById('modal').classList.add('show');
-    document.getElementById('modal-title').textContent=id?'Edit Opportunity':'New Opportunity';
-    if(id){
-        const p=items.find(x=>x.id===id);if(!p)return;
-        document.getElementById('edit-id').value=p.id;
-        document.getElementById('f-title').value=p.title;
-        document.getElementById('f-category').value=p.category;
-        document.getElementById('f-status').value=p.status;
-        document.getElementById('f-platform').value=p.platform||'';
-        document.getElementById('f-prize').value=p.prize||'';
-        document.getElementById('f-deadline').value=p.deadline||'';
-        document.getElementById('f-url').value=p.url||'';
-        document.getElementById('f-tags').value=(p.tags||[]).join(', ');
-        document.getElementById('f-notes').value=p.notes||'';
-    } else {
-        document.getElementById('edit-id').value='';
-        ['f-title','f-platform','f-prize','f-deadline','f-url','f-tags','f-notes'].forEach(x=>document.getElementById(x).value='');
-        document.getElementById('f-category').value='hackathon';
-        document.getElementById('f-status').value='watching';
-    }
-}
-
-function closeModal(){document.getElementById('modal').classList.remove('show')}
-
-function setDL(days){const d=new Date();d.setDate(d.getDate()+days);document.getElementById('f-deadline').value=d.toISOString().slice(0,10)}
-
-function saveItem(){
-    const title=document.getElementById('f-title').value.trim();
-    if(!title)return alert('Title is required');
-    const editId=document.getElementById('edit-id').value;
-    const tagsRaw=document.getElementById('f-tags').value;
-    const tags=tagsRaw?tagsRaw.split(',').map(t=>t.trim()).filter(Boolean):[];
-    const data={
-        id:editId||Date.now().toString(36)+Math.random().toString(36).slice(2,6),
-        title,
-        category:document.getElementById('f-category').value,
-        status:document.getElementById('f-status').value,
-        platform:document.getElementById('f-platform').value.trim(),
-        prize:document.getElementById('f-prize').value.trim(),
-        deadline:document.getElementById('f-deadline').value,
-        url:document.getElementById('f-url').value.trim(),
-        tags,
-        notes:document.getElementById('f-notes').value.trim(),
-        updated:today()
-    };
-    if(editId){const i=items.findIndex(x=>x.id===editId);if(i>=0)items[i]=data}
-    else{data.created=today();items.push(data)}
-    save();closeModal();render();
-}
-
-function editItem(id){openModal(id)}
-function deleteItem(id){if(!confirm('Delete?')){return}items=items.filter(x=>x.id!==id);save();render()}
-
-function quickAdd(dir){
-    document.getElementById('f-title').value=dir.name;
-    document.getElementById('f-category').value=dir.cat;
-    document.getElementById('f-platform').value=dir.name;
-    document.getElementById('f-url').value=dir.url;
-    document.getElementById('f-prize').value=dir.prize||'';
-    document.getElementById('f-status').value='watching';
-    document.getElementById('f-tags').value=dir.focus||'';
-    document.getElementById('f-notes').value='';
-    document.getElementById('f-deadline').value='';
-    document.getElementById('edit-id').value='';
-    document.getElementById('modal-title').textContent='New Opportunity';
-    document.getElementById('modal').classList.add('show');
-}
-
-function renderDirectory(){
-    const t=document.getElementById('dir-table');
-    let html='<tr><th>Platform</th><th>Category</th><th>Prize Range</th><th>Focus</th><th></th></tr>';
-    DIRECTORY.forEach(d=>{
-        html+=`<tr>
-            <td><a href="${d.url}" target="_blank">${d.name}</a></td>
-            <td><span class="badge ${CAT_CLS[d.cat]||''}">${CATS[d.cat]||d.cat}</span></td>
-            <td>${d.prize}</td>
-            <td>${d.focus}</td>
-            <td><button class="btn-track" onclick='quickAdd(${JSON.stringify(d)})'>+ Track</button></td>
-        </tr>`;
+    // Group: upcoming (has future deadline) → rolling (no deadline) → past
+    const upcoming=[],rolling=[],past=[];
+    const now=today();
+    filtered.forEach(i=>{
+        if(!i.deadline)rolling.push(i);
+        else if(i.deadline>=now)upcoming.push(i);
+        else past.push(i);
     });
-    t.innerHTML=html;
+    upcoming.sort((a,b)=>(a.deadline||'').localeCompare(b.deadline||''));
+    rolling.sort((a,b)=>(a.title||'').localeCompare(b.title||''));
+    past.sort((a,b)=>(b.deadline||'').localeCompare(a.deadline||''));
+
+    let html='';
+    if(upcoming.length){
+        html+=`<div class="section-hd">Upcoming <span class="ct">${upcoming.length}</span></div>`;
+        html+=upcoming.map(renderCard).join('');
+    }
+    if(rolling.length){
+        html+=`<div class="section-hd">Rolling / Always Open <span class="ct">${rolling.length}</span></div>`;
+        html+=rolling.map(renderCard).join('');
+    }
+    if(past.length){
+        html+=`<div class="section-hd">Recently Ended <span class="ct">${past.length}</span></div>`;
+        html+=past.map(renderCard).join('');
+    }
+    if(!html)html='<div class="empty">No opportunities found.</div>';
+
+    document.getElementById('feed').innerHTML=html;
 }
 
-function exportData(){
-    const blob=new Blob([JSON.stringify(items,null,2)],{type:'application/json'});
-    const a=document.createElement('a');a.href=URL.createObjectURL(blob);
-    a.download='opportunities_'+today()+'.json';a.click();
+function renderCard(i){
+    const dl=dlInfo(i.deadline);
+    const titleHtml=i.url?`<a href="${i.url}" target="_blank">${esc(i.title)}</a>`:esc(i.title);
+    const tags=(i.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+    const loc=i.location?`<span class="loc">${esc(i.location)}</span>`:'';
+    const dates=i.start_date&&i.deadline?`<span>${i.start_date} ~ ${i.deadline}</span>`:
+               i.start_date?`<span>From ${i.start_date}</span>`:
+               i.deadline?`<span>${dl.text}</span>`:'<span>Rolling</span>';
+
+    return `<div class="card">
+        <div class="card-top">
+            <span class="badge ${CAT_CLS[i.category]||''}">${CATS[i.category]||i.category}</span>
+            <span class="card-title">${titleHtml}</span>
+        </div>
+        <div class="card-right">
+            ${i.prize?`<span class="prize">${esc(i.prize)}</span>`:''}
+            <span class="${dl.cls}">${dl.text}</span>
+        </div>
+        <div class="card-meta">
+            <span class="platform">${esc(i.platform||'')}</span>
+            ${loc}${dates}
+        </div>
+        ${i.description?`<div class="card-desc">${esc(i.description)}</div>`:''}
+        ${tags?`<div class="card-tags">${tags}</div>`:''}
+    </div>`;
 }
 
-function importData(e){
-    const file=e.target.files[0];if(!file)return;
-    const r=new FileReader();
-    r.onload=ev=>{try{const d=JSON.parse(ev.target.result);
-        if(Array.isArray(d)&&confirm(`Import ${d.length} items? This replaces current data.`)){items=d;save();render()}}
-        catch(e){alert('Invalid JSON')}};
-    r.readAsText(file);e.target.value='';
-}
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 
-document.getElementById('modal').addEventListener('click',e=>{if(e.target===e.currentTarget)closeModal()});
+window.setTab=function(t){activeTab=t;render()};
+
+// Load data
+fetch('opportunities.json').then(r=>r.json()).then(data=>{
+    allItems=data;
+    render();
+}).catch(e=>{
+    document.getElementById('feed').innerHTML='<div class="empty">Failed to load data.</div>';
+});
+
 document.getElementById('search').addEventListener('input',render);
-document.getElementById('status-filter').addEventListener('change',render);
-
-render();
-renderDirectory();
 </script>
 </body>
 </html>
