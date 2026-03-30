@@ -23134,5 +23134,693 @@
       "measurement"
     ],
     "analyzed": false
+  },
+  {
+    "id": "eprint:2025/2049",
+    "title": "Black-Box Separation Between Multi-Collision Resistance and Collision Resistance",
+    "authors": [
+      "Jiapeng Zhang"
+    ],
+    "abstract": "A $K$-multi-collision-resistant hash function ($K$-MCRH) is a shrinking keyed function for which it is computationally infeasible to find $K$ distinct inputs that map to the same output under a randomly chosen hash key; the case $K = 2$ coincides with the standard definition of collision-resistant hash function (CRH).\nA natural question is whether $K$-MCRH implies CRH for $K \\geq 3$, as noted by Komargodski, Naor, and Yogev (EUROCRYPT 2018) and also by  Jain, Li, Robere, and Xun  (FOCS 2024). \n\nWe resolve this question for all constant $K$, showing that there is no black-box construction of $K$-MCRH from $(K + 1)$-MCRH for all constant $K \\geq 2$. We also show that there is no black-box construction of distributional CRH (which is another relaxation of CRH) from 3-MCRH, answering an open question posed by Komargodski and Yogev (CRYPTO 2018) and also by Berman, Degwekar, Rothblum, and Vasudevan (EUROCRYPT 2018).  Besides applications in cryptography, our separation also implies black-box separations between TFNP search problems, which are related to problems in proof complexity and other areas.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-11-06",
+    "pdf_url": "https://eprint.iacr.org/2025/2049.pdf",
+    "url": "https://eprint.iacr.org/2025/2049",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1552",
+    "title": "Revisiting Keyed-Verification Anonymous Credentials",
+    "authors": [
+      "Michele Orrù"
+    ],
+    "abstract": "Keyed-verification anonymous credentials (KVACs) have demonstrated their practicality through large-scale deployments in privacy-critical systems like Signal and Tor.  Despite their widespread adoption, the theoretical framework underlying KVACs lacks the flexibility needed to support diverse applications, which in general require different security properties. For instance, rate-limiting credentials only need a weaker unforgeability notion (one-more unforgeability), yet the framework cannot easily accommodate this relaxation. Similarly, identity-based applications require stronger properties than unforgeability -—specifically, extractability for security proofs when adversaries can observe other users' credentials.\n\nIn this work, we address these limitations, introducing new notions of extractability and one-more unforgeability. We improve two foundational works in the space:\n - The scheme by Chase et al. (CCS 2014), commonly referred to as CMZ or PS MAC can be made statistically anonymous, and issuance cost reduced from \\(O(2n)\\) to \\(O(1)\\). We update the proof of Chase et al. in the algebraic group model.\n - The scheme by Barki et al. (SAC 2016), known as BBDT or BBS MAC can be issued more efficiently (one less group element).\n\nFinally, we note that for KVACs, designated-verifier proofs suffice since the verifier is known in advance. We introduce designated-verifier polynomial commitment schemes and instantiate a variant of the popular KZG commitment scheme without pairings. Any interactive oracle proof can be used in tandem with it, leading to designated-verifier fully-succinct zk-SNARKs without pairings for algebraic groups.\n\nOur model can improve the deployment of larger protocols relying on KVACs. We show this with some examples that benefit from our approach.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-10-03",
+    "pdf_url": "https://eprint.iacr.org/2024/1552.pdf",
+    "url": "https://eprint.iacr.org/2024/1552",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/536",
+    "title": "A Fiat–Shamir Transformation From Duplex Sponges",
+    "authors": [
+      "Michele Orrù"
+    ],
+    "abstract": "We analyze a variant of the Fiat–Shamir transformation based on an ideal permutation. The transformation relies on the popular duplex sponge paradigm, and minimizes the number of calls to the permutation (given the information to absorb/squeeze). This closely models deployed variants of the Fiat–Shamir transformation, and our analysis provides concrete security bounds to guide security parameters in practice. Our results contribute to the ongoing community-wide effort to achieve rigorous, and ultimately formally verified, security proofs for deployed cryptographic proofs. Along the way, we find that indifferentiability (a property proven for many modes of operation, including the duplex sponge) is ill-suited for establishing the knowledge soundness and zero knowledge of a non-interactive argument.\n\nWe additionally contribute spongefish, an open-source Rust library implementing our Fiat–Shamir transformation. The library is interoperable across multiple cryptographic frameworks, and works with any choice of permutation. The library comes equipped with Keccak and Poseidon permutations, as well as several \"codecs\" for re-mapping prover and verifier messages to the permutation's domain.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-03-22",
+    "pdf_url": "https://eprint.iacr.org/2025/536.pdf",
+    "url": "https://eprint.iacr.org/2025/536",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/609",
+    "title": "Post-Quantum Blockchains with Agility in Mind",
+    "authors": [
+      "Michael Lodder"
+    ],
+    "abstract": "Blockchains intend to provide long-term integrity guarantees through cryptographic primitives that may become vulnerable over time due to algorithmic advances or paradigm shifts such as quantum computation. While cryptographic agility, the ability to transition between algorithms without disrupting operation, is recognized as essential, existing blockchain systems lack comprehensive support for such transitions. We address this gap by designing an Ethereum virtual machine (EVM) compatible blockchain that introduces support for cryptographic agility from genesis.\n    \nWe first propose a flexibility framework that characterizes how algorithm choice can be distributed across blockchain components.  We then present two technical contributions aligned with this framework: (1) cryptographically agile transactions (CATX), a new transaction format that decouples body and signature to enable user-selected signature schemes; and (2) a consensus-layer key registration mechanism that allows validators to migrate between signature schemes as operational upgrades without hard forks. We exemplify the agility of our design with ECDSA, Falcon-512, and ML-DSA signatures by conducting experimental evaluations over 30,000 blocks and 11 million transactions, showing that the CATX format introduces no measurable overhead.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-27",
+    "pdf_url": "https://eprint.iacr.org/2026/609.pdf",
+    "url": "https://eprint.iacr.org/2026/609",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "consensus",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/608",
+    "title": "Can Adaptive Communication Graphs Lower the Bottleneck Complexity of (Secure) Multiparty Computation?",
+    "authors": [
+      "Nicolas Resch"
+    ],
+    "abstract": "The bottleneck complexity of a (secure) multiparty computation protocol is one measure of its communication-efficiency. It captures how well the communication load is balanced, and is defined as the maximum communication complexity required by any one party within the protocol execution.\n\nPrior works on this topic restricted attention to protocols with fixed communication graphs, i.e. whether or not a given party communicates to another only depends on the round number.\n\nWe demonstrate the power of adaptively choosing communication graphs by developing various bottleneck-efficient protocols, both with and without security. Done naÏvely, protocols with adaptive communication graphs can exploit unnatural tricks, such as \"communicating with silence.\" To ensure our protocols are meaningful, we additionally stipulate that they should run correctly even in asynchronous networks (where we make no assumption on the adversarial message-delays other than being finite). \n\n[Bottleneck complexity of arbitrary functions.] With fixed communication graphs, Boyle, Jain, Prabhakaran, and Yu (ICALP'18) established the existence of a function $f\\colon\\{0,1\\}^n\\to\\{0,1\\}$ requiring $\\Omega(n)$-bit bottleneck complexity, which is matched by the trivial protocol of having all parties send their inputs to one party. By adaptively choosing communication graphs, we show that any function $f\\colon\\{0,1\\}^n\\to\\{0,1\\}$ can be computed (securely) with bottleneck $O(n/\\log n)$ (which we  prove is essentially optimal), even in \\emph{asynchronous} networks. \n\n  [Bottleneck complexity of symmetric functions.] Prior works  have\n    demonstrated that special classes of symmetric functions, such as additive [Eriguchi, Asiacrypt'23] or abelian [Keller, Orlandi, Paskin-Cherniavsky, Ravi, ITC'23]  functions can be computed bottleneck-efficiently with fixed communication graphs. We both expand the class of symmetric functions achievable with low bottleneck complexity, as well as show how input-adaptive communication graphs can be leveraged to further reduce the bottleneck complexity of some of our protocols.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-27",
+    "pdf_url": "https://eprint.iacr.org/2026/608.pdf",
+    "url": "https://eprint.iacr.org/2026/608",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1868",
+    "title": "Is the Hard-Label Cryptanalytic Model Extraction Really Polynomial?",
+    "authors": [
+      "Yosuke Todo"
+    ],
+    "abstract": "Deep Neural Networks (DNNs) have attracted significant attention, and their internal models are now considered valuable intellectual assets. Extracting such a model via oracle access to a DNN is conceptually similar to extracting a secret key via oracle access to a block cipher. Consequently, cryptanalytic techniques, particularly differential-like attacks, have been actively explored recently. \nReLU-based DNNs are the most common and widely deployed architectures. While early works (e.g., Crypto 2020, Eurocrypt 2024) assume access to exact output logits, which are typically not exposed, more recent works (e.g., Asiacrypt 2024, Eurocrypt 2025) focus on the hard-label setting, where only the final classification result (e.g., \"dog\" or \"car\") is available to the attacker. Notably, Carlini et al. (Eurocrypt 2025) demonstrated that model extraction is feasible in polynomial time even under this restricted setting.\n\nIn this paper, we show that a key assumption underlying their attack becomes increasingly unrealistic as the target depth grows. While prior works have noted neurons whose activation states rarely change, we analyze their concrete impact on hard-label extraction: even a single neuron that is (almost) always active can prevent the attack from proceeding unless its parameters are recovered, and ignoring it inevitably incurs a non-negligible error. \nA straightforward solution is to extract these parameters by observing a state switch of such a neuron, but observing such a switch becomes exponentially harder as the depth increases, implying that hard-label extraction is not always polynomial time.\nTo address this limitation, we propose a novel attack method called cross-layer extraction. Rather than extracting the secret parameters (e.g., weights and biases) directly, we exploit cross-layer interactions to recover them from deeper layers, reducing query complexity and addressing limitations of existing model extraction approaches.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-08",
+    "pdf_url": "https://eprint.iacr.org/2025/1868.pdf",
+    "url": "https://eprint.iacr.org/2025/1868",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/146",
+    "title": "Feistel Tools: Reprogramming and Query-Recording for QRPs",
+    "authors": [
+      "Abishanka Saha"
+    ],
+    "abstract": "We present a new generic approach to extend proof techniques in the quantum random oracle model (QROM) — such as query-recording and reprogramming — to the quantum random permutation model (QRPM). Our framework involves simulating bidirectional-query random permutation oracles using Feistel constructions to port the QROM features for the underlying random round functions to the overall Feistel-simulated QRP. We then demonstrate the power of our framework by:\n• Obtaining a tighter than state-of-the-art lower bound for the query extrapolation problem — a variant of which was studied by Boneh and Zhandry (Eurocrypt 2013) in the QROM — in the bidirectional QRPM, as well as recovering a meaningful lower bound for the double-sided zero search problem (Unruh, Asiacrypt 2023).\n• Proving the adaptive zero-knowledge property of NIZKs derived from a recent variant of the Fiat-Shamir transform — called duplex-sponge Fiat-Shamir (Chiesa and Orrù, TCC 2025) which is deployed in the wild — in a post-quantum setting against non-uniform adversaries with preprocessing capabilities.\n\nAll in all, our work illustrates how the “Feistel toolkit” effectively bridges the QROM-QRPM gap by not only achieving the standard QROM techniques of query-recording and reprogramming techniques for QRPs, but also unlocking new state-of-the-art features such as proving non-uniform security in the QRPM.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-01-29",
+    "pdf_url": "https://eprint.iacr.org/2026/146.pdf",
+    "url": "https://eprint.iacr.org/2026/146",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "bridge",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/596",
+    "title": "Gryphes: Hybrid Proofs for Modular SNARKs with Applications to zkRollups",
+    "authors": [
+      "Dimitrios Papadopoulos"
+    ],
+    "abstract": "We address the challenge of constructing a proof system capable of handling multiple computations that involve diverse types of tasks, such as scalable zkRollup applications. A central dilemma in this design is the trade-off between generality and efficiency: while arithmetic circuit-based SNARKs offer fast proofs but limited flexibility, zkVMs provide general-purpose programmability at the cost of considerable overhead for circuit translation. We observe that typical workloads for such applications can be naturally divided into two parts: (1) diverse, task and data-dependent application logic, and (2) computationally intensive cryptographic operations, e.g., hashes, that are common and repetitive. To optimize for both efficiency and adaptability, we propose Gryphes, a hybrid framework that composes matrix lookup, a generalization of lookup arguments, together with SNARK solutions tailored for cryptographic operations. At the heart of Gryphes is a novel and efficient linking protocol, enabling seamless, efficient composition of matrix lookup + Plonk with general commit-and-prove SNARKs. \n\nBy integrating Gryphes with Groth16 for signatures and RSA accumulators for membership proofs, we build a zkRollup prototype that achieves efficient proving, constant-size proofs, and dynamic support for thousands of transaction types. This includes our matrix lookup implementation incorporated with Plonk, as well as practical optimizations, comprehensive benchmarks, and open-sourced code. Our results demonstrate that Gryphes strikes a very good balance between functionality and efficiency, offering highly expressive and practical zkRollup systems.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-25",
+    "pdf_url": "https://eprint.iacr.org/2026/596.pdf",
+    "url": "https://eprint.iacr.org/2026/596",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP",
+      "layer2"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/030",
+    "title": "Delegated Multi-party Private Set Intersection from Secret Sharing",
+    "authors": [
+      "Cong Zuo"
+    ],
+    "abstract": "In this work, we address the problem of Delegated PSI (D-PSI), where a cloud server is introduced to handle most computational and communication tasks. D-PSI enables users to securely delegate their private sets to the cloud, ensuring the privacy of their data while allowing efficient computation of the intersection. The cloud operates under strict security requirements, learning nothing about the individual sets or the intersection result. Moreover, D-PSI minimizes user-to-user communication and supports \"silent\" processing, where the cloud can perform computations independently without user interaction, apart from set delegation and result retrieval.\n\nWe formally define the D-PSI problem and propose a novel construction that extends beyond two-party scenarios to support multi-party settings. Our construction adheres to the D-PSI requirements, including security against semi-honest adversaries, and achieves computational and communication complexities close to the ideal \"perfect\" D-PSI protocol. Additionally, we demonstrate the practicality of our approach through a baseline implementation and an optimized version that further reduces computational overhead. Our results establish a strong foundation for secure and efficient PSI in real-world cloud computing scenarios.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-01-08",
+    "pdf_url": "https://eprint.iacr.org/2025/030.pdf",
+    "url": "https://eprint.iacr.org/2025/030",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1961",
+    "title": "Anamorphic Monero Transactions: the Threat of Bypassing Anti-Money Laundering Laws",
+    "authors": [
+      "Gabriel Wechta"
+    ],
+    "abstract": "In this paper, we analyze the clash between privacy-oriented cryptocurrencies and emerging legal frameworks for combating financial crime, focusing in particular on the recent European Union regulations. We analyze Monero, a leading \"privacy coin\" and a major point of concern for law enforcement, and study the scope of due diligence that must be exercised under the new law with regard to Monero trading platforms and how it translates to the technical capabilities of the Monero protocol. We both recognize flaws in the legislation and identify technical pitfalls threatening either the effective compliance of, say, Monero exchanges or the anonymity endeavour of Monero itself. Of independent interest is that we turn to anamorphic cryptography (marking one of the first practical applications of the concept) and leverage it to build a hidden transaction layer embedded in the Monero blockchain that obfuscates illegal money flow and circumvents transaction-level attempts at enforcing the EU law.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-20",
+    "pdf_url": "https://eprint.iacr.org/2025/1961.pdf",
+    "url": "https://eprint.iacr.org/2025/1961",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy",
+      "eCrime"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/594",
+    "title": "Efficient Compilers for Verifiable Dynamic Searchable Symmetric Encryption",
+    "authors": [
+      "Raja Rakshit Varanasi"
+    ],
+    "abstract": "We construct compilers to generically transform any dynamic Searchable Symmetric Encryption (DSSE) scheme that is secure against a semi-honest server into one that is secure against a malicious servers, thus yielding a Verifiable dynamic SSE (VDSSE). Our compilers achieve optimal overheads while preserving forward and backward privacy, which are the standard and widely accepted security notions for DSSE.\n\nWe focus on optimizing communication overheads and client storage requirements. Our first compiler $\\mathsf{FLASH}$ incurs $O(1)$ communication overhead between the client and the server, which is optimal, while incurring mild storage overhead at the client. Our second compiler $\\mathsf{BOLT}$ incurs $O(1)$ storage overhead at the client while incurring mild communication overhead. \nTowards this, we define a new authenticated data structure called a set commitment and we provide an efficient instantiation of this primitive. \n\nWe prototype implement our compilers and report on their performance over real-world databases. Our experiments validate that our compilers incur concretely low overheads on top of existing semi-honest DSSE schemes, and yield practically efficient VDSSE schemes that scale to very large databases.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-25",
+    "pdf_url": "https://eprint.iacr.org/2026/594.pdf",
+    "url": "https://eprint.iacr.org/2026/594",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/593",
+    "title": "Three-Move Blind Signatures in Pairing-Free Groups",
+    "authors": [
+      "Yanbo Chen"
+    ],
+    "abstract": "We propose the first blind signature scheme that simultaneously achieves the following properties:\n- It uses a pairing-free group and random oracles in a black-box manner;\n- It provably achieves concurrent security based on standard assumptions (DDH) without the algebraic group model (AGM);\n- It requires only three moves.\nMoreover, the public key, signature, and communication of our scheme all consist of only a constant number of group/field elements.\n\nPrior to our work, black-box, three-move pairing-free schemes were only known in the AGM. A recent line of work proposed and optimized schemes without the AGM, but they all require at least four moves.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-25",
+    "pdf_url": "https://eprint.iacr.org/2026/593.pdf",
+    "url": "https://eprint.iacr.org/2026/593",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/2054",
+    "title": "Optimal Proximity Gaps for Subspace-Design Codes and (Random) Reed-Solomon Codes",
+    "authors": [
+      "Venkatesan Guruswami"
+    ],
+    "abstract": "Reed-Solomon (RS) codes were recently shown to exhibit an intriguing $\\textit{proximity gap}$ phenomenon. Specifically, given a collection of strings with some algebraic structure (such as belonging to a line or affine space), either all of them are $\\delta$-close to RS codewords, or most of them are $\\delta$-far from the code. Here  $\\delta$ is the proximity parameter which can be taken to be the Johnson radius $1-\\sqrt{R}$ of the RS code ($R$ being the code rate), matching its best known list-decodability. Proximity gaps play a crucial role in the soundness analysis of Interactive Oracle Proof (IOP) protocols used in Succinct Non-Interactive Arguments of Knowledge (SNARKs) and the resulting proof sizes. \n\nProving proximity gaps beyond the Johnson radius, and in particular approaching $1-R$ (which is best possible), has been posed multiple times as a challenge with significant practical consequences to the efficiency of SNARKs. Here we prove that variants of RS codes, such as folded RS codes and univariate multiplicity codes, indeed have proximity gaps for $\\delta$ approaching $1-R$. The result applies more generally to codes with a certain subspace-design property. Our proof hinges on a clean property we abstract called line (or more generally curve) decodability, which we establish leveraging and adapting techniques from recent progress on list-decoding such codes. Importantly, our analysis avoids the heavy algebraic machinery used in previous works, and requires a field size only linear in the block length.\n\nThe behavior of subspace-design codes w.r.t ``local properties'' has recently been shown to be similar to random linear codes and random RS codes (where the evaluation points are chosen at random from the underlying field). We identify a local property that implies curve decodability, and thus also proximity gaps, and thereby conclude that random linear and random RS codes also exhibit proximity gaps up to the $1-R$ bound. Our results also establish the stronger (mutual) correlated agreement property which implies proximity gaps. Additionally, we also a show a $\\textit{slacked}$ proximity gap theorem for constant-sized fields using AEL-based constructions and local property techniques.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-11-06",
+    "pdf_url": "https://eprint.iacr.org/2025/2054.pdf",
+    "url": "https://eprint.iacr.org/2025/2054",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/589",
+    "title": "FROSTLASS: Flexible Ring-Oriented Schnorr-like Thresholdized Linkably Anonymous Signature Scheme",
+    "authors": [
+      "Luke Szramowski"
+    ],
+    "abstract": "FROST is a pragmatic method of thresholdizing Schnorr signatures, permitting a threshold quorum of $t$ signers out of $n$ total individuals to sign for a message. This scheme improved on the state of the art, resulting in an efficient protocol that aborts in the presence of up to $t-1$ malicious users with strong resilience against chosen-message attacks, assuming the hardness of the discrete logarithm problem. In this work, we build upon the foundation introduced in FROST by presenting FROSTLASS, which additionally enjoys novel linkability criteria and anonymity guarantees under the general one-more discrete logarithm problem, utilizing a \"Schnorr-shaped hole'' technique to prove desirable security results. This scheme is highly practical, tailor-made for use on-chain in the Monero cryptocurrency; indeed, we also showcase a Rust implementation for this protocol, demonstrating its real-world application to improve the security and usability of Monero.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-24",
+    "pdf_url": "https://eprint.iacr.org/2026/589.pdf",
+    "url": "https://eprint.iacr.org/2026/589",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1411",
+    "title": "BACON: An Improved Vector Commitment Construction with Applications to Signatures",
+    "authors": [
+      "Ugur Ilker Atmaca"
+    ],
+    "abstract": "All-but-one Vector Commitments (AVCs) allow a committed vector to be verified by randomly opening all but one of the committed values. Typically, AVCs are instantiated using Goldwasser-Goldreich-Micali (GGM) trees. Generating these trees comprises a significant computational cost for AVCs due to a large number of hash function calls. Recently, correlated GGM \n(cGGM) trees were proposed to halve the number of hash calls and Batched AVCs (BAVCs) using one large GGM tree were integrated to FAEST to form the FAEST version 2 signature scheme, which improves efficiency and reduces the signature size. However, further optimizations on BAVC schemes remain possible.\nInspired by the large-GGM based BAVC and the cGGM tree, this paper proposes BACON, a BAVC with aborts scheme by leveraging a large cGGM tree. BACON executes multiple instances of AVC in a single batch and enables an abort mechanism to probabilistically reduce the commitment size. We prove that BACON is secure under the ideal cipher model and the random oracle model. We also discuss the possible application of the proposed BACON, i.e., FAEST version 2. Furthermore, because the number of hash calls in a large cGGM tree is halved compared with that used in a large GGM tree, theoretically, our BACON is more efficient than the state-of-the-art BAVC scheme.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-08-02",
+    "pdf_url": "https://eprint.iacr.org/2025/1411.pdf",
+    "url": "https://eprint.iacr.org/2025/1411",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/585",
+    "title": "Format-Preserving Compression-Tolerating Authenticated Encryption for Images",
+    "authors": [
+      "Jehad Hussein"
+    ],
+    "abstract": "We study the problem of provably-secure format-preserving authenticated encryption scheme for images, where decryption is successful even when ciphertexts undergo compression. This novel primitive offers users more control and privacy when sharing and storing images on social media and other photo-centric, compressing platforms like Facebook and Google Photos. Since compression is usually lossy, we cannot expect the decrypted image to be identical to the original. But we want the decrypted image to be visually as close to the original image as possible. \nThere is a vast number of works on image encryption, mostly in the signal processing community, but they do not provide formal security analyses. We formally define security, covering the goals of image confidentiality and integrity. While we first treat the problem generically, we are particularly interested in the construction for the most common compression format, JPEG. We design a scheme for JPEG compression using the standard symmetric cryptographic tools and special pre- and post-processing.  We formally assess the security guarantees provided by the construction, discuss how to select the parameters using empirical experiments, and study performance of our scheme in terms of computational efficiency and decryption quality. We also build a browser plug-in that helps users store and share photos privately.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-24",
+    "pdf_url": "https://eprint.iacr.org/2026/585.pdf",
+    "url": "https://eprint.iacr.org/2026/585",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "TEE",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/583",
+    "title": "SoK: Updatable Public-Key Encryption",
+    "authors": [
+      "Federico Valbusa"
+    ],
+    "abstract": "Updatable (public-key) encryption is a broad concept covering (public-key) encryption schemes whose keys can evolve over time to support secure key rotation and limit the impact of key compromise. The essential feature is that the encryption keys (and possibly also ciphertexts) can be updated from one epoch to the next via so called update tokens. This concept is useful in various applications, among them secure outsourced storage, secure messaging or low-latency forward-secret key-exchange protocols.\n\nThe term, however, is used with varying meanings across the literature. Some works define key-updatable schemes, where only the public and secret keys evolve. Others extend this idea by also allowing ciphertexts to be updated during key evolution. Variants further differ in how evolution is triggered: in some schemes, the receiver performs key updates locally, while in others, the sender initiates the evolution by embedding update information in ciphertexts. Beyond achieving forward secrecy, many formulations also aim for post-compromise security, ensuring that once a compromised key is updated, future ciphertexts regain confidentiality under the new key. \n\nIn this paper, we systematize this field with a focus on updatable public-key encryption schemes. Our aim is to first provide a taxonomy that sheds light into the currently fragmented terminology. It then compares their formal definition, syntaxes and formal security models found in the literature, clarifies their interrelations, and identifies common design patterns underlying current schemes. Beyond mapping the definitional landscape we provide a comparative analysis of existing instantiations, focusing on their properties and efficiency, and highlighting their main trade-offs. The paper concludes with open challenges outlining directions for advancing the field.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-24",
+    "pdf_url": "https://eprint.iacr.org/2026/583.pdf",
+    "url": "https://eprint.iacr.org/2026/583",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "token"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/581",
+    "title": "vkproof: Succinct verification of indexed verifying keys using modular compilation and polynomial fingerprinting",
+    "authors": [
+      "Xueqin Zhao"
+    ],
+    "abstract": "We introduce vkproof, a preprocessing SNARG which enables verification of the Varuna verifying key (or that of any similar proof system based on Marlin [Chi+20]) for the R1CS compiled from a given higher-level program. It has constant proof size and affords linear verifier costs in the number of instructions of the program rather than the density of the compiled R1CS, which makes it especially appealing in contexts where complex-to-arithmetise functions (such as hashing) appear as program instructions frequently. This verifier succinctness is achieved through modular compilation of programs and the use of fingerprints to verify polynomial correctness. We augment the algebraic holographic proof (AHP) model of Marlin by allowing oracles to witness polynomials in the instance and queries to linear combinations of indexed polynomials, resulting in a primitive we refer to as extended algebraic holographic proofs (eAHP).",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-24",
+    "pdf_url": "https://eprint.iacr.org/2026/581.pdf",
+    "url": "https://eprint.iacr.org/2026/581",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1814",
+    "title": "SophOMR: Improved Oblivious Message Retrieval from SIMD-Aware Homomorphic Compression",
+    "authors": [
+      "Yongdong Yeo"
+    ],
+    "abstract": "Privacy-preserving blockchains and private messaging services that ensure receiver-privacy face a significant UX challenge: each client must scan every payload posted on the public bulletin board to avoid missing messages intended for them. Oblivious Message Retrieval (OMR) addresses this issue by securely outsourcing this expensive scanning process to a service provider using Homomorphic Encryption (HE).\n\nIn this work, we propose a new OMR scheme that substantially improves upon the previous state-of-the-art, PerfOMR (USENIX Security'24). Our implementation demonstrates reductions of 3.4x in runtime, 2.2x in digest size, and 1.5x in key size, in a scenario with 65536 payloads (each 612 bytes), of which up to 50 are pertinent. At the core of these improvements is a new homomorphic compression mechanism, where ciphertexts of length proportional to the number of total payloads are compressed into a digest whose length is proportional to the upper bound on the number of pertinent payloads. Unlike previous approaches, our scheme fully exploits the native homomorphic SIMD structure of the underlying HE scheme, significantly enhancing efficiency. In the setting described above, our compression scheme achieves 7.5x speedup compared to PerfOMR.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-11-06",
+    "pdf_url": "https://eprint.iacr.org/2024/1814.pdf",
+    "url": "https://eprint.iacr.org/2024/1814",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1924",
+    "title": "Golden: Lightweight Non-Interactive Distributed Key Generation",
+    "authors": [
+      "Chelsea Komlo"
+    ],
+    "abstract": "We present Golden, a non-interactive Distributed Key Generation (DKG) protocol. Golden achieves public verifiability in a lightweight, non-interactive manner, outputting Shamir secret shares of a field element $\\mathsf{sk} \\in \\mathbb{Z}_p$ to all participants, and a public key $\\mathsf{PK}= g^{\\mathsf{sk}}$ that is a discrete-logarithm commitment to sk.\n\nGolden avoids the overhead of public-key encryption schemes like ElGamal, Pallier, or class groups by using a novel building block: a two-party exponent Verifiable Random Function (two-party eVRF), which may be of independent interest. We present a concretely efficient construction based on the Diffie-Hellman non-interactive key exchange and an efficient zero-knowledge proof. DKG participants use this two-party eVRF in a pairwise manner to generate a one-time pad to encrypt shares, while maintaining public verifiability. Golden can be securely instantiated in the random oracle model over any elliptic curve for which the discrete logarithm assumption holds.\n\nGolden drastically improves efficiency, compared to other non-interactive DKGs. For 50 participants, Golden requires only 223 kb bandwidth and 13.5 seconds of total runtime for each participant, in comparison to ElGamal-based non-interactive DKG, which requires 27.8 MB bandwidth and 40.5 seconds runtime per participant.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-15",
+    "pdf_url": "https://eprint.iacr.org/2025/1924.pdf",
+    "url": "https://eprint.iacr.org/2025/1924",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/578",
+    "title": "How Much Verifier's Dilemma and Staking Pools Adversely Affect Decentralization of Ethereum PoS under Realistic Operational Costs? (Extended Version)",
+    "authors": [
+      "Daria Smuseva"
+    ],
+    "abstract": "Some consensus protocols, including Proof-of-Work (PoW) and Proof-of-Stake (PoS) designs of Ethereum, contain incentive misalignment because the protocol cannot technically verify whether a block producer or validator has executed (or omitted) validation of transaction correctness before producing a block or issuing an attestation. The incentive to omit validation stems from the risk of losing a fraction of the reward due to a late attestation in PoS, or the risk of missing timely block production (and thus its inclusion) in PoW.\n\nThis problem is referred to as the Verifier’s Dilemma (VD), and it has been investigated in prior work in the context of PoW, as well as in hybrid PoW and PoS settings of Ethereum.\n\nIn this work, we focus on Ethereum PoS, and we investigate how rational, minimally compliant validators affect long-term network decentralization due to VD and operational costs. Using evolutionary game theory and the replicator equation, we model competition among three validator phenotypes: the honest strategy, the lazy strategy, and the join pool strategy. While the honest strategy, which performs validation, requires the operational cost of expensive hardware to run a full validator node, which is currently about 20% of rewards earned, the lazy strategy, which omits validation (based on VD), enables operation of a reduced validator node at five times lower expense, which is currently about 4% of rewards earned. Moreover, the join pool strategy enables amortization of operational costs among pool members and can incorporate the lazy strategy to further reduce costs.\n\nWe analyze the profits of these strategies co-occurring under varying late attestation rates and operational cost levels using our slot-level simulator. Our findings demonstrate that the lazy strategy consistently outperforms the honest strategy in earned profits. Our next experiments reveal that the join pool strategy, combined with a variant of the lazy strategy, forms an evolutionarily stable equilibrium that rapidly collapses the validator population into a single shared pool. These results suggest that Ethereum decentralization can erode through rational economic drift even in the absence of late attestations.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-23",
+    "pdf_url": "https://eprint.iacr.org/2026/578.pdf",
+    "url": "https://eprint.iacr.org/2026/578",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/2292",
+    "title": "FRIVail: A Data Availability Scheme based on FRI Binius",
+    "authors": [
+      "Rachit Anand Srivastava"
+    ],
+    "abstract": "Data Availability Sampling (DAS) has emerged as a key scalability technique for blockchain systems, enabling light clients to verify that block data have been fully published without downloading them in their entirety. We introduce FRIVail, a new DAS construction built on top of the FRI-Binius polynomial commitment scheme, designed for datasets composed of many independent single-row payloads that together form a block’s data blob. FRIVail exploits the intrinsic Reed–Solomon structure of FRI, wherein each commitment naturally encodes a codeword that light clients can sample directly.\n\nEach row of the blob is assigned an independent FRI proof. These row-level proofs are then combined into a global availability certificate using one of three aggregation strategies. The first constructs a succinct zero-knowledge proof attesting to the correct verification of all row-level FRI proofs, yielding a compact ZK proof of proofs that enables succinct global verification while preserving row independence. The second is a fully post-quantum construction that recursively applies FRI-Binius to build a proof of proofs. In this setting, global verification relies on FRI proximity checks, but reconstruction of the aggregated proof polynomial is required to recover embedded row-level information. The third is a hybrid aggregation based on KZG polynomial commitments, where the aggregated polynomial admits direct algebraic openings but relies on pairing-based assumptions and a trusted setup, and is therefore not post-quantum.\n\nIn all variants, light clients verify availability via a small number of local opening checks against the header commitment, without downloading entire rows or the full blob. We formalize DAS security in this multi-row, multi-proof setting and show that FRIVail achieves sublinear verification complexity, robustness against adversarial availability equivocation at the row level, and resistance to correlated sampling attacks. FRIVail provides a modular foundation for next-generation blockchain data availability protocols, supporting zero-knowledge-based, fully post-quantum, and hybrid cryptographic deployments.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-12-19",
+    "pdf_url": "https://eprint.iacr.org/2025/2292.pdf",
+    "url": "https://eprint.iacr.org/2025/2292",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/964",
+    "title": "TOOP: A transfer of ownership protocol over Bitcoin",
+    "authors": [
+      "Sergio Demian Lerner"
+    ],
+    "abstract": "We present the Transfer of Ownership Protocol (TOOP). TOOP solves a limitation of all existing BitVM-like protocols (and UTxO blockchains at large) that restricts the unlocking transfers to addresses known and preregistered during lock and setup. Accordingly, our protocol avoids the financially costly, regulatory problematic, and congestion-prone front-and-reimburse paradigm.\n\nFurthermore, we note that one of the main applications of TOOP is as an enabler of secure transfer of assets between UTxO blockchains, and back. We showcase this via sketching a committee-based validation protocol that requires only 1-out-of-n honest security. This protocol operates in distinct phases: the lock phase, where the initial setup and individual assets are locked on Bitcoin, and the unlocking with the ownership transfer phase, where the asset is transferred to a possibly different legitimate owner. \n\nThis cross-chain bridge protocol, where TOOP plays a key role, is being formalized in concurrent work, and has been implemented for the first time in Cardinal, a protocol for wrapping Bitcoin Unspent Transaction Outputs (UTxOs) onto the Cardano blockchain, with Bitcoin Ordinals represented as Cardano Non-Fungible Tokens (NFTs).",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-05-27",
+    "pdf_url": "https://eprint.iacr.org/2025/964.pdf",
+    "url": "https://eprint.iacr.org/2025/964",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "NFT",
+      "token",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/2158",
+    "title": "Efficient Batched IBE from Lattices in the Standard Model",
+    "authors": [
+      "Jie Chen"
+    ],
+    "abstract": "In this work, we present the first lattice-based construction of batched IBE in the standard model, whose security is proven under the succinct LWE assumption. Prior batched IBE schemes are only known either based on pairing-based assumptions or in the random oracle model. Moreover, our scheme is shown to be highly efficient, as the master public key, decryption key, and ciphertext are independent of the batch size $B$. \n\nTechnically, we mainly rely on an insightful observation: batched IBE can be obtained solely from Inner-Product Encryption (IPE). To satisfy the efficiency requirements of batched IBE, we require an IPE scheme that owns two important features: decomposable key generation and compact components. Finally, we show how to construct such an IPE scheme from the well-known BGG+14 IPE scheme via careful modification.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-11-27",
+    "pdf_url": "https://eprint.iacr.org/2025/2158.pdf",
+    "url": "https://eprint.iacr.org/2025/2158",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/576",
+    "title": "Radical 3-isogenies for the ideal class group actions on $(2, \\varepsilon)$-structures",
+    "authors": [
+      "Tsuyoshi Takagi"
+    ],
+    "abstract": "Chenu and Smith introduced the notion of $(d,\\varepsilon)$-structures, pairs consisting of an elliptic curve over $\\mathbb{F}_{p^2}$ and an isogeny of degree $d$ from the curve to its Galois conjugate. They also defined an ideal class group action on a set of supersingular $(d,\\varepsilon)$-structures, inherited from the action on oriented supersingular elliptic curves. As cryptographic applications of this action, they outlined extensions of the CSIDH key exchange and of the Delfs-Galbraith algorithm for the supersingular isogeny problem. In particular, their extension of the Delfs-Galbraith algorithm, called the generalized Delfs-Galbraith algorithm, is expected to be more efficient than the original one by a constant factor. Therefore, it is important to find efficient methods for evaluating the ideal class group action on $(d, \\varepsilon)$-structures.\n\nIn this paper, we focus on the case $d=2$ and present explicit radical 3-isogenies for evaluating the action of the class of a prime ideal above 3. Our approach relies on two representations of $(2,\\varepsilon)$-structures: (i) reductions of degree-2 $\\mathbb{Q}$-curves and (ii) Montgomery curves. In particular, we show that any $(2,\\varepsilon)$-structure can be represented as a pair of a curve coefficient (of a degree-2 $\\mathbb{Q}$-curve or a Montgomery curve) and a single sign. From these representations, we derive radical 3-isogenies that efficiently implement the action of the class of a prime ideal above 3. As an application of our radical 3-isogenies, we give an explicit algorithm of the meet-in-the-middle method for finding an ideal class connecting two given $(2, \\varepsilon)$-structures, which is a part of the generalized Delfs-Galbraith algorithm.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-23",
+    "pdf_url": "https://eprint.iacr.org/2026/576.pdf",
+    "url": "https://eprint.iacr.org/2026/576",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/030",
+    "title": "Incremental Single-Server Private Information Retrieval",
+    "authors": [
+      "Haoyu Cui"
+    ],
+    "abstract": "Incremental preprocessing in private information retrieval (PIR) schemes refers to handle insertions, modifications, and deletions to the database without requiring complete preprocessing after each update. This broadens the applicability of PIR in practical scenarios. However, two major issues remain: the concept of incremental preprocessing for the single-server PIR is still not established, and the row-level update strategy (iSimplePIR (Row-level)) introduces excessive unnecessary overhead. This paper aims to efficiently extend incremental preprocessing to the single-server setting. To our knowledge, we are the first to propose the formal definition of single-server incremental PIR. Besides, we construct an entry-level incremental scheme (iSimplePIR (Entry-level)) based on SimplePIR (USENIX ’23). iSimplePIR (Entry-level) supports real-time updates of individual entries, as well as optimization of communication for scenarios with certain update cycles by incorporating a row aggregation mechanism. For a 1\\% column-major update in a 1GB database, iSimplePIR (Entry-level) achieves a 224$\\times$ reduction in preprocessing computation overhead and a 4.2$\\times$ reduction in both communication and monetary costs compared to iSimplePIR (Row-level). When applied to password breach detection with completely random entry updates, iSimplePIR (Entry-level) reduces preprocessing time by 86$\\times$. Meanwhile, our method can be combined with various SimplePIR-based schemes to reduce preprocessing costs, such as DoublePIR, Authenticated PIR (based on the LWE assumption), VeriSimplePIR, and YPIR.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-01-08",
+    "pdf_url": "https://eprint.iacr.org/2026/030.pdf",
+    "url": "https://eprint.iacr.org/2026/030",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1748",
+    "title": "Post-Quantum TLS 1.3 Handshake from CPA-Secure KEMs with Tighter Reductions",
+    "authors": [
+      "Moti Yung"
+    ],
+    "abstract": "TLS 1.3 is at the heart of secure modern internet communications. With the rise of quantum attacks, post-quantum TLS 1.3, built on post-quantum key encapsulation mechanisms (KEMs), has naturally become a major research focus. At Eurocrypt 2022, Huguenin-Dumittan and Vaudenay demonstrated that KEMs secure against chosen-plaintext attacks (CPA) are sufficient to construct a secure TLS 1.3 handshake in the random oracle model (ROM), but their security reduction incurs an $\\mathcal{O}(q^6)$ loss, where $q$ is the number of random oracle queries. Improving their security bounds was left as an open problem. To address this problem, Zhou et al. took the first step at Asiacrypt 2024, improving the loss factor to $\\mathcal{O}(q^2)$ in the ROM and $\\mathcal{O}(q^4)$ in the quantum ROM (QROM) for OW-CPA secure KEMs, and to $\\mathcal{O}(q)$ (ROM) and $\\mathcal{O}(q^2)$ (QROM) for IND-CPA secure KEMs.\n\nIn this work, we advance the state-of-the-art by providing tighter security reductions for TLS 1.3 handshake based on CPA-secure KEMs. We introduce a new security notion, \\textit{IND-1CCA-1MAC}, and show that with a slight ciphertext expansion, the reduction losses can be significantly improved to $\\mathcal{O}(q)$ (ROM) and $\\mathcal{O}(q^2)$ (QROM) for OW-CPA secure KEMs, and to only $\\mathcal{O}(1)$ in both models for IND-CPA secure KEMs. Moreover, we prove that without additional modifications such as ciphertext expansion, the loss of $\\mathcal{O}(q)$ (ROM) and $\\mathcal{O}(q^2)$ (QROM) is unavoidable. Finally, we analyze the security of TLS 1.3 from CPA-secure KEMs in the hybrid key exchange setting, and provide experimental evidence that ciphertext expansion is a practical trade-off for mitigating reduction losses.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-09-24",
+    "pdf_url": "https://eprint.iacr.org/2025/1748.pdf",
+    "url": "https://eprint.iacr.org/2025/1748",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/468",
+    "title": "Tighter Proofs for PKE-to-KEM Transformations under Average-Case Decryption Error and without $\\gamma$-Spread",
+    "authors": [
+      "Xiaofeng Chen"
+    ],
+    "abstract": "In the NIST post-quantum standardization process, Fujisaki-Okamoto-like (FO-like) transformation has become the de facto paradigm for constructing IND-CCA secure key encapsulation mechanisms (KEMs) from public-key encryption (PKE). However, most post-quantum PKE schemes exhibit decryption error, which poses significant challenges for the security proofs of FO-like PKE-to-KEM transformations, particularly in the quantum-accessible random oracle model (QROM). Hofheinz, Hövelmanns, and Kiltz (TCC 2017) gave the first QROM security proofs for PKE-to-KEM transformations under \\textit{worst-case} decryption error.  To relax this to the more designer-friendly one of \\textit{average-case} decryption error, Duman et al. (PKC 2023) presented two transformations, $\\mathsf{FOAC}_0$ and $\\mathsf{FOAC}$, which are under average-case decryption error but introduce substantial loss in QROM reduction tightness ($\\mathcal{O}(q^8)$ for $\\mathsf{FOAC}_0$ and $\\mathcal{O}(q^6)$ for $\\mathsf{FOAC}$) and the need for the $\\gamma$-spread assumption on the underlying PKEs.  Very recently, Ge et al. (ePrint 2025) removed the $\\gamma$-spread assumption for $\\mathsf{FOAC}_0$ and improved the QROM reduction tightness to $\\mathcal{O}(q^4)$ for both $\\mathsf{FOAC}_0$ and $\\mathsf{FOAC}$.\n\nIn this work, we make further advances by introducing two refined variants: $\\mathsf{FOAC}'_0$ and $\\mathsf{FOAC'}$. We provide new security analyses in both the ROM and the QROM, and present the following key contributions: (1) Compared with previous transformations under average-case decryption error, $\\mathsf{FOAC}'_0$ and $\\mathsf{FOAC'}$ exhibit tighter security proofs with QROM reduction loss of only $\\mathcal{O}(q^2)$ for $\\mathsf{FOAC}'_0$ and $\\mathcal{O}(q^3)$ for $\\mathsf{FOAC'}$ when the underlying PKE is OW‑CPA secure, and just $\\mathcal{O}(q)$ when it is deterministic or IND‑CPA security; (2) Both $\\mathsf{FOAC}'_0$ and $\\mathsf{FOAC'}$ eliminate the $\\gamma$-spread assumption entirely, further relaxing the requirements on the underlying PKE.\n\nTo support our QROM proofs, we provide three new QROM proof techniques that build on Zhandry's compressed oracle technique (CRYPTO 2019). These techniques may be of independent interest and could have broader applicability in post-quantum cryptography.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-06",
+    "pdf_url": "https://eprint.iacr.org/2026/468.pdf",
+    "url": "https://eprint.iacr.org/2026/468",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1007/s10515-026-00594-0",
+    "title": "Community-driven variability: characterizing a new software variability paradigm",
+    "authors": [
+      "Roman Bögli",
+      "Alexander Boll",
+      "Alexander Schultheiß",
+      "Timo Kehrer"
+    ],
+    "abstract": "Both software engineering researchers and practitioners have increasingly shifted their focus from single software systems to software families, reflecting the need for software industrialization through systematic reuse of implementation artifacts. Interestingly, several vibrant ecosystems produce software families in a radically different way than classical variability-intensive systems, notably software product lines (SPLs). The Bitcoin community, for instance, evolves its ecosystem through crowdsourced improvement proposals being continuously shaped and autonomously implemented by independent actors. While this novel paradigm of Community-Driven Variability (CDV) has proven effective for driving flourishing technologies like Bitcoin and others, it also comes with unique challenges calling for novel solutions. In this paper, we define the key characteristics of ecosystems exposing CDV and derive a taxonomy that hierarchically decomposes each characteristic into constituting sub-characteristics. Building on the taxonomy, we conduct a systematic analysis of 14 software ecosystems to evaluate the presence and nature of CDV. We highlight the novel problems they face, such as the lack of ecosystem overview, difficulties in impact assessment, misalignment between proposals and implementations, and interoperability breakdowns – challenges that transcend classical variability management. Based on the problem analysis, we outline our research vision to tackle these challenges, including a sketch of concrete starting points for technical solutions. While classical SPLs and CDV ecosystems differ drastically, we believe that feature-oriented modeling and analysis offers promising concepts for addressing CDV challenges without enforcing product-line processes. Conversely, the unique demands of CDV can inspire advances in variability research with impact beyond its original domains.",
+    "venue": "IEEE/ACM ASE",
+    "year": 2026,
+    "date_published": "2026-03-21",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10515-026-00594-0.pdf",
+    "url": "https://doi.org/10.1007/s10515-026-00594-0",
+    "citation_count": 0,
+    "relevance_tags": [
+      "MEV",
+      "DeFi",
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3677430",
+    "title": "S-Auth: Schnorr-enhanced Authentication Scheme for Security and Efficiency in Blockchain Web3.0",
+    "authors": [
+      "Jangho Na",
+      "Hoh Peter In"
+    ],
+    "abstract": "Web3 authentication stacks largely inherit ECDSA centric single-signature workflows that limit security and efficiency, while custody of identity data often remains application controlled rather than self-sovereign. We present S-Auth, an authentication layer that combines BIP340 Schnorr signatures with Decentralized Identifiers (DID), Verifiable Credentials (VC), and Content addressing (CID). The proposed solution utilizes Schnorr digital signatures, which have demonstrated improved security and efficiency over traditional schemes. The contributions of this work are as follows. Firstly, we apply the BIP340 standard to Schnorr digital signatures, bolstering security against various attacks including strong unforgeability under chosen message attack (SUF-CMA), non-malleability, linearity, related-key at tacks, hash collision, fault injection, nonce exfiltration, resource exhaustion, and domain separation. Secondly, we leverage the linearity property of Schnorr signatures to enable multi-signature aggregation and batch verification, addressing the inefficiency of existing schemes that rely on single signatures and thereby also enhancing privacy. Third, we combine the blockchain with DID, VC, and IPFS to provide a secure and self-sovereign identity that can be authenticated. Experiments comparing ECDSA, Ed25519, Schnorr, and BIP340 show that S-Auth reduces signature artifacts via aggregation, improves verifier throughput with batching, and decreases anchoring overhead while preserving user-controlled identity. S-Auth provides a self-sovereign, efficient, and secure authentication mechanism suitable for Web3 environments.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": "https://doi.org/10.1109/tdsc.2026.3677430",
+    "url": "https://doi.org/10.1109/tdsc.2026.3677430",
+    "citation_count": 0,
+    "relevance_tags": [
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3676743",
+    "title": "Smart Contracts- Cloud Storage-Assisted Medical Image Encryption and Sharing Solution",
+    "authors": [
+      "Jianmeng Liu",
+      "Zhenlong Man"
+    ],
+    "abstract": "To address the security risks in sharing medical imaging data and the challenges of insufficient data interoperability between heterogeneous systems, and to achieve secure sharing of medical information across institutions, this paper proposes a secure encryption scheme based on the characteristics of medical images, and uses cloud storage and smart contracts to build a secure framework for cross-institutional information sharing. First, in response to the regional characteristics and uneven information distribution of medical images, an innovative two-stage encryption scheme of “partitioning, diffusion, and coupled scrambling” is proposed. The first stage applies information entropy equalisation processing to non-ROI regions, enhancing their information effectiveness and generating dynamic parameters. The second stage utilises the cross-region coupling dynamic parameters generated in the first stage to optimise the encryption results within ROI regions. Finally, a key driven scrambling factor is employed to complete the global pixel position reconstruction, achieving high-security encryption. Each medical institution encrypts medical images and uploads them to unified cloud storage, along with binary thumbnails generated from the corresponding plaintext images. Simultaneously, essential metadata—including image hash values, ownership details, and access permission policies—is stored on the blockchain. After an authorized user selects the desired data by browsing cloud thumbnails, a smart contract automatically executes the transaction, completing on-chain permission verification, data traceability, and access authentication, thereby coordinating the user's secure access to the corresponding encrypted image data off-chain. Eight experiments have demonstrated the security of the encryption scheme and the proposed sharing framework.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tdsc.2026.3676743",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "bridge",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tifs.2026.3676668",
+    "title": "FlyCred: Contractual Anonymous Credentials Based on Oracles and Events",
+    "authors": [
+      "Rui Shi",
+      "Yang Yang",
+      "Huamin Feng",
+      "Y. Peeta Li",
+      "Chunjie Cao",
+      "Robert H. Deng"
+    ],
+    "abstract": "In a scenario where an issuer wishes to issue an attribute-based anonymous credential to a user, this issuance is conditional on a number of real-world outcomes. These outcomes involve multiple entrusted oracles confirming the occurrence of several events, after which the issuance can proceed successfully. Such contractual credentials can serve as an important building block for blockchain-based Web 3.0 systems and can be used in real-world applications that require privacy-preserving, prescheduled authorization. However, there is currently no work that enables the pre-issuance of credentials based on oracles and events. In this work, we propose contractual anonymous credentials, called FlyCred, to fill this gap. With FlyCred, the issuer can issue an encrypted credential to a user, controlled by a dual-layer authorization policy consisting of oracle-based and event-based expressive policies. As core building blocks, we introduce two novel cryptographic primitives: the Adaptor Anonymous Credential and ABE-based Signature Witness Encryption with Tags, which can serve as independent interests. We provide efficient instantiations of these primitives and evaluate their performance under different security levels and system parameters on a laptop, showing that the computation and communication overhead of the credential pre-issuance is less than 85.8 seconds and 8.7 MB, respectively.",
+    "venue": "IEEE TIFS",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tifs.2026.3676668",
+    "citation_count": 0,
+    "relevance_tags": [
+      "oracle",
+      "privacy",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tifs.2026.3654380",
+    "title": "APEG: Adaptive Physical Layer Authentication With Channel Extrapolation and Generative AI",
+    "authors": [
+      "Xi Cheng",
+      "Rui Meng",
+      "Xiaodong Xu",
+      "Haixiao Gao",
+      "Ping Zhang",
+      "Dusit Niyato"
+    ],
+    "abstract": "With the rapid advancement of 6G, identity authentication has become increasingly critical for ensuring wireless security. The lightweight and keyless Physical Layer Authentication (PLA) is regarded as an instrumental security measure in addition to traditional cryptography-based authentication methods. However, existing PLA schemes often struggle to adapt to dynamic radio environments. To overcome this limitation, we propose the Adaptive PLA with Channel Extrapolation and Generative AI (APEG), designed to enhance authentication robustness in dynamic scenarios. Leveraging Generative AI (GAI), the framework adaptively generates Channel State Information (CSI) fingerprints, thereby improving the precision of identity verification. To refine CSI fingerprint generation, we propose the Collaborator-Cleaned Masked Denoising Diffusion Probabilistic Model (CCMDM), which incorporates collaborator-provided fingerprints as conditional inputs for channel extrapolation. Additionally, we develop the Cross-Attention Denoising Diffusion Probabilistic Model (CADM), employing a cross-attention mechanism to align multi-scale channel fingerprint features, further enhancing generation accuracy. Simulation results demonstrate the superiority of the APEG framework over existing time-sequence-based PLA schemes in authentication performance. Notably, CCMDM exhibits a significant advantage in convergence speed, while CADM, compared with model-free, time-series, and VAE-based methods, achieves superior accuracy in CSI fingerprint generation.",
+    "venue": "IEEE TIFS",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": "https://arxiv.org/pdf/2603.21923",
+    "url": "https://doi.org/10.1109/tifs.2026.3654380",
+    "citation_count": 1,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3800939",
+    "title": "Human-centric Evaluation of Semantic Resources: A Systematic Mapping Study",
+    "authors": [
+      "Marta ; id_orcid 0000-0001-9301-8418 Sabou",
+      "Stefani Tsaneva",
+      "Miriam Fernández",
+      "María Poveda",
+      "Mari Carmen Suárez-Figueroa"
+    ],
+    "abstract": "Semantic resources such as ontologies and knowledge graphs enable intelligent applications in a broad range of application areas. As ensuring their quality is important, evaluation activities are an integral part of their life-cycle. Yet, several aspects of these resources, such as domain or modelling correctness, are not amenable to automatic evaluation and require assessment through human participation. Despite such human-centric evaluation of semantic resources (HESR) is essential, there is a lack of a systematic understanding of this area in terms of a theoretical framework as well as an overview of concrete HESR approaches and trends . We address this gap by, firstly, integrating existing literature into a theoretical framework for defining and characterising HESR thus developing a new perspective on this area. Second, we perform a Systematic Mapping Study of 15 years of work published in this area covering 144 papers in order to empirically ground and extend the theoretical framework and identify trends and best practices. These theoretical foundations , insights into current trends and practices as well as our openly available data and analysis scripts aim to enable new research in this area and offer practical guidelines for performing HESR to researchers and practitioners alike.",
+    "venue": "ACM CSUR",
+    "year": 2026,
+    "date_published": "2026-03-05",
+    "pdf_url": "https://doi.org/10.1145/3800939",
+    "url": "https://doi.org/10.1145/3800939",
+    "citation_count": 0,
+    "relevance_tags": [
+      "MEV",
+      "DeFi",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3800687",
+    "title": "Must Read: A Comprehensive Survey of Computational Persuasion",
+    "authors": [
+      "Nimet Beyza Bozdag",
+      "Shuhaib Mehri",
+      "Xiaocheng Yang",
+      "Hyeonjeong Ha",
+      "Zhuo Cheng",
+      "Esin Durmus",
+      "Jiaxuan You",
+      "Heng Ji",
+      "Gökhan Tür",
+      "Dilek Hakkani-Tür"
+    ],
+    "abstract": "Persuasion is a fundamental aspect of communication, influencing decision-making across diverse contexts, from everyday conversations to high-stakes scenarios such as politics, marketing, and law. The rise of conversational AI systems has significantly expanded the scope of persuasion, introducing both opportunities and risks. AI-driven persuasion can be leveraged for beneficial applications, but also poses threats through unethical influence. Moreover, AI systems are not only persuaders, but also susceptible to persuasion, making them vulnerable to adversarial attacks and bias reinforcement. Despite rapid advancements in AI-generated persuasive content, our understanding of what makes persuasion effective remains limited due to its inherently subjective and context-dependent nature. In this survey, we provide a comprehensive overview of persuasion, structured around three key perspectives: (1) AI as a Persuader , which explores AI-generated persuasive content and its applications; (2) AI as a Persuadee , which examines AI’s susceptibility to influence and manipulation; and (3) AI as a Persuasion Judge , which analyzes AI’s role in evaluating persuasive strategies, detecting manipulation, and ensuring ethical persuasion. We introduce a taxonomy for persuasion research and discuss key challenges for future research to enhance the safety, fairness, and effectiveness of AI-powered persuasion while addressing the risks posed by increasingly capable language models.",
+    "venue": "ACM CSUR",
+    "year": 2026,
+    "date_published": "2026-03-19",
+    "pdf_url": "https://arxiv.org/pdf/2505.07775",
+    "url": "https://doi.org/10.1145/3800687",
+    "citation_count": 1,
+    "relevance_tags": [],
+    "analyzed": false
   }
 ]
