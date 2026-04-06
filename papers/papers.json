@@ -23822,5 +23822,560 @@
     "citation_count": 1,
     "relevance_tags": [],
     "analyzed": false
+  },
+  {
+    "id": "eprint:2025/2097",
+    "title": "Hash-Based Blind Signatures: First Steps",
+    "authors": [
+      "Hugo Louiso"
+    ],
+    "abstract": "Hash-based signatures are a strong candidate for post-quantum scenarios requiring authentication and integrity. Their security relies only on (well-studied) properties of hash functions,  so they may be thought as being more robust than other schemes that (today) resist quantum attacks, like those based on lattices, coding or isogenies.\n\nRecent works also study hash-based signature schemes with additional properties, such as group, ring, threshold, or aggregate signature schemes. In this work, we do the same for the important case of blind signatures. We describe a secure (in the programmable random oracle model) modification of Fischlin's generic construction of blind signatures that can be instantiated with different hash-based protocols. As a result, we obtain the first blind signature schemes whose security relies only on the collision resistance of hash functions. Finally, as a proof of concept, we have implemented one (highly non-optimized) of the possible instantiations.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-11-14",
+    "pdf_url": "https://eprint.iacr.org/2025/2097.pdf",
+    "url": "https://eprint.iacr.org/2025/2097",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/649",
+    "title": "Perils of Parallelism: Transaction Fee Mechanisms under Execution Uncertainty",
+    "authors": [
+      "Kartik Nayak"
+    ],
+    "abstract": "Modern blockchains increasingly rely on parallel execution to improve throughput. We show several industry and academic transaction fee mechanisms (TFMs) struggle to simultaneously account for execution parallelism while remaining performant and fair. First, if parallelism affects fees, adversarial protocol manipulations that offset possible benefits to throughput by introducing fake transactions become rational: users can insert functionally useless parallel transactions solely to reduce fees, and schedulers can create useless sequential transactions to increase revenue. Execution contingency, a core feature of expressive programming languages, both exacerbates the aforementioned threats and introduces new ones:\n(1) users may overpay for unused resources, and \n(2) scheduler revenue is harmed when reserved scheduling slots go unused due to contingency.\nWe introduce a framework for this challenging setting, and prove an impossibility, highlighting an inherent tension: both parallelism and contingency involve a trade-off between minimizing risks for users and schedulers, as favoring one comes at the expense of the other. To complete the picture, we introduce a fee mechanisms and prove that they achieve the boundaries of this trade-off. Our results provide rigorous foundations for evaluating designs advanced by notable blockchains, such as Sui and Monad.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-02",
+    "pdf_url": "https://eprint.iacr.org/2026/649.pdf",
+    "url": "https://eprint.iacr.org/2026/649",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2023/1063",
+    "title": "DiStefano: Decentralized Infrastructure for Sharing Trusted Encrypted Facts and Nothing More",
+    "authors": [
+      "Joe Rowell"
+    ],
+    "abstract": "We design DiStefano: an efficient, maliciously-secure framework for generating private commitments over TLS-encrypted web traffic, for verification by a designated third-party. DiStefano provides many improvements over previous TLS commitment systems, including: a modular protocol specific to TLS 1.3, support for arbitrary verifiable claims over encrypted data, client browsing history privacy amongst pre-approved TLS servers, and various optimisations to ensure fast online performance of the TLS 1.3 session. We build a permissive open-source implementation of DiStefano integrated into the BoringSSL cryptographic library (used by Chromium-based Internet browsers). We show that DiStefano is practical in both LAN and WAN settings for committing to facts in arbitrary TLS traffic, requiring \\(<\\) 1 s and \\(≤\\) 80 KiB to execute the complete online phase of the protocol.",
+    "venue": "IACR ePrint",
+    "year": 2023,
+    "date_published": "2023-07-07",
+    "pdf_url": "https://eprint.iacr.org/2023/1063.pdf",
+    "url": "https://eprint.iacr.org/2023/1063",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/647",
+    "title": "SSLE-DAG: A High-Throughput Proof-of-Stake Consensus Protocol Combining an Adaptive DAG with a Single Secret Leader Election",
+    "authors": [
+      "Ivan Homoliak"
+    ],
+    "abstract": "SSLE-DAG Proof-of-Stake (PoS) blockchains with publicly visible leader schedules expose future proposers to targeted Denial-of-Service (DoS) attacks. Single Secret Leader Election (SSLE) techniques address this problem by hiding the leader's identity until block publication. However, existing SSLE techniques are difficult to integrate with high-throughput Directed Acyclic Graph (DAG)-based Proof-of-Stake consensus protocols. We introduce SSLE-DAG, a PoS consensus protocol that combines a zk-SNARK-based SSLE commitment scheme with the adaptive DAG-based consensus protocol that splits or merges parallel chains (and thus regulates throughput) upon transaction demand. The commitment scheme uses EdDSA signatures, MiMC hashing, and Merkle proofs to guarantee uniqueness, fairness, and unpredictability while keeping leader identities private. We implement SSLE-DAG in Go (gnark) and evaluate it in a geo-distributed simulation using real-world latency traces. In a 60-node network, we achieve about 990 TPS, and in a 40-node network with shorter rounds, we reach about 1,600 TPS with low variance in block rewards.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-02",
+    "pdf_url": "https://eprint.iacr.org/2026/647.pdf",
+    "url": "https://eprint.iacr.org/2026/647",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "ZKP",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/644",
+    "title": "Ordered Multi-Signatures from the DL Assumption",
+    "authors": [
+      "Masayuki Tezuka"
+    ],
+    "abstract": "Ordered multi-signatures allow multiple signers to sign a common message sequentially, and anyone to verify the signing order of signers with a public-key list. Recently, Baum et al. (PKC 2025) proposed an ordered multi-signature scheme over a pairing-free group by modifying the multi-signature scheme MuSig2 by Nick et al. (CRYPTO 2021). The security of their ordered multi-signature scheme was proven under the algebraic one-more discrete logarithm (AOMDL) assumption in the random oracle model (ROM). The AOMDL assumption is stronger than the discrete logarithm (DL) assumption. To strengthen the assurance of security, it is desirable either to prove their scheme under the DL assumption or give a construction whose security is proven under the DL assumption.\nIn this paper, we give an ordered multi-signature scheme from linear hash function families. Our scheme is obtained by generalizing Baum et al.’s scheme via linear hash function families. The security of our scheme is proven under the algebraic one-more preimage resistance (AOMPR) property of a linear hash function in the ROM. There is a linear hash function whose AOMPR property can be proven under the DL assumption. Thus, by using this linear hash function, we obtain the first DL- based ordered multi-signature scheme.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-02",
+    "pdf_url": "https://eprint.iacr.org/2026/644.pdf",
+    "url": "https://eprint.iacr.org/2026/644",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/643",
+    "title": "FOVA: Fast One-Shot Verifiable Aggregation for Federated Learning",
+    "authors": [
+      "Haifeng Qian"
+    ],
+    "abstract": "In federated learning (FL), secure aggregation (SA) allows a server to compute aggregate model updates (gradients) without accessing individual client gradients. SA is intended to protect clients’ local dataset from being inferred through individual gradients. However, recent NDSS 2025 work shows that even state-of-the-art SA protocols can be vulnerable, as a malicious server may reconstruct clients’ datasets from aggregated gradients. This demonstrates that protecting dataset privacy requires not only gradient confidentiality but also aggregation hiding. Moreover, a malicious server may deviate from the protocol and return manipulated results, making authenticity an additional critical security goal. Supporting one-shot clients, which send a single message per iteration to reduce synchronization overhead, further increases design complexity.\n\n\nTo address these challenges, we propose FOVA, a fast one-shot verifiable aggregation protocol that simultaneously achieves aggregation hiding and authenticity against an actively malicious server. Notably, authenticity, defined under full participation, must be relaxed for dropout robustness due to the indistinguishability between adversarial omissions and legitimate dropout. FOVA is built upon the verifiable linearly homomorphic encryption scheme, for which we give a new construction based solely on the Paillier cryptosystem. This design enables high efficiency and allows FOVA to be integrated into existing Paillier-based FL frameworks with minimal modifications. We implement FOVA on top of an industrial FL framework. Experimental results show that, compared to the most relevant prior protocols, FOVA achieves up to three orders-of-magnitude speedup while providing stronger security guarantees.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-02",
+    "pdf_url": "https://eprint.iacr.org/2026/643.pdf",
+    "url": "https://eprint.iacr.org/2026/643",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "TEE",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/642",
+    "title": "SoK: The Weakest-Link Principle in Public Key Infrastructures and Modern Mitigation Strategies",
+    "authors": [
+      "Carsten Köhn"
+    ],
+    "abstract": "As digital transformation accelerates, securing communication through hierarchical Public Key Infrastructures (PKIs) is increasingly critical. Yet, this centralized trust architecture remains inherently vulnerable. As a Systematization of Knowledge (SoK), this paper maps the threat landscape of hierarchical PKIs, demonstrating how a compromise at any single node from a Root CA breach to an operational revocation failure can trigger a cascading loss of global trust. Grounded in the Weakest-Link Principle, our analysis reveals that a PKI ecosystem is only as resilient as its least protected vector. Traditional revocation mechanisms, particularly CRLs and OCSP, exhibit significant operational and privacy flaws, and are often rendered ineffective by client-side \"soft-fail\" policies. To address these vulnerabilities, we advocate for a shift: replacing unconditional trust in individual entities with decentralized,verifiable protocols. We evaluate Certificate Transparency (CT) as a core mitigation strategy, illustrating how append-only Merkle trees make misissuance publicly visible and cryptographically auditable. Finally, we synthesize essential operational hardening measures such as strict key cryptoperiods and procedural policies to ensure long-term ecosystem resilience.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-01",
+    "pdf_url": "https://eprint.iacr.org/2026/642.pdf",
+    "url": "https://eprint.iacr.org/2026/642",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/639",
+    "title": "Synchronous BFT with Provability and Fast Path for the Age of Blockchains",
+    "authors": [
+      "Ertem Nusret Tas"
+    ],
+    "abstract": "Synchronous Byzantine fault tolerant (BFT) protocols offer stronger security guarantees, increasing resilience from one third to one half. However, existing constructions suffer from three drawbacks that are critical in blockchain settings.\n\nFirst, blockchain systems require rotating leaders, but the existing constructions are not optimized for low latency under leader rotation. Second, blockchain systems require provable commitments that can be forwarded to clients or offchain entities. Third, modern blockchains optimize for low latency in the good case, and often further optimize for a fast path under even milder adversarial conditions. \n\nIn this work, we formalize and study fast paths in the context of provable synchronous BFT. Our first result is that for $n \\le  2t + 2p + c -1$, it is impossible to obtain a provable synchronous BFT protocol that tolerates $t$ Byzantine and $c$ crash faults while also achieving a two round fast path resilient to $p$ Byzantine faults. Guided by this bound, we then present four provable synchronous protocols tailored to two deployment paradigms: optimistic responsivness and fixed view schedules.\n\nFor optimistic responsiveness, we present $\\Delta$-Sync Simplex and $2\\Delta$-Sync Simplex, which for $n = 2t + 2p + c + 1$, produce provable commit certificates in time $2\\delta$ under a correct leader when the number of faulty parties $f$ satisfies $f \\le p$. $2\\Delta$-Sync Simplex also achieves $3\\delta$ commit latency when the total number of faulty parties is $f \\le \\lfloor (p + t)/2 \\rfloor$ with Byzantine faults $f_b \\le t$ and crash faults $f_c \\le c$. Outside these optimistic regimes, the protocols remain safe and live for $t$ Byzantine and $c$ crash faults, and output provable commitments within $2\\Delta + 2\\delta$ and $1\\Delta + 3\\delta$, respectively. Under faulty leaders, the protocols guarantee a worst case view length of $6\\Delta + \\delta$ and $5\\Delta + \\delta$ respectively.\n\nFor fixed view schedules, we present two additional protocols, TenderSync and SyncMint, that trade off commit latency and view duration. They achieve either $3\\Delta$ provable commit with $4\\Delta$ views, or $4\\Delta$ provable commit with $3\\Delta$ views. Both protocols obtain a provable commit in $2\\delta$ under a correct leader when $f \\le p$.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-01",
+    "pdf_url": "https://eprint.iacr.org/2026/639.pdf",
+    "url": "https://eprint.iacr.org/2026/639",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/890",
+    "title": "Ring Signatures for Deniable AKEM: Gandalf's Fellowship",
+    "authors": [
+      "Eike Kiltz"
+    ],
+    "abstract": "Ring signatures, a cryptographic primitive introduced by Rivest, Shamir and Tauman (ASIACRYPT 2001), offer signer anonymity within dynamically formed user groups. Recent advancements have focused on lattice-based constructions to improve efficiency, particularly for large signing rings. However, current state-of-the-art solutions suffer from significant overhead, especially for smaller rings.\n\nIn this work, we present a novel NTRU-based ring signature scheme, Gandalf, tailored towards small rings. Our post-quantum scheme achieves a 50% reduction in signature sizes compared to the linear ring signature scheme Raptor (ACNS 2019). For rings of size two, our signatures are approximately a quarter the size of DualRing (CRYPTO 2021), another linear scheme, and remain more compact for rings up to size seven. Compared to the sublinear scheme Smile (CRYPTO 2021), our signatures are more compact for rings of up to 26. In particular, for rings of size two, our ring signatures are only 1236 bytes.\n\nAdditionally, we explore the use of ring signatures to obtain deniability in authenticated key exchange mechanisms (AKEMs), the primitive behind the recent HPKE standard used in MLS and TLS. We take a fine-grained approach at formalising sender deniability within AKEM and seek to define the strongest possible notions. Our contributions extend to a black-box construction of a deniable AKEM from a KEM and a ring signature scheme for rings of size two. Our approach attains the highest level of confidentiality and authenticity, while simultaneously preserving the strongest forms of deniability in two orthogonal settings. Finally, we present parameter sets for our schemes, and show that our deniable AKEM, when instantiated with our ring signature scheme, yields ciphertexts of 2004 bytes.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-06-04",
+    "pdf_url": "https://eprint.iacr.org/2024/890.pdf",
+    "url": "https://eprint.iacr.org/2024/890",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/303",
+    "title": "$\\mathsf{TalonG}$: Bandwidth-Efficient Two-Round Threshold Signatures from Lattices",
+    "authors": [
+      "Yongjian Yin"
+    ],
+    "abstract": "Threshold signatures split the secret key among $n$ parties, where any subset of at least $t$ parties can collaboratively produce a valid signature. They have been widely deployed in applications such as blockchain systems. Lattice-based threshold signatures have also attracted considerable attention due to their post-quantum security guarantees. However, existing lattice-based constructions still face significant efficiency challenges, particularly when the number of parties becomes large. Recent lattice-based threshold signatures such as TRaccoon (Eurocrypt’24) and Ringtail (S\\&amp;P’25) support large thresholds, but they either require three interaction rounds or incur heavy communication costs in the two-round setting, limiting their practicality.\n\nIn this paper, we present $\\mathsf{TalonG}$, a novel two-round lattice-based threshold signature that overcomes these limitations via a new trapdoor semi-commitment technique. This variant of commitment relaxes the standard binding requirement to a weaker form, allowing an efficient instantiation from the NTRU assumption and enabling a compact two-round signing protocol with low communication. \n\nFor $t=1024$ and 128-bit security, $\\mathsf{TalonG}$ achieves significant improvements among existing lattice-based threshold signatures: its total communication per party and public key size are both minimal, at 26.9 KB and 2.0 KB, respectively. While the resulting signature size is larger (17.7 KB), it remains practical and highly competitive. $\\mathsf{TalonG}$ is thus well-suited for real-world large-scale deployments where both round efficiency and communication load are critical.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-02-18",
+    "pdf_url": "https://eprint.iacr.org/2026/303.pdf",
+    "url": "https://eprint.iacr.org/2026/303",
+    "citation_count": null,
+    "relevance_tags": [
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/632",
+    "title": "A tight security analysis of the FIPS-205 standard (SLH-DSA)",
+    "authors": [
+      "Ba Danh Vu"
+    ],
+    "abstract": "The SPHINCS+ framework, recently standardized by NIST as SLH-DSA (FIPS 205), is a leading stateless hash-based signature scheme for the post-quantum era. Concrete-security evaluation of SPHINCS+ faces a trade-off: tight bounds require a conjectural multi-target decisional second-preimage resistance (SM-DSPR), while fully proven bounds incur substantial looseness. In this paper, we refine the concrete security analysis of SPHINCS+ by eliminating this heuristic reliance. In our approach, we analyze the SM-openPRE and SM-PRE properties instead of relying on SM-DSPR. By utilizing a precise probabilistic simulation technique, we restrict the multi-target tightness degradation exclusively to the maximum number of practically revealed targets rather than the total theoretical targets. When applied to the SLH-DSA parameter sets, our conjecture-free approach bridges the theoretical gap, recovering up to 18 bits of classical security and 9 bits of quantum security compared to the NIST loose evaluation.\nOur results establish a provable bound for the practical security of SLH-DSA without relying on optimistic multi-target assumptions.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-01",
+    "pdf_url": "https://eprint.iacr.org/2026/632.pdf",
+    "url": "https://eprint.iacr.org/2026/632",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/631",
+    "title": "Rethinking r-PKP: a New Formulation for the Relaxed Permuted Kernel Problem",
+    "authors": [
+      "Giuliano Romeo"
+    ],
+    "abstract": "Among the schemes in the second round of NIST's additional call for Post-Quantum signatures, PERK builds its security on the intractability of the Permuted Kernel Problem (PKP). In its original formulation, this problem asks, on input three matrices $\\mathbf H,\\mathbf X,\\mathbf Y$, to find a permutation matrix $\\mathbf P$ such that $\\mathbf H \\mathbf P \\mathbf X = \\mathbf Y$. To achieve better performance and smaller signatures, in its first proposal, the PERK signature modified the security assumption in the following way: given a PKP instance, the matrix $\\mathbf P$ does not have to verify the exact previous equation but a relaxed one, taking care of a non-null vector $\\mathbf v$ such that $(\\mathbf H \\mathbf P \\mathbf X)\\mathbf v = \\mathbf Y \\mathbf v$.\nIn this work, we rephrase the relaxed problem so that it no longer depends on the PKP instance nor the vector $\\mathbf v$. We show that it suffices to find $\\mathbf P$ such that $\\mathbf H\\mathbf P \\mathbf X - \\mathbf Y$ has rank deficiency. This generalized formulation is easier to model and allows us to design an algebraic attack inspired by those of MinRank and Rank Syndrome Decoding, writing a polynomial system in the entries of $\\mathbf P$. Moreover, we can consider it as linear in the minors of $\\mathbf P$ and provide some results on them, which may be of independent interest.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-31",
+    "pdf_url": "https://eprint.iacr.org/2026/631.pdf",
+    "url": "https://eprint.iacr.org/2026/631",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/352",
+    "title": "Migrating Bitcoin and Ethereum Addresses to the Quantum Blockchain Era",
+    "authors": [
+      "Suleyman Kardas"
+    ],
+    "abstract": "Recent advances in quantum computing threaten the cryptographic foundations of blockchain systems, including Bitcoin and Ethereum, which rely on elliptic-curve cryptography (ECC) for security. Algorithms such as Shor’s algorithm can efficiently solve the discrete logarithm problem (DLP), enabling recovery of private keys from public keys. Existing funds, especially those tied to long-lived addresses or unspent coinbase outputs (such as Satoshi Nakamoto’s bitcoins), and Ethereum externally owned accounts become vulnerable once large-scale quantum computers become available. While previous work has suggested post-quantum signature schemes and migration strategies, no widely deployed, end-to-end,backward-compatible, and privacy-preserving migration mechanism has been presented for migrating legacy funds without revealing the corresponding classical public keys on-chain. In this paper, we present a complete framework for secure migration of both spent and unspent Bitcoin and Ethereum assets to a post-quantum (PQ) security model, using a hybrid approach based on post-quantum signatures and quantum-resistant zero-knowledge proofs (ZKPs). We design zkSTARK circuits that prove knowledge of a witness linking a legacy Bitcoin or Ethereum address to a fresh PQ public key without disclosing the legacy elliptic-curve public key on-chain. We also formalize a one-way post-quantum transition model for migrated assets: legacy authorization is used only at enrollment, while future authorization semantics are governed by post-quantum credentials and migrated-state registry semantics. We further show why hash-security margins must be re-evaluated in the quantum setting by distinguishing collision resistance (BHT-style attacks, approximately 2n/3) from preimage resistance (Grover-style attacks, approximately 2n/2), and we motivate hash agility for migration-era commitments and registries. To enable verifiable on-chain transitions, we propose new primitives (OP_CHECKQUANTUMSIG, OP_CHECKSTARKPROOF), enabling verification of quantum-safe proofs and signatures. Our work and implementation3 provide a practical framework for securing legacy blockchain assets against quantum-era threats while preserving backward compatibility and operational continuity.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-02-21",
+    "pdf_url": "https://eprint.iacr.org/2026/352.pdf",
+    "url": "https://eprint.iacr.org/2026/352",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "ZKP",
+      "privacy",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/629",
+    "title": "Towards Formal Security Proofs of MQOM",
+    "authors": [
+      "Keita Xagawa"
+    ],
+    "abstract": "Recent MPC-in-the-Head (MPCitH) signatures increasingly rely on aggressive GGM-tree optimizations to reduce signature size and cost, culminating in _secret-key-root correlated_ GGM tree as used in MQOM (NIST PQC Standardization for Additional Signature Round-2, 2024). While this technique yields substantial compression, it introduces a dependency loop in the proof. The transcript we would like to randomize for simulation is generated by expanding a GGM tree from a root that is part of the secret key, so this randomization must be justified via a reduction to the hardness of recovering the secret key. However, the hiding of the secret key relies on masking randomness that is a part of the transcript derived from the same GGM tree. As a result, justifying the randomization requires hiding, while proving hiding requires the randomization, and standard MPCitH proof templates do not apply directly.\n\nWe propose and analyze two variants of MQOM and provide the EUF-CMA security proofs. The first variant makes a minor change to salts and replaces blockcipher-based hash functions in the GGM trees with random functions; we then prove its EUF-CMA security in the (quantum) random oracle model under partial-domain one-wayness or slightly stronger one-wayness assumptions. The second variant also makes a minor change to salts and adjusts security parameters to admit a proof under standard one-wayness in the ideal-cipher and random-oracle models. The proof exploits the H-coefficient technique with one-wayness, which might be of independent interest.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-31",
+    "pdf_url": "https://eprint.iacr.org/2026/629.pdf",
+    "url": "https://eprint.iacr.org/2026/629",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/625",
+    "title": "Securing Elliptic Curve Cryptocurrencies against Quantum Vulnerabilities: Resource Estimates and Mitigations",
+    "authors": [
+      "Dan Boneh"
+    ],
+    "abstract": "The expected emergence of cryptographically relevant quantum computers (CRQCs) will represent a singular discontinuity in the history of digital security, with wide ranging impacts. This whitepaper seeks to elucidate specific implications that the capabilities of developing quantum architectures have on blockchain vulnerabilities and potential mitigation strategies. First, we provide new resource estimates for breaking the 256-bit Elliptic Curve Discrete Logarithm Problem over the secp256k1 curve, the core of modern blockchain cryptography. We demonstrate that Shor's algorithm for this problem can execute with either $\\leq 1200$ logical qubits and $\\leq 90$ million Toffoli gates or $\\leq 1450$ logical qubits and $\\leq 70$ million Toffoli gates. In the interest of responsible disclosure, we use a zero-knowledge proof to validate these results without disclosing attack vectors. On superconducting architectures with $10^{-3}$ physical error rates and planar connectivity, those circuits can execute in minutes using fewer than half a million physical qubits. We introduce a critical distinction between ``fast-clock'' (such as superconducting and photonic) and ``slow-clock'' (such as neutral atom and ion trap) architectures. Our analysis reveals that the first fast-clock CRQCs would enable ``on-spend'' attacks on public mempool transactions of some cryptocurrencies. We survey major cryptocurrency vulnerabilities through this lens, identifying systemic risks associated with advanced features in some blockchains such as smart contracts, Proof-of-Stake consensus, and Data Availability Sampling mechanism, as well as the enduring concern of ``abandoned'' assets. We argue that technical solutions would benefit from accompanying public policy and discuss various frameworks of ``digital salvage'' to regulate the recovery or destruction of dormant assets while preventing adversarial seizure. We also discuss implications for other digital assets and tokenization as well as challenges and successful examples of the ongoing transition to Post-Quantum Cryptography (PQC). Finally, we urge all vulnerable cryptocurrency communities to join the migration to PQC without delay.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-30",
+    "pdf_url": "https://eprint.iacr.org/2026/625.pdf",
+    "url": "https://eprint.iacr.org/2026/625",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "consensus",
+      "ZKP",
+      "token"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/618",
+    "title": "CAGP: A Quantum Canary Address Generation Protocol",
+    "authors": [
+      "Cristina Pérez-Solà"
+    ],
+    "abstract": "The advent of quantum computing poses a fundamental threat to classical cryptographic assumptions. While algorithms such as RSA and Elliptic-Curve Cryptography are secure against classical adversaries, they would be efficiently broken by a sufficiently powerful quantum adversary. Yet, despite rapid industrial and academic progress, the timeline for achieving a Cryptographically Relevant Quantum Computer (CRQC) remains uncertain and opaque. In this work, we propose a mechanism to monitor quantum capabilities through economic incentives. We introduce CAGP, a trustless distributed protocol for deploying a quantum canary trap. CAGP enables the creation of publicly auditable cryptographic challenges whose solutions would reveal the existence of quantum computers capable of breaking the Elliptic Curve Discrete Logarithm problem. The protocol is decentralized, secure, efficient, and verifiable, featuring adjustable difficulty and native Bitcoin compatibility. A proof-of-concept implementation demonstrates the feasibility of CAGP as a Bitcoin-based early-warning system for the emergence of quantum computational power.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-30",
+    "pdf_url": "https://eprint.iacr.org/2026/618.pdf",
+    "url": "https://eprint.iacr.org/2026/618",
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1514",
+    "title": "Black-Box Non-Interactive Zero Knowledge from Vector Trapdoor Hash",
+    "authors": [
+      "Akshayaram Srinivasan"
+    ],
+    "abstract": "We present a new approach for constructing non-interactive zero-knowledge (NIZK) proof systems from vector trapdoor hashing (VTDH) -- a generalization of trapdoor hashing [Döttling et al., Crypto'19]. Unlike prior applications of trapdoor hash to NIZKs, we use VTDH to realize the hidden bits model [Feige-Lapidot-Shamir, FOCS'90] leading to black-box constructions of NIZKs. This approach gives us the following new results:\n - A statistically-sound NIZK proof system based on the hardness of decisional Diffie-Hellman (DDH) and learning parity with noise (LPN) over finite fields with inverse polynomial noise rate. This gives the first statistically sound NIZK proof system that is not based on either LWE, or bilinear maps, or factoring.\n - A dual-mode NIZK satisfying statistical zero-knowledge in the common random string mode and statistical soundness in the common reference string mode assuming the hardness of learning with errors (LWE) with polynomial modulus-to-noise ratio. This gives the first black-box construction of such a dual-mode NIZK under LWE. This improves the recent work of Waters (STOC'24) which relied on LWE with super-polynomial modulus-to-noise ratio and required a setup phase with private coins. \n\nThe above constructions are black-box and satisfy single-theorem zero-knowledge property. Building on the works of Feige et al.(FOCS'90) and Fishclin and Rohrback (PKC'21), we upgrade these constructions (under the same assumptions) to satisfy multi-theorem zero-knowledge property at the expense of making non-black-box use of cryptography.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-09-26",
+    "pdf_url": "https://eprint.iacr.org/2024/1514.pdf",
+    "url": "https://eprint.iacr.org/2024/1514",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/708",
+    "title": "Strong keys for tensor isomorphism cryptography",
+    "authors": [
+      "Anand Kumar Narayanan"
+    ],
+    "abstract": "Sampling a non degenerate (that is, invertible) square matrix over a finite field is easy, draw a random square matrix and discard if the determinant is zero. We address the problem in higher dimensions, and sample non degenerate boundary format tensors, which generalise square matrices. Testing degeneracy is conjectured to be hard in more than two dimensions, precluding the \"draw a random tensor and discard if degenerate'' recipe. The difficulty is in computing hyperdeterminants, higher dimensional analogues of determinants. Instead, we start with a structured random non degenerate tensor and scramble it by infusing more randomness while still preserving non degeneracy. We propose two kinds of scrambling. The first is  multiplication in each dimension by random invertible matrices, which preserves dimension and format. Assuming pseudo randomness of this action, which also underlies tensor isomorphism based cryptography, our samples are computationally indistinguishable from uniform non degenerate tensors. The second scrambling employs tensor convolution (that generalises multiplication by matrices) and can increase dimension. Inspired by hyperdeterminant multiplicativity, we devise a recursive sampler that uses tensor convolution to reduce the problem from arbitrary to three dimensions.\n\nOur sampling is a candidate solution for drawing public keys in tensor isomorphism based cryptography, since non degenerate tensors elude recent weak key attacks targeting public key tensors either containing geometric structures such as \"triangles\" or being deficient in tensor rank. To accommodate our sampling, tensor isomorphism based schemes need to be instantiated in boundary formats such as (2k+1) x (k+1) x (k+1), away from the more familiar k x k x k cubic formats. Our sampling (along with the recent tensor trapdoor one-way functions) makes an enticing case to transition tensor isomorphism cryptography to boundary formats tensors, which are true analogues of square matrices.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-04-18",
+    "pdf_url": "https://eprint.iacr.org/2025/708.pdf",
+    "url": "https://eprint.iacr.org/2025/708",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/615",
+    "title": "On the Security of MPC-in-the-Head Signatures with Correlated GGM Trees",
+    "authors": [
+      "Matthieu Rivain"
+    ],
+    "abstract": "Recent MPC-in-the-Head techniques enable the construction of signature schemes with compact signature sizes from various hardness assumptions. These techniques rely on commitments based on GGM trees, which have been optimized to further reduce the signature size with the so-called  one-tree or correlated tree optimizations. While the one-tree technique has no incidence on the security of the scheme, this is not obvious for the correlated tree technique, and a formal security analysis of this technique has been missing in the literature. \n\nIn this work, we fill this gap and provide the first formal security analysis of MPC-in-the-Head signature schemes based on correlated trees. We first exhibit a potential security flaw of this technique which rules out any hope for a security reduction to the underlying hardness assumption. In particular, we show that recovering the first $\\lambda$ bits of the secret witness is sufficient to achieve a full key recovery (where $\\lambda$ is the security level). The underlying assumption should hence be such that recovering these $\\lambda$ bits is as hard as recovering the full witness. Some state-of-the-art schemes do not satisfy this condition, which prevents a direct application of the correlated tree technique.\n\nWe then provide a formal security proof for signature schemes based on the correlated tree technique under this degraded hardness assumption. Our proof comes in several variants, in the random oracle mode or in the ideal cipher model, depending on the specific correlated tree construction. We also introduce a tweak for the instantiation of the leaf seed expansion in the ideal cipher model, which allows us to achieve a tighter security reduction. Our result shows that  MPC-in-the-Head signatures based on correlated trees can achieve strong security guarantees and provides the first formal security proof for the MQOM v2 signature scheme, the on-going candidate in the NIST post-quantum standardization process with the shortest signature size in the MPC-in-the-Head family.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-28",
+    "pdf_url": "https://eprint.iacr.org/2026/615.pdf",
+    "url": "https://eprint.iacr.org/2026/615",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/JIOT.2026.3652166",
+    "title": "CCPP: Cross-Chain Privacy-Preserving for CCLS With Lattice-Based Ring Signature",
+    "authors": [
+      "Yang Zhang",
+      "Yu Tang",
+      "Chaoyang Li",
+      "Mianxiong Dong",
+      "Min Huang",
+      "Hua Zhang",
+      "K. Ota"
+    ],
+    "abstract": "Cold chain logistics systems (CCLSs) require the secure, efficient, and fresh management of cold products. Blockchain technology facilitates cross-institutional data-sharing for CCLSs, yet heterogeneous blockchains across different institutions give rise to ”data islands” and privacy issues. Facing these problems, we propose a cross-chain privacy-preserving (CCPP) framework based on a notary mechanism. This CCPP model aggregates heterogeneous institutional chains through a notary network, enabling interblockchain operability while eliminating the data islands. Meanwhile, to ensure transaction security and address the quantum vulnerability of traditional signature schemes, we design an identity-based ring signature (ID-RS) scheme. The ID-RS combines the identity mechanism (for traceability) with the ring mechanism (to guarantee the signer’s unconditional anonymity), and combats quantum threats by relying on the lattice assumption (a foundation for postquantum security). Under the random oracle model (ROM), we prove the correctness, unforgeability, and anonymity of the ID-RS scheme. In addition, the experimental results under 80-bit security settings show that our ID-RS scheme outperforms other signature schemes in signature size and verification latency. These findings validate that the CCPP framework and the ID-RS scheme together offer an efficient and practical foundation for privacy-preserving, quantum-resistant data sharing among heterogeneous blockchain-based CCLSs.",
+    "venue": "IEEE IoT Journal",
+    "year": 2026,
+    "date_published": "2026-04-01",
+    "pdf_url": null,
+    "url": "https://www.semanticscholar.org/paper/50971d6c2b65645c0eddc31dbfa0897790324a27",
+    "citation_count": 0,
+    "relevance_tags": [
+      "oracle",
+      "bridge",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3679571",
+    "title": "Enabling Cross-Clouds Encrypted Data Fine-Grained Deduplication and Recovery via Blockchain Systems",
+    "authors": [
+      "Bingyun Liu",
+      "Xuan Zhang",
+      "Juncai Chen",
+      "Yinbin Miao",
+      "Jie Zhao",
+      "Huaxiong Wang"
+    ],
+    "abstract": "Data deduplication contributes to avoiding great waste of cloud storage resources. Most of current data deduplication schemes focus on file-level data deduplication, without realizing deduplication ownership privacy protection, data blocks retrieval or error data blocks recovery. To this end, this paper proposes cross-clouds encrypted data fine-grained deduplication and recovery (CC-FGDR) scheme supporting blockchain collaborative computing. CC-FGDR exploits two-party joint generation of deduplication tags to prevent deduplication privacy leakage, and constructs vector-commitment ciphertext tree to realize proofs of ownership verification of distributed backup data blocks via blockchain systems. CC-FGDR achieves secure cross-clouds deduplication detection by constructing twin bloom filter tree and privacy puncture pseudo-random function. To achieve data availability, a ciphertext reconstruction matrix is introduced and combined with countable bloom filter to achieve the location, search and retrieval of distributed outsourced data blocks. CC-FGDR further designs low-density parity check code to achieve cross-clouds encrypted error data recovery through collaborative computing of smart contracts. The security analysis demonstrates CC-FGDR ensures data storage verifiability, data confidentiality, and ownership privacy protection. Performance evaluation demonstrates the feasibility of CC-FGDR in the deployment of multiple clouds via blockchain systems, and CC-FGDR significantly improves the deduplication efficiency by joint deduplication in multi-clouds.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tdsc.2026.3679571",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3679770",
+    "title": "EdgeGuard: Blockchain-Enhanced Secure Data Circulation via Aggregatable Distributed Key Generation",
+    "authors": [
+      "Boyang Liao",
+      "Jianxing Liu",
+      "Xinxin Xing",
+      "Jian Cui",
+      "Qianhong Wu",
+      "Willy Susilo",
+      "Robert H. Deng",
+      "Yizhong Liu"
+    ],
+    "abstract": "Data has become a critical driver of innovation in artificial intelligence and the evolution of 6G technologies. The explosive growth of data volume accelerates the convergence of cloud and edge computing, while simultaneously posing heightened challenges to data security and privacy. The emerging cloud-edge-device collaborative paradigm enables dynamic and large-scale data circulation across heterogeneous entities, exposing systems to complex threats such as malicious edge nodes and eavesdropping over untrusted communication channels. In response to these issues, we propose EdgeGuard, a secure and decentralized framework for cloud-edge-device data circulation. EdgeGuard is specifically designed for highly dynamic environments and ensures robust data confidentiality, integrity, traceability, and resilience against both malicious external attackers and compromised edge servers. To underpin its cryptographic foundation, we develop two core primitives. Specifically, we introduce an Aggregatable Publicly Verifiable Secret Sharing (APVSS) scheme that enables efficient sharing of field elements while supporting aggregation and public verifiability. Furthermore, we construct AggDKG, a distributed key generation (DKG) protocol. AggDKG achieves public verifiability and bias resistance with an expected total communication cost of <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">${\\mathcal {O}}(\\kappa n^{3})$</tex-math></inline-formula> effectively overcoming the scalability limitations inherent in traditional complaint-based protocols. Collectively, these components form a comprehensive framework that strengthens secure and efficient data circulation in cloud-edge-device systems. Experimental data show that AggDKG delivers clear performance gains: across all tested scales, its total running time is only about 8%–65% of that of the DKG of Gurkan et al., and at <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$n=256$</tex-math></inline-formula>, it reduces per-node runtime by approximately 27% compared with the DKG of Gennaro et al. These results highlight EdgeGuard's superior scalability, lower latency, and stronger Byzantine resilience for secure large-scale deployments.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tdsc.2026.3679770",
+    "citation_count": 0,
+    "relevance_tags": [
+      "consensus",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3667807",
+    "title": "Security-Enhanced Decentralized Conditional Privacy-Preserving Authentication in VANETs",
+    "authors": [
+      "Shuqin Luo",
+      "Xinghua Li",
+      "Y. Miao",
+      "Xuelin Cao",
+      "Zhan Zhang",
+      "Yunwei Wang",
+      "Robert H. Deng"
+    ],
+    "abstract": "To ensure the legitimacy of communicators while ad dressing the privacy concerns of vehicles in vehicular ad-hoc networks (VANETs), conditional privacy-preserving authentication (CPPA) schemes have been proposed. Given that existing schemes suffer from single point of failure due to centralized authorities, several distributed CPPA schemes have been proposed. However, these schemes all ignore the tight cementation between system secret keys and the authority, which could be a serious threat to system security, that the compromised authority may leak the system secret key. To address these issues, we propose a security enhanced decentralized conditional privacy-preserving authentication (DCPPA) scheme. DCPPA first introduces a decentralized system master key generation (DSMKG) mechanism without a centralized secret sharer, ensuring that the system secret key remains hidden from any single authority. Based on DSMKG, DCPPA then implements a lightweight verifiable pseudonym self-generation strategy without the system master secret key escrow problem, thus providing flexible pseudonym updating and reliable de-anonymization. Moreover, we implement DCPPA over a hyperelliptic curve cryptosystem (HECC) to balance the system performance. Considering the additional communication processes due to the decentralized feature, we introduce a symmetric balanced incomplete block design (SBIBD) to enhance the communication efficiency. We demonstrate the excellent security of DCPPA through an in-depth security analysis, while demonstrate that the overhead of DCPPA is at ms level through experiments.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": "https://ink.library.smu.edu.sg/context/sis_research/article/12056/viewcontent/Security_Enhanced_Vanet_av.pdf",
+    "url": "https://doi.org/10.1109/tdsc.2026.3667807",
+    "citation_count": 0,
+    "relevance_tags": [
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tifs.2026.3679943",
+    "title": "CShard: Blockchain Sharding via Repairable Fountain Codes and the Paradigm for Sharding Design",
+    "authors": [
+      "Sheng Cao",
+      "Yifan Tian",
+      "Jiegang Peng",
+      "Butian Huang",
+      "Xiaosong Zhang"
+    ],
+    "abstract": "Sharding is an important solution to improve the scalability of blockchain. The basic idea of blockchain sharding is to separate transactions among multiple disjoint shards processing in parallel to maximize system performance. The current sharding protocols mainly rely on node rotation (namely, node allocation and migration) randomly among shards periodically to ensure security, which is often considered the most challenging when developing a sharding system. However, (1) if a shard or multiple shards are corrupted, the sharding system will not be available anymore; (2) to avoid shard corruption, the demand of large size of each shard limits the throughput performance of sharding protocols. To solve (1), we introduce a blockchain sharding protocol with scale-out transaction processing capacity called CShard. The main idea of CShard is to use repairable fountain codes (RFCs), an information coding method with the locality feature, to innovate sharding design. By adjusting encoding parameters, topological associations among shards are constructed, which are then utilized to define the verification logic for transactions. The blocks of corrupted shard(s) can be recovered through decoding by its corresponding shard group(s), and the sharding system is still secure and available. Our approach utilizes encoding techniques to build a general architecture of a sharding system, establishing a paradigm of “encoding as verification” and showcases new horizons in the field of blockchain sharding. To solve (2), we propose the ghost reporter mechanism that gives all nodes chances to verify a transaction by submitting reports in the sharding network. The mechanism brings two direct benefits. Firstly, it provides the way to detect corrupted shards and recover the blocks by RFCs; the second is to make the number of nodes in a single shard smaller, which solves the limitation of existing sharding schemes that usually require a larger number of nodes in a single shard to ensure security. In principle, this mechanism can also be applicable to the known and even unknown sharding protocols for its generality.",
+    "venue": "IEEE TIFS",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tifs.2026.3679943",
+    "citation_count": 0,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tifs.2026.3680056",
+    "title": "AtomXross: Towards General Cross-Chain Transaction",
+    "authors": [
+      "Yanran Zhang",
+      "Yifu Geng",
+      "Qin Wang",
+      "Bo Qin",
+      "Qinghao Wu",
+      "Wenbing Huang",
+      "Wenchang Shi",
+      "Willy Susilo"
+    ],
+    "abstract": "As blockchain technology advances, an increasing number of applications require interactions between smart contracts across multiple blockchains. However, existing cross-chain solutions exhibit limited scalability due to heterogeneous blockchain environments and diverse application requirements. A fundamental challenge lies in the absence of a unified resource definition for cross-chain processes, impeding moderate resource allocation and effective conflict resolution. Specifically, when extended to general cross-chain transactions involving invocations among multiple contracts, these methods lack the capability to correctly handle state transitions for all related contracts. This paper proposes AtomXross, a novel cross-chain scheme that supports arbitrary combinations of smart contracts during the cross-chain process. We build a scalable cross-chain architecture based on a relay chain and a cluster of cross-chain nodes to provide better scalability. We propose a unified definition for cross-chain resources within the system and implement an adaptive resource management mechanism on the relay chain, enabling it to record the invocation relationships of contract functions. When a cross-chain transaction involves multiple contract calls, AtomXross can index the calls and generate the corresponding call tree. To address the challenges posed by potential mutual invocations between smart contracts, we design an atomic transaction protocol based on buckle-lock, an ordered two-tier pessimistic locking mechanism. AtomXross ensures that cross-chain transactions do not conflict with each other while remaining compatible with non-cross-chain calls that may occur at any time. Furthermore, we propose a universal programming template for on-chain smart contracts, which enables ordinary smart contracts to acquire cross-chain capabilities. We implement AtomXross based on Hyperledger Fabric and FiscoBCOS. In comparison to WeCross, AtomXross lowers the gas cost on system initialization and incurs only a 14% increase in transaction latency while supporting inter-contract calls.",
+    "venue": "IEEE TIFS",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tifs.2026.3680056",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "DeFi",
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tifs.2026.3679192",
+    "title": "DeFiMix: Indistinguishable Coin Mixing Schemes in Decentralized Finance",
+    "authors": [
+      "Y. S. Chang",
+      "Yang Miao",
+      "Tom H. Luan",
+      "Jinkai Zheng",
+      "Zhongbo Su"
+    ],
+    "abstract": "The need for enhanced transaction privacy in decentralized finance (DeFi) is critical. However, existing coin mixing solutions often reveal telltale patterns on the blockchain, exposing users to heuristic analysis. This paper presents DeFiMix, an indistinguishable coin mixing scheme engineered to obscure transaction flows while guaranteeing fairness and security. DeFiMix achieves this through a dual-layer mechanism. First, an off-chain secret handshake protocol enables anonymous negotiation between senders and mixers, effectively breaking the link between transactions and participants. Second, on-chain transactions are structured using time-locks and concurrent signatures to resemble common DeFi activities such as staking and lending, rendering them indistinguishable from ordinary operations. Using security analysis and extensive simulations, we validate DeFiMix’s ability to prevent transaction linkage while remaining practically viable. The results underscore DeFiMix’s strong indistinguishability and fairness, alongside its minimal computational demands, establishing it as a compelling solution for privacy-focused transactions within the DeFi ecosystem.",
+    "venue": "IEEE TIFS",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tifs.2026.3679192",
+    "citation_count": 0,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3806397",
+    "title": "As Long As I See It - OSVHunter: Understanding and Detecting Open-Secret Vulnerabilities in Smart Contracts",
+    "authors": [
+      "Songyan Ji",
+      "Jin Wu",
+      "Wei Zhang",
+      "Ming Han",
+      "Limin Ma",
+      "Jian Dong"
+    ],
+    "abstract": "This paper centers on open-secret vulnerabilities (OSVs), a kind of smart contract vulnerability that allows attackers to exploit the natural transparency feature of blockchains to gain illegal monetary profits from problematic smart contracts. Attackers can easily launch OSV attacks by leveraging publicly visible information from a smart contract to issue a profitable transaction without violating its business logic. This poses significant challenges in detecting OSVs. Despite the severe impacts of OSVs, there is no prior research work that systematically discusses OSVs (to the best of our knowledge). To fill this knowledge gap, this paper presents a formal definition of OSVs, and OSVHunter, the first-ever tool aiming to detect OSVs in smart contracts. The detection results show that OSVs are prevalent in real-world smart contracts. Some of these vulnerabilities are even concealed within highly popular Ethereum contracts, with individual contract valuations exceeding five hundred thousand U.S. dollars. These vulnerabilities appear in finance, gaming, gambling, etc. We hope this paper can arouse our community’s attention to the significance of OSVs and lay the technical foundation for future research.",
+    "venue": "ACM TOSEM",
+    "year": 2026,
+    "date_published": "2026-04-04",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1145/3806397",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "DeFi"
+    ],
+    "analyzed": false
   }
 ]
