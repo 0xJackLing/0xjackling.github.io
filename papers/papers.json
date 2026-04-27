@@ -4517,8 +4517,8 @@
     "url": "https://arxiv.org/abs/2512.15179",
     "citation_count": null,
     "relevance_tags": [
-      "measurement",
-      "smart-contract"
+      "smart-contract",
+      "measurement"
     ],
     "analyzed": false
   },
@@ -25874,6 +25874,902 @@
     "relevance_tags": [
       "measurement"
     ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.22602",
+    "title": "PASS: A Provenanced Access Subaccount System for Blockchain Wallets",
+    "authors": [
+      "Jay Yu",
+      "Shunfan Zhou",
+      "Hang Yin",
+      "Brian Seong"
+    ],
+    "abstract": "Blockchain wallets conventionally follow an ownership model where possession of a private key grants unilateral control. However, this assumption is brittle for emerging settings such as AI agent wallets, organizational custody, and enterprise payroll, where multiple actors must coordinate without exposing secrets or leaking internal activity. We present PASS, a Provenanced Access Subaccount System that replaces role-based or identity-based control with provenance-based control: assets can only be used by subaccounts that can trace custody back to a valid deposit. A simple Inbox-Outbox mechanism ensures all external actions have verifiable lineage, while internal transfers remain private and indistinguishable from ordinary EOAs. We formalize PASS in Lean 4 and prove core invariants, including privacy of internal transfers, asset accessibility, and provenance integrity. We implement a prototype with enclave backends on AWS Nitro Enclaves and dstack Intel TDX, integrate with WalletConnect, and benchmark throughput across wallet operations. These results show that provenance-based wallets are both implementable and efficient. PASS bridges today's gap between strict self-custody and flexible shared access, advancing the design space for practical, privacy-preserving custody.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-24",
+    "pdf_url": "https://arxiv.org/pdf/2604.22602v1",
+    "url": "https://arxiv.org/abs/2604.22602",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.22096",
+    "title": "Who Audits the Auditor? Tamper-Proof Fraud Detection with Blockchain-Anchored Explainable ML",
+    "authors": [
+      "Zhaohui Wang"
+    ],
+    "abstract": "In enterprise fraud detection, model accuracy alone is insufficient when insiders can tamper with audit logs or bypass approval workflows. Real-world incidents show that fraud often persists not because detection algorithms fail, but because the audit trail itself is controllable by privileged operators. This exposes a fundamental trust gap: *who audits the auditor?*\n  We present a tamper-evident fraud detection system that anchors both ML predictions and workflow execution to an immutable blockchain ledger. Rather than using blockchain as passive storage, we enforce the entire approval process through smart contracts, ensuring that every transaction, prediction, and explanation is atomically recorded and cannot be retroactively modified. Our detection module achieves competitive accuracy (F1 = 0.895, PR-AUC = 0.974) while providing cryptographically verifiable decision trails that support regulatory auditability requirements (e.g., GDPR Article 22). System evaluation shows sub-25 ms inference latency and economically viable deployment on Layer-2 networks at under \\$0.01 per transaction (validated against PolygonScan data), supporting enterprise-scale workloads of 10,000+ monthly payments.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-23",
+    "pdf_url": "https://arxiv.org/pdf/2604.22096v1",
+    "url": "https://arxiv.org/abs/2604.22096",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "layer2",
+      "eCrime"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.21169",
+    "title": "Position Paper: Denial-of-Service Against Multi-Round Transaction Simulation",
+    "authors": [
+      "Yuzhe Tang",
+      "Yibo Wang",
+      "Wanning Ding",
+      "Jiaqi Chen",
+      "Taesoo Kim"
+    ],
+    "abstract": "In Ethereum, transaction-bundling services are a critical component of block builders, such as Flashbots Bundles, and are widely used by MEV searchers. Disrupting bundling services can degrade searcher experience and reduce builder revenue. Despite the extensive studies, the existing denial-of-service attack designs are ineffective against bundling services due to their unique multi-round execution model.\n  This paper studies the open problem of asymmetric denial-of-service against bundling services. We develop evasive, risk-free, and low-cost DoS attacks on Flashbots' bundling service, the only open-source bundling service known to us. Our attacks exploit inter-transaction dependencies through contract state to achieve evasiveness, and abuse bundling-specific features, such as atomic block inclusion, to significantly reduce both capital and operational costs of the attack.\n  Experimental results show that our attacks achieve high success rates, substantially reduce builders' revenue, and slow block production. We further propose mitigation strategies for the identified risks.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-23",
+    "pdf_url": "https://arxiv.org/pdf/2604.21169v1",
+    "url": "https://arxiv.org/abs/2604.21169",
+    "citation_count": null,
+    "relevance_tags": [
+      "MEV"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.21055",
+    "title": "Layer 2 Blockchains Simplified: A Survey of Vector Commitment Schemes, ZKP Frameworks, Layer-2 Data Structures and Verkle Trees",
+    "authors": [
+      "Ekleen Kaur",
+      "Marko Suvajdzic"
+    ],
+    "abstract": "Layer-2 (L2) protocols address the fundamental limitations of Layer-1 (L1) blockchains by offloading computation while anchoring trust to the parent chain. This architectural shift, while boosting throughput, introduces a new, complex security surface defined by off-chain components like sequencers, bridges, and data availability mechanisms. Prior literature[31][33] offers fragmented views of this risk. This paper presents the first unified, security-focused survey that rigorously maps L2 architecture to its underlying cryptographic security. We dissect the technical progression from L1 primitives to the core of modern L2s, analyzing the security assumptions(Discrete Logarithm, Computational Diffie-Hellman, Bilinear Diffie-Hellman) of ZK frameworks (Groth16, Plonk) and their corresponding commitment schemes (KZG, IPA). We formalize a comprehensive L2 threat model encompassing sequencer liveness, bridge exploits, and data-availability failures. This work serves as an accessible yet rigorous reference for researchers and developers to reason about L2 security from a deep crypto-mathematical perspective.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-22",
+    "pdf_url": "https://arxiv.org/pdf/2604.21055v1",
+    "url": "https://arxiv.org/abs/2604.21055",
+    "citation_count": null,
+    "relevance_tags": [
+      "MEV",
+      "DeFi",
+      "bridge",
+      "ZKP",
+      "layer2"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.20062",
+    "title": "Federated Learning over Blockchain-Enabled Cloud Infrastructure",
+    "authors": [
+      "Saloni Garg",
+      "Amit Sagtani",
+      "Kamal Kant Hiran"
+    ],
+    "abstract": "The rise of IoT devices and the uptake of cloud computing have informed a new era of data-driven intelligence. Traditional centralized machine learning models that require a large volume of data to be stored in a single location have therefore become more susceptible to data breaches, privacy violations, and regulatory non-compliance. This report presents a thorough examination of the merging of Federated Learning (FL) and blockchain technology in a cloud-edge setting, demonstrating it as an effective solution to the stated concerns. We are proposing a detailed four-dimensional architectural categorization that meticulously assesses coordination frameworks, consensus algorithms, data storage practices, and trust models that are significant to these integrated systems. The manuscript presents a comprehensive comparative examination of two cutting-edge frameworks: the Multi-Objectives Reinforcement Federated Learning Blockchain (MORFLB), which is designed for intelligent transportation systems, and the Federated Blockchain-IoT Framework for Sustainable Healthcare Systems (FBCI-SHS), elucidating their distinctive contributions and inherent limitations. Lastly, we engage in a thorough evaluation of the literature that integrates a comparative perspective on current frameworks to discern the singular nature of this research within existing knowledge systems. The manuscript culminates in delineating the principal challenges and offering a strategic framework for prospective research trajectories, emphasizing the advancement of adaptive, resilient, and standardized BCFL systems across diverse application domains.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-21",
+    "pdf_url": "https://arxiv.org/pdf/2604.20062v1",
+    "url": "https://arxiv.org/abs/2604.20062",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.19026",
+    "title": "ClawCoin: An Agentic AI-Native Cryptocurrency for Decentralized Agent Economies",
+    "authors": [
+      "Shaoyu Li",
+      "Chaoyu Zhang",
+      "Hexuan Yu",
+      "Y. Thomas Hou",
+      "Wenjing Lou"
+    ],
+    "abstract": "Autonomous AI agents live or die by the API tokens they consume: without paid inference capacity they cannot reason, act, or delegate. Compute-token cost has become the binding resource of the emerging agent economy, yet it is non-transferable: it is account-bound, vendor-specific, and absent from on-chain ledgers. Existing payment rails such as x402 move fiat-backed value between agents, but they do not represent the quantity agents actually burn. As a result, agents can transport purchasing power but cannot quote, escrow, or settle workflows in a unit aligned with compute cost.\n  We present ClawCoin, a tokenized, compute-cost-indexed unit of account and settlement asset for decentralized agent economies. ClawCoin combines four layers: a robust basket index over standardized prices; an oracle publishing signed fresh attestations; a NAV-based mint/redeem vault with coverage thresholds and rate limits; and an on-chain settlement layer for multi-hop delegations.\n  We implement a prototype on an Ethereum-compatible L2 and evaluate it using a multi-agent simulator and the OpenClaw testbed. Across single-agent, multi-agent, workflow, and procurement experiments, ClawCoin stabilizes execution capacity under cost shocks, reduces cross-agent quote dispersion, eliminates partial settlements, and sustains cooperative market dynamics that fiat-denominated baselines cannot. These results suggest that compute-indexed units of account can improve decentralized agent coordination.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-21",
+    "pdf_url": "https://arxiv.org/pdf/2604.19026v1",
+    "url": "https://arxiv.org/abs/2604.19026",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "layer2",
+      "token"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.18819",
+    "title": "Blockchain-Driven AI-Enhanced Post-Quantum Multivariate Identity-based Signature and Privacy-Preserving Data Aggregation Scheme for Fog-enabled Flying Ad-Hoc Networks",
+    "authors": [
+      "Sufian Al majmaie",
+      "Ghazal Ghajari",
+      "Niraj Prasad Bhatta",
+      "Fathi Amsaad"
+    ],
+    "abstract": "The integration of Fog Computing with Flying Ad-Hoc Networks (FANETs) offers promising capabilities for decentralized, low-latency intelligence in UAV-based applications. However, the distributed nature, mobility, and resource constraints of FANETs expose them to significant security and privacy challenges, particularly against quantum threats. To address these issues, this work introduces a blockchain-based, AI-enhanced key management framework designed for fog-enabled FANETs. The proposed scheme employs a Post-Quantum Multivariate Identity-Based Signature Scheme (PQ-MISS) and Zero-Knowledge Proofs (ZKPs) to achieve secure key establishment, privacy-preserving data aggregation, and integrity verification. A polynomial composition-based encryption mechanism and an aggregate signature model support secure and efficient multi-device communication across fog and UAV layers. Fog servers construct partial blockchain blocks from validated UAV data. These blocks are completed and mined by Cloud Servers (CSs). AI algorithms then analyze the verified data to generate accurate predictions and insights. NS-3 simulations validate the efficiency of PQ-MISS in reducing communication overhead while improving the speed and reliability of data aggregation and verification. Comparative analysis demonstrates the proposed scheme's advantages over existing methods in computational cost, post-quantum security, and scalability, making it a robust solution for secure, intelligent, and future-ready FANET systems.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-20",
+    "pdf_url": "https://arxiv.org/pdf/2604.18819v1",
+    "url": "https://arxiv.org/abs/2604.18819",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.18395",
+    "title": "Capturing Monetarily Exploitable Vulnerability in Smart Contracts via Auditor Knowledge-Learning Fuzzing",
+    "authors": [
+      "Bowen Cai",
+      "Weiheng Bai",
+      "Hangyun Tang",
+      "Youshui Lu",
+      "Kangjie Lu"
+    ],
+    "abstract": "Smart contracts extended blockchain functionality beyond simple transactions, powering complex applications like decentralized finance (DeFi). However, this complexity introduces serious security challenges, including price manipulation and inflation attacks. Despite the development of various security tools, the rapid rise in financially motivated exploits continues to pose a significant threat to the blockchain ecosystem. These financially motivated exploits often stem from Monetarily Exploitable Vulnerabilities (MEVuls), which refer to vulnerabilities arising from exploitable implementations in monetary transactions or value-transfer logic. Due to their complexity, intricate chains of function calls, multifaceted logic, and diverse manifestations across different smart contracts, MEVuls are particularly challenging for current security tools to identify. Instead of providing actionable insights, existing tools frequently generate excessive warnings that overwhelm developers without effectively mitigating risks. To address the challenge of recognizing MEVuls, we first formalize MEVuls based on common real-world financial exploits. Then, we introduce FAUDITOR, a specialized fuzzer designed to detect MEVuls in smart contracts. The key insight is that leveraging smart contracts' finance-related interfaces directly exposes critical vulnerabilities, making detection more targeted. We further integrate auditors' reports using NLP to extract valuable insights on exploitation patterns, enabling a more informed search strategy. Additionally, FAUDITOR employs a self-learning mechanism that refines its detection strategies over time, allowing it to improve based on prior fuzzing results. In our evaluation, FAUDITOR impressively reveals 220 zero-day MEVuls. Meanwhile, compared to existing fuzzers, FAUDITOR detects vulnerabilities faster and achieves better instruction coverage.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-20",
+    "pdf_url": "https://arxiv.org/pdf/2604.18395v1",
+    "url": "https://arxiv.org/abs/2604.18395",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "MEV",
+      "DeFi",
+      "oracle",
+      "fuzzing"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.17179",
+    "title": "Decentralised Trust and Security Mechanisms for IoT Networks at the Edge: A Comprehensive Review",
+    "authors": [
+      "Khandoker Ashik Uz Zaman",
+      "Mahdi H. Miraz",
+      "Mohammed N. M. Ali"
+    ],
+    "abstract": "INTRODUCTION: The proliferation of the amalgamation of IoT and edge computing has increased the demand for decentralised trust and security mechanisms capable of operating across heterogeneous and resource-limited devices. Approaches such as federated learning, Zero Trust architectures, lightweight blockchain and distributed neural models offer alternatives to centralised control. OBJECTIVES: This review examines various state-of-the-art decentralised mechanisms and evaluates their effectiveness in terms of securing IoT networks at the edge. METHODS: Thirty recent studies were analysed to compare how decentralised architectures establish trust, support secure communication and enable intrusion and anomaly detection. Frameworks, such as DFGL-LZTA, SecFedDNN and COSIER were assessed. RESULTS: Decentralised designs enhance privacy, reduce single points of failure and improve adaptive threat response, though challenges remain in scalability, efficiency and interoperability. CONCLUSION: The study identifies key considerations and future research needs for building secure and resilient trust-aware IoT edge ecosystems.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-19",
+    "pdf_url": "https://arxiv.org/pdf/2604.17179v1",
+    "url": "https://arxiv.org/abs/2604.17179",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2604.16827",
+    "title": "ParikkhaChain: Blockchain-Based Result Processing and Privacy-Preserving Academic Record Management for the Complete Examination Lifecycle",
+    "authors": [
+      "Rabib Jahin Ibn Momin",
+      "Ahmed Mahir Sultan Rumi",
+      "Rezwana Reaz"
+    ],
+    "abstract": "Academic examination systems worldwide continue to rely on centralised, opaque record-keeping that is often vulnerable to credential forgery, result tampering, examiner bias, and the absence of transparent re-evaluation pathways. Existing blockchain-based approaches in education focus predominantly on post-hoc certificate storage or online-only examination portals, leaving the complete onsite examination lifecycle, from conducting exams through scrutiny, largely unaddressed. This paper proposes ParikkhaChain, a blockchain-based framework that covers the entire examination lifecycle of an onsite examination system with three distinguishing contributions: (i) anonymous script evaluation through cryptographic hashing of answer scripts before examiner access, thereby eliminating identity-based bias; (ii) a transparent evaluation and scrutiny workflow backed by an immutable on-chain audit trail that records every mark submission and grade revision; and (iii) inclusion of privacy-preserving verification using zero-knowledge proofs and off-chain storage mechanisms. The system is architected around four Solidity smart contracts deployed on the Ethereum blockchain. The proposed architecture is the first initiative to our knowledge to support physical examination process, anonymous marking, and re-evaluation transparency. We successfully simulate full exam cycles of an onsite exam to grade-sheet generation using a working prototype on a large scale of 100 courses and hundreds of teachers and students. The experimental results show that the system can manage online examinations of hundreds of courses, students and faculties efficiently with great throughput, low storage, and transaction cost. Our codebase is available in open source form at https://github.com/AhmedRumi/CSE6608-ParikkhaChain",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-04-18",
+    "pdf_url": "https://arxiv.org/pdf/2604.16827v1",
+    "url": "https://arxiv.org/abs/2604.16827",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/305",
+    "title": "The Malice of ELFs: Practical Anamorphic-Resistant Encryption without Random Oracles",
+    "authors": [
+      "Francesco Migliaro"
+    ],
+    "abstract": "The concept of Anamorphic Encryption (Persiano, Phan, and Yung, EUROCRYPT'22), aims to enable private communication in settings where the usage of encryption is heavily controlled by a central authority (henceforth called the dictator) who can obtain users' secret keys. Since then, various works have improved our understanding of AE in several aspects, including its limitations. In this regard, two recent works at CRYPTO'25 constructed various Anamorphic-Resistant Encryption (ARE) schemes, i.e., schemes admitting at most $O(\\log(\\lambda))$ bits of covert communication.\n\nHowever, those results are still unsatisfactory, each coming with at least one of the following issues: (1) use of cryptographic heavy hammers such as indistinguishability obfuscation (iO); (2) abuse of the original definition to define overly powerful dictators; (3) reliance on the Random Oracle Model (ROM). In particular, proofs in the ROM are controversial as they fail to account for anamorphic schemes making non-black-box usage of the hash function used to instantiate the Random Oracle. \n\nIn this work, we overcome all of these limitations. First, we describe an anamorphic-resistant encryption scheme approaching practicality by relying only on public-key encryption and Extremely Lossy Functions (ELFs), both known from the (exponential) DDH assumption. Moreover, assuming Fully Unique NIZKs (known from iO), we provide another construction, which we later use to realize the first $\\mathit{definitive}$ ARE; that is, a $\\mathit{single}$ scheme that $\\mathit{simultaneously}$ achieves the strongest level of anamorphic resistance against each of the possible levels of anamorphic security.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-02-20",
+    "pdf_url": "https://eprint.iacr.org/2025/305.pdf",
+    "url": "https://eprint.iacr.org/2025/305",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/778",
+    "title": "Cobra: All-in-one for full-fledged defense — a hybrid nested KEM",
+    "authors": [
+      "Chun-I Fan"
+    ],
+    "abstract": "The transition to post-quantum cryptography (PQC) is constrained by the limited cryptanalytic history of individual PQC algorithms. Hybrid constructions, which combine several primitives so that breaking the hybrid requires breaking each component, address this concern directly. This paper presents Cobra, a hybrid Key Encapsulation Mechanism (KEM)\nthat integrates FrodoKEM (unstructured LWE), ML-KEM (FIPS 203 module-LWE), HQC (code-based), and a Dummy KEM for agility, and analyses all 15 mathematically distinct composition methods spanning parallel, cascading, multi-stage, and nested topologies. We prove that every Cobra method achieves IND-CCA2 security within the MarketTheoretic Security Framework (MTSF), which subsumes and strictly extends both Universal Composability and the Random Oracle Model. An explicit 10-round bidding-round chain per method yields post-quantum ask prices of approximately 2−127 at NIST Level 1 together\nwith composability under arbitrary TLS 1.3 embeddings, per-session CNF auditing, and unbounded-session security via pinging. Although all fifteen methods are security-equivalent, encapsulation latency varies by 3.2× (1.2–3.8 ms) and Theorem 7.1 reduces deployment\nselection to a Pareto-optimal set of five archetypes. Three real-world TLS 1.3 case studies (financial, healthcare, government) confirm the prediction, with infrastructure overhead\nclustering at 15–22% across sectors.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-20",
+    "pdf_url": "https://eprint.iacr.org/2026/778.pdf",
+    "url": "https://eprint.iacr.org/2026/778",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/848",
+    "title": "How (Not) to Simulate PLONK",
+    "authors": [
+      "Marek Sefranek"
+    ],
+    "abstract": "PLONK is a zk-SNARK system by Gabizon, Williamson, and Ciobotaru with proofs of constant size (0.5 KB) and sublinear verification time. Its setup is circuit-independent supporting proofs of arbitrary statements up to a certain size bound.\n\nAlthough deployed in several real-world applications, PLONK's zero-knowledge property had only been argued informally. Consequently, we were able to find and fix a vulnerability in its original specification, leading to an update of PLONK in eprint version 20220629:105924.\n\nIn this work, we construct a simulator for the patched version of PLONK and prove that it achieves statistical zero knowledge. Furthermore, we give an attack on the previous version of PLONK showing that it does not even satisfy the weaker notion of (statistical) witness indistinguishability.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-05-30",
+    "pdf_url": "https://eprint.iacr.org/2024/848.pdf",
+    "url": "https://eprint.iacr.org/2024/848",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/800",
+    "title": "Deploying decryption oracles for fun and non-profit: Backing up with friends and TEEs",
+    "authors": [
+      "Ian Miers"
+    ],
+    "abstract": "Secure backups are the Achilles' Heel of the E2EE ecosystem if they do not provide the same strong security properties as the E2EE messaging systems they support. They constitute a set of servers that, if compromised, would expose nearly all user messages.  Unfortunately, state-of-the-art and deployed secure backup systems fail to consider forward secrecy and post-compromise security of these servers as first-order design constraints.  Additionally, some proposals, in limited deployment, implicitly rely on the PKIs of trusted execution environments in order to provide security, creating a small number of keys whose compromise would be catastrophic.\n\nWe develop an elegant, efficient, and simple secure backup system that naturally addresses these issues by regularly rotating backup servers, each of which samples independent key material.  To make this approach scalable, we design a silent backup procedure, reducing server load compared to state-of-the-art designs while providing improved security.  \nOur design can be trivially extended to incorporate \\emph{social key recovery}, enabling more flexible deployment configurations.  We carefully prove the security of our construction and benchmark it to  show that it is deployment-ready. Our approach works on commodity hardware making it deployable without the resources needed for  WhatsApp or Apple's Encrypted Backups.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-23",
+    "pdf_url": "https://eprint.iacr.org/2026/800.pdf",
+    "url": "https://eprint.iacr.org/2026/800",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/799",
+    "title": "EQuADiSE: Efficient Quantum-safe Adaptive Distributed Symmetric-key Encryption",
+    "authors": [
+      "Debdeep Mukhopadhyay"
+    ],
+    "abstract": "Distributed symmetric-key encryption (DiSE), introduced in CCS' 18 enables threshold versions of traditional (symmetric-key) authenticated encryption. In DiSE, the long-term master secret key is secret-shared among multiple parties following a threshold access structure, and both encryption and decryption are performed in a distributed manner. An adaptively secure DiSE, introduced in INDOCRYPT' 20 tolerates adaptive corruptions of the key-holding parties for arbitrary thresholds, while simultaneously retaining efficient encryption and decryption. Unfortunately, all existing instances of adaptively secure DiSE are either quantum-broken (due to their inherent-reliance on discrete log-hard groups), or incur exponential (in the number of parties) online overheads for encryption/decryption. \n\nIn this paper, we present EQuADiSE -- the first practically efficient, adaptively secure, and plausibly post-quantum construction of DiSE based on the Module Learning with Rounding (MLWR) assumption in the Quantum Random Oracle model (QROM). EQuADiSE is the first adaptively secure quantum-safe instance of DiSE that incurs linear (in the number of parties) encryption/decryption overheads. As a core technical tool of independent interest, we introduce an MLWR-based distributed pseudorandom function (DPRF) that enjoys adaptive security in the QROM and practically outperforms all existing adaptively secure DPRF constructions in terms of online evaluation time.\n\nWe present experimental evaluations demonstrating that EQuADiSE achieves higher online throughput than all prior realizations of DiSE, including quantum-broken realizations based on discrete log-hard groups.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-23",
+    "pdf_url": "https://eprint.iacr.org/2026/799.pdf",
+    "url": "https://eprint.iacr.org/2026/799",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/772",
+    "title": "Lattice-based Ring Verifiable Random Functions",
+    "authors": [
+      "Ron Steinfeld"
+    ],
+    "abstract": "Verifiable Random Functions (VRFs) provide publicly verifiable pseudorandomness uniquely determined by a secret key and an input. While widely used in decentralized protocols, standard VRF verification reveals the signer's identity, exposing them to targeted adversarial disruption once their eligibility is known.\n\nWe study Ring VRFs(RVRFs), which allow a member of a public key set (a ring) to publish a VRF value along with a proof of correct generation while hiding the signer's index within the set. We formalize an algorithmic RVRF interface that binds the ring into the evaluated input to prevent cross-ring reuse and ring grinding (i.e., the malicious selection of a specific ring configuration to manipulate the pseudorandom outcome). Diverging from existing UC-based treatments, we propose a comprehensive suite of game-based security notions tailored to verifiable randomness under anonymity: correctness, anonymity, pseudorandomness, and a novel corruption-aware uniqueness notion called $T$-uniqueness. Our main technical result is a modular compiler that transforms any provable VRF into an RVRF by proving a one-out-of-many statement for the induced ring relation. We instantiate the OR layer via an optimized Fiat--Shamir OR (FS-OR) composition in the random oracle model, where the prover utilizes prover-side simulation for all non-witness branches and completes the witness branch only after a global consistency constraint is fixed. Focusing on post-quantum resilience, we provide concrete instantiations of our RVRF framework based on two state-of-the-art lattice VRFs: the long-term lattice VRF $\\mathsf{LaV}$ by Esgin et al. (Crypto'23) and the few-time lattice VRF $\\mathsf{LB}\\text{-}\\mathsf{VRF}$ by Esgin et al. (FC'19). We provide a detailed analysis of concrete parameters across various ring sizes for both constructions and perform a comprehensive side-by-side comparison of their communication costs and security trade-offs. Our instantiations are modular, with their security reducing cleanly to (i) the base VRF's correctness, pseudorandomness, and per-key uniqueness, and (ii) standard FS-OR properties (simulatability and extractability).",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-20",
+    "pdf_url": "https://eprint.iacr.org/2026/772.pdf",
+    "url": "https://eprint.iacr.org/2026/772",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1826",
+    "title": "Proofs of No Intrusion",
+    "authors": [
+      "Justin Raizes"
+    ],
+    "abstract": "A central challenge in data security is not just preventing theft, but detecting whether it has occurred. Classically, this is impossible because a perfect copy leaves no evidence. Quantum mechanics, on the other hand, forbids general duplication, opening up new possibilities.\n\nWe introduce Proofs of No Intrusion, which enable a classical client to remotely test whether a quantum server has been hacked and the client's data stolen.  Crucially, the test does not destroy the data being tested, avoiding the need to store a backup elsewhere. We define and construct proofs of no intrusion for ciphertexts assuming fully homomorphic encryption. Additionally, we show how to equip several constructions of unclonable primitives with proofs of non-intrusion, such as unclonable decryption keys and signature tokens. Conceptually, proofs of non-intrusion can be defined for essentially any unclonable primitive.\n\nAt the heart of our techniques is a new method for non-destructively testing coset states with classical communication. It can be viewed as a non-destructive proof of knowledge of a measurement result of the coset state.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-03",
+    "pdf_url": "https://eprint.iacr.org/2025/1826.pdf",
+    "url": "https://eprint.iacr.org/2025/1826",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "token",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/796",
+    "title": "Masking Ordering Failures in BFT SMR via Proactive Pre-Commit Execution",
+    "authors": [
+      "Aniket Kate"
+    ],
+    "abstract": "Modern Byzantine fault-tolerant state machine replication (BFT SMR) systems adopt a decoupled BFT consensus process to separate data dissemination from transaction ordering as it enables efficient (asynchronous) dissemination even when ordering fails intermittently under partial synchrony. Nevertheless, they may still suffer from high transaction confirmation latency as the transaction-execution process waits for the ordering process to complete: when the ordering process stalls, the execution process does not proceed even when transactions are disseminated.\n\nWe propose Pufferfish, the first BFT SMR system that effectively masks intermittent ordering failures in practice. Pufferfish introduces a pre-commi execution scheme that enables replicas to speculatively execute transactions even during the ordering process stalls. These pre-commit execution results can be directly committed, if correct, when the ordering failures are resolved. To achieve this, Pufferfish builds an adaptive probabilistic speculation mechanism on top of a DAG-based BFT consensus protocol, enabling replicas to predict and speculatively execute transactions ahead of confirmed ordering. Additionally, Pufferfish adopts a commit-aware snapshot mechanism to minimize the overhead of transaction re-execution in cases of speculation failures. To demonstrate the effectiveness of Pufferfish, we implement and evaluate it on a geo-distributed AWS environment. The evaluation results show that Pufferfish achieves faster recovery and 1.36x speedup on the p99 transaction confirmation latency compared to the state-of-the-art BFT SMR in the presence of ordering failures. Even under normal execution, Pufferfish can achieve a 1.58x speedup on transaction confirmation latency under a transaction workload of 80k tps.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-22",
+    "pdf_url": "https://eprint.iacr.org/2026/796.pdf",
+    "url": "https://eprint.iacr.org/2026/796",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1765",
+    "title": "Compact and Tightly Secure (Anonymous) IBE from Module LWE in the QROM",
+    "authors": [
+      "Junji Shikata"
+    ],
+    "abstract": "We present a new compact and tightly secure (anonymous) identity-based encryption (IBE) scheme based on the module learning with errors (MLWE) assumption, known as the standard lattice assumption, in the (quantum) random oracle model. Our IBE scheme is the first to achieve the asymptotically most compact and tight security under the standard lattice assumption. We design our IBE scheme by instantiating the framework of Gentry, Peikert, and Vaikuntanathan (STOC`08) using the compact trapdoor proposed by Yu, Jia, and Wang (CRYPTO'23). The tightness of our IBE scheme is achieved by extending the proof technique of Katsumata et al. (ASIACRYPT'18, JoC'21) to the Hermite normal form setting. To achieve this, we develop some new results on module lattices that may be of independent interest.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-10-30",
+    "pdf_url": "https://eprint.iacr.org/2024/1765.pdf",
+    "url": "https://eprint.iacr.org/2024/1765",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/794",
+    "title": "sigma-rs: A Modular Approach for Keyed-Verification Anonymous Credentials",
+    "authors": [
+      "Ian Goldberg"
+    ],
+    "abstract": "We introduce a new software stack in Rust aimed at simplifying\nconstructions and deployments of protocols based on\nmodern anonymous credential systems.\n\nThe stack, called sigma-rs, through its layered design,\nabstracts cryptographic complexity while remaining flexible enough to\nsupport a range of credential schemes, proofs, and access policies.\nIt emphasizes misuse resistance via type safety, domain separation, and\nprover-state discipline, and supports side-channel-aware constant-time\nstrategies.\n\nWe evaluate practicality through re-implementations of Tor’s Lox bridge\ndistribution protocols and of user authentication in the Open\nObservatory for Network Interference.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-22",
+    "pdf_url": "https://eprint.iacr.org/2026/794.pdf",
+    "url": "https://eprint.iacr.org/2026/794",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/385",
+    "title": "Bridging Privacy and Utility: A Verifiable Framework for Data Valuation via Zero-Knowledge Proofs",
+    "authors": [
+      "Guoqiang Li"
+    ],
+    "abstract": "Deep learning’s hunger for high-quality data has catalyzed a burgeoning\neconomy of decentralized data marketplaces. However, a\nfundamental trust deficit stifles this ecosystem: buyers fear data\npoisoning, while sellers fear data leakage. Although the Shapley\nvalue offers a rigorous economic framework for fair compensation,\nits calculation traditionally requires a Trusted Third Party (TTP) to\naccess raw data, creating a single point of failure for privacy. Verifying\ndata valuation without compromising confidentiality remains\nan open challenge.\nIn this paper, we present ZK-DV, the first Zero-Knowledge Proof\n(ZKP) system designed for verifiable, privacy-preserving data valuation.\nZK-DV enables a seller to prove that a claimed valuation score\n(based on Gradient Shapley) is mathematically consistent with the\nunderlying private data and the buyer’s model, without revealing\neither. Our key technical insight is the architectural coupling of\nmodel training and valuation: we construct a specialized arithmetic\ncircuit that combines the valuation logic into the backpropagation,\nextracting marginal utility scores from intermediate gradients.\nThis design, implemented via the GKR protocol with a hybrid commitment strategy, amortizes the heavy cryptographic overhead\nthrough batched processing. Our implementation, evaluated on\nLeNet-5 and VGG-11 across MNIST and CIFAR-10, demonstrates\npractical prover scalability and constant, negligible verifier time.\nZK-DV thus bridges the gap between cryptographic integrity and\neconomic fairness, paving the way for trustless data exchange.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-02-25",
+    "pdf_url": "https://eprint.iacr.org/2026/385.pdf",
+    "url": "https://eprint.iacr.org/2026/385",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "bridge",
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/275",
+    "title": "PhantomCrypt: Second-Order Deniable Encryption with Post-Quantum Security",
+    "authors": [
+      "Zahra Seyedi"
+    ],
+    "abstract": "Traditional deniable encryption focuses on denying the $content$ of secret communications by allowing plausible alternative plaintexts under coercion. However, the recognizable use of deniable encryption may itself defeat its purpose: any revealed plaintext becomes suspicious if the coercer detects that a non-standard encryption tool was used. We introduce $second-order~deniability$: the property that the use of a deniability mechanism is itself deniable. We formalize this notion via game-based security definitions for $content~deniability$ (CD) and $existence~deniability$ (ED), prove that CD and ED are logically independent, and show that their conjunction suffices to achieve second-order deniability. We present PhantomCrypt, a concrete construction composing False-Bottom Encryption (for CD) with Invisible Encryption (for ED) under a hybrid encryption envelope, and prove that this composition preserves both security properties with an explicit security bound. A proof-of-concept implementation demonstrates practical feasibility, achieving encryption of a 32-byte message with three decoys in under 10ms on commodity hardware.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-02-16",
+    "pdf_url": "https://eprint.iacr.org/2026/275.pdf",
+    "url": "https://eprint.iacr.org/2026/275",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1006",
+    "title": "Permutation-Based Hash from Non-Idealized Assumptions: Adding Feed-Forward to Sponge",
+    "authors": [
+      "Meiqin Wang"
+    ],
+    "abstract": "Avoiding feeding forward seems to be a major goal of the sponge construction. We make a step back and investigate adding feeding forward back to sponge. The obtained sponge-with-feeding-forward construction has a number of benefits: (1) In the random permutation model, its preimage and second preimage security bounds are much better than the standard sponge with the same capacity, while collision and indifferentiability security bounds are comparable; (2) Its collision and (second) preimage security can be reduced to well-defined properties of the underlying permutation, i.e., correlation intractability w.r.t. certain family of evasive relations.\n\n\n\nWe further incorporate several somewhat new ideas to form detailed hash and XOF constructions SpongeFwd: (1) Feeding-forward is only applied to the capacity part, and the final output(s) is the capacity part (with the rate part discarded). In this way, when $c$ equals the primary hash output size $h$, a single permutation-call suffices for squeezing. This also simplifies the underlying evasive relations for the reduction security proof. (2) We replace the hash IV with the first message block to have the best possible efficiency. (3) We employ a parallel structure to define an XOF variant. (4) We use HAIFI-style counter inputs to achieve both length-independent second-preimage security and domain separation for XOF.\n\nThe better (second) preimage security enables constructing 512-bit output hash function from Keccak-p[800]: with 512-bit capacity, its collision and (second) preimage security bounds are the same as the standard SHA-3-512, while its hardware area is reduced by roughly 38% (according to our preliminary estimation).",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-05-31",
+    "pdf_url": "https://eprint.iacr.org/2025/1006.pdf",
+    "url": "https://eprint.iacr.org/2025/1006",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/922",
+    "title": "Scalable Private Set Union, with Stronger Security",
+    "authors": [
+      "Dawu Gu"
+    ],
+    "abstract": "Private Set Union (PSU) protocol allows parties, each holding an input set, to jointly compute the union of the sets without revealing anything else. In the literature, scalable PSU protocols follow the “split-execute-assemble” paradigm (Kolesnikov et al., ASIACRYPT 2019); in addition, those fast protocols often use Oblivious Transfer as building blocks. Kolesnikov et al. (ASIACRYPT 2019) and Jia et al. (USENIX Security 2022), pointed out that certain security issues can be introduced in the “split-execute-assemble” paradigm. In this work, surprisingly, we observe that the typical way of invoking Oblivious Transfer also causes unnecessary leakage, and only the PSU protocols based on additively homomorphic encryption (AHE) can avoid the leakage. However, the AHE-based PSU protocols are far from being practical.\n\nTo bridge the gap, we also design a new PSU protocol that can avoid the unnecessary leakage. Unlike the AHE-based PSU protocols, our new construction only relies on symmetric-key operations other than base OTs, thereby being much more scalable. The experimental results demonstrate that our protocol can obtain at least 873.74× speedup over the best-performing AHE-based scheme. Moreover, our performance is comparable to that of the state-of-the-art PSU protocol (Chen et al., USENIX Security 2023), which also suffers from the unnecessary leakage.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-06-10",
+    "pdf_url": "https://eprint.iacr.org/2024/922.pdf",
+    "url": "https://eprint.iacr.org/2024/922",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/792",
+    "title": "Equivocal Broadcast Encryption: Adaptively-Secure Optimal Distributed Broadcast Encryption from Lattices",
+    "authors": [
+      "Saikumar Yadugiri"
+    ],
+    "abstract": "We present the first Distributed Broadcast Encryption (DBE) scheme from falsifiable lattice assumptions that achieves adaptive security with optimal parameters (short public/secret keys and ciphertexts). Our construction enjoys transparent setup and offers flexible instantiation: we achieve a succinct CRS in the Random Oracle Model, or a long CRS in the standard model. Previously, no lattice-based DBE simultaneously achieved adaptivity and optimal parameters in either setting.\n\nTo achieve this, we introduce a new methodology for proving adaptive security: $\\textit{Equivocal Encryption Systems}$. This framework operates in two indistinguishable modes: a 'real' mode utilizing standard algorithms, and a 'fake' mode where keys and ciphertexts are jointly sampled with auxiliary trapdoors, enabling the dynamic equivocation of ciphertexts to arbitrary challenge values. While our approach is technically distinct from the celebrated Dual System Encryption (Waters, CRYPTO'09), we believe it could serve as a similarly powerful paradigm for realizing adaptive security across a broad class of lattice-based encryption systems.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-22",
+    "pdf_url": "https://eprint.iacr.org/2026/792.pdf",
+    "url": "https://eprint.iacr.org/2026/792",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/791",
+    "title": "Experimental Validation of AUX scheme for Quantum Homomorphic Encryption on IBM Quantum Platforms",
+    "authors": [
+      "Jim Basilakis"
+    ],
+    "abstract": "Quantum Homomorphic Encryption (QHE) addresses Quantum Cloud Computing (QCC) security concerns by ensuring the privacy of a client’s data and algorithms when outsourced to untrusted third-party quantum servers. However, current QHE schemes face significant challenges: scaling computational resources introduces overhead and hardware noise, degrading accuracy and compromising security. This paper imple- ments and analyses a non-interactive AUX-QHE scheme that employs pre-generated auxiliary states for universal computation. We identify three critical computational bottlenecks: exponential growth in auxiliary state count, complex homomorphic evaluation, and extensive symbolic key updates. Through experimental evaluation on IBM Quantum hardware, we quantify the impact of NISQ noise on AUX-QHE performance and establish practical resource thresholds for deployment. Our results bridge the gap between theoretical QHE frameworks and their practical implementation on noisy quantum devices, providing concrete benchmarks for future noise mitigation efforts.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-22",
+    "pdf_url": "https://eprint.iacr.org/2026/791.pdf",
+    "url": "https://eprint.iacr.org/2026/791",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/226",
+    "title": "Round-Optimal Identity-Based Blind Signature from Module Lattice Assumptions",
+    "authors": [
+      "Shashank Singh"
+    ],
+    "abstract": "This work presents a round optimal identity-based blind signature scheme based on module lattices. Our construction extends Fischlin's two-round blind signature framework [CRYPTO'06] to the identity-based setting. The construction uses the GPV signature scheme based on Micciancio and Peikert's G-trapdoor techniques and NIZK proofs [CRYPTO'22] in the random oracle model. The scheme is secure under the MLWE and MSIS assumptions. The optimised parameters are also provided targeting $128$-bit security. To the best of our knowledge, this scheme is the first-round optimal identity-based blind signature scheme whose security relies on module lattice problems.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-02-11",
+    "pdf_url": "https://eprint.iacr.org/2026/226.pdf",
+    "url": "https://eprint.iacr.org/2026/226",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/789",
+    "title": "Foundations of Verifiably Encrypted (Blind) Signatures",
+    "authors": [
+      "Pedro Moreno-Sanchez"
+    ],
+    "abstract": "Many blockchain-based applications can be seen as instances of fair exchange of two signatures. Adaptor signatures (AS) and, more concretely, their extractability property, are commonly combined with blockchain-based economic incentives to achieve fairness in the exchange of two signatures in the blockchain. Certain blockchain applications require unique signatures (e.g., BLS), but it is formally impossible to build AS from unique signatures. Other applications need blind signatures, however, we found a tension between extractability and blindness. To address these limitations, we observe that fair exchange protocols based on AS only require extractability for one of the two exchanged signatures. This observation allows the other AS to be replaced with a primitive that provides similar security guarantees without inheriting the limitations of AS with respect to unique and blind signatures. A natural candidate is verifiably encrypted signatures (VES), introduced by Boneh et al. (Eurocrypt'03). However, this primitive predates blockchain systems and relies on a trusted party, the adjudicator.\n\nOur first contribution is to eliminate the need for an adjudicator by shifting trust to the blockchain and redefining the VES security model accordingly.  We introduce two new security notions and prove that our notions imply existing guarantees.  We revisit classical VES constructions by Boneh et al. (Eurocrypt'03) for unique signatures and by Hanser et al. (ESORICS'15) for probabilistic signatures, and show that they satisfy our new definitions. Furthermore, we compare our new notions with AS, and conclude that our revised VES is equivalent in terms of security to AS without extractability. Our second contribution extends VES to support blind and non-interactive blind signatures, introducing a new primitive: Verifiably Encrypted Blind Signatures (VEBS). We present a novel construction for non-interactive blind signatures and prove its security. We implement our construction and demonstrate its practical efficiency: encryption requires 3 ms, verification 6 ms, and decryption 13 ms, with a communication cost of 912 bytes. Finally, we discuss how VES/VEBS apply to diverse use cases, including anonymous credentials, contingent payments, atomic swaps, intermediated payments, coin mixing, and applications involving blind signatures.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-21",
+    "pdf_url": "https://eprint.iacr.org/2026/789.pdf",
+    "url": "https://eprint.iacr.org/2026/789",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/2059",
+    "title": "Minimizing the Use of the Honest Majority in YOSO MPC with Guaranteed Output Delivery",
+    "authors": [
+      "Sophia Yakoubov"
+    ],
+    "abstract": "Cleve (STOC 86) shows that an honest majority is necessary for MPC with guaranteed output delivery. In this paper, we show that while an honest majority is indeed necessary, its involvement can be minimal. We demonstrate an MPC protocol with guaranteed output delivery, the majority of which is executed by a sequence of committees with dishonest majority; we leverage one committee with an honest majority, each member of which does work independent of the circuit size. Our protocol has the desirable property that every participant speaks only once (YOSO, Crypto 2021).\n\nAs a building block of independent interest, we introduce public computation, which is essentially privacy-free MPC with guaranteed output delivery (akin to smart contracts realized on blockchains). We instantiate public computation on a public bulletin board in three different ways (with different assumption / round / space utilization trade-offs).",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-12-20",
+    "pdf_url": "https://eprint.iacr.org/2024/2059.pdf",
+    "url": "https://eprint.iacr.org/2024/2059",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/240",
+    "title": "Robust Non-Interactive Zero-Knowledge Combiners",
+    "authors": [
+      "Yu Xia"
+    ],
+    "abstract": "A $t$-out-of-$n$ robust non-interactive zero-knowledge (NIZK) combiner is a construction that, given access to $n$ candidate instantiations of a NIZK for some language, itself implements a NIZK for the same language. Moreover, the combiner is secure, assuming at least $t$ of the given candidates are secure.\n\nIn this work, we provide the first definition of combiners for NIZK, and prove that no robust NIZK combiner exists assuming $t \\le \\lfloor n/2 \\rfloor$ (unless the polynomial hierarchy collapses). On the positive side, we provide different constructions of robust NIZK combiners for  $t >  \\lfloor n/2 \\rfloor$. In particular, we show how to obtain:\n\n1) A black-box combiner working for a special class of {\\em homomorphic} languages where $n,t$ are polynomial and $t > \\lfloor n/2 \\rfloor$.  \n\n2) A non-black-box combiner working for any language, where $n,t$ are constant and $t > \\lfloor n/2 \\rfloor$. \n\n3)  A non-black-box combiner working for any language, where $n,t$ are polynomial and $t > \\lfloor 2n/3 \\rfloor$.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-02-15",
+    "pdf_url": "https://eprint.iacr.org/2025/240.pdf",
+    "url": "https://eprint.iacr.org/2025/240",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/581",
+    "title": "Multi-Party Homomorphic Encryption with Dynamicity and Ciphertext Reusability",
+    "authors": [
+      "Yongdong Yeo"
+    ],
+    "abstract": "Homomorphic Encryption (HE) enables computation on encrypted data while preserving privacy. We explore its application in the multi-party setting, where data is stored in the cloud under several distinct keys. For $n$ parties, Multi-Key HE (MKHE) supports such scenarios but incurs $O(n)$ space and computational overhead, making it impractical for large-scale use. Conversely, Multi-Party HE (MPHE) achieves constant $O(1)$ overhead but is typically limited by a static group structure: ciphertexts are traditionally tied to a fixed set of parties, which poses challenges for dynamically joining new members or reusing existing ciphertexts for different party sets.\n\nTo address these limitations, we first construct a Dynamic MPHE (dMPHE) scheme that allows new parties to join, while the original parties are not required to remain online. Our construction bridges the gap between existing MPHE and MKHE frameworks while achieving superior efficiency compared to prior dynamic MPHE attempts. Building on this, we introduce Reusable Dynamic MPHE (rdMPHE), a new primitive that simultaneously supports dynamicity and ciphertext reusability. We implement both schemes based on the RLWE assumption. Our analyzes and experiments demonstrate that rdMPHE maintains $O(1)$ efficiency while overcoming the scalability and static constraints of previous MKHE and MPHE. \nTo support open research, our code has been made publicly available.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-03-31",
+    "pdf_url": "https://eprint.iacr.org/2025/581.pdf",
+    "url": "https://eprint.iacr.org/2025/581",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/2005",
+    "title": "Reactive Correctness, sINDCPA-D-Security and Deterministic Evaluation for TFHE",
+    "authors": [
+      "Michael Walter"
+    ],
+    "abstract": "We examine the relationship between correctness definitions for Fully Homomorphic Encryption (FHE) and the associated security definitions. We show that reactive notions of correctness imply INDCPA-D and sINDCPA-D security. But that to obtain both INDCPA-D and sINDCPA-D security we need to use a randomized version of the evaluation procedure. Such randomized evaluation procedures cause problems in real life deployments of FHE solutions, so we then go on to show how one can de-randomize the evaluation procedure and still obtain sINDCPA-D security in the random oracle model for the specific FHE scheme of TFHE.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-27",
+    "pdf_url": "https://eprint.iacr.org/2025/2005.pdf",
+    "url": "https://eprint.iacr.org/2025/2005",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/777",
+    "title": "How Strong is the FO-Calypse, Really? Instantiating Plaintext-Checking Oracles against Masked Software Implementations of ML-KEM",
+    "authors": [
+      "François-Xavier Standaert"
+    ],
+    "abstract": "Side-channel attacks exploiting Plaintext-Checking Oracles (PCOs) instantiated thanks to the leakage of the re-encryption step taking place during decapsulation are a well-known weakness of ML-KEM. An already wide literature investigated how to efficiently exploit such oracles, leading to easy (full) key recoveries. Somewhat surprisingly, the investigation of how to best instantiate PCOs against ML-KEM's most leaking operations is less investigated, in particular when it comes to quantitative evaluations against concrete masked implementations. In this paper, we first remedy this lack by systematically instantiating PCOs against three open source masked software implementations of the Keccak function used in ML-KEM, based on different masking techniques and programming styles. We evaluate the accuracy of PCOs for increasing number of shares using state-of-the-art profiled attacks against ARM Cortex-M4 implementations, and succeed obtaining high accuracy for up to 7 shares by leveraging the leakage of approximately 50 ML-KEM executions only. Doing so, we confirm the ``computing more implies leaking more'' adage and conclude that enforcing high security levels on such platforms will not be affordable. Next, we consolidate recent solutions for exploiting PCOs. \nFor this purpose, we start by introducing a simple, concrete and re-usable model for PCOs targeting\nmasked implementations of Keccak. We follow by clarifying that approaches based on hard decisions are suboptimal compared to soft (probabilistic) ones. We finally open a study of how to best exploit the adversary's computational power in a security evaluation.\nWe show that (even naive) lattice based attacks are a promising approach for this purpose,\nleaving the design of a generic estimator that could efficiently leverage physical (side-channel) information as an interesting research direction.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-20",
+    "pdf_url": "https://eprint.iacr.org/2026/777.pdf",
+    "url": "https://eprint.iacr.org/2026/777",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/773",
+    "title": "Practical Attacks on Session Messenger and Oxen Blockchain",
+    "authors": [
+      "Thomas Haines"
+    ],
+    "abstract": "Session is a decentralised secure (anonymous) messenger that combines onion routing with the Oxen Proof-of-Stake blockchain to provide metadata-private communication. Our study presents the first comprehensive analysis of Session's messaging protocol and its integration with the Oxen blockchain. In analysing Session and the underlying Oxen blockchain, we uncovered seven vulnerabilities.\n\nMost notably we discovered flaws in the Oxen consensus protocol which could allow network takeover in a realistic setting, thereby undermining the integrity guarantees on which Session's anonymity layer depends. We also discovered serious vulnerabilities in Version 1 of Session's group chat protocol. We conducted extensive simulations to analyse the impact of these vulnerabilities and provide recommendations to reinforce both the Oxen protocol and the Session client to mitigate these attacks.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-20",
+    "pdf_url": "https://eprint.iacr.org/2026/773.pdf",
+    "url": "https://eprint.iacr.org/2026/773",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/767",
+    "title": "Cryptanalysis of the Sharafi–Daghigh digital signature scheme",
+    "authors": [
+      "Abdelmalek Azizi"
+    ],
+    "abstract": "This paper is devoted to the study of the Ring-LWE-based digital signature\nscheme proposed by Sharafi and Daghigh, especially, the cryptanalysis of this\nscheme. The Sharafi and Daghigh’s scheme is inspired by the Lindner–Peikert\nencryption paradigm and adopts a hash-and-sign approach via the Fiat–Shamir\ntransformation. The security claims rely on the assumed hardness of the Ring\nLWE and Ring-SIS problems, whose definitions and properties are well studied\nin last two decades. We demonstrate that this scheme is not secure and generalise\nour analysis to the analogous scheme in the plain-LWE setting.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-18",
+    "pdf_url": "https://eprint.iacr.org/2026/767.pdf",
+    "url": "https://eprint.iacr.org/2026/767",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/766",
+    "title": "Dynamic Group Time-based One-time Passwords",
+    "authors": [
+      "Jianying Zhou"
+    ],
+    "abstract": "Group time-based one-time passwords (GTOTP)  is a novel lightweight cryptographic primitive for achieving anonymous client authentication, which enables the efficient generation of time-based one-time passwords on behalf of a group without revealing any information about the actual client's identity beyond their group membership. The security properties of GTOTP regarding anonymity and traceability have been formulated in a static group management setting (where all group members should be determined during the group initialization phase), yet, a formal treatment for real-world dynamic groups (i.e., group members may join and leave at any time) is still an open question. It is non-trivial to construct an efficient GTOTP scheme that can provide a lightweight password generation procedure run by group members and support dynamic group management, allowing group members to join and leave without affecting other members' states (non-disruptively). \nTo address the above challenge, we first define the notion and the security model of dynamic group time-based one-time passwords (DGTOTP) in this work. We then present an efficient DGTOTP construction that can generically transform an asymmetric time-based one-time passwords scheme into a DGTOTP scheme utilizing a chameleon hash function family and a Merkle tree scheme. Within our construction, we particularly tailor an outsourcing solution realizing an issue-first-and-join-later (IFJL) strategy, enabling smooth joining and revocation without disrupting other group members. Moreover, our scheme minimizes symmetric cryptographic operations and maintains constant storage for group members, compared to the linear storage cost that grows rapidly with respect to the lifetime of the GTOTP instance in the previous static GTOTP scheme. Our DGTOTP scheme satisfies stronger security guarantees in a dynamic group management setting without random oracles. Our experimental results confirm the efficiency of our DGTOTP scheme.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-18",
+    "pdf_url": "https://eprint.iacr.org/2026/766.pdf",
+    "url": "https://eprint.iacr.org/2026/766",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/762",
+    "title": "The Sum-Check Protocol over the Monomial Basis, and Other Optimizations",
+    "authors": [
+      "Justin Thaler"
+    ],
+    "abstract": "The sum-check protocol underpins SNARKs with the fastest known provers. For an $n$-variate polynomial $g$ defined over a finite field $\\mathbb{F}$, the protocol enables an untrusted prover to convince a verifier of the sum of all evaluations of $g$ over a product set $H^n$ with $H \\subset \\mathbb{F}$. The standard choice for $H^n$ is the Boolean hypercube $\\{0,1\\}^n$, which serves as a natural interpolating set for multilinear polynomials.\n\nWe propose a projective variant of the sum-check protocol, obtained by changing the interpolating set from $\\{0,1\\}^n$ to the infinity hypercube $\\{0,\\infty\\}^n$. Under a suitable notion of evaluation at $\\infty$, evaluating a multilinear polynomial at a point in $\\{0,\\infty\\}^n$ directly extracts its corresponding monomial coefficient.\n\nThis projective viewpoint is a near-drop-in replacement for applications of sum-check, requiring only local changes to polynomial representations, round identities, and evaluation formulas. It yields a ${\\approx}\\,10\\%$ end-to-end speedup for the sum-check prover on BN254 and on a pseudo-Mersenne 128-bit prime field, against a fair baseline. It eliminates all field subtractions when binding a multilinear polynomial, and for structured polynomials such as equality and less-than, the projective interpolants admit evaluation procedures with fewer field operations. Moreover, the monomial-coefficient form aligns naturally with polynomial commitment schemes like WHIR, removing a basis mismatch that these schemes otherwise need to work around.\n\nFinally, we describe an optimization for sum-check over $\\approx 256$-bit prime fields. When targeting $\\approx 128$ bits of security, it suffices to sample challenges from a subset of size $\\approx 2^{128}$. We show that a suitable choice of this subset, interpreted as upper-limb values in Montgomery form, yields a $1.92\\times$ speedup for field multiplication. Combined with the projective binding formula, this gives a $1.82\\times$ speedup for sum-check binding (a key component of fast sum-check proving).",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-17",
+    "pdf_url": "https://eprint.iacr.org/2026/762.pdf",
+    "url": "https://eprint.iacr.org/2026/762",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "NFT"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/758",
+    "title": "Incentivizing Geographic Diversity for Decentralized Systems",
+    "authors": [
+      "Aggelos Kiayias"
+    ],
+    "abstract": "Permissionless Decentralized networks, such as blockchains, are typified by self-determined participation. Unfortunately, this has resulted in lack of geographic diversity in several blockchains due to benefits emanating from network proximity between nodes and the higher availability of computing infrastructure in certain areas. Lack of diversity in the resulting network can make it susceptible to eopolitical events, blockchain or cryptocurrency-adverse law-making, and natural disasters. While there exists a growing body of work in verifiable localization in distributed systems, very little exists on mechanisms promoting geographic diversity in distributed systems. Our work sets out to initiate the study of the incentivization of geographic diversity in permissionless distributed systems. We design a family of mechanisms that incentivize network nodes to truthfully declare and diversify their locations. In particular, we provide a game theoretic analysis to derive the conditions under which truthful location reporting is an equilibrium. The conditions relate the offered rewards (for geo-diversity) and the success probability of the underlying localization protocol to detect falsely claimed locations. Our proposed mechanisms assume an underlying secure node localization protocol based solely on round-trip times (RTT) measurements from participants of the protocol. We initiate a formal model to reason about such localization protocols and identify network topologies that are ideal for resisting location spoofing attempts. We evaluate effectiveness of our incentive mechanisms in different scenarios of node placement and underlying network structure. Our validation is based on two RTT data sets we use to derive maximal spoofing distance and attack success rates that adversarial nodes can achieve when operating alone or in collusion with other nodes.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-17",
+    "pdf_url": "https://eprint.iacr.org/2026/758.pdf",
+    "url": "https://eprint.iacr.org/2026/758",
+    "citation_count": null,
+    "relevance_tags": [
+      "measurement",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/754",
+    "title": "BTX: Simple and Efficient Batch Threshold Encryption",
+    "authors": [
+      "Victor Shoup"
+    ],
+    "abstract": "Batched threshold encryption (BTE) enables a committee of servers to jointly decrypt any chosen subset of ciphertexts from a large pool, while all remaining ciphertexts stay private. BTE is a key building block for encrypted mempools, where transactions are encrypted until block inclusion to mitigate maximal extractable value (MEV). Existing epochless  BTE constructions either require user-chosen ciphertext indices that create coordination and censorship concerns or are computationally inefficient.\n\nIn this paper, we present BTX, a simple and concretely efficient BTE construction that is both epochless and collision-free: encryption does not require a user-chosen batch index. Our scheme achieves the shortest ciphertext size among all known BTE constructions having the same size as a standard elgamal ciphertext. By making the scheme amenable to FFT, we reduce the decryption cost to $O(B\\log B)$ group exponentiations and $O(B)$ pairings, where $B$ is the size of the dynamically chosen batch of ciphertexts.\n\nWe implement BTX and two baselines in a shared, aggressively optimized C++ codebase over BLS12-381 with AVX-512 vectorization, FFT-based backends where applicable, and additional low-level engineering throughout. At batch size $B = 512$, using a single core, BTX requires approximately $598$ ms total for decryption, compared with $1197$ ms for the FFT optimized version of partial-fraction evaluation baseline of Boneh et al., an overall $2.0\\times$ improvement.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-04-17",
+    "pdf_url": "https://eprint.iacr.org/2026/754.pdf",
+    "url": "https://eprint.iacr.org/2026/754",
+    "citation_count": null,
+    "relevance_tags": [
+      "MEV",
+      "DeFi",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3685897",
+    "title": "A2-DIDM: Privacy-preserving Accumulator-enabled Auditing for Decentralized Identity of DNN Model",
+    "authors": [
+      "Tianxiu Xie",
+      "Keke Gai",
+      "Jing Yu",
+      "Liehuang Zhu"
+    ],
+    "abstract": "Recent booming development of Generative Artificial Intelligence (GenAI) has facilitated model commercialization to reinforce the model performance, including licensing or trading Deep Neural Network (DNN) models. However, DNN model trading may violate the benefit of the model owner due to unauthorized replications or misuse of the model. Model identity auditing is a challenging issue in protecting DNN model ownership, and verifying the integrity and ownership of models is one of the critical obstacles. In this paper, we focus on the above issue and propose an <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">A</u>ccumulator-enabled <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">A</u>uditing for <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">D</u>ecentralized <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Id</u>entity of DNN <underline xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">M</u>odel (A2-DIDM) that utilizes blockchain and zero-knowledge techniques to protect data and function privacy while ensuring the lightweight on-chain ownership verification. The proposed model presents a scheme of identity records via configuring model weight checkpoints with zero-knowledge proofs, which incorporates predicates to capture incremental state changes in model weight checkpoints. Our scheme ensures both computational integrity and programmability in DNN training process so that the uniqueness of the weight checkpoint sequence in a DNN model is preserved. A2-DIDM also addresses privacy protections in decentralized identity. We systematically analyze the security and robustness of our proposed model and further evaluate the effectiveness and usability of auditing DNN model identities. The code is available at <uri xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">https://github.com/xtx123456/A2-DIDM.git</uri>.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tdsc.2026.3685897",
+    "citation_count": 0,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3687210",
+    "title": "Is There A Bottom Line for Poisoning? Detecting High-Concealed Injection Attacks for Recommendation",
+    "authors": [
+      "Yan Feng",
+      "Zhihai Yang",
+      "Kexin Li",
+      "Jianhua He",
+      "Jianxin Li",
+      "Pinghui Wang",
+      "Zhiquan Liu"
+    ],
+    "abstract": "Recommender systems (RSs) are widely adopted due to their effectiveness in modeling user preferences and generating personalized recommendations. However, data poisoning attacks (PAs) manipulate recommendation results by injecting fake user profiles, thereby affecting the quality and accuracy of RSs. Moreover, emerging high-concealed PAs (HCPAs) achieve greater evasion of detection by controlling the cost of the attack, simulating the behavior patterns of benign users, and carrying out the attack with less prior knowledge. The HCPAs bring challenges: (1) the very low cost of attacks not only leads to an imbalance in data distribution but also introduces a large amount of accidental co-occurrence noise; (2) the behavioral patterns similar to benign users make it difficult to describe the characteristics of HCPAs; and (3) the prior knowledge for detecting HCPAs in real scenarios is very limited. To address these challenges, we propose STOP, an orthogonal projection bi-hypersphere detection method built on multi-view relational disentanglement and information-consistent fusion. First, we model the distributional preferences of user ratings to eliminate rating and popularity bias, and construct a co-occurrence association graph to suppress accidental overlaps. To address data imbalance caused by HCPAs, second, we introduce a distributional-consensus importance screening method that filters out benign users weakly associated with potential attackers. To address the issues of noise and the difficulty in feature characterization, third, we propose a multi-view relational disentanglement and information-consistent fusion method, which can eliminate redundant relationships, separate key relations into sequence-varying and sequence-stable components over rating sequences, and retain task-related relationships. Finally, inspired by the “convergence theorem”, we design an orthogonal projection bi-hypersphere boundary learning detection method to reduce the high false alarm rate (FAR). We extensively evaluate STOP under various HCPA scenarios, demonstrating its superiority over existing methods with an average 12.34% improvement in detection rate and an average 2.75% reduction in FAR. Furthermore, forensic analysis on real-world unlabeled data reveals distinct attacker “fingerprints”, such as extreme ratings, contradictory review styles, and analysis of target items, validating STOP's reliability in practical applications.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tdsc.2026.3687210",
+    "citation_count": 0,
+    "relevance_tags": [
+      "consensus",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tifs.2026.3687013",
+    "title": "Closing the Proof-of-Stake Security Gap: A Signature-Based Defense Against Malicious Validators in Long-Range Attacks",
+    "authors": [
+      "Zhanwen Chen",
+      "Yannan Li",
+      "Willy Susilo"
+    ],
+    "abstract": "Long-range attacks pose a significant threat to the integrity of Proof-of-Stake (PoS) blockchains by enabling adversaries to reconstruct an alternative chain history embedded with fraudulent transactions. These attacks can deceive honest participants into accepting a maliciously crafted branch as the canonical chain. While Key Evolving Signature (KES) schemes are widely adopted to mitigate such threats, they typically rely on the assumption that validators behave honestly. In this work, we challenge this assumption by demonstrating how a malicious validator can exploit inherent limitations in existing KES-based mechanisms to mount a successful long-range attack. To address this critical vulnerability, we introduce a novel cryptographic construction that combines one-time signatures with commitment schemes. Our approach imposes constraints on the signing capabilities of validators, thereby significantly reducing the feasibility of long-range attacks. We provide rigorous formal security proofs to substantiate the robustness of our scheme and conduct a comprehensive performance evaluation. The results show that our solution is both computationally and storage efficient, making it a practical and scalable defense mechanism for real-world PoS blockchain deployments.",
+    "venue": "IEEE TIFS",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tifs.2026.3687013",
+    "citation_count": 0,
+    "relevance_tags": [
+      "consensus",
+      "eCrime"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3809500",
+    "title": "Towards Reliable Generation of Executable Workflows by Foundation Models",
+    "authors": [
+      "Sogol Masoumzadeh",
+      "Keheliya Gallaba",
+      "Dayi Lin",
+      "Ahmed E. Hassan"
+    ],
+    "abstract": "Recent advancements in Foundation Models (FMs) have demonstrated significant progress in processing complex natural language to perform intricate tasks. Successfully executing these tasks often requires orchestrating calls to FMs alongside other software components. However, manually decomposing a task into a coherent sequence of smaller, logically aggregated steps, commonly referred to as workflows, demands considerable effort and specialized domain knowledge. While FMs can assist in generating such workflows specified in domain-specific languages (DSLs), achieving accuracy and reliability in this process remains a challenge. We introduce a framework that leverages static analysis feedback to enable FMs to detect and repair defects in the DSL-based workflows they generate. We begin by presenting an initial taxonomy of incidences of defects in FM-generated DSL workflows, categorizing them into 20 distinct types. Furthermore, we observe a high prevalence of defects across FM-generated DSL workflows, with \\(89.23\\) % of the studied instances containing at least one defect. This high prevalence underscores the magnitude of the problem and the necessity for mitigation strategies. Following this, we demonstrate that nine types of these defects can be effectively identified through static analysis of the workflows. For this purpose, we develop Timon, the first-of-its-kind static analyzer specifically designed for FM-generated DSL workflows. Finally, we show that by incorporating feedback from Timon, we can guide Pumbaa, an FM-based tool, to repair the detected defect incidences. By systematically detecting and repairing defects, our work provides a crucial step towards the reliable and automated generation of executable workflows from natural language requirements.",
+    "venue": "ACM TOSEM",
+    "year": 2026,
+    "date_published": "2026-04-21",
+    "pdf_url": "https://arxiv.org/pdf/2509.25117",
+    "url": "https://doi.org/10.1145/3809500",
+    "citation_count": 0,
+    "relevance_tags": [
+      "formal-verification"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3811822",
+    "title": "AI Reasoning for Wireless Communications and Networking: A Survey and Perspectives",
+    "authors": [
+      "Haoxiang Luo",
+      "Yu Yan",
+      "Yanhui Bian",
+      "Wenjiao Feng",
+      "Ruichen Zhang",
+      "Yinqiu Liu",
+      "Jiacheng Wang",
+      "Gang Sun",
+      "Dusit Niyato",
+      "Hongfang Yu",
+      "Abbas Jamalipour",
+      "Shiwen Mao"
+    ],
+    "abstract": "Artificial Intelligence (AI) plays a pivotal role in optimizing wireless communication networks. However, traditional deep learning approaches often act as closed boxes, lacking the structured reasoning abilities needed to tackle complex, multi-step decision problems. This survey provides a comprehensive review and outlook of reasoning-enabled AI in wireless communication networks, with a focus on Large Language Models (LLMs) and other advanced reasoning paradigms. In particular, LLM-based agents can combine reasoning with long-term planning, memory, tool utilization, and autonomous cross-layer control to dynamically optimize network operations with minimal human intervention. We begin by outlining the evolution of intelligent wireless networking and the limitations of conventional AI methods. We then introduce emerging AI reasoning techniques. Furthermore, we establish a classification system applicable to wireless network tasks. We also present a layer-by-layer examination for AI reasoning, covering the physical, data link, network, transport, application, and security layers. For each part, we identify key challenges and illustrate how AI reasoning can improve wireless performance. Meanwhile, we also provide the actual deployment and cost analysis of AI reasoning. Finally, we discuss research directions for AI reasoning toward future wireless communication networks. By combining insights from both communications and AI, this survey aims to chart a path for integrating reasoning techniques into the next-generation wireless networks.",
+    "venue": "ACM CSUR",
+    "year": 2026,
+    "date_published": "2026-04-23",
+    "pdf_url": "https://arxiv.org/pdf/2509.09193",
+    "url": "https://doi.org/10.1145/3811822",
+    "citation_count": 0,
+    "relevance_tags": [],
     "analyzed": false
   }
 ]
