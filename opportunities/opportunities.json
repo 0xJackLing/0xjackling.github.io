@@ -1956,6 +1956,22 @@
     "fetched": "2026-03-28"
   },
   {
+    "title": "Product Feedback",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/poh-product-feedback",
+    "prize": "150 USDT",
+    "deadline": "2026-05-20",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260518_246",
+    "fetched": "2026-05-18"
+  },
+  {
     "title": "Promote Solana Summit Kazakhstan — Content & Community Bounty",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2020,6 +2036,22 @@
     "fetched": "2026-05-11"
   },
   {
+    "title": "Solana Consumer Day - Best Consumer Insights Thread",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/solana-consumer-day-best-consumer-insights-thread",
+    "prize": "300 USDC",
+    "deadline": "2026-05-23",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260518_247",
+    "fetched": "2026-05-18"
+  },
+  {
     "title": "Write Engaging Twitter Thread on CoinEx Earn for Staking Rewards",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2052,6 +2084,22 @@
     "fetched": "2026-04-27"
   },
   {
+    "title": "Autonomous Agent Bounty: OOBE × Ace Data Cloud",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/autonomous-agent-bounty-oobe-ace-data-cloud",
+    "prize": "2400 USDC",
+    "deadline": "2026-06-03",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260518_248",
+    "fetched": "2026-05-18"
+  },
+  {
     "title": "Create Content about the Solana Summit in Germany",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2066,6 +2114,22 @@
     ],
     "id": "opp_20260511_231",
     "fetched": "2026-05-11"
+  },
+  {
+    "title": "Stake $GMYLD  & Play PumpCat.FUN - Get Paid Up to $100 for Honest Feedback",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/stake-dollargmyld-and-play-pumpcatfun-get-paid-up-to-dollar100-for-honest-feedback-1",
+    "prize": "2000 USDC",
+    "deadline": "2026-06-10",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260518_249",
+    "fetched": "2026-05-18"
   },
   {
     "id": "ethglobal_newyork_2026",
@@ -3987,6 +4051,42 @@
     "fetched": "2026-05-04"
   },
   {
+    "title": "DevNetwork [AI + ML] Hackathon 2026",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://devnetwork-ai-ml-hack-2026.devpost.com/",
+    "prize": "$<span data-currency-value>8,000</span>",
+    "deadline": "May 11 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "DevOps",
+      "Enterprise",
+      "Machine Learning/AI"
+    ],
+    "id": "opp_20260518_244",
+    "fetched": "2026-05-18"
+  },
+  {
+    "title": "Beyond Tomorrow Summit",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://beyond-tomorrow-summit.devpost.com/",
+    "prize": "$<span data-currency-value>2,000</span>",
+    "deadline": "May 13 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Cybersecurity",
+      "Fintech",
+      "Health"
+    ],
+    "id": "opp_20260518_241",
+    "fetched": "2026-05-18"
+  },
+  {
     "title": "Web Summit Vancouver Hackathon",
     "category": "hackathon",
     "platform": "Devpost",
@@ -4003,6 +4103,60 @@
     ],
     "id": "opp_20260504_202",
     "fetched": "2026-05-04"
+  },
+  {
+    "title": "Hack the Tech",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hack-the-tech.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 16 - 1",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Education",
+      "Enterprise",
+      "Fintech"
+    ],
+    "id": "opp_20260518_243",
+    "fetched": "2026-05-18"
+  },
+  {
+    "title": "AlgoFest Hackathon ",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://algofest-hackathon2.devpost.com/",
+    "prize": "$<span data-currency-value>4,300</span>",
+    "deadline": "May 16 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Enterprise",
+      "Fintech",
+      "Machine Learning/AI"
+    ],
+    "id": "opp_20260518_242",
+    "fetched": "2026-05-18"
+  },
+  {
+    "title": "Virtual Dreams 2026",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://virtual-dreams-2026.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 16 - 3",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "AR/VR",
+      "Design",
+      "Education"
+    ],
+    "id": "opp_20260518_245",
+    "fetched": "2026-05-18"
   },
   {
     "title": "Code Crush 2026",
