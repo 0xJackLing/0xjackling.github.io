@@ -28676,5 +28676,763 @@
     "citation_count": 1,
     "relevance_tags": [],
     "analyzed": false
+  },
+  {
+    "id": "eprint:2026/969",
+    "title": "Icy-DVRF: A Distributed Verifiable Random Function based on FROST signatures",
+    "authors": [
+      "Oğuz Yayla"
+    ],
+    "abstract": "Unbiased and unpredictable randomness is a cornerstone of Web3 security, underpinning everything from consensus protocols to DeFi logic. Although Distributed Verifiable Random Functions (DVRFs) eliminate central points of failure, current designs often have to compromise performance. Most existing protocols are hindered by one of three limitations: proofs that scale linearly with the number of participants, high computational cost of bilinear pairings, or latency introduced by mandatory interactive steps during generation. In this work, we present Icy-DVRF, a protocol that improves DVRFwCP by employing a preprocessing scheme similar to FROST to reduce the number of interaction rounds among participants, by lowering the additional communication cost from $O(n^2 t)$ to $O(t)$ while maintaining constant-size proofs. The downside of our construction is that, relative to DDH-DVRF and GLOW-DVRF, this approach incurs an additional off-chain communication round due to the threshold structure of our non-interactive zero-knowledge proof. This architecture ensures that verification costs remain low, regardless of the set of participants. We evaluate Icy-DVRF against established standards and demonstrate that our protocol achieves a substantial efficiency gain over pairing-based alternatives. While theoretical estimates suggest verification costs of approximately one quarter of those of standard designs, our empirical benchmarks on the Sepolia testnet, utilizing the EIP-2537: Precompile for BLS12-381 curve operations, confirm that Icy-DVRF requires only 88,803 gas for full execution. This represents a significant 43.02\\% reduction in total gas consumption compared to existing pairing-based constructions, saving 67,035 gas per on-chain verification.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-15",
+    "pdf_url": "https://eprint.iacr.org/2026/969.pdf",
+    "url": "https://eprint.iacr.org/2026/969",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "DeFi",
+      "ZKP",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1605",
+    "title": "Nebula: Efficient read-write memory and switchboard circuits for folding schemes",
+    "authors": [
+      "Srinath Setty"
+    ],
+    "abstract": "A zero-knowledge virtual machine (zkVM) is a\nversatile, developer-friendly primitive that proves the correct\nexecution of programs on a fixed machine architecture. A\nmajor bottleneck for these protocols is the prover’s space\ncomplexity, which grows linearly with the number of program\nsteps and makes it impractical to produce proofs for long-\nrunning computations. To overcome this, we propose generating\nthese proofs incrementally, using folding schemes. However,\nrealizing this requires new tools in the folding setting: (1)\nan efficient read-write memory argument for proving the\ncorrectness of memory operations; and (2) a method to eliminate\nthe overheads incurred by unused machine instructions when\nincrementally proving a program execution step.\n\nWe address these with new techniques. First, we introduce\ncommitment-carrying IVC, where a proof carries an incremental\ncommitment to the prover’s non-deterministic advice provided\nat different steps. Second, we show how this unlocks efficient\nread-write memory arguments (which implies indexed lookups\narguments), with a cost profile identical to that of memory\narguments in the context of non-recursive arguments. Third, we\nprovide a new universal “switchboard” circuit construction that\ncombines circuits of different instructions such that one can\n“turn off” uninvoked circuit elements and constraints, offering\na new way to achieve pay-per-use prover costs.\n\nWe design an IVC scheme, which we refer to as Nebula,\nthat incorporates these techniques. We implement a prototype\nof a Nebula-based zkVM for the Ethereum Virtual Machine\n(EVM). We find that our techniques qualitatively provide a\n30×smaller constraint system to represent the EVM over\nstandard memory-checking techniques, and lead to over 260×\nfaster proof generation for the standard ERC-20 token transfer\ntransaction when compared to our baseli",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-10-09",
+    "pdf_url": "https://eprint.iacr.org/2024/1605.pdf",
+    "url": "https://eprint.iacr.org/2024/1605",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "DeFi",
+      "ZKP",
+      "token"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/029",
+    "title": "YouChoose: A Lightweight Anonymous Proof of Account Ownership",
+    "authors": [
+      "Mahabir Prasad Jhanwar"
+    ],
+    "abstract": "Anonymous proofs of account ownership (anonymous PAOs) enable a prover to convince a verifier that the prover owns a valid account at a server without revealing their identity. Importantly, no server-side changes are required - the server does not even learn that such a proof is taking place. This functionality is particularly valuable in sensitive applications such as whistleblowing, or in settings where infrastructural changes at the server are impractical. Anonymous PAOs were first introduced by Wang et al. (IEEE S&amp;P 2019), who realized them in the email setting via secure channel injection (SCI), a technique that requires carefully engineered multi-party computation (MPC) protocols. In this work, we propose YouChoose, a new approach to anonymous PAO that avoids MPC entirely, relying instead on the verifier to selectively forward TLS records. Compared to SCI, YouChoose is simpler, faster, and more adaptable across services. We also provide the first formal security definition for anonymous PAOs, establishing a rigorous framework for analysis and future constructions. Finally, we present a prototype implementation of YouChoose, evaluate it in the context of email and other social media accounts, showing its better performance than SCI with minimal latency overhead in practice.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-01-08",
+    "pdf_url": "https://eprint.iacr.org/2024/029.pdf",
+    "url": "https://eprint.iacr.org/2024/029",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/970",
+    "title": "Security Analysis on a Blockchain-based Public-Key Authenticated Searchable Encryption Scheme",
+    "authors": [
+      "Keita Emura"
+    ],
+    "abstract": "Du et al. (Security and Communication Networks, 2022) proposed a public-key authenticated searchable encryption scheme that employs Bloom filters and blockchain. In their scheme, Bloom filters are used to search encrypted keywords, while blockchain is used to ensure the integrity of search results that guarantees the search result is correct. \nIn this paper, we demonstrate that Du et al.'s scheme leaks keyword information from ciphertexts. Our analysis focuses on the fact that the Bloom filter is uniquely determined by the keyword to be encrypted and is directly embedded in each ciphertext. We show that the proposed attack succeeds with the probability that no false positives occur in the Bloom filter, and we evaluate the false-positive probability to confirm that the attack achieves a sufficiently high success rate. Furthermore, we examine Du et al.'s security model and their assumed usage scenarios, and we discuss the validity of our attack under those conditions. We also consider a simple modification intended to prevent our attack and demonstrate that our attack, with a slight adaptation, remains effective against the modified scheme. In addition, we show that even when the search results differ, previously generated ciphertexts can still pass verification, indicating that the integrity verification mechanism based on blockchain is insufficient.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-16",
+    "pdf_url": "https://eprint.iacr.org/2026/970.pdf",
+    "url": "https://eprint.iacr.org/2026/970",
+    "citation_count": null,
+    "relevance_tags": [
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/965",
+    "title": "Device Binding for Anonymous Credentials on Legacy Phones",
+    "authors": [
+      "Alexandros Zacharakis"
+    ],
+    "abstract": "Digital identity systems are currently build around the globe, aiming to enable secure, usable, but also privacy-preserving user authentication. Concretely, the EUDI Wallet developed in Europe requires to ensure selective attribute disclosure and unlinkable authentication. This essentially mandates the use of anonymous credentials, that have been developed for this exact purpose over the last 20 years. However, they are not integrated in the current solutions as they lack an essential feature: device binding. That is, binding credentials stored on the users' phones to a secure hardware element therein, in order to prevent credential cloning or sharing. Device binding is typically done through encoding a device public key into the user's credential and requiring a fresh signature  under the corresponding and hardware-protected secret key - the proof-of-possession (PoP) - when presenting the credential.  While academic solutions exist that realize efficient device binding for anonymous credentials, they are not compatible with the secure hardware currently available in consumer phones. The main challenge lies in the underlying curves: all efficient anonymous credentials, (and their native device binding protocols) require the use of pairing-friendly curves, whereas existing phones are essentially restricted to ECDSA signatures and classic P256 curves.\n\nIn this work, we show how to bridge these two systems, enabling device-binding for pairing-based credentials on legacy phones, i.e., relying solely on standard ECDSA signatures for the PoP. We present three different constructions with different trade-offs in efficiency and in protocol complexity. Our most efficient solution generates unlinkable bridging proofs of size ~1.5KB in less than ~500ms by relying on a (very simple) arithmetic circuit, whereas the most conservative approach (without circuits) takes as well ~500ms and comes with proof size of ~175KB. All our solutions share a common blueprint, and we express them in the reductions of knowledge framework (Crypto 2023) to reflect this is in our protocols' design. This framework allows to modularly construct  complex zero-knowledge proofs in an elegant and intuitive manner, greatly facilitating the security analysis and the implementation. This framework has previously been mainly used in a theoretical context, and our work demonstrates that it is a powerful tool to design, analyze and implement complex real-world systems.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-15",
+    "pdf_url": "https://eprint.iacr.org/2026/965.pdf",
+    "url": "https://eprint.iacr.org/2026/965",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/964",
+    "title": "Beyond Quadratic: Unlocking Pseudorandomness with Quartic Character",
+    "authors": [
+      "Rana Barua"
+    ],
+    "abstract": "We study pseudorandomness arising from quartic Dirichlet characters and obtain results that connect analytic and cryptographic perspectives. From an analytic perspective, and following the framework of Mauduit and Sárközy, we define a Boolean function $\\psi_\\pi$ from the quartic character $\\chi_\\pi$ modulo a Gaussian prime $\\pi$ and analyze sequence $E_{p-1}=(\\psi_\\pi(1),\\ldots,\\psi_\\pi(p-1))$ for $p=\\pi\\bar\\pi \\equiv 1 \\bmod{4}$. Using classical character-sum bounds (Pólya-Vinogradov and refinements of Mauduit-Sárközy and Oon), we show that $E_{p-1}$ satisfies $W(E_{p-1}) =O(\\sqrt{p}\\log p)$ and $C_{\\mu}(E_{p-1}) \\leq 2^{\\frac{\\mu}{2}+1} \\mu \\sqrt{p}\\log p,$ which imply strong pseudorandomness for small $\\mu$. From the cryptographic side, we resolve an open question posed by Damgård by proving that quartic characters yield the secure pseudorandom generators and weak pseudorandom functions (wPRFs). Adapting similar techniques of Corrigan-Gibbs and Wu, we have shown that distinguishing quartic wPRF implies solving quadratic residuosity, via a chain of polynomial-time reductions. Our results show that under the Quadratic Residuosity Assumption, the quartic character also yields cryptographically secure wPRFs whose one-wayness was assumed in the construction of $\\mathsf{Quartapus}$ signature scheme by Brier et al. and the post-quantum secure signature scheme $\\mathsf{PorcRoast}_{4}$ by Beullens et al. that are more efficient and secure than legacy schemes based on the Legendre character.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-15",
+    "pdf_url": "https://eprint.iacr.org/2026/964.pdf",
+    "url": "https://eprint.iacr.org/2026/964",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/962",
+    "title": "rBFT: a Revamped Two-Stage BFT from Delegated Committee",
+    "authors": [
+      "Yi Sun"
+    ],
+    "abstract": "Byzantine fault-tolerant (BFT) protocol from delegated committee is an approach in improving the performance and scalability of blockchains. Notable industrial examples include Delegated Proof-of-Stake (DPoS) by Tron, Polkadot, and Solana, and Proof-of-Staked-Authority (PoSA) by Binance. In these protocols, a subset of nodes is first selected to form a committee, then the committee members reach an agreement and disseminate the results to all nodes. Although these approaches allow the committee members to be rotated periodically, the security of the system is built upon a strong assumption that no committee can have more than certain fraction of faulty nodes (e.g., one-third in a partially synchronous network).\n\nIn this paper, we provide a revamped two-stage design to model BFT from delegated committee without making the strong assumption. Namely, the only assumption is that in a partially synchronous network, the entire system does not have more than one-third faulty nodes. We propose rBFT, a practical BFT protocol that has a fast path where only committee members participate and a slow path where all nodes in the system are involved. We show that, not surprisingly, the fast path is extremely fast, and under reasonable assumptions such as alive-but-corrupt nodes and rational nodes, only fast path can be triggered. Meanwhile, even under conventional Byzantine failures where the slow path is triggered, our protocol is still practical enough.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-15",
+    "pdf_url": "https://eprint.iacr.org/2026/962.pdf",
+    "url": "https://eprint.iacr.org/2026/962",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/960",
+    "title": "On the Communication Complexity of Sleepy Consensus",
+    "authors": [
+      "Yuchen Ye"
+    ],
+    "abstract": "Sleepy consensus allows parties to join and leave execution arbitrarily, which is a fundamental requirement for large-scale distributed systems. Classic longest-chain protocols, such as Bitcoin and its variants, achieve consensus under this model but suffer from inherent long latency. In contrast, recent protocols that build upon the classic view-based BFT paradigm can achieve constant expected latency and short best-case latency under optimal resilience, but they often incur high communication cost. We observe that the high communication overhead stems from the time-shifted quorums, a technique that makes quorum certificates transferable under dynamic participation. However, the technique relies on extensive message forwarding to reconcile parties' inconsistent local views, and thus incurs a cubic communication cost unavoidably.\n\nIn this work, we tackle the problem by proposing a novel way to transfer certificates. Building on this, we construct a Byzantine Agreement (BA) protocol secure against the state-of-the-art growing adversary model. Our BA protocol achieves optimal resilience, constant expected round complexity, and an expected communication complexity of $O(nNL+nN\\kappa+nN\\log N)$, where $n$ is the maximum number of awake parties throughout the execution, $N$ is the total number of eligible parties, $L$ is the input length, and $\\kappa$ is the security parameter. We also present an efficient recovery mechanism for our BA, incurring only $O(N\\kappa+nL)$ bits per recovering party. Then we extend our BA to an Atomic Broadcast (ABC) protocol that achieves optimal resilience, constant expected latency, and an expected amortized communication complexity of $O(nNL+nN\\kappa+nN\\log N)$ per input value. The recovery mechanism for our ABC incurs $O(N\\kappa+n\\ell L+n\\ell \\kappa)$ bits per recovering party, where $\\ell$ is the number of views that the party has slept for. Last but not least, we establish communication lower bounds of $\\Omega(N^2L)$ for sleepy BA and ABC. The result shows that our BA and ABC are communication-optimal when $L$ is sufficiently large (i.e., when $L=\\Omega(\\kappa+\\log N)$), and highlights a fundamental limitation of communication efficiency in the sleepy model.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-15",
+    "pdf_url": "https://eprint.iacr.org/2026/960.pdf",
+    "url": "https://eprint.iacr.org/2026/960",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1516",
+    "title": "GoSSamer: Lightweight and Linear-Communication Asynchronous (Dynamic Proactive) Secret Sharing and the Applications",
+    "authors": [
+      "Tianwei Zhang"
+    ],
+    "abstract": "Asynchronous complete secret sharing (ACSS) and asynchronous dynamic proactive secret sharing (ADPSS) are fundamental primitives for secret sharing and resharing in modern threshold systems, such as multi-party computation, distributed key management, and blockchain. However, existing ACSS constructions that employ homomorphic commitments incur notable computational overhead, while the lightweight-computation constructions require quadratic per-secret communication, limiting scalability as the number of parties grows. ADPSS constructions inevitably inherit these inefficiencies due to their tight coupling to the commitment-based ACSS and requiring at least quadratic cross-committee communication. \nTo break these bottlenecks, we design GoSSamer, a concretely and asymptotically efficient protocol suite, where both our ACSS and ADPSS achieve (1) lightweight computation with only hash function and symmetric encryption; (2) asymptotically optimal, linear per-secret communication; (3) optimal resilience in asynchronous networks; and (4) post-quantum security. In GoSSamer-ACSS, we propose an original-evaluation propagation paradigm for linear communication without commitment‑requiring interpolation, which further unlocks our lightweight bivariate-polynomial-based degree checking for share verification. Building on this foundation, GoSSamer‑ADPSS contributes two further techniques: a consistency verification technique that decouples the ADPSS framework from the commitment-based ACSS, and a dual-committee reconstruction technique that yields linear per-secret communication. When deployed in distributed AWS instances, GoSSamer-ACSS reduces the runtime by 95.6% compared to the linear-communication scheme hbACSS (NDSS'22) and 45.8% compared to lightweight SS24 (JoC'24). GoSSamer-ADPSS reduces the runtime by at least 67.7% compared to LongLive (Usenix Security'23). Moreover, when applied to practical distributed key management systems, the GoSSamer-ACSS-based distributed key generation is 7-11x faster than DXK+23 (Usenix Security'23), and GoSSamer-ADPSS-based key resharing reaches a throughput of 1994 keys/s across 10-node committees, compared to 85 keys/s in LongLive.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-08-23",
+    "pdf_url": "https://eprint.iacr.org/2025/1516.pdf",
+    "url": "https://eprint.iacr.org/2025/1516",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/504",
+    "title": "Polylogarithmic Proofs for Multilinears over Binary Towers",
+    "authors": [
+      "Jim Posen"
+    ],
+    "abstract": "The use of small fields has come to typify the design of modern, production-oriented SNARKs. In this work, we treat multilinear polynomial commitment over tiny fields. A tiny-field polynomial—in the nomenclature of Diamond and Posen (EUROCRYPT '25)—is defined over a field that has fewer elements than the polynomial itself has coefficients. We focus on multilinears over the field with just two elements.\n\nIn this work, we generically reduce the problem of tiny-field commitment to that of large-field commitment. We introduce a sumcheck-based compiler—called \"ring-switching\"—which, upon being fed a multilinear polynomial commitment scheme over some large extension field, yields a further scheme over that field's ground field. The resulting scheme lacks embedding overhead, in that its commitment cost, on each input, equals that of the large-field scheme on each input of identical size (in bits). Its evaluation protocol's overhead is linear for the prover and logarithmic for the verifier, and is essentially optimal.\n\nInstantiating our ring-switching reduction on the BaseFold (CRYPTO '24) large-field multilinear polynomial commitment scheme—or more precisely on a characteristic-2 adaptation of that scheme that we develop at length—we obtain an extremely fast polynomial commitment scheme for bit-valued multilinears. Our scheme outperforms its state-of-the-art peers, a fact we demonstrate experimentally.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-03-29",
+    "pdf_url": "https://eprint.iacr.org/2024/504.pdf",
+    "url": "https://eprint.iacr.org/2024/504",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/863",
+    "title": "Conquering Bad Norms in RstOE: Pure-Database Substitution and Early-Defense",
+    "authors": [
+      "Ying Chen"
+    ],
+    "abstract": "The Recording Standard Oracle with Errors (RstOE) technique is a quantum-security proof technique that provides a structured framework for analyzing adversarial capabilities in quantum settings. For example, it can be applied to prove the quantum security of compressing pseudorandom functions. However, against adaptive quantum chosen-plaintext adversaries, traditional RstOE-based proofs may suffer from the ''trivialization of norm'' problem. In the RstOE analyses considered in this paper, this issue can be traced to three recurring causes: delayed evaluation of bad events, the presence of unrecorded external variables, and unconstrained independence among intermediate variables. To address this obstacle, we propose two refinements of the RstOE methodology, namely Pure-Database Substitution and Early-Defense. Pure-Database Substitution algebraically eliminates unrecorded external variables and reformulates collision constraints in terms of internal database records. Building on this substitution, Early-Defense moves the collision check to the point at which a new internal variable is sampled. Because the bad event then depends on this freshly generated quantum randomness, only a negligible fraction of the $2^n$ superposition branches satisfy the collision constraint. This reduces the amplitude of transitions into the bad subspace and avoids the $O(1)$ norm collapse. We demonstrate the method on TNT as a case study and outline extensions to EDMQ, EDMDQ, LRWQ, and QPMAC.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-03",
+    "pdf_url": "https://eprint.iacr.org/2026/863.pdf",
+    "url": "https://eprint.iacr.org/2026/863",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/958",
+    "title": "Enhancing Blockchain Proof of Stake with Active Weighted Signatures: The ADAPT Framework",
+    "authors": [
+      "Changmin Lee"
+    ],
+    "abstract": "Proof of Stake (PoS) blockchain systems require weighted threshold signatures where participants' voting powers reflect their stakes. As stakes change dynamically through deposits and withdrawals, efficient weight and threshold adjustments are essential for maintaining system security and availability without downtime. However, existing approaches face critical limitations: (1) virtualization-based schemes require <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$O(w)$</tex-math></inline-formula> operations (signatures) per participant with weight <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$w$</tex-math></inline-formula>; (2) dynamic threshold / paricipants schemes do not support weighted participants; (3) schemes with both properties require trusted dealers or <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$O(n^{2})$</tex-math></inline-formula> re-setup, causing temporary unavailability. This paper introduces Active Weighted Signature (AWS), enabling dynamic adjustments without trusted dealers or re-setup. We propose Generalized Lagrange Interpolation (GLI), encoding weights as polynomial derivatives rather than virtualized participants, and instantiate AWS through <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$ {\\sf ADAPT}$</tex-math></inline-formula> by applying GLI to the Schnorr-based threshold signature <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">${\\sf FROST}$</tex-math></inline-formula>. Our implementation shows that <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$ {\\sf ADAPT}$</tex-math></inline-formula> achieves comparable efficiency to <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">${\\sf FROST}$</tex-math></inline-formula> for key generation, while weight and threshold adjustments complete in 4.1-22.3% of re-setup time. For uneven weight distributions, <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$ {\\sf ADAPT}$</tex-math></inline-formula> achieves sub-linear scaling: 49× weight difference requires only 3.29× computation versus 49× in virtualization.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-05-14",
+    "pdf_url": "https://eprint.iacr.org/2026/958.pdf",
+    "url": "https://eprint.iacr.org/2026/958",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "DAO"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/956",
+    "title": "Efficient Bootstrapping in Fully Homomorphic Encryption for Matrix Arithmetic",
+    "authors": [
+      "Yongwoo Lee"
+    ],
+    "abstract": "Recently, Gentry and Lee (GL) proposed a fully homomorphic encryption (FHE) scheme optimized for matrix arithmetic. In this paper, we propose an efficient bootstrapping technique for the GL scheme. Our core idea leverages the linearity of the slot--coefficient transformations, namely CtS and StC: we formulate these operations as ciphertext--plaintext matrix multiplications, which are natively supported by the GL scheme. As a result, the proposed method reduces the number of key-switching operations per step to a small constant. To enable this, we first generalize the GL scheme to matrices of non-power-of-two dimensions by introducing a generalized definition of the trace over commutative rings and proving that it commutes with decryption. Our bootstrapping adopts the CKKS paradigm: ModRaise, CtS, EvalMod and StC. Typically, CtS/StC and EvalMod dominate runtime and depth, respectively; our optimization shifts the bottleneck to EvalMod for both. A proof-of-concept implementation shows that linear transformations account for 20.1% of the total bootstrapping time, compared to 54.9-71.7% in prior CKKS bootstrapping, and that, despite lacking low-level optimizations, our amortized CtS runtime is still about 3 times faster than the well-optimized library (Lattigo).",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-14",
+    "pdf_url": "https://eprint.iacr.org/2026/956.pdf",
+    "url": "https://eprint.iacr.org/2026/956",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1682",
+    "title": "Toward Optimal-Complexity Hash-Based Asynchronous MVBA with Optimal Resilience",
+    "authors": [
+      "Tim Roughgarden"
+    ],
+    "abstract": "Multi-valued validated Byzantine agreement (MVBA), a fundamental primitive of distributed computing, allows $n$ processes to agree on a valid $\\ell$-bit value, despite $t$ faulty processes behaving maliciously. Among hash-based solutions for the asynchronous setting with adaptive faults, the state-of-the-art HMVBA protocol achieves optimal $O(n^2)$ message complexity, (near-)optimal $O(n \\ell + n^2 \\lambda \\log n)$ bit complexity, and optimal $O(1)$ time complexity. However, it only tolerates $t  0$. Unlike Reducer, Reducer++ does not rely on SMBA. Instead, it employs a novel approach involving hash functions modeled as random oracles to ensure termination. Reducer++ maintains constant time complexity, quadratic message complexity, and quasi-quadratic bit complexity, with constants dependent on $\\epsilon$.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-10-16",
+    "pdf_url": "https://eprint.iacr.org/2024/1682.pdf",
+    "url": "https://eprint.iacr.org/2024/1682",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/954",
+    "title": "Black-box validation of Falcon key generation under numerical instability",
+    "authors": [
+      "Ray Perlner"
+    ],
+    "abstract": "Falcon is a lattice-based digital signature scheme offering excellent performance and key sizes, and it has been selected for standardization by the National Institute of Standards and Technology (NIST) as part of their post-quantum standardization project. However, the use of floating-point and/or fixed-point arithmetic in Falcon presents unique challenges. One such challenge is the lack of reproducibility, which can arise due to the inexact representation of fractional numbers. Traditionally, implementations are validated for correctness using Known Answer Tests (KATs), but this approach requires exact reproducibility.\nWe propose a novel alternate procedure for validating the correctness of Falcon’s key generation. Our procedure never rejects correct implementations of Falcon that vary due to the numerical instability of floating and fixed-point arithmetic. It is still strict enough to guarantee that differences in generated keys due to these variations will not create security problems, although like all black-box testing methods, it does not rule out security problems due to other implementation characteristics, such as side channels. Combined with black-box conformance testing on signing and verification, this provides a path for validating the correctness of Falcon implementations on defined platforms. We further study Falcon’s keys by defining and computing perfect keys that are generated using infinite precision. Last, we estimate the total number of valid keys that could be generated from a single seed. Our work is based on extensive experiments for which the code is available.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-13",
+    "pdf_url": "https://eprint.iacr.org/2026/954.pdf",
+    "url": "https://eprint.iacr.org/2026/954",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/952",
+    "title": "Formalizing Blockchain PQC Signature Transition: How to Outpace Quantum Adversaries",
+    "authors": [
+      "Shin’ichiro Matsuo"
+    ],
+    "abstract": "It is getting widely recognized that quantum computers pose a fundamental threat to blockchain security. The transaction signature transition to Post-quantum cryptography (PQC) is therefore an urgent challenge. However, it remains unclear how much quantum computing power would be sufficient to compromise blockchain security and, consequently, by when the transition should be completed. To address these questions theoretically, we first formalize the signature transition process and the quantum adversary based on the well-known Bitcoin backbone protocol framework. We then establish a threshold for the chain's tolerable quantum adversary capability. Specifically, we prove that a security property migration liveness holds with overwhelming probability if and only if\n  $$\n    \\Delta_{\\mathrm{eff}} \\;\\geq\\; \\left\\lceil \\frac{4}{(1 - \\epsilon)f} \\right\\rceil,\n  $$\nwhere $\\Delta_{\\mathrm{eff}}$ is the number of rounds the quantum adversary needs to produce a forged transaction after the broadcast of a migration transaction, $f$ is the honest mining success probability, and $\\epsilon$ is the concentration quality of the underlying random variables. We further generalize the analysis to derive a relationship between the transition process and the tolerable quantum adversary capability, providing a theoretical basis for designing secure signature transition plans.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-13",
+    "pdf_url": "https://eprint.iacr.org/2026/952.pdf",
+    "url": "https://eprint.iacr.org/2026/952",
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/951",
+    "title": "Early-stopping Consensus with Adaptive Bit Complexity",
+    "authors": [
+      "Julian Loss"
+    ],
+    "abstract": "Protocols for Byzantine agreement are known to be constrained by relatively strong lower bounds on their optimal resilience, round complexity, and communication complexity. Crucially, though, these lower bounds do not immediately rule out the possibility of protocols that are faster and use less communication when the actual number of faults $f$ is less than the maximum number of faults $t$ that can be sustained. Early-stopping protocols terminate in a number of rounds proportional to $f$ (rather than $t$); likewise, protocols with adaptive communication incur asymptotically less communication when $f$ is less than $t$. We present a randomized, early-stopping Byzantine agreement protocol with adaptive communication complexity that terminates in $O(f+1)$ rounds with bit complexity $O((f+1)n\\kappa)$ for a failure probability of $2^{-\\kappa}$ in a synchronous network with $t<n/2$ faults, assuming a Public Key Infrastructure (PKI). This is achieved against a strongly adaptive adversary, i.e., the attacker can observe all messages in round $r$, then choose which parties to corrupt in round $r$, and then remove or alter the round-$r$ messages of corrupted parties.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-13",
+    "pdf_url": "https://eprint.iacr.org/2026/951.pdf",
+    "url": "https://eprint.iacr.org/2026/951",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/168",
+    "title": "Revisiting Beimel-Weinreb Weighted Threshold Secret Sharing Schemes",
+    "authors": [
+      "Miquel Guiot"
+    ],
+    "abstract": "A secret sharing scheme is a cryptographic primitive that allows a dealer to share a secret among a set of parties, so that only authorized subsets of them can recover it. The access structure of the scheme is the family of authorized subsets. In a weighted threshold secret sharing scheme, each party is assigned a weight according to its importance, and the authorized subsets are those in which the sum of their weights is at least the threshold value. \n\nFor these access structures, Beimel and Weinreb [IPL 2006] presented the best general constructions: The scheme with computational security has a total share size polynomial in $n$, while the scheme with perfect security has a total share size $n^{O(\\log n)}$. However, these constructions require the use of shallow monotone sorting networks, which limits their practical use.\n\nIn this work, we revisit weighted threshold secret sharing from a circuit-based perspective. By considering alternative circuits and formulas that avoid monotone sorting networks, we obtain substantial improvements in two directions.\n\nFirst, in the computational setting, we provide a computational scheme that is feasible in practice. Assuming the existence of one-way functions with security parameter $\\lambda$, we show that any weighted threshold access structure over $n$ parties with threshold $\\sigma$ admits a computational secret sharing scheme with share size $\\lambda$, public information of size $O(\\lambda n^2 \\log \\sigma)$, and a reconstruction procedure in which any authorized subset needs to download only $O(\\lambda n \\log \\sigma)$ bits of public information. Notably, for weight distributions that arise in the most widely deployed blockchain networks, our construction reduces the total share size ranging from $300\\times$ to $6700\\times$ compared to the best previously known schemes.\n\nSecond, extending these techniques, we obtain improved information-theoretic ramp weighted threshold secret sharing schemes. For any weights, threshold $\\sigma$, and $\\epsilon < 1$, we construct a $(\\sigma,(1+\\epsilon)\\sigma)$-ramp weighted threshold scheme with share size $O\\left((n/\\epsilon) \\log n\\right)$, reducing the share size with respect to the state-of-the-art solutions.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-02-04",
+    "pdf_url": "https://eprint.iacr.org/2025/168.pdf",
+    "url": "https://eprint.iacr.org/2025/168",
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/949",
+    "title": "Quantum Circuit Realization and Grover Cryptanalysis of the Hybrid ARX-SPN Cipher GFSPX",
+    "authors": [
+      "Oğuz Yayla"
+    ],
+    "abstract": "The security of classical symmetric-key primitives is fundamentally challenged by\nthe emergence of quantum computing, necessitating a rigorous evaluation of their\npost-quantum resilience. This paper presents a comprehensive quantum circuit\nrealization and Grover cryptanalysis of GFSPX, a lightweight block cipher featuring a 64-bit data block and a 128-bit secret key. GFSPX utilizes a unique hybrid\narchitecture that integrates a 4-branch generalized Feistel structure with both\nAddition-Rotation-XOR (ARX) and Substitution-Permutation Network (SPN)\ncomponents. Our quantum implementation optimizes resource distribution by\nexploiting the inherent reversibility of the Feistel network and employing a compact ripple-carry adder for the ARX layers. The proposed architecture achieves\na qubit-optimized footprint of 209 qubits with a baseline quantum cost of 32,498\nand a circuit depth of 7,617. To evaluate the cipher’s resistance against quantum\nadversaries, we construct a parallelized Grover oracle using three plaintextciphertext pairs to eliminate spurious matches. Our analysis reveals that the\ntotal quantum cost of a key-recovery attack on GFSPX is 1.12 × 2^{159} quantum\ngates. Although this cost falls below the NIST Level 1 security threshold of 2^{170},\nthe hybrid ARX-SPN design demonstrates a higher quantum attack resistance\namong other lightweight designs. These findings provide critical insights into the\nbalance between classical efficiency and quantum resilience in next-generation\ncryptographic designs for resource-constrained environments.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-13",
+    "pdf_url": "https://eprint.iacr.org/2026/949.pdf",
+    "url": "https://eprint.iacr.org/2026/949",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/947",
+    "title": "Efficient SIMD Implementation of the BLS Signature Scheme Using Intel AVX-512",
+    "authors": [
+      "Johann Großschädl"
+    ],
+    "abstract": "The BLS digital signature scheme, in particular its instantiation with the BLS12-381 curve, has become a cornerstone of modern blockchain protocols such as Ethereum Proof-of-Stake, due to its unique and attractive characteristics (e.g., support for non-interactive signature aggregation). Recently, Cheng et al. (CHES 2025) demonstrated that the enormous Single-Instruction-Multiple-Data (SIMD) computing power of the Intel AVX-512 extensions, when combined with carefully-designed vectorization strategies, can be effectively leveraged to speed up the computation of the optimal ate pairing on BLS12-381, a major component of BLS. This naturally raises the question of whether such SIMD-parallel processing can be exploited more extensively to benefit the entire BLS signature scheme. The present paper answers this question positively by presenting a highly SIMD-optimized BLS implementation using Intel AVX-512, especially the AVX-512IFMA instructions. In order to harness AVX-512 more efficiently for the performance-critical operations of BLS, we explored a wide range of optimization options, including various formulas and vectorization granularities for elliptic curve arithmetic operations, scalar multiplication, and hash-to-curve, as well as the fine-tuning and flexible use of different implementations of the finite-field arithmetic. Benchmarking results collected on an Intel Core i3-1005G1 (\"Ice Lake\") CPU show that our vectorized BLS software using AVX-512 is at least 1.57 times faster than an x64 assembly implementation of the widely-used blst library.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-13",
+    "pdf_url": "https://eprint.iacr.org/2026/947.pdf",
+    "url": "https://eprint.iacr.org/2026/947",
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1824",
+    "title": "Coppercloud: Blind Server-Supported RSA Signatures",
+    "authors": [
+      "Alisa Pankova"
+    ],
+    "abstract": "Privacy-preserving technologies are a well-established area of research for the modern digital systems, driven by the regulatory mandates, such as the GDPR, and growing demand for the users' privacy. A notable example of such technologies is blind signature: a primitive that supports creation of privacy-sensitive applications, starting from secure e-voting and anonymous digital cash to privacy-preserving credentials and identity management systems. In this work, we introduce Coppercloud, a blind server-supported RSA signature scheme designed to enhance privacy in digital identity systems. Coppercloud enables a user to obtain a signature on a message, without revealing its content to the supporting server, while distributing the signing key between the user's device and the supporting server. We formalize the security requirements for blind server-supported signing by defining an ideal functionality $\\mathcal{F}^{\\textsf{BlindSpl}}$, and prove that Coppercloud securely realizes this functionality in the Universal Composability (UC) model.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-03",
+    "pdf_url": "https://eprint.iacr.org/2025/1824.pdf",
+    "url": "https://eprint.iacr.org/2025/1824",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "DAO"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/434",
+    "title": "Secure Cloud Storage: Modularization, Network Adversaries and Adaptive Corruptions",
+    "authors": [
+      "Doreen Riepel"
+    ],
+    "abstract": "End-to-end cloud storage solutions are deployed at large scale, yet recent works have demonstrated severe attacks against their confidentiality and integrity. Motivated by this, a first formal treatment of secure cloud storage was given at CRYPTO 2024 by Backendal, Davis, Günther, Haller and Paterson (BDGHP). They define syntax and security notions, capturing client-to-client security of cloud storage schemes with respect to a password distribution. They also give an eﬃcient construction using the Two-Hash Diﬃe-Hellman (2HDH) OPRF and standard cryptographic building blocks, which they prove secure under selective corruptions in the random oracle model. However, several aspects of practical security guarantees remain open.\nWe extend and refine the work of BDGHP along multiple dimensions, advancing the analysis of secure cloud storage schemes. First, we prove that their construction can be proven secure against adaptive corruptions (with a slight modification), circumventing technical challenges posed by file sharing. Second, we modularize the scheme further by introducing an abstraction for the authentication procedure. This allows us to identify the concrete role of 2HDH and alternative instantiations. Third, we introduce a weaker model that captures adversaries who can arbitrarily control the network, except during registration. This allows us to prove concrete guarantees about online password guessing attacks, whereas the stronger model inherently allows for oﬄine guessing. Finally, we formalize and prove explicit authentication, relying on the security of our new authentication abstraction and the MAC scheme, where the latter was previously not used in the security analysis.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-03",
+    "pdf_url": "https://eprint.iacr.org/2026/434.pdf",
+    "url": "https://eprint.iacr.org/2026/434",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/449",
+    "title": "Short Signatures from DDH without Pairings or Random Oracles",
+    "authors": [
+      "Emanuele Giunta"
+    ],
+    "abstract": "We present two constructions of short signature schemes based on the polynomial hardness of decisional Diffie Hellman. Our simplest scheme guarantees selective security (i.e. the adversary has to commit to the forged message ahead of time) while the second one realizes full fledged existential unforgeability. Remarkably, our schemes can be implemented over standard prime order groups (no pairings needed) and can be proven secure without resorting to the random oracle heuristic.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-04",
+    "pdf_url": "https://eprint.iacr.org/2026/449.pdf",
+    "url": "https://eprint.iacr.org/2026/449",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1671",
+    "title": "Multi-party Setup Ceremony for Generating Multivariate zk-SNARK Parameters",
+    "authors": [
+      "Muhammed Ali Bingol"
+    ],
+    "abstract": "The development of succinct non-interactive arguments of knowledge (SNARKs), which maintain a constant proof size regardless of computational complexity, has led to substantial improvements in both the scalability and privacy of verifiable computations. By enabling efficient verification of complex computations without revealing sensitive data, SNARK systems underpin modern applications ranging from privacy-focused protocols to high-performance blockchain infrastructures.\nThis work presents a generalised specification for a Multi-Party Computation (MPC) setup ceremony designed to generate structured reference strings for non-transparent, pairing-based zk-SNARKs. Building on the MMORPG framework of Bowe, Gabizon, and Miers, we design a unified MPC protocol that accommodates multi-dimensional parameter structures required by contemporary SNARK designs. While our methodology is applicable to a broad class of structured CRS constructions, the Tokamak zk-SNARK serves as a motivating example illustrating the need for such a generalisation. The proposed ceremony supports universal and circuit-specific parameter generation, enabling reuse of CRS components across multiple instantiations while maintaining strong soundness guarantees under the presence of at least one honest participant. The protocol operates in two phases:  \n(i) a universal ``Powers of \"tau''-style phase generating parameter sets independent of circuit topology; and  (ii) a circuit-specialised phase derived from a subcircuit-based universal circuit paradigm. For both phases, we formalise complete computation and verification procedures, including proof-of-knowledge mechanisms, cross-parameter consistency checks, and structured multivariate parameter updates. Optional integration of a random beacon---as in the MMORPG construction---is supported to enhance unpredictability and public auditability without altering the core security assumptions. \nOverall, this work provides a modular, extensible, and publicly verifiable MPC framework suitable for SNARK systems requiring structured, multi-parameter CRS generation, while Tokamak serves as a practical motivating instance of the broader methodology.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-10-15",
+    "pdf_url": "https://eprint.iacr.org/2024/1671.pdf",
+    "url": "https://eprint.iacr.org/2024/1671",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/243",
+    "title": "K-Linkable Ring Signatures and Applications in Generalized Voting",
+    "authors": [
+      "Vassilis Zikas"
+    ],
+    "abstract": "Linkable ring signatures (LRS) allow a user to sign anonymously on behalf of a ring at most once: two signatures from the same signer are publicly identified, i.e., linked. Linkability makes LRS suitable for classical, plurality voting protocols---each voter casts at most one vote and the candidate with the most votes wins.\n\nSeveral voting and governance scenarios rely on (generalized) rules rather than plurality. For example, in ranked voting, voters submit a ranking of the candidates, and the outcome is a function of these rankings. Such generalized rules are common in social choice theory, and have recently found their way into blockchain governance, e.g., for prioritizing (voting on) proposed (candidate)  projects. However, unlike plurality voting, using LRS for voters to sign their votes (rankings) does not guarantee vote privacy as one can observe the rankings of each individual voter.\n \nWe introduce $k$-Linkable Ring Signatures ($k$-LRS), an extension of standard (1-)linkable signatures, which simultaneously achieves anonymity and privacy in generalized voting. A $k$-LRS scheme has the following properties: \n\n($k$-)Anonymity: a user can sign anonymously (on behalf of the ring) up to $k$ times, so that no one can link his signatures.\n\n($k$-)Linkability: If any signer signs more than $k$ times, all his signatures are publicly linked (individual $k$-linkability); and, any set of $c$ signers cannot generate more than $k \\cdot c$ unlinked signatures (collective $k$-linkability).\n\nWe provide two constructions of $k$-LRS: one is from the DDH, and the other is from SIS (hence post-quantum) achieving unconditional anonymity, which we believe is important for voting situations which keep state indefinitely., e.g., blockchain governance mechanisms. We, then, show how $k$-LRS can be applied to a broad range of voting rules, including score voting, multi-voting, and Borda. Our voting protocols are non-interactive---each voter just posts a message on a bulletin board---which highlights the potential of $k$-LRS in blockchain-governance scenarios. Finally, we initiate the study of computational hardness of linking, i.e., exposing violations of $k$-linkability. Our study shed light to trade-offs between privacy, statefulness, and linkability of $k$-LRS, and as a result to their usefulness (and limitations) for digital governance.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-02-16",
+    "pdf_url": "https://eprint.iacr.org/2025/243.pdf",
+    "url": "https://eprint.iacr.org/2025/243",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "DAO",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/938",
+    "title": "Storing Less in-the-Head: An Area-Efficient Hardware Architecture for SDitH-v2",
+    "authors": [
+      "Tim Güneysu"
+    ],
+    "abstract": "In 2022, the National Institute of Standards and Technology (NIST) initiated a second call for post-quantum digital signature proposals to broaden algorithmic diversity beyond the already standardized schemes based on structured lattices and hashes. Among the 14 candidates, five are built on the MPC-in-the-Head paradigm. While theoretically promising, available results on their implementation costs imply a reduced applicability to resource-constrained embedded devices.\n\nIn this work we analyze the revised second version of the Syndrome Decoding in the Head (SDitH) signature scheme based on the VOLE-in-the-Head framework and showcase that these issues are not inherent to the family of algorithms. We propose an area-efficient hardware design including highly optimized variants of both Batch Line Commitment (BLC) and Polynomial Interactive Oracle Proof (PIOP) routines. As a result, we manage to reduce memory requirements by an order of magnitude compared to hardware implementations of other MPCitH and code-based signature schemes. Most notably, with respect to the previous hardware implementation of SDitH-v1 we improve SRAM usage by a factor of 82 to 104, while still achieving competitive runtimes. Furthermore, many of our proposed techniques are similarly applicable in order to reduce memory usage of software implementations.\n\nDuring the design process, we determined nine significant discrepancies between the specification and reference implementation of SDitH-v2, with a subset of them breaking test vector compatibility. In addition to addressing these issues, we suggest a set of possible specification changes which can help to further reduce resource usage on embedded targets without compromising security assumptions.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-12",
+    "pdf_url": "https://eprint.iacr.org/2026/938.pdf",
+    "url": "https://eprint.iacr.org/2026/938",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1575",
+    "title": "BitPriv: A Privacy-Preserving Protocol for DeFi Applications on Bitcoin",
+    "authors": [
+      "Dominique Schröder"
+    ],
+    "abstract": "Bitcoin secures over a trillion dollars in assets but remains largely absent from decentralized finance (DeFi) due to its restrictive scripting language. The emergence of BitVM, which enables verification of arbitrary off-chain computations via on-chain fraud proofs, opens the door to expressive Bitcoin-native applications without altering consensus rules. A key challenge for smart contracts executed on a public blockchain, however, is the privacy of data: bid privacy is crucial in auctions, and transaction privacy underlies MEV-mitigation techniques such as proposer-builder separation. While solutions exist for Ethereum, none apply to Bitcoin.\n\nIn this work, we present BitPriv, the first Bitcoin-compatible protocol to condition payments on the outcome of a secure two-party computation (2PC). At its core is the Garbled Hashed Timelock Contract (GHTLC), a generalization of HTLCs that conditions payment on garbled-circuit output labels rather than arbitrary hash preimages. Parties lock collateral on-chain and evaluate a garbled circuit off-chain; a cut-and-choose mechanism deters misbehavior, and any violation is proven and punished on-chain via BitVM. This design achieves security against rational adversaries: deviation is irrational under financial penalties.\n\nWe showcase BitPriv through two applications: BitMarket, the first Bitcoin-native sealed-bid auction protocol, and BitBridge, an intent-based cross-chain bridge built by composing BitMarket with a SNARK-verifying settlement layer. Optimistic settlement completes for under $3 in fees in both applications; disputes cost \\$47-\\$363 depending on the BitVM backend, with their mere feasibility acting as a deterrent under our compliance analysis. BitPriv provides a blueprint for enforceable, privacy-preserving DeFi primitives on Bitcoin without trusted hardware, sidechains, or consensus changes.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-09-02",
+    "pdf_url": "https://eprint.iacr.org/2025/1575.pdf",
+    "url": "https://eprint.iacr.org/2025/1575",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "consensus",
+      "MEV",
+      "DeFi",
+      "bridge",
+      "privacy",
+      "eCrime"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/933",
+    "title": "BitVM3: Efficient Bitcoin Bridges via Garbled Circuits",
+    "authors": [
+      "David Tse"
+    ],
+    "abstract": "Bitcoin bridges, protocols that lock BTC on Bitcoin and represent it on a secondary system, underpin much of Bitcoin's application layer, yet remain poorly secured. Deployed bridges rely on federated custody with honest-majority assumptions, while BitVM2, the state of the art in trust-minimized bridging, incurs worst-case dispute costs of approximately \\$16,000, requiring large operator bonds and deposits that restrict participation to well-capitalized parties.\n\nWe present BitVM3-BRIDGE, a trust-minimized bridge architecture from Bitcoin to (i) chains with finality certificates, such as Ethereum, and (ii) Bitcoin rollups. Our main contribution is an end-to-end bridge construction that makes trust-minimized Bitcoin bridging practical at scale. The bridge is powered by BitVM3-CORE, a modular abstraction for permissionless off-chain computation on Bitcoin using garbled circuits. In BitVM3-CORE, a challenger evaluates a garbled circuit entirely off-chain and obtains a fraud-proof witness if and only if the operator's claim is incorrect. This paradigm reduces total on-chain costs to approximately \\$9, with the challenge transaction itself costing just \\$0.20. This nearly 1000× cost reduction enables smaller bonds, broader operator participation, and smaller deposit sizes.\n\nBeyond the bridge itself, we make two additional contributions. First, we formalize BitVM3-CORE as a sound and complete on-chain proof system under standard cryptographic assumptions. Prior GC-based proposals typically provide either informal security arguments or construction-specific formalizations; by contrast, our framework captures existing constructions within a uniform model and gives a generic treatment based on axiomatized security and functional assumptions. Second, we introduce an on-chain Bitcoin light client secure in the variable-difficulty setting, enabling permissionless chain introspection on Bitcoin and thereby the rollup variant of BitVM3-BRIDGE.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-11",
+    "pdf_url": "https://eprint.iacr.org/2026/933.pdf",
+    "url": "https://eprint.iacr.org/2026/933",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "layer2",
+      "eCrime",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/930",
+    "title": "Improved Quantum Attacks on Iterated Even-Mansour Ciphers with Classical Queries",
+    "authors": [
+      "André Schrottenloher"
+    ],
+    "abstract": "The Even-Mansour cipher is a construction of a keyed pseudorandom permutation from a random unkeyed permutation. Its generalization to multiple rounds, known as iterated Even-Mansour or key-alternating cipher, is an important abstraction in block cipher design. Yet, while the security of single-round Even-Mansour is tight in the quantum setting (with attacks matching security proofs), much less is known on multi-round versions.\n\nIn this paper we study the quantum security of iterated Even-Mansour ciphers with two keys (the key-schedule alternates between two independent keys), which model concrete block ciphers like LED. We give the first quantum attacks improving asymptotically over exhaustive key search for 4 to 6 rounds.\n\nOn 4 rounds, we present three attacks: two using collision search and one using a quantum version of the multibridge attack of Dinur, Dunkelman, Keller and Shamir (ASIACRYPT 2014), which relies on a quantum walk. The latter reaches up to a quantum time $2^{7n/9}$ where $n$ is the block size, compared to $2^n$ of exhaustive key search.\n\nOn 6 rounds, we present an attack of quantum time $2^{n} / \\sqrt{\\log n}$, adapting classical attacks based on multicollisions. In both cases, our new attacks require only classical known-plaintext queries.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-11",
+    "pdf_url": "https://eprint.iacr.org/2026/930.pdf",
+    "url": "https://eprint.iacr.org/2026/930",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/929",
+    "title": "On the Statistical vs. Computational Security of the DKLs23 Multiparty ECDSA Protocol",
+    "authors": [
+      "Gil Segev"
+    ],
+    "abstract": "The DKLs23 protocol (Doerner, Kondi, Lee and shelat, IEEE S&amp;P '24) is a state-of-the-art multiparty ECDSA signing protocol. Due to its exceptional combination of simplicity, efficiency, and statistical UC security within an elegant hybrid model providing access to standard ideal functionalities, it is rapidly seeing widespread adoption.\n\nWe provide a comprehensive security analysis of the DKLs23 protocol, showing that although it is not statistically secure as originally claimed, it is nevertheless computationally secure, and can be made statistically secure via a lightweight refinement. Our contributions are as follows:\n\n-- Statistical insecurity: Within the hybrid model utilized for the original analysis, we construct a computationally-unbounded \"split-view\" adversary that successfully attacks the protocol by causing two or more honest parties to output different valid signatures on the same message (specifically, signatures with independent nonces). Considering any ideal ECDSA signing functionality that outputs a single signature per session, such an attack cannot be simulated in the ideal model, and thus the protocol is not statistically secure.\n\n-- Computational security: We prove that the protocol is nevertheless computationally secure based on the assumption that ECDSA is strongly unforgeable up to sign (i.e., up to the trivial $(r, \\pm s)$ malleability), as defined by Groth and Shoup (EUROCRYPT '22). Specifically, complementing our split-view attack, we show that any adversary for which the protocol's execution is distinguishable from its ideal-model simulation can be efficiently transformed into an algorithm that breaks the strong unforgeability up to sign of ECDSA.\n\n-- A refined statistically-secure protocol: Identifying the root cause of our split-view attack, we present a refined protocol that is statistically secure. Our refinement incorporates a lightweight consistency check, where each party sends a single group element as part of the protocol's third-round message. Our refinement additionally introduces a relaxed zero-sharing functionality that serves as a drop-in replacement for the original protocol's zero-sharing functionality. We show that this relaxed functionality can be unconditionally realized by a simple one-round protocol (executed in parallel with the first round of signing) without a dedicated setup or pre-shared seeds. Consequently, when paired with a compatible (e.g., Paillier-based) VOLE instantiation, this eliminates the need for long-term secure pairwise storage across the entire signing protocol.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-11",
+    "pdf_url": "https://eprint.iacr.org/2026/929.pdf",
+    "url": "https://eprint.iacr.org/2026/929",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2023/1045",
+    "title": "The XHash Family for ZK-Friendly Hash Functions",
+    "authors": [
+      "Sundas Tariq"
+    ],
+    "abstract": "Zero-knowledge proofs are widely used in real-world applications, such as authentication, access control, blockchains, and cryptocurrencies. The underlying hash\nfunction is a core element in these zero-knowledge proof systems, and it plays a vital role in its efficiency. While traditional hash functions, such as SHA3 or BLAKE, are efficient on CPU architectures, they perform poorly within proof systems. This is primarily because these systems require functions that operate efficiently over finite fields, without mixing operations from different algebras. To address this challenge, a new paradigm called  Arithmetization-Orientation has emerged. These designs are tailored for efficiency within proof systems while providing reliable security guarantees. Several such hash functions have been proposed, many have been successfully targeted by algebraic attacks or fail to provide optimal performances.\n\nIn this work, we provide a new framework to design such hash functions that prevent these attacks and allow a highly efficient implementation in various proof systems. To this end, we combine the Marvellous design strategy with a new type of S-boxes and propose a new security argument against algebraic attacks that relies on a single well-defined and reasonable conjecture of a novel type.\n\nUsing these techniques in the framework, we construct four new hash functions, XHash12-Goldilocks, XHash8-Goldilocks, XHash24-M31, and XHash16-M31. These high-performance hash functions are designed for ZK-STARKs and Circle-STARKs.",
+    "venue": "IACR ePrint",
+    "year": 2023,
+    "date_published": "2023-07-04",
+    "pdf_url": "https://eprint.iacr.org/2023/1045.pdf",
+    "url": "https://eprint.iacr.org/2023/1045",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP",
+      "privacy",
+      "TEE",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1504",
+    "title": "On the $\\gamma$-Spreadness of Average-Case to Worst-Case Transformations",
+    "authors": [
+      "Jong Hwan Park"
+    ],
+    "abstract": "Achieving (at least) a worst-case correctness error is essential for an underlying public-key encryption (PKE) scheme to which the Fujisaki-Okamoto (FO) transformation is applied. There are three average-case to worst-case (ACWC) transformations—denoted as $\\mathsf{ACWC}_{0}$, $\\mathsf{ACWC}_{1}$ (PKC 2023), and $\\mathsf{ACWC}_{2}$ (TIFS 2023)-which generically convert a PKE scheme with an average-case correctness error into one with a worst-case correctness error. However, in these ACWC transformations the $\\gamma$-spreadness, a critical factor in determining explicit rejection ($\\mathsf{FO}^{\\perp}$) or implicit rejection ($\\mathsf{FO}^{\\not\\perp}$), has not been established with rigorous proofs. Existing analyses of $\\gamma$-spreadness lack rigorous proofs, include analytical flaws, or fail to achieve the tightest possible bounds. In this work, we reprove the $\\gamma$-spreadness of ACWC-transformed PKE schemes by leveraging two key facts: the random oracle is chosen at random and the encoding mechanism used in the ACWC framework is message-hiding. Our new proofs are applied to the previous NTRU-based PKE schemes, called $\\mathsf{NTRU}\\mbox{-}\\mathsf{C}$, $\\mathsf{NTRU}\\mbox{-}\\mathsf{B}$, and $\\mathsf{NTRU+}$, giving the corrected $\\gamma$-spreadness for those PKE schemes with concrete parameters.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-08-21",
+    "pdf_url": "https://eprint.iacr.org/2025/1504.pdf",
+    "url": "https://eprint.iacr.org/2025/1504",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/925",
+    "title": "LogVOLE: Succinct and Efficient Chosen-Input VOLE for ZK and Beyond",
+    "authors": [
+      "Akash Shah"
+    ],
+    "abstract": "Random Vector Oblivious Linear Evaluation (VOLE) correlations are a widely used backend for zero-knowledge proofs and secure computation, and can now be generated with strong concrete efficiency. Many applications, however, need correlations on the receiver’s actual input. They therefore start from random VOLE and send a linear-size derandomization vector, which remains a main communication bottleneck.\n\nWe study chosen-input VOLE (CI-VOLE), where the receiver privately chooses a large vector \\(\\mathbf{x}\\), the sender fixes \\(\\Delta\\), and the parties obtain shares of \\(\\mathbf{x} \\cdot \\Delta\\) without communicating a linear-size object. This work presents \\(\\textsf{LogVole}\\), a concretely efficient CI-VOLE protocol with polylogarithmic end-to-end communication under Ring-LWE. The construction uses a recursive shrink/expand design: it authenticates short digests of the chosen input and then uses a succinct telescope to expand those relations back to the full vector. The protocol has \\(O(\\lambda \\log^2(|\\mathbf{x}| + m_{\\mathrm{msg}}))\\) one-time setup and query communication and \\(O(|\\mathbf{x}|/n)\\) ring operations. Here, \\(n\\) is the underlying ring degree, \\(\\lambda\\) is the computational security parameter, and \\(m_{\\mathrm{msg}}\\) is the size of the shares.\n\n\\(\\textsf{LogVole}\\) also supports a public-key non-interactive mode: for a fixed \\(\\Delta\\), the sender publishes reusable parameters, and a receiver sends one compact \\(\\mathbf{x}\\)-dependent message to obtain the matching VOLE shares. This gives a route to non-interactive VOLE-based ZK with polylogarithmic communication for arbitrary circuits. We also give a malicious-security extension in the random oracle model.\n\nUsing \\(\\textsf{LogVole}\\), we obtain the first concretely efficient VOLE-based ZK protocol with polylogarithmic communication for arbitrary circuits. At 128-bit computational and 40-bit statistical security, our implementation reaches 12.9 million \\(\\mathbb{Z}_p\\) inputs/s, 9.0 million ZK multiplication gates/s on a 16-core machine, and proves \\(1024 \\times 1024\\) matrix multiplication in about 4s with single-thread computation and 226 KB communication.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-11",
+    "pdf_url": "https://eprint.iacr.org/2026/925.pdf",
+    "url": "https://eprint.iacr.org/2026/925",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/924",
+    "title": "RIC: Randomize Invalid Coefficients to Mitigate Side-Channel Assisted Chosen-Ciphertext Attacks on ML-KEM",
+    "authors": [
+      "Kentaro Imafuku"
+    ],
+    "abstract": "Module lattice-based key encapsulation mechanisms (ML-KEM) are susceptible to side-channel-assisted chosen-ciphertext attacks (SCA-CCAs) that exploit leakage from the re-encryption process during decapsulation. \nThese attacks enable adversaries to recover secret keys with hundreds to thousands of oracle accesses, thereby posing a critical threat to the practical deployment of post-quantum cryptography. \nThis paper presents RandInvalidCoeff, a novel and lightweight countermeasure that introduces randomness into the decryption function to mitigate SCA-CCAs.\nBy randomizing invalid coefficients in the decrypted message polynomial, RandInvalidCoeff injects probabilistic errors into side-channel observations, significantly reducing the attacker’s ability to perform reliable key recovery.\nThis randomization slightly increases the decryption failure rate (DFR). Nevertheless, our analysis shows that strong resistance can be achieved with an acceptable DFR of approximately $2^{-80}$.\nWe provide information-theoretic and statistical analyses of the countermeasure to quantify the reduction in information leakage for plaintext-checking (PC) and decryption-failure (DF) oracle attacks.\nFurthermore, we performed PC- and DF-oracle attacks on an implementation with RandInvalidCoeff to validate the theoretical analysis, confirming that the proposed method achieves the expected countermeasure effect.\nThe results demonstrate that the number of observations required for successful key recovery increases by a factor of more than eight, with only a few percent performance overhead compared to unprotected implementations.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-11",
+    "pdf_url": "https://eprint.iacr.org/2026/924.pdf",
+    "url": "https://eprint.iacr.org/2026/924",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/922",
+    "title": "Generic Construction of CCA-Secure PKE from Key-Insulated and Privacy-Preserving Signatures with Publicly Derived Public Key",
+    "authors": [
+      "Keita Emura"
+    ],
+    "abstract": "To enhance the security of stealth addresses and protect user privacy, Liu et al. (EuroS&amp;P 2019) proposed a Key-Insulated and Privacy-Preserving Signature Scheme with Publicly Derived Public Keys (PDPKS). In this scheme, the payee generates a master public/secret key pair, and the payer derives a public key from the payee's master public key and binds the cryptocurrency asset to the resulting derived public key. The payee then verifies, using the master secret key, whether the derived public key has been correctly generated from the master public key. In this paper, we show that a public-key encryption (PKE) scheme secure against chosen-ciphertext attacks (CCA) can be generically constructed from PDPKS. Specifically, we utilize unlinkability, which hides the master public key from which a derived public key originates, to conceal plaintext information from ciphertexts. We also simulate the decryption oracle by leveraging the derived public key checking algorithm. In addition, to guarantee the correctness of the proposed PKE scheme, we rely on the consistency of PDPKS introduced by Emura (IACR CiC 2025). Given the motivation behind PDPKS, namely the construction of stealth addresses in a provably secure manner, unlinkability is regarded as the core security property of PDPKS. Our result shows that achieving this core security property essentially requires CCA-secure PKE, or cryptographic primitives of equivalent strength, and that such primitives are indispensable for constructing PDPKS.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-10",
+    "pdf_url": "https://eprint.iacr.org/2026/922.pdf",
+    "url": "https://eprint.iacr.org/2026/922",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3693743",
+    "title": "FastBOC: Towards Efficient Covert Communication Merging Blockchain and Onion Networks",
+    "authors": [
+      "Xiangbo Yuan",
+      "Z H Chen",
+      "Jialing He",
+      "Ziqi Yang",
+      "Tao Xiang",
+      "Liehuang Zhu"
+    ],
+    "abstract": "Covert communication over public blockchains has emerged as a promising approach for secret data transmission. However, existing methods often suffer from high communication costs, low communication efficiency, and the risk of permanent data exposure. To overcome the above challenges, we propose FastBOC, a hybrid covert communication framework that integrates blockchain and onion networks. In FastBOC, the blockchain is employed as a covert signal channel to transmit lightweight signals, while the onion network handles high-capacity secret data transmission. This decoupling significantly reduces communication costs and avoids permanent data exposure on the blockchain. We further design an address-based encoding scheme and a dynamic port activation mechanism to enhance concealment. We implement FastBOC on the Ethereum testnet and conduct experiments to evaluate its concealment, efficiency, and cost. The results demonstrate that FastBOC (1) achieves strong concealment and (2) can transmit 1-Megabyte (MB) data within 20.11 seconds and reduce communication cost by 5–7 orders of magnitude compared to prior blockchain-based covert communication schemes.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tdsc.2026.3693743",
+    "citation_count": 0,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3692826",
+    "title": "RD-PCN: A Secure Role-Differentiated Payment Channel Network for Heterogeneous Nodes",
+    "authors": [
+      "Qinghao Wang",
+      "Can Chen",
+      "Ning Lu",
+      "Wenbo Shi",
+      "Zhiquan Liu"
+    ],
+    "abstract": "Scalability is a critical challenge for blockchain-based cryptocurrencies and has become a significant bottleneck in large-scale applications such as retail. Payment channel networks (PCNs) are among the most promising solutions to this challenge. However, nodes in real-world PCNs exhibit heterogeneous behaviors and capabilities, causing existing schemes to perform poorly when deployed in practical environments. In this paper, we first demonstrate, through a measurement study, the existence of node heterogeneity in real-world PCNs; and then propose RD-PCN, a role-differentiated PCN that accommodates such heterogeneity by explicitly separating node roles and responsibilities. We address two key challenges in realizing RD-PCN. To improve channel fund utilization, RD-PCN introduces multi-party payment channels (MPCs) to selectively connect nodes at the network edge. We accordingly design a PCN-compatible MPC, termed PC-MPC, representing the first practical solution for deploying MPCs in PCNs. To securely outsource routing tasks to resource-rich nodes, we design a privacy-preserving and fair routing scheme based on trusted execution environments and the proposed topology synchronization mechanism. We prove the security of PC-MPC and the routing scheme under the universally composable framework. Experiments show that RD-PCN improves the payment success ratio by at least 18.9% compared to representative schemes, while increasing fund utilization by 60%.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tdsc.2026.3692826",
+    "citation_count": 0,
+    "relevance_tags": [
+      "privacy",
+      "TEE",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3815587",
+    "title": "SpeSC <sup>+</sup> : An End-User Readable Domain-Specific Language for Smart Legal Contracts",
+    "authors": [
+      "Xiao He",
+      "Tao Zan",
+      "Yan Zhu"
+    ],
+    "abstract": "Smart contracts are self-executing programs deployed on blockchains to enable automated and trustless transactions without intermediaries. However, existing smart contracts (e.g., those written in Solidity) resemble general-purpose programs rather than legal contracts, making them incomprehensible to non-technical users. To address this limitation, we present SpeSC + , a domain-specific language (DSL) designed for both readability and legal expressiveness. SpeSC + features a natural-language-like syntax and integrates domain-specific concepts for contractual logic, such as time expressions, parties and authorizations, and obligations and privileges. Unlike existing works that focus on utilizing natural languages for specification, we equip SpeSC + with a formally defined, Turing-complete semantics for precise execution, covering the entire execution process of a legal contract. We evaluated SpeSC + ’s expressiveness by implementing 35 real-world legal contracts across 10 business domains and 5 canonical Solidity examples. A controlled user study further demonstrated SpeSC + ’s superior readability over Solidity, particularly for users without programming expertise, without compromising expressiveness. We also measured the gas usage and detected vulnerabilities in the Solidity programs generated by the SpeSC + code generator. The evaluation results suggest that SpeSC + lowers the barrier to creating and understanding legally enforceable smart contracts.",
+    "venue": "ACM TOSEM",
+    "year": 2026,
+    "date_published": "2026-05-15",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1145/3815587",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "DeFi",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3814959",
+    "title": "Model Context Protocol (MCP) at First Glance: Studying the Security and Maintainability of MCP Servers",
+    "authors": [
+      "Mohammed Mehedi Hasan",
+      "Hao Li",
+      "Emad Fallahzadeh",
+      "Gopi Krishnan Rajbahadur",
+      "Bram Adams",
+      "Ahmed E. Hassan"
+    ],
+    "abstract": "Although Foundation Models (FMs), such as GPT-4, are increasingly used in domains like finance and software engineering, reliance on textual interfaces limits these models’ real-world interaction. To address this, FM providers introduced tool calling—triggering a proliferation of frameworks with distinct tool interfaces. In late 2024, Anthropic introduced the Model Context Protocol (MCP) to standardize this tool ecosystem. With SDK downloads surpassing twenty five million per week and 86% of enterprises using models supporting MCP tools, MCP is rapidly emerging as a de facto industry standard. Despite its adoption, MCP's AI-driven, non-deterministic control flow introduces new risks to sustainability, security, and maintainability, warranting closer examination. Towards this end, we present the first large-scale empirical study of MCP. Using state-of-the-art health metrics and a hybrid analysis pipeline, combining a general-purpose static analysis tool with an MCP-specific scanner, we evaluate 1,899 open-source MCP servers to assess their health, security, and maintainability. Despite MCP servers demonstrating strong health metrics, we identify eight distinct vulnerabilities—only three overlapping with traditional software vulnerabilities. Additionally, 7.2% of servers contain general vulnerabilities and 5.5% exhibit MCP-specific tool poisoning. Regarding maintainability, while 66% exhibit code smells, 14.4% contain nine bug patterns overlapping prior research. These findings highlight the need for MCP-specific vulnerability detection techniques while reaffirming the value of traditional analysis and refactoring practices. Furthermore, we advocate for stronger governance across the MCP ecosystem by incorporating MCP-specific vulnerabilities into standardized vulnerability databases, enabling automated security scanning within MCP registries, and promoting responsible development practices to ensure the long-term safety and sustainability of the MCP ecosystem.",
+    "venue": "ACM TOSEM",
+    "year": 2026,
+    "date_published": "2026-05-12",
+    "pdf_url": "https://arxiv.org/pdf/2506.13538",
+    "url": "https://doi.org/10.1145/3814959",
+    "citation_count": 2,
+    "relevance_tags": [
+      "formal-verification",
+      "DAO",
+      "measurement"
+    ],
+    "analyzed": false
   }
 ]
