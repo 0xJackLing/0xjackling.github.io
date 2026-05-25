@@ -28900,8 +28900,8 @@
     "url": "https://eprint.iacr.org/2026/958",
     "citation_count": null,
     "relevance_tags": [
-      "consensus",
-      "DAO"
+      "DAO",
+      "consensus"
     ],
     "analyzed": false
   },
@@ -29431,6 +29431,489 @@
     "relevance_tags": [
       "formal-verification",
       "DAO",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/979",
+    "title": "Improved Dual Attack and Trapdoor Sampling via Quantum Rejection Sampling",
+    "authors": [
+      "Nicholas Zhao"
+    ],
+    "abstract": "In this work, we revisit the dual attack and GPV trapdoor sampling, focusing on the lattice Gaussian sampling term, which can be a significant bottleneck in the overall complexity. We show that this sampling step can be quantumly accelerated by combining the lower bound underlying Wang and Ling's analysis of Klein's algorithm with the quantum rejection sampling (QRS) framework proposed by Ozols et al. Specifically, this lower bound gives precisely the pointwise domination condition required for quantum rejection sampling when given coherent oracle access to a truncated Klein proposal distribution, which yields a quantum procedure for preparing the truncated dual $q$-ary lattice Gaussian with a quadratic reduction in the sampling complexity. The truncation radius is chosen so that the truncated distribution is negligibly close to the full lattice Gaussian in total variation distance. Substituting this sampler into the dual attack framework results in reduced overall attack-cost estimates. Compared with Pouly and Shen's modern dual attack under the same parameter choices, our estimates reduce the attack cost by \\(9\\), \\(4\\), and \\(13\\) bits for Kyber-512, Kyber-768, and Kyber-1024, respectively. We also report the corresponding estimates with modulus switching. Finally, by replacing the Markov chain Monte Carlo (MCMC) sampler with the QRS algorithm, we achieve a similar quadratic speedup in the GPV signing process.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-18",
+    "pdf_url": "https://eprint.iacr.org/2026/979.pdf",
+    "url": "https://eprint.iacr.org/2026/979",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/422",
+    "title": "Threshold Traitor Tracing Revisited: Insider Attacks and Multi-Traitor Tracing",
+    "authors": [
+      "Hussien Othman"
+    ],
+    "abstract": "Threshold traitor tracing [Boneh et al., Crypto’24] enhances threshold decryption with anti-collusion guarantees via a tracing mechanism. In this model, a set of colluders constructs a decryption box, called a decoder, and sells it to an external buyer. Collusion-resilience is guaranteed by a tracing algorithm that, given only black-box access to the decoder, can identify at least one of the colluders.\nSince its introduction, threshold traitor tracing has attracted significant attention, leading to a number of new constructions that have been proven secure within this model [Asiacrypt'25, CiC'25, CCS’25, Eurocrypt’26], focusing on optimizing parameter sizes and removing trusted authority.\nHowever, in this paper, we argue that the state-of-the-art definition and constructions are not resilient against natural attacks where the decoder is sold to an insider, i.e., a member of the decryption committee. \nMotivated by this gap, we introduce new definitions to model decoder boxes that are sold to insiders. We show that existing threshold traitor tracing techniques are inherently vulnerable to insider attacks. Then, we introduce a novel approach to achieve insider resilience through \\emph{multi-traitor tracing}, i.e., identifying multiple traitors.\nWe present compilers that amplify the number of traitors that can be found, thereby achieving insider-resilience with efficient parameters, in particular, sublinear ciphertext size. These compilers may also be of independent interest.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-03-02",
+    "pdf_url": "https://eprint.iacr.org/2026/422.pdf",
+    "url": "https://eprint.iacr.org/2026/422",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1841",
+    "title": "Pegasus and PegaRing: Efficient (Ring) Signatures from Sigma-Protocols for Power Residue PRFs with (Q)ROM Security",
+    "authors": [
+      "Tsz Hon Yuen"
+    ],
+    "abstract": "In this work, we present a novel commit-and-open $\\Sigma$-protocol based on the power residue PRFs. Our construction leverages the oblivious linear evaluation (OLE) correlations inherent in PRF evaluations and requires only black-box access to a tree-PRG-based vector commitment. By applying the standard Fiat-Shamir transform, we obtain a post-quantum signature scheme, Pegasus, which improves upon the prior power residue PRFs based signature scheme PorcRoast (PQCrypto 2020) across all key metrics. In particular, Pegasus requires only a three-move interaction between the prover and verifier, compared to seven moves in PorcRoast. For the same power residue PRF, we reduce the signature size by 426 to 928 bytes, and in the fast parameter variant, our public key is eight times shorter than that in PorcRoast. Moreover, the signing and verification time of Pegasus are comparable to, or slightly faster than those of PorcRoast. Finally, we also provide security proof of Pegasus in the quantum random oracle model (QROM), addressing a limitation of all prior PRF-based signatures.  \n\nWe further develop a ring signature scheme, PegaRing, that preserves the three-move commit-and-open structure of Pegasus. Compared to previous PRF-based ring signature called DualRing-PRF (ACISP 2024), PegaRing reduces the constant communication overhead by more than half and achieves significantly faster signing and verification. We prove the security of PegaRing in both the random oracle model and the quantum random oracle model. To the best of our knowledge, PegaRing is the first post-quantum ring signature based on symmetric-key primitives that simultaneously achieves practical performance and provable security in the QROM.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-06",
+    "pdf_url": "https://eprint.iacr.org/2025/1841.pdf",
+    "url": "https://eprint.iacr.org/2025/1841",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1030",
+    "title": "Pushforward Problems and Applications to Isogeny-based Cryptography",
+    "authors": [
+      "Christophe Petit"
+    ],
+    "abstract": "Let $E$ and $E'$ be two supersingular elliptic curves and let $\\varphi: E\\to E'$ be an isogeny of known degree $d$. Given a basis $(P, Q)$ of  $E[N]$ together with $(\\varphi(P), \\varphi(Q))$, it is possible to recover $\\varphi$ provided that $N$ is sufficiently large and smooth, and that the torsion basis can be represented over a small extension of the base field.\n\nIn this work, we consider the more general setting where the $N$-torsion may not be efficiently representable. To address this setting, we introduce a new framework for encoding torsion information via an oracle that computes pushforwards of $N$-isogenies under $\\varphi$. We then show that there exist  instances for which access to the pushforward oracle allows for an efficient isogeny recovery. \n  \nBeyond their theoretical interest, these instances have direct cryptographic implications. We show a practical attack against the threshold signature scheme recently proposed by Kim, Kim, and Lee. We also identify weak instances for Basso's oblivious pseudorandom function, and we refine the security discussion for Leroux and Roméas's updatable encryption scheme.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-22",
+    "pdf_url": "https://eprint.iacr.org/2026/1030.pdf",
+    "url": "https://eprint.iacr.org/2026/1030",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1024",
+    "title": "Separating the Pebbling Model from the Random Oracle Model",
+    "authors": [
+      "Leonid Reyzin"
+    ],
+    "abstract": "The security of cryptographic constructions that enforce resource usage, such as Proofs of Work or Proofs of Space, is often shown in the random oracle model. This model restricts the class of possible adversaries, because it assumes that the adversary can access some function RO only as a black box, via queries. When the resource in question is space, the random oracle model is often further idealized by assuming that the outputs of RO are usable only in a black box manner: they are either stored whole or discarded whole by the adversary, and are never computed upon, except when provided as inputs to RO. In this idealization, they are often called \"pebbles,\" and space usage is counted in terms of pebbles stored.\n\nIn some cases, it is known that the pebbling model does not add further restrictions on the adversary, because the bit strings that correspond to the pebbles can actually be extracted from the adversary's memory. In other cases, this question has been open for over a decade.\n\nWe resolve the open question by showing that the pebbling model does not realistically model adversarial capabilities in two important cases. Specifically, we construct a family of Proofs of Space and a family of Memory-Hard Functions in the pebbling model for which an algorithm that is allowed to treat outputs of RO as bit strings and compute upon them (simply by XORing subsets of them) can be significantly more efficient that an algorithm limited to pebbling.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-21",
+    "pdf_url": "https://eprint.iacr.org/2026/1024.pdf",
+    "url": "https://eprint.iacr.org/2026/1024",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/317",
+    "title": "Two-Factor Authentication Can Harden Servers Against Offline Password Search",
+    "authors": [
+      "Tianyu Zheng"
+    ],
+    "abstract": "We propose a novel notion of Two-Factor Authenticated Key Exchange (TFA-KE), defined in the universal composability model (UC), which extends asymmetric PAKE (aPAKE) by a 2nd authentication factor in the form of a $t$-bit one-time code computed by a personal device based on a clock or counter.  Our notion strengthens the security of standard integration of aPAKE with short authentication codes by additionally slowing down offline brute-force password search in case of server compromise by a factor of $2^t$. In other words, our TFA-KE notion uses $t$-bit authentication codes not only to improve on-line security of password authentication, as is the current practice, but also to strengthen password security on server corruption, whilst retaining the ability of aPAKE to avoid the common but deplorable practice of relying on \"secure-channel\" encryption for password protection. \n\nWe show a generic framework for implementing TFA-KE, with two efficient instantiations. Our key enabling tool is a tight one-way function (TOWF) with an algebraic structure that allows for its evaluation on a secret-shared input.  We initiate the study of such functions, and we provide two proposals which we show to be tightly one-way in the Generic Group Model. Tightness means that a function evaluation on an input sampled from domain $\\mathcal{X}$ takes $\\Omega(|\\mathcal{X}|)$ time to invert, which in our application implies that offline password search attacks are slowed to $\\Omega(|D|\\cdot 2^t)$ for passwords sampled from dictionary $D$.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-02-18",
+    "pdf_url": "https://eprint.iacr.org/2026/317.pdf",
+    "url": "https://eprint.iacr.org/2026/317",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1021",
+    "title": "Schnorr-like Proofs of Knowledge for Hidden Oil Subspaces in UOV",
+    "authors": [
+      "Zhiwei Wang"
+    ],
+    "abstract": "A UOV public key hides a distinguished linear subspace: the public-coordinate image of the central oil-coordinate subspace. In central coordinates, the homogeneous quadratic part of each UOV polynomial contains no oil-oil monomials. Consequently, for every honestly generated UOV public key, each public homogeneous quadratic form vanishes when restricted to this hidden oil subspace. We formalize the hidden oil-subspace relation and construct a Schnorr-like Sigma protocol that proves knowledge of such a subspace without revealing it. The witness consists of matrices $B,W$ satisfying $WB=I_o$ and $Q_k(Bz)\\equiv 0$ for all public quadratic forms $Q_k$. The prover masks the witness linearly and responds to a challenge $c$ with $Z=A+cB$, $Y=E+cW$, yielding a protocol with computational 3-special soundness and computational honest-verifier zero knowledge. We prove a generic uniqueness theorem: in the random homogeneous UOV model, the hidden oil subspace is, with overwhelming probability, the unique $o$-dimensional common zero subspace. The uniqueness bound is explicit and negligible for UOV-type parameters. This strengthens the interpretation of the protocol as proving knowledge of the unique hidden oil subspace, rather than merely some oil-like subspace. We provide empirical observations on small parameters and discuss applications and limitations.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-21",
+    "pdf_url": "https://eprint.iacr.org/2026/1021.pdf",
+    "url": "https://eprint.iacr.org/2026/1021",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/983",
+    "title": "A formal analysis of FLEX and FLEX2",
+    "authors": [
+      "Ramses Fernandez"
+    ],
+    "abstract": "This paper formalizes the cryptographic core of the FLEX protocol and its enhanced variation FLEX2 . The analysis formalizes a minimal ledger abstraction, capturing Taproot, CSV timelocks, and reorg bounds, and defines ideal functionalities implemented as transaction-DAG and state machines. Main contributions include proving on-chain enforceability, CDS secrecy, soundness, leakage-bounded privacy, and universal composability realization under standard assumptions.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-18",
+    "pdf_url": "https://eprint.iacr.org/2026/983.pdf",
+    "url": "https://eprint.iacr.org/2026/983",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1018",
+    "title": "Symmetric Attribute-Based Encryption from Minimal Hardness Assumptions",
+    "authors": [
+      "Enrico Sorbera"
+    ],
+    "abstract": "We present a novel construction that applies the Ciphertext-Policy Attribute-Based Encryption paradigm in an original symmetric framework, where also the encryptor needs to have enough attributes to be able to produce a ciphertext for a given policy.\n\n    The scheme is built from minimal assumptions on collision-resistant hash functions and pseudorandom functions, exploiting the properties of linear secret sharing and polynomial interpolation. Thus, it is natively Post-Quantum secure. \n\n    We formally define a novel extended form for access trees, that trades a polynomial space expansion for a more predictable topological structure. This structure enhance the arithmetic possibilities of the associated secret sharing primitive.\n    \n    Moreover, we propose a comprehensive notation for access trees, sharing and interpolation, which may help in the study of these powerful primitives.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-21",
+    "pdf_url": "https://eprint.iacr.org/2026/1018.pdf",
+    "url": "https://eprint.iacr.org/2026/1018",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1017",
+    "title": "Quantum and Post-Quantum Blockchain: A Systematic Survey",
+    "authors": [
+      "Kasun De Zoysa"
+    ],
+    "abstract": "This literature review explores the state-of-the-art advancements in quantum and post-quantum blockchain. The realm of quantum computing is on the rise and will disrupt entire tech industries, including classical cryptography, which is the foundation of blockchain. There has been extensive research on classical cryptosystems (i.e., post-quantum) and their integration with blockchain to create quantum-resistant classical blockchains. We have reviewed the state-of-the-art in these post-quantum blockchains in academic research. But to have forward compatibility with the quantum internet and infrastructure in the future and to have quantum mechanical security, research has been conducted to implement blockchain on quantum technologies and quantum cryptography as well. Consequently, we have explored the current state of research in these quantum solutions, known as quantum blockchains.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-21",
+    "pdf_url": "https://eprint.iacr.org/2026/1017.pdf",
+    "url": "https://eprint.iacr.org/2026/1017",
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/199",
+    "title": "Sublinear Proofs over Polynomial Rings",
+    "authors": [
+      "Jiapeng Zhang"
+    ],
+    "abstract": "Designing non-interactive proof systems, such as NIZK or SNARKs, for lattice-based protocols is a well-motivated problem with numerous applications including aggregate signatures, verifiable random functions, group signatures, verifiable homomorphic encryption schemes, and others. Although many works have made efforts toward efficient lattice-based protocols, several challenges remain. In particular, a major challenge, as highlighted by Ganesh et al. (Journal of Cryptology 2023) and Zhang et al. (CCS 2025), is the algebraic gap between polynomial rings, which are typically used in lattice-based constructions, and fields, which are commonly used in the constructions of non-interactive proofs.\n\nIn this paper, we introduce a novel technique called ring switching, which bridges this gap by transforming proofs over polynomial-ring arithmetic into proofs over finite fields or Galois rings with prime power modulus. Using ring switching, we construct an efficient non-interactive argument of knowledge for Ring-R1CS over $\\mathbb{Z}_Q[X]/(X^N+1)$ for arbitrary prime-power moduli $Q$. Our construction achieves sublinear proof size and enables significantly faster verification by eliminating costly ring multiplications. The ring switching framework is compatible with parameter regimes used in practical lattice-based cryptosystems, including NTT-friendly and power-of-two moduli. Subsequent works building on this technique further demonstrate its efficiency, achieving substantial verification time improvements in lattice-based polynomial commitments and verifiable homomorphic encryption schemes.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-02-11",
+    "pdf_url": "https://eprint.iacr.org/2025/199.pdf",
+    "url": "https://eprint.iacr.org/2025/199",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/737",
+    "title": "FICS and FACS: Fast IOPPs and Accumulation via Code-Switching",
+    "authors": [
+      "Matan Shtepel"
+    ],
+    "abstract": "Recent work on IOP-based succinct arguments has focused on developing IOPs that improve prover efficiency by relying on linear-time encodable codes. We present two new schemes for improving the efficiency of such succinct arguments:\n\n$\\quad \\bullet$ $\\mathsf{FICS}$, an IOP of proximity for multilinear polynomial evaluation that, like prior work Blaze [EUROCRYPT 2025] achieves linear prover time, but additionally reduces the verifier oracle query complexity to $O(\\lambda \\log \\log n + \\log n)$ for codewords of length $n$.\n$\\quad \\bullet$ $\\mathsf{FACS}$, an accumulation scheme for NP that achieves linear prover time and $O(\\lambda)$ oracle queries per step of the accumulation.\n\nBoth schemes support a large class of linear-time encodable codes, including systematic LDPC codes and tensor codes of linear-time encodable codes.\n\nWe obtain our results by extending and formalizing the framework of Interactive Oracle Reductions (IORs) introduced by Ben-Sasson et al. [TCC 2019]. In particular, we develop new IORs for \"codeswitching\" tensor codes (Ron-Zewi and Rothblum [JACM 2024]), and also develop a new notion of knowledge soundness for IORs that allows us to easily compose IORs and to prove the security of our schemes in the non-interactive setting, even if the underlying codes are not known to be decodable in polynomial time.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-04-24",
+    "pdf_url": "https://eprint.iacr.org/2025/737.pdf",
+    "url": "https://eprint.iacr.org/2025/737",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/2164",
+    "title": "Hardness and Algorithms for Batch LPN under Dependent Noise",
+    "authors": [
+      "Zhaienhe Zhou"
+    ],
+    "abstract": "We study the Batch Learning Parity with Noise (LPN) variant, where the oracle returns $k$ samples in a batch and draws the noise vector from a joint noise distribution $\\mathcal{D}$ over $\\mathbb{F}_2^k$ instead of from an i.i.d. product distribution. This model captures a broad range of correlated or structured noise patterns studied in cryptography and learning theory. Consequently, understanding which dependent-noise distributions preserve the hardness of LPN has become an important question. \n\nOn the hardness side, we design several reductions from standard LPN to Batch LPN. Our reductions identify broader classes of noise distributions $\\mathcal{D}$ that preserve LPN hardness, extending the prior hardness results of Golowich, Moitra, and Rohatgi (FOCS 2024). We show hardness in three regimes:\n1. If $\\mathcal{D}$ satisfies a mild Fourier-analytic condition $\\sum_{\\mathbf{s}\\neq \\mathbf0}|\\widehat{P}_{\\mathcal{D}}(\\mathbf{s})|\\le 2\\varepsilon$, then Batch LPN is as hard as standard LPN with noise rate $1/2-\\varepsilon$;\n2. If $\\mathcal{D}$ is $\\Omega(\\eta \\cdot k 2^{-k})$-dense (i.e., every error pattern occurs with probability at least $\\Omega(\\eta \\cdot k 2^{-k})$) for $\\eta < 1/k$, then Batch LPN is as hard as standard LPN with noise rate $\\eta$;\n3. If $\\mathcal{D}$ is a $\\delta$-Santha-Vazirani source, then Batch LPN is as hard as standard LPN with noise rate $1/2-\\varepsilon$ whenever $\\delta\\le O(2^{-k/2}\\varepsilon)$, improving the previous $O(2^{-k}\\varepsilon)$ dependence (in Golowich et al.).\n\nOn the algorithmic side, we extend Arora and Ge's (ICALP 2011) linearization attack to show that Batch LPN can be solved when the noise distribution assigns sufficiently small probability to at least one point, giving an algorithmic counterpart to our hardness results.\n\nOur reductions are based on random affine transformations and are analyzed through the lens of Fourier analysis, providing a general framework for studying dependent-noise LPN variants.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-11-28",
+    "pdf_url": "https://eprint.iacr.org/2025/2164.pdf",
+    "url": "https://eprint.iacr.org/2025/2164",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/931",
+    "title": "Communication Depth in Multivalued Broadcast",
+    "authors": [
+      "Chen-Da Liu-Zhang"
+    ],
+    "abstract": "Synchronous protocols are a fundamental and widely studied model in distributed computing and cryptography. \nIn this model, protocols proceed in rounds: at the beginning of each round, parties send messages, and all messages are guaranteed to be delivered before the round ends.\n\nThe standard communication complexity of a synchronous protocol measures the total number of bits transmitted throughout the execution. However, this metric does not accurately reflect the protocol’s actual running time, since it ignores the inherent parallelism of synchronous communication. In particular, multiple parties may transmit simultaneously within the same round, and the duration of a round is determined not by the total communication volume, but by the longest transmission that must occur sequentially.\nTo capture this aspect of synchronous computation, we introduce \\emph{communication-depth}, a new complexity measure for synchronous protocols. Informally, communication-depth quantifies the amount of communication that lies on the protocol’s critical path, namely, the number of bits that must be transmitted sequentially and therefore determine the protocol’s execution time. The communication-depth of a protocol is defined as the sum, over all rounds, of the  cost of each round.\n\nWe consider two variants of round-cost capturing different types of parallel communication the network allows. In the \\emph{simultaneous-parties} model, the cost of a round is the maximum number of bits any party sends or receives during that round. In the \\emph{simultaneous-channels} model, the cost of a round is the maximum number of bits transmitted over any single channel during the round.\n\nWe demonstrate the usefulness of communication-depth by fully characterizing the asymptotic complexity of multivalued synchronous broadcast. Perhaps surprisingly, while protocols for $\\ell$-bit inputs with asymptotic optimal communication $O(\\ell n)$ have been known for a long time, current protocols only achieve communication-depth $\\Theta(\\ell n)$ in the simultaneous-parties model and $\\Theta(\\ell)$ in the simultaneous-channels model.\n\nOur results provide a complete characterization of multivalued broadcast under communication-depth for both variants. On the negative side, we show that when $n - t = O(1)$, any protocol tolerating up to $t$ corrupt parties requires communication-depth $\\Omega(\\ell n)$ in the simultaneous-parties model and $\\Omega(\\ell)$ in the simultaneous-channels model. On the positive side, we show that when $n - t = \\Theta(n)$, multivalued broadcast can be achieved with communication-depth $\\Theta(\\ell)$ in the simultaneous-parties model and $\\Theta(\\ell/n)$ in the simultaneous-channels model.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-05-22",
+    "pdf_url": "https://eprint.iacr.org/2025/931.pdf",
+    "url": "https://eprint.iacr.org/2025/931",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "TEE",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1009",
+    "title": "Constant-Online PVSS from CCA2-Secure Threshold Encryption: A Generic Framework",
+    "authors": [
+      "Moti Yung"
+    ],
+    "abstract": "Publicly Verifiable Secret Sharing (PVSS) is widely used in distributed systems. Existing schemes usually incur at least $O(n)$ online cost: the dealer encrypts, proves, and publishes $n$ shareholder-dependent objects, which public verification must process. In this work, we present a generic framework that transforms publicly verifiable CCA2-secure threshold encryption (CCATE) into \\emph{constant-online} PVSS, with distribution and public- verification costs independent of the number of shareholders. The framework moves the share-generation work into a reusable setup phase: once threshold keys and public verification material are fixed, online sharing amounts to a single publicly verifiable threshold encryption. We instantiate the framework with two CCATE constructions: \n1) a pairing-free instantiation using standard Threshold ElGamal encryption under a committee-based setup assumption; and\n2) a silent-setup scheme leveraging non-interactive key generation via a Power-of-Tau ceremony, eliminating inter-party coordination during setup.\nFurthermore, we discuss epoch-based membership updates under the corresponding setup assumptions, clarifying the security boundary of reconfiguration. The resulting schemes incur higher setup costs, but the critical online distribution and public-verification phases are constant-size and constant-time. This trade-off is particularly useful when setup can be amortized over many PVSS instances, as in blockchain and distributed-system deployments.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-20",
+    "pdf_url": "https://eprint.iacr.org/2026/1009.pdf",
+    "url": "https://eprint.iacr.org/2026/1009",
+    "citation_count": null,
+    "relevance_tags": [
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1003",
+    "title": "A Blockchain-Based Pre-Verification Access Control Scheme with Vector Commitments and Bulletproofs",
+    "authors": [
+      "Naixing Wu"
+    ],
+    "abstract": "Blockchain-enabled data sharing provides public verifiability and auditability for access control in Internet of Things environments. However, before formal authorization is granted, efficiently verifying whether a data requester satisfies a hidden access policy remains challenging. Existing schemes may expose user attributes, access policies, or matching relationships during on-chain verification, while pairing-based operations, decryption tests, or general zero-knowledge circuits often introduce high verification overhead or strong trust assumptions.\n\nTo address these issues, this paper proposes a privacy-preserving pre-verification access control scheme based on attribute vector commitments and Bulletproofs. The proposed scheme encodes user attributes and access policies into vector forms and uses vector commitments to hide authenticated user attributes. Access eligibility verification is then transformed into a hidden inner-product relation, allowing a data requester to prove policy satisfaction without revealing its real attributes or the policy contents. The pre-verification process is pairing-free and does not require trusted setup, making it suitable for smart-contract-based public verification. In addition, proxy re-encryption is integrated to support controlled data access after successful pre-verification.\n\nSecurity analysis shows that the proposed scheme achieves pre-verification completeness, knowledge soundness, zero-knowledge, attribute privacy, policy privacy, and collusion resistance. Performance analysis and experimental results demonstrate that the proposed scheme reduces on-chain verification overhead, communication cost, and deployment complexity compared with existing access control schemes, making it practical for privacy-preserving data sharing in blockchain-assisted Internet of Things environments.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-20",
+    "pdf_url": "https://eprint.iacr.org/2026/1003.pdf",
+    "url": "https://eprint.iacr.org/2026/1003",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP",
+      "privacy",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/664",
+    "title": "Publicly Verifiable Generalized Secret Sharing Schemes and Their Applications",
+    "authors": [
+      "Moti Yung"
+    ],
+    "abstract": "Secret sharing under expressive access structures and public verifiability have largely been developed in separate lines of work. Generalized secret sharing (GSS) supports arbitrary monotone access structures, but relies on private channels and gives no public evidence that the dealer distributed a consistent sharing. Publicly verifiable secret sharing (PVSS), in contrast, supports public verification over insecure channels, but is fundamentally tailored to threshold policies. We introduce publicly verifiable generalized secret sharing (PVGSS), a primitive that combines arbitrary monotone access structures with non-interactive public verification of both encrypted shares and decrypted reconstruction shares. Our construction encrypts only the leaf shares of an underlying GSS instance and proves, via Schnorr-type NIZK proofs, that all ciphertexts are globally consistent with a single secret. The key technical ingredient is a GSS testing procedure that checks this global consistency from proof responses, without revealing the shares. We instantiate PVGSS from recursive Shamir secret sharing and from linear secret sharing schemes, obtaining verification complexity linear in the number of leaves of the access structure. We formalize correctness, encrypted-share verifiability, share-decryption verifiability, and IND1-secrecy, and prove security in the random oracle model under DDH, knowledge soundness of the proof systems, and privacy of the underlying GSS-on-group sharing. As an application, we show how PVGSS enables publicly accountable secret release in a decentralized exchange protocol.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-04-12",
+    "pdf_url": "https://eprint.iacr.org/2025/664.pdf",
+    "url": "https://eprint.iacr.org/2025/664",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/999",
+    "title": "Modern Portfolio Theory in the Crypto-Wilderness",
+    "authors": [
+      "Aviv Yaish"
+    ],
+    "abstract": "Modern portfolio theory (MPT) prescribes how to maximise the return of an asset portfolio for a given level of risk. The optimal trade-off between return and variance defines the efficient frontier. Whether actual cryptoasset portfolios approximate this prescription and whether proximity to the frontier translates into realised performance remain difficult to test at large scale in traditional markets due to their opaque nature and the inaccessibility of data. As we show, public blockchains make these questions measurable: every token transfer is recorded, thus enabling complete portfolio reconstruction for every account at any point in time. We leverage this transparency to reconstruct cryptoasset portfolios for over 116 M Ethereum accounts across the full chain history (2015-2025), measure their distance to the constrained efficient frontier, and quantify how deviations translate into realised performance. Here we show that market entry timing, not allocation choice, is the dominant predictor of realised cryptoasset returns. On-chain wealth is highly concentrated and portfolios are pervasively under-diversified, with single-asset holdings accounting for 83.35% of accounts. Two-asset portfolios sit closest to the efficient frontier defined by their held assets, a proximity that reflects the narrowness of their opportunity set rather than deliberate optimisation. Passive market-capitalisation weighting outperforms every MPT optimisation strategy in median realised return, and entry month alone explains 70-79% of the variance in returns, far exceeding the contribution of allocation choice. Mean-variance optimisation therefore appears neither descriptive of observed behaviour nor prescriptively useful in the cryptoasset domain, even if MPT retains its value as a normative benchmark.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-19",
+    "pdf_url": "https://eprint.iacr.org/2026/999.pdf",
+    "url": "https://eprint.iacr.org/2026/999",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "token"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/995",
+    "title": "On Local Invariants for Permutation Equivalence",
+    "authors": [
+      "Benjamin Benčina"
+    ],
+    "abstract": "We give an efficiently computable invariant for the (Signed) Permutation Code Equivalence ((S)PCE) problem we call the square class invariant, that was previously not recognised in coding theory. Our invariant naturally yields a distinguisher for the decision version of (S)PCE as defined at Eurocrypt 2025 by Albrecht, Benčina and Lai [ABL25], breaking the hardness assumption that underpins the security of their updatable public-key encryption scheme.\n\n  Moreover, we extend a 2023 result by Bruin, Ducas and Gibbons by showing the genus of the Construction A lattice of a code generator matrix with any hull dimension is completely determined by the hull dimension and our square class invariant, and that neither of these genera splits non-trivially into spinor genera (as soon as the lattice dimension is at least \\(5\\)), implying the genus of the Construction A \\(q\\)-ary lattice encodes all known efficiently computable coding-theoretic invariants for (S)PCE and vice versa. Thus our distinguisher can be rephrased as comparing the genera of Construction A lattices of the (S)PCE instance in the spirit of the Lattice Isomorphism Problem. We also give a complete description of the genus distribution of uniformly random \\(q\\)-ary lattices.\n\n  This motivates the definition of a genus of a linear code as the genus of the Construction A lattice of any of its generator matrices, and we adapt the sampling algorithm from [ABL25] to sample from a single genus uniformly at random, and can thus restrict their hardness assumption for (S)PCE to a single genus. Restricting PCE to one genus and using our sampling algorithms is then used with a slight modification to the security proof to mend the scheme from [ABL25].\n\n  Finally we show that associating to a linear code generator matrix a quadratic space whose geometry is given by the corresponding Gram matrix and computing its Witt decomposition yields the same invariants that define the code genus, implying two \\(q\\)-ary lattices are locally equivalent if and only if the quadratic spaces associated to their underlying linear codes share a Witt decomposition type.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-19",
+    "pdf_url": "https://eprint.iacr.org/2026/995.pdf",
+    "url": "https://eprint.iacr.org/2026/995",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "layer2"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/412",
+    "title": "Decentralized Multi-Authority Functional Encryption with Malicious Authorities from Standard Assumptions",
+    "authors": [
+      "Saikumar Yadugiri"
+    ],
+    "abstract": "We design decentralized multi-authority functional encryption (MAFE) for $\\mathsf{P/Poly}$ circuits from minimal assumptions in both the bounded-collusion and fully collusion-resistant models, i.e., from public-key encryption and from functional encryption, respectively. Prior constructions required sub-exponentially hard public-key encryption with random oracles (bounded collusion) or sub-exponentially-hard obfuscation (collusion-resistant).\n\nUnder the additional assumption of SXDH or LWE, our constructions remain secure against an adversary that corrupts any $k$ of the $n$ local authorities, provided $\\binom{n}{k} = \\mathsf{poly}(\\lambda)$, covering, for example, $k = O(1)$ and $n = \\mathsf{poly}(\\lambda)$ or $k = O(\\log \\lambda)$ and $n = O(\\log \\lambda)$. Complementing this, we show that any MAFE scheme that tolerates corruption of more than $\\chi = O(\\log \\lambda)$ authorities and remains non-trivially compact (i.e., parameter sizes scale sub-linearly in $2^{\\chi}$) implies indistinguishability obfuscation. Thus, our scheme is essentially optimal across a wide parameter regime.\n\nAlong the way, we introduce two abstractions, MAFE with $\\textit{synchronous setup}$ and $\\textit{synchronous key generation} $ that provide a path to constructing multi-authority encryption schemes from their centralized counterparts, and may be useful for designing other multi-authority encryption systems.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-03-04",
+    "pdf_url": "https://eprint.iacr.org/2025/412.pdf",
+    "url": "https://eprint.iacr.org/2025/412",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/994",
+    "title": "Super-intelligence Survival Guide: Verification via Proof-Carrying Output",
+    "authors": [
+      "Moti Yung"
+    ],
+    "abstract": "The increasing deployment of large language models (LLMs) in high-stakes domains demands infrastructure to ensure trust in artificial intelligence (AI)-generated outputs and actions. Users often struggle to validate results from LLMs because their reasoning is opaque and possibly beyond human comprehension. This paper introduces proof-carrying output (PCO), a framework in which an AI system returns an answer accompanied by a machine-checkable proof. We define φ-compliance formally (see the compliance definition in the paper): given a decidable predicate φ over signed inputs and AI outputs published by a named authority, a pair (x, y) is φ-compliant iff φ(x, y) = 1. \"Compliance\" in the rest of the paper refers to this binary, machine-checkable relation, not to organizational assurance practice. The framework is an instance of the producer-verifier-with-audit pattern previously introduced for game-theoretic rational behavior, applied here to regulatory compliance for AI-mediated decisions. Our primary security contribution is a cryptographic accountability layer that binds an AI output, its formal proof, the verifying validator's version, and a trusted timestamp into a non-repudiable commitment recorded on an append-only ledger before the output is acted upon. This layer provides four properties—binding, hiding, temporal ordering, and audit correctness—which jointly yield non-repudiation of AI-mediated decisions, a property neither LLM outputs nor formal proofs provide in isolation. These proofs rely on established proof assistants such as Rocq (Coq) (the Coq proof assistant was recently renamed to Rocq; we use \"Rocq\" throughout the paper, with \"Coq\" appearing where the historical name is more recognizable) for symbolic reasoning and (linear temporal logic (LTL), signal temporal logic (STL)) for temporal logics prior to output usage. A legal entity—whether a human subject to law or an AI agent bound by smart contracts—must employ independent proof validators to confirm that the inputs (multiple-choice selections and signed documents) correctly lead to the output under published specifications and regulations. After validation and before acting on the output, the legal entity cryptographically commits the query, specification, output, validator version, timestamp, and proof to an append-only ledger. The entity then proceeds based on the output and reveals the proof only during the audit. We demonstrate PCO through three case studies with working Rocq/STL implementations: tax computation, autonomous-vehicle compliance, and recommendation transparency, extending proof-carrying code (PCC) from static programs to dynamic AI outputs. To enable reliable proof generation as an enabling substrate, we propose that regulatory authorities publish specification-coupled small language models (SLMs) trained on canonical scenario-proof pairs; we view this as supporting infrastructure rather than the core security contribution. We explicitly delimit PCO's scope to compliance predicates expressible as decidable first-order logic with bounded quantification or STL over finite-horizon signals; free-form prose, input authenticity, and specification correctness are out of scope and treated as orthogonal problems. PCO complements existing approaches to interpretable and explainable AI by providing machine-verifiable certificates of compliance rather than human-readable rationalizations.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-05-19",
+    "pdf_url": "https://eprint.iacr.org/2026/994.pdf",
+    "url": "https://eprint.iacr.org/2026/994",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1971",
+    "title": "Further Connections Between Isogenies of Supersingular Curves and Bruhat-Tits Trees",
+    "authors": [
+      "Ari Markowitz"
+    ],
+    "abstract": "We further explore the explicit connections between supersingular curve isogenies and Bruhat-Tits trees. By identifying a supersingular elliptic curve $E$ over $\\mathbb{F}_p$ as the root of the tree, and a basis for the Tate module $T_\\ell(E)$; our main result is that given a vertex $M$ of the Bruhat-Tits tree one can write down a generator of the ideal $I \\subseteq \\text{End}(E)$ directly, using simple linear algebra, that defines an isogeny corresponding to the path in the Bruhat-Tits tree from the root to the vertex $M$. In contrast to previous methods to go from a vertex in the Bruhat-Tits tree to an ideal, once a basis for the Tate module is set up and an explicit map $\\Phi : \\text{End}(E) \\otimes_{\\mathbb{Z}_\\ell} \\to M_2( \\mathbb{Z}_\\ell )$ is constructed, our method does not require any computations involving elliptic curves, isogenies, or discrete logs. This idea leads to simplifications and potential speedups to algorithms for converting between isogenies and ideals.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-12-05",
+    "pdf_url": "https://eprint.iacr.org/2024/1971.pdf",
+    "url": "https://eprint.iacr.org/2024/1971",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tifs.2026.3694661",
+    "title": "ParaVul: A Parallel Large Language Model and Retrieval-Augmented Framework for Smart Contract Vulnerability Detection",
+    "authors": [
+      "Tenghui Huang",
+      "Jinbo Wen",
+      "Jiawen Kang",
+      "Siyong Chen",
+      "Zhengtao Li",
+      "Tao Zhang",
+      "Dongning Liu",
+      "Jiacheng Wang",
+      "Chengjun Cai",
+      "Yinqiu Liu"
+    ],
+    "abstract": "Smart contracts play a significant role in automating blockchain services. Nevertheless, vulnerabilities in smart contracts pose serious threats to blockchain security. Currently, traditional detection methods primarily rely on static analysis and formal verification, which can result in high false-positive rates and poor scalability. Large Language Models (LLMs) have recently made significant progress in smart contract vulnerability detection. However, they still face challenges such as high inference costs and substantial computational overhead. In this paper, we propose ParaVul, a parallel LLM and retrievalaugmented framework to improve the reliability and accuracy of smart contract vulnerability detection. Specifically, we first develop Sparse Low-Rank Adaptation (SLoRA), a technique for efficient LLM fine-tuning tailored to smart contract vulnerability detection. Distinct from existing LoRA methods, SLoRA inserts parallel sparse and low-rank branches after the attention projection and the feed-forward block, enabling LLMs to capture both global code semantics and localized vulnerability patterns while maintaining low training overhead. We then construct a vulnerability contract knowledge base and develop a hybrid Retrieval-Augmented Generation (RAG) system that integrates Okapi BM25 with dense retrieval to provide complementary lexical and semantic evidence for smart contract vulnerability verification. Furthermore, we propose a meta-learner-based gated verification module to fuse the outputs of the SLoRA detector and the two RAG-based detectors, thereby generating the final detection results. After completing vulnerability detection, we design chain-of-thought prompts to guide LLMs to generate comprehensive vulnerability detection reports. Simulation results demonstrate the superiority of ParaVul, especially in terms of F1 scores, achieving 0.9398 for single-label detection and 0.9930 for multi-label detection.",
+    "venue": "IEEE TIFS",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": "https://arxiv.org/pdf/2510.17919",
+    "url": "https://doi.org/10.1109/tifs.2026.3694661",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "formal-verification"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3817114",
+    "title": "Harmful Fine-tuning Attacks and Defenses for Large Language Models: A Survey",
+    "authors": [
+      "Tiansheng Huang",
+      "Sihao Hu",
+      "Fatih İlhan",
+      "Selim Furkan Tekin",
+      "Ling Liu"
+    ],
+    "abstract": "Recent research demonstrates that the nascent fine-tuning-as-a-service business model exposes serious safety concerns: fine-tuning with a few harmful data or even seemingly benign data uploaded from the users can compromise the safety alignment of the model. The attack, known as harmful fine-tuning attack, has generated broad research interests in both academia and industry. In this paper, we first systematically formulate the threat model and basic assumptions of harmful fine-tuning. Then, we provide a comprehensive review of harmful fine-tuning from three fundamental perspectives: attack setting, defense design, and evaluation methodology. First, we present the threat model of the problem and introduce the harmful fine-tuning attack. Next, we systematically survey representative attacks, defense methods, and mechanical interpretability in the existing literature. Finally, we introduce the evaluation methodology and outline future research directions, which can serve as guidelines and crucial perspectives for the future development of the subject. We also maintain a curated list of relevant papers, which are made accessible at https://github.com/git-disl/awesome_LLM-harmful-fine-tuning-papers. Disclaimer: This document contains content that some may find disturbing or offensive, including content that is hateful or violent.",
+    "venue": "ACM CSUR",
+    "year": 2026,
+    "date_published": "2026-05-22",
+    "pdf_url": "https://doi.org/10.1145/3817114",
+    "url": "https://doi.org/10.1145/3817114",
+    "citation_count": 2,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3817600",
+    "title": "Universal Time-Series Representation Learning: A Survey",
+    "authors": [
+      "Patara Trirat",
+      "Yooju Shin",
+      "Jun-Hyeok Kang",
+      "Youngeun Nam",
+      "Jihye Na",
+      "Minyoung Bae",
+      "Jo‐Eun Kim",
+      "Byunghyun Kim",
+      "Jae-Gil Lee"
+    ],
+    "abstract": "Time-series data exists in every corner of real-world systems and services, ranging from satellites in the sky to wearable devices on human bodies. Learning representations by extracting and inferring valuable information from these time series is crucial for understanding the complex dynamics of particular phenomena and enabling informed decisions. With the learned representations, we can perform numerous downstream analyses more effectively. Among several approaches, deep learning has demonstrated remarkable performance in extracting hidden patterns and features from time-series data without manual feature engineering. This survey first presents a novel taxonomy based on three fundamental elements in designing state-of-the-art universal representation learning methods for time series. According to the proposed taxonomy, we comprehensively review existing studies and discuss their intuitions and insights into how these methods enhance the quality of learned representations. Finally, as a guideline for future studies, we summarize commonly used experimental setups and datasets and discuss several promising research directions.",
+    "venue": "ACM CSUR",
+    "year": 2026,
+    "date_published": "2026-05-22",
+    "pdf_url": "https://doi.org/10.1145/3817600",
+    "url": "https://doi.org/10.1145/3817600",
+    "citation_count": 5,
+    "relevance_tags": [
       "measurement"
     ],
     "analyzed": false
