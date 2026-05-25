@@ -2084,6 +2084,38 @@
     "fetched": "2026-04-27"
   },
   {
+    "title": "Research & Organize Influential Solana Twitter Accounts",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/research-and-organize-influential-solana-twitter-accounts",
+    "prize": "500 USDG",
+    "deadline": "2026-05-27",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260525_257",
+    "fetched": "2026-05-25"
+  },
+  {
+    "title": "[FLASH BOUNTY] \"How Big Is Your Solana Contribution?\" QRT Campaign",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/flash-bounty-how-big-is-your-solana-contribution-qrt-campaign",
+    "prize": "350 USDC",
+    "deadline": "2026-05-28",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260525_258",
+    "fetched": "2026-05-25"
+  },
+  {
     "title": "Autonomous Agent Bounty: OOBE × Ace Data Cloud",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2098,6 +2130,22 @@
     ],
     "id": "opp_20260518_248",
     "fetched": "2026-05-18"
+  },
+  {
+    "title": "Write a Pre-Seed Fundraising Guide for Ukrainian Solana Startups",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/write-a-pre-seed-fundraising-guide-for-ukrainian-solana-startups",
+    "prize": "1300 USDG",
+    "deadline": "2026-06-03",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260525_259",
+    "fetched": "2026-05-25"
   },
   {
     "title": "Create Content about the Solana Summit in Germany",
@@ -2130,6 +2178,22 @@
     ],
     "id": "opp_20260518_249",
     "fetched": "2026-05-18"
+  },
+  {
+    "title": "Create Content About Amulets & Earn Rewards",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/create-content-about-amulets-and-earn-rewards",
+    "prize": "2000 USDC",
+    "deadline": "2026-06-11",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260525_260",
+    "fetched": "2026-05-25"
   },
   {
     "id": "ethglobal_newyork_2026",
@@ -2752,6 +2816,24 @@
     ],
     "id": "opp_20260420_162",
     "fetched": "2026-04-20"
+  },
+  {
+    "title": "LUMA Hackathon: Pitch your idea, win guaranteed subscription prizes",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://luma-hackathon-500.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Apr 11 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "id": "opp_20260525_253",
+    "fetched": "2026-05-25"
   },
   {
     "title": "HackAmerica",
@@ -4087,6 +4169,24 @@
     "fetched": "2026-05-18"
   },
   {
+    "title": "Byte2Beat",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://byte-2-beat.devpost.com/",
+    "prize": "$<span data-currency-value>15,000</span>",
+    "deadline": "May 14 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Low/No Code",
+      "Machine Learning/AI"
+    ],
+    "id": "opp_20260525_255",
+    "fetched": "2026-05-25"
+  },
+  {
     "title": "Web Summit Vancouver Hackathon",
     "category": "hackathon",
     "platform": "Devpost",
@@ -4159,6 +4259,60 @@
     "fetched": "2026-05-18"
   },
   {
+    "title": "Hack Begin",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hack-begin.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 19 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Blockchain",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "id": "opp_20260525_250",
+    "fetched": "2026-05-25"
+  },
+  {
+    "title": "Slack Agent Builder Challenge",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://slackhack.devpost.com/",
+    "prize": "$<span data-currency-value>42,000</span>",
+    "deadline": "May 20 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Enterprise",
+      "Low/No Code"
+    ],
+    "id": "opp_20260525_252",
+    "fetched": "2026-05-25"
+  },
+  {
+    "title": "Mind the Product presents World Product Day: Everyone Ships Now",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://mindtheproduct.devpost.com/",
+    "prize": "$<span data-currency-value>10,000</span>",
+    "deadline": "May 20 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Low/No Code"
+    ],
+    "id": "opp_20260525_254",
+    "fetched": "2026-05-25"
+  },
+  {
     "title": "Code Crush 2026",
     "category": "hackathon",
     "platform": "Devpost",
@@ -4175,6 +4329,42 @@
     ],
     "id": "opp_20260504_206",
     "fetched": "2026-05-04"
+  },
+  {
+    "title": "Claude Builders Club Hackathon",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://cbc-alu-spring-hackathon.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 23 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Web"
+    ],
+    "id": "opp_20260525_256",
+    "fetched": "2026-05-25"
+  },
+  {
+    "title": "HackNomics",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hacknomicshack.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 24 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Enterprise",
+      "Fintech",
+      "Health"
+    ],
+    "id": "opp_20260525_251",
+    "fetched": "2026-05-25"
   },
   {
     "title": "Cursor Hackathon Toronto Tech Week",
