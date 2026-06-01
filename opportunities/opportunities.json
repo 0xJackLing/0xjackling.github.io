@@ -2116,6 +2116,22 @@
     "fetched": "2026-05-25"
   },
   {
+    "title": "[FLASH CLIPPING BOUNTY] Exploring Solana Ep. 18 with Loopscale QRT Campaign",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/flash-clipping-bounty-exploring-solana-ep-18-with-loopscale-qrt-campaign",
+    "prize": "120 USDC",
+    "deadline": "2026-06-01",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_274",
+    "fetched": "2026-06-01"
+  },
+  {
     "title": "Autonomous Agent Bounty: OOBE × Ace Data Cloud",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2164,6 +2180,54 @@
     "fetched": "2026-05-11"
   },
   {
+    "title": "Write an X Thread: Advice on Surviving Your First Hackathon",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/write-an-x-thread-advice-on-surviving-your-first-hackathon",
+    "prize": "800 USDG",
+    "deadline": "2026-06-06",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_275",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Create a Short Video Explaining Totalis (Vertical Format)",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/create-a-short-video-explaining-totalis-vertical-format",
+    "prize": "1000 USDC",
+    "deadline": "2026-06-08",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_276",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "BENTO [Security layer for AI Agents] - Beta Bounty",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/bento-beta-bounty",
+    "prize": "200 USDC",
+    "deadline": "2026-06-09",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_277",
+    "fetched": "2026-06-01"
+  },
+  {
     "title": "Stake $GMYLD  & Play PumpCat.FUN - Get Paid Up to $100 for Honest Feedback",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2196,6 +2260,54 @@
     "fetched": "2026-05-25"
   },
   {
+    "title": "Solana IRL: Real-World Use Cases Research",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/solana-irl-real-world-use-cases-research",
+    "prize": "500 USDG",
+    "deadline": "2026-06-11",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_278",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Growth Marketer for Onchainhunt",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/project/growth-marketer-for-an-indie-solana-saas",
+    "prize": "",
+    "deadline": "2026-06-13",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_279",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "SolPoint Germany Summit Connect",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/solpoint-germany-summit-connect",
+    "prize": "220 USDC",
+    "deadline": "2026-06-13",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_280",
+    "fetched": "2026-06-01"
+  },
+  {
     "id": "ethglobal_newyork_2026",
     "title": "ETHGlobal New York",
     "category": "hackathon",
@@ -2212,6 +2324,150 @@
       "L2"
     ],
     "fetched": "2026-03-28"
+  },
+  {
+    "title": "RampHub Creator Bounty",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/ramphub-creator-bounty",
+    "prize": "7500 USDG",
+    "deadline": "2026-06-14",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_271",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Create a Video on Archer",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/archer-video-bounty",
+    "prize": "500 USDC",
+    "deadline": "2026-06-17",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_281",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Build everyday real-world systems as on-chain Rust programs",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/build-everyday-real-world-systems-as-on-chain-rust-programs",
+    "prize": "1000 USDG",
+    "deadline": "2026-06-18",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_282",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Creator Challenge: Promote a UK Colosseum Frontier Project",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/creator-challenge-promote-a-uk-colosseum-frontier-project",
+    "prize": "750 USDG",
+    "deadline": "2026-06-21",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_283",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Business Challenge: Institutional Competitor Analysis",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/business-challenge-institutional-competitor-analysis",
+    "prize": "750 USDG",
+    "deadline": "2026-06-21",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_284",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Developer Challenge: Blueshift – Assembly Timeout",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/developer-challenge-blueshift-assembly-timeout",
+    "prize": "750 USDG",
+    "deadline": "2026-06-21",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_285",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Explain ClapMi in Your Niche",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/explain-clapmi-in-your-niche",
+    "prize": "5000 USDG",
+    "deadline": "2026-06-24",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_272",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Advanced Infrastructure Challenge – Build a Smart Transaction Stack",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/advanced-infrastructure-challenge-build-a-smart-transaction-stack",
+    "prize": "5000 USDG",
+    "deadline": "2026-06-29",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_273",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Walk through a Trepa round in your language",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/walk-through-a-trepa-round-in-your-language",
+    "prize": "750 USDC",
+    "deadline": "2026-06-30",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260601_286",
+    "fetched": "2026-06-01"
   },
   {
     "id": "ethglobal_lisbon_2026",
@@ -2836,6 +3092,24 @@
     "fetched": "2026-05-25"
   },
   {
+    "title": "LUMA Hackathon (July 3rd - 10th)",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://luma-hackathon-500.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Apr 11 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "id": "opp_20260601_270",
+    "fetched": "2026-06-01"
+  },
+  {
     "title": "HackAmerica",
     "category": "hackathon",
     "platform": "Devpost",
@@ -3421,6 +3695,24 @@
     "fetched": "2026-03-30"
   },
   {
+    "title": "Ventura Challenge",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://ventura-challenge.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Jun 01 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Design",
+      "E-commerce/Retail"
+    ],
+    "id": "opp_20260601_268",
+    "fetched": "2026-06-01"
+  },
+  {
     "title": "Techspire",
     "category": "hackathon",
     "platform": "Devpost",
@@ -3437,6 +3729,24 @@
     ],
     "id": "opp_20260511_224",
     "fetched": "2026-05-11"
+  },
+  {
+    "title": "Hack Days in Feni",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hack-days-in-feni.devpost.com/",
+    "prize": "$<span data-currency-value>15</span>",
+    "deadline": "Jun 01, 20",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Low/No Code",
+      "Mobile",
+      "Web"
+    ],
+    "id": "opp_20260601_264",
+    "fetched": "2026-06-01"
   },
   {
     "title": "STEMINATE HACKS 2026",
@@ -4367,6 +4677,42 @@
     "fetched": "2026-05-25"
   },
   {
+    "title": "DeveloperWeek New York 2026 Hackathon",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://dwny-2026-hackathon.devpost.com/",
+    "prize": "$<span data-currency-value>8,500</span>",
+    "deadline": "May 25 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "DevOps",
+      "Enterprise",
+      "Machine Learning/AI"
+    ],
+    "id": "opp_20260601_266",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "Global AI Hackathon Series with Qwen Cloud ",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://qwencloud-hackathon.devpost.com/",
+    "prize": "$<span data-currency-value>45,000</span>",
+    "deadline": "May 26 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Machine Learning/AI",
+      "Design",
+      "Productivity"
+    ],
+    "id": "opp_20260601_265",
+    "fetched": "2026-06-01"
+  },
+  {
     "title": "Cursor Hackathon Toronto Tech Week",
     "category": "hackathon",
     "platform": "Devpost",
@@ -4381,6 +4727,78 @@
     ],
     "id": "opp_20260504_203",
     "fetched": "2026-05-04"
+  },
+  {
+    "title": "Vortexa",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://vortexa.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 28 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Blockchain",
+      "Cybersecurity",
+      "Fintech"
+    ],
+    "id": "opp_20260601_263",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "NexaMind Challenge",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://nexamind-challenge.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 30 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "E-commerce/Retail",
+      "Education",
+      "Enterprise"
+    ],
+    "id": "opp_20260601_261",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "QF HackFest",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://qfai-hackfest.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 30 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Enterprise",
+      "Fintech",
+      "Machine Learning/AI"
+    ],
+    "id": "opp_20260601_262",
+    "fetched": "2026-06-01"
+  },
+  {
+    "title": "BioNova Innovathon",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://bionova-innovathon.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 30 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Design",
+      "Enterprise",
+      "Machine Learning/AI"
+    ],
+    "id": "opp_20260601_269",
+    "fetched": "2026-06-01"
   },
   {
     "title": "Code Crest",
@@ -4399,6 +4817,24 @@
     ],
     "id": "opp_20260511_223",
     "fetched": "2026-05-11"
+  },
+  {
+    "title": "Brand Portals for Brands",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://brand.devpost.com/",
+    "prize": "$<span data-currency-value>57,500</span>",
+    "deadline": "May 31 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Design",
+      "Low/No Code"
+    ],
+    "id": "opp_20260601_267",
+    "fetched": "2026-06-01"
   },
   {
     "title": "Digital Innovation Challenge 2025 - Finance Track",
