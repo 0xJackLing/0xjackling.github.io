@@ -2228,6 +2228,22 @@
     "fetched": "2026-06-01"
   },
   {
+    "title": "Develop Solana Yield Adapter Standard",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/develop-solana-yield-adapter-standard",
+    "prize": "1000 USDC",
+    "deadline": "2026-06-09",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260608_293",
+    "fetched": "2026-06-08"
+  },
+  {
     "title": "Stake $GMYLD  & Play PumpCat.FUN - Get Paid Up to $100 for Honest Feedback",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2342,6 +2358,22 @@
     "fetched": "2026-06-01"
   },
   {
+    "title": "Compose a Twitter/X Post or Thread Promoting JagPool World Cup",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/compose-a-twitterx-post-or-thread-promoting-jagpool-world-cup",
+    "prize": "500 USDC",
+    "deadline": "2026-06-15",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260608_294",
+    "fetched": "2026-06-08"
+  },
+  {
     "title": "Create a Video on Archer",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2358,6 +2390,38 @@
     "fetched": "2026-06-01"
   },
   {
+    "title": "Design the Official Solana Summit Nigeria 2026 Merchandise Collection",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/design-the-official-solana-summit-nigeria-2026-merchandise-collection",
+    "prize": "3500 USDG",
+    "deadline": "2026-06-17",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260608_295",
+    "fetched": "2026-06-08"
+  },
+  {
+    "title": "Solana Summit Animation Bounty",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/solana-summit-animation-bounty",
+    "prize": "5000 USDG",
+    "deadline": "2026-06-17",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260608_296",
+    "fetched": "2026-06-08"
+  },
+  {
     "title": "Build everyday real-world systems as on-chain Rust programs",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2372,6 +2436,38 @@
     ],
     "id": "opp_20260601_282",
     "fetched": "2026-06-01"
+  },
+  {
+    "title": "Founders Fridays Graphic Design Challenge",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/founders-fridays-graphic-design-challenge",
+    "prize": "500 USDG",
+    "deadline": "2026-06-18",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260608_297",
+    "fetched": "2026-06-08"
+  },
+  {
+    "title": "Write a Twitter Thread on Eva",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/write-a-twitter-thread-on-eva",
+    "prize": "120 USDC",
+    "deadline": "2026-06-19",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260608_298",
+    "fetched": "2026-06-08"
   },
   {
     "title": "Creator Challenge: Promote a UK Colosseum Frontier Project",
@@ -2436,6 +2532,22 @@
     ],
     "id": "opp_20260601_272",
     "fetched": "2026-06-01"
+  },
+  {
+    "title": "Paj Video Content Bounty",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/paj-video-content-bounty",
+    "prize": "10000 USDG",
+    "deadline": "2026-06-26",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260608_299",
+    "fetched": "2026-06-08"
   },
   {
     "title": "Advanced Infrastructure Challenge – Build a Smart Transaction Stack",
@@ -3218,6 +3330,24 @@
     "fetched": "2026-04-20"
   },
   {
+    "title": "Your idea vs 1,000 other marketers. Let’s see where you actually stand. ",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://connectsblue.devpost.com/",
+    "prize": "₹ <span data-currency-value>10,000</span>",
+    "deadline": "Apr 15 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Low/No Code",
+      "Open Ended"
+    ],
+    "id": "opp_20260608_292",
+    "fetched": "2026-06-08"
+  },
+  {
     "title": "FusionHack 2026",
     "category": "hackathon",
     "platform": "Devpost",
@@ -3747,6 +3877,95 @@
     ],
     "id": "opp_20260601_264",
     "fetched": "2026-06-01"
+  },
+  {
+    "title": "Hack-Vserse",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hack-vserse.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Jun 03 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Blockchain",
+      "Machine Learning/AI"
+    ],
+    "id": "opp_20260608_287",
+    "fetched": "2026-06-08"
+  },
+  {
+    "title": "Hack Munch ",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hack-munch-30312.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Jun 03 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Blockchain",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "id": "opp_20260608_290",
+    "fetched": "2026-06-08"
+  },
+  {
+    "title": "Hack Verse",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hack-verse-30325.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Jun 04 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Blockchain",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "id": "opp_20260608_288",
+    "fetched": "2026-06-08"
+  },
+  {
+    "title": "HackNova",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hacknova-30322.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Jun 04 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Blockchain",
+      "Machine Learning/AI",
+      "Open Ended"
+    ],
+    "id": "opp_20260608_289",
+    "fetched": "2026-06-08"
+  },
+  {
+    "title": "InnovatorsX: Startup Sprint",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://innovatorsx.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Jun 05 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Design",
+      "E-commerce/Retail"
+    ],
+    "id": "opp_20260608_291",
+    "fetched": "2026-06-08"
   },
   {
     "title": "STEMINATE HACKS 2026",
