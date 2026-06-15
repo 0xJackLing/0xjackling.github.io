@@ -4517,8 +4517,8 @@
     "url": "https://arxiv.org/abs/2512.15179",
     "citation_count": null,
     "relevance_tags": [
-      "smart-contract",
-      "measurement"
+      "measurement",
+      "smart-contract"
     ],
     "analyzed": false
   },
@@ -31472,6 +31472,588 @@
     "url": "https://doi.org/10.1109/tifs.2026.3698606",
     "citation_count": 0,
     "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1252",
+    "title": "HedgeSwap: Universal Hedged Atomic Swaps Against Griefing Attacks",
+    "authors": [
+      "Jiangshan Yu"
+    ],
+    "abstract": "Universal atomic swaps [Oakland'22] replace hashed timelock contracts with adaptor signatures and verifiable timed dlogs, enabling secure cross-chain cryptocurrency exchanges that only require basic signature verification from the underlying blockchains. \nHowever, existing universal swap protocols remain vulnerable to griefing attacks, where a deviating party aborts the swap to lock a compliant party's assets for a long period. A natural approach is to lift existing contract-based solutions to the universal setting, but we identify that this straightforward solution faces two key challenges: (i) timeout race attacks, first identified in PipeSwap [Oakland'25], which arises from the absence of an upper bound on the transaction validity; (ii) a timeout overlap dilemma, which results from multiple overlapping refund periods. \n\nIn this paper, we propose HedgeSwap, a universal hedged atomic swap protocol against griefing attacks, which compensates a compliant party with a premium if its asset is locked but not redeemed. To mitigate the timeout race attacks and timeout overlap dilemma, HedgeSwap eliminates the premium timeout and instead relies on a hard relation to refund the premium. For high-value asset swaps where the parties acceptable premium ranges do not overlap, we further propose a round-based HedgeSwap that utilizes a premium migration mechanism to solve these two timeout challenges, where parties iteratively increase the premium until the lock-up risk premium  acceptable to both. Our experimental results show that our HedgeSwap can complete in under 0.5 seconds, and round-based HedgeSwap completes in under 1.3 seconds for a five-round setting, while HedgeSwap reduces gas cost by 2.69X compared to existing contract-based solutions.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-14",
+    "pdf_url": "https://eprint.iacr.org/2026/1252.pdf",
+    "url": "https://eprint.iacr.org/2026/1252",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1250",
+    "title": "TensorZKP: Repurposing GPU Tensor Cores for High-Performance Zero-Knowledge Proofs",
+    "authors": [
+      "Jiaheng Zhang"
+    ],
+    "abstract": "GPU Tensor Cores, specialized hardware units designed to accelerate matrix multiplication, have served as the primary engine behind the AI revolution. Given the exponential performance gains they have delivered, aligning cryptographic implementations with this hardware evolution is critical. This is particularly acute for zero-knowledge proofs (ZKPs), a cryptographic primitive that currently grapples with high proof generation costs. Existing GPU implementations for ZKPs rely exclusively on general-purpose SIMT cores, leaving the massive computational power of Tensor Cores untapped.\n\nIn this paper, we introduce TensorZKP, the first GPU framework to harness Tensor Cores for ZKP acceleration. Since Tensor Cores are designed for low-precision matrix multiplication, mapping ZKP's arithmetic to this hardware is non-trivial. To bridge this gap, we develop Tensor-Core-compatible finite field arithmetic and reformulate ZKP modules, specifically sum-check protocols and Spielman code, into matrix multiplication tasks. Furthermore, we design an asynchronous warp-specialized framework that pipelines memory access, Tensor Core matrix operations, and SIMT-based modular reductions. We instantiate these optimizations with HyperPlonk as the Polynomial Interactive Oracle Proof (PIOP) and Brakedown as the Polynomial Commitment Scheme (PCS) to enable end-to-end proof generation.\n\nThe evaluation results show that TensorZKP exhibits remarkable efficiency. At a $2^{25}$ scale, the underlying building blocks complete in $0.85$ ms for inner product, $0.91$ ms for scalar-vector multiplication, $4.04$ ms for degree-2 sum-check, and $11.58$ ms for the encoder. For a circuit with $2^{25}$ multiplication gates, TensorZKP achieves a proof generation time of only $215.28$ milliseconds, representing a $955\\times$ speedup over the CPU baseline and a $36.2\\times$ improvement over state-of-the-art SIMT-based GPU implementations.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-13",
+    "pdf_url": "https://eprint.iacr.org/2026/1250.pdf",
+    "url": "https://eprint.iacr.org/2026/1250",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "bridge",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1249",
+    "title": "A family of invertible shift-invariant maps with strong arithmetic properties",
+    "authors": [
+      "Qun-Xiong Zheng"
+    ],
+    "abstract": "Shift-invariant maps have been employed to design nonlinear layers in many symmetric cryptographic schemes, such as the $\\chi$-map used in Keccak. In this paper, we study the shift-invariant maps on $\\mathbb{F}_2^n$, whose defining functions come from a family of $n$-variable Boolean functions induced by a bifix-free sequence $\\underline{a}=(a_1,a_2,\\ldots,a_m)\\in \\mathbb{F}_2^m$ with $2\\leq m<n$, which we denote by  $\\Omega_{\\underline{a}}$. It is shown that $\\Omega_{\\underline{a}}$ forms a commutative monoid with respect to the composition. Moreover, if $m\\nmid n$, then $\\Omega_{\\underline{a}}$ is isomorphic to the unit group of $\\mathbb{F}_2[x]/ (x^{\\lceil \\frac{n}{m} \\rceil})$; if $m\\mid n$, then the unit group of  $\\Omega_{\\underline{a}}$ is isomorphic to that of $\\mathbb{F}_2[x]/ (x^{ \\frac{2n}{m}}+x^{ \\frac{n}{m}})$.\nThe isomorphic relation transforms the composition of  functions on $\\Omega_{\\underline{a}}$ into the multiplication of polynomials on the quotient ring of $\\mathbb{F}_2[x]$, where the algebraic properties of  the latter are well-understood. As a straightforward application, we focus on the algebraic properties of $\\rho=x_0+(x_1+a_1+1)(x_2+a_2+1)\\cdots (x_m+a_m+1)\\in \\Omega_{\\underline{a}}$, which includes the $\\chi$-map as well as several other known maps studied in earlier literature. It is shown that $\\rho$ is invertible if and only if $m\\nmid n$. Also the inverse  and the cycle structure of $\\rho$ (if invertible) can be fully characterized. The construction of $\\Omega_{\\underline{a}}$ generalizes previous works given by  Kriepke et al. and Lyu et al. It is hoped that $\\Omega_{\\underline{a}}$ could provide a deeper insight into the study of invertible shift-invariant maps.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-12",
+    "pdf_url": "https://eprint.iacr.org/2026/1249.pdf",
+    "url": "https://eprint.iacr.org/2026/1249",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1014",
+    "title": "Grafting: Decoupled Scale Factors and Modulus in RNS-CKKS",
+    "authors": [
+      "Taeyeong Noh"
+    ],
+    "abstract": "The CKKS Fully Homomorphic Encryption (FHE) scheme enables approximate arithmetic on encrypted complex numbers for a desired precision. Most implementations use RNS with carefully chosen parameters to balance precision, efficiency, and security. However, a key limitation in RNS-CKKS is the rigid coupling between the scale factor, which determines numerical precision, and the modulus, which ensures security. Since these parameters serve distinct roles—one governing arithmetic correctness and the other defining cryptographic structure—this dependency imposes design constraints, such as a lack of suitable NTT primes and limited precision flexibility, ultimately leading to inefficiencies.\n\nWe propose Grafting, a novel approach to decouple scale factors from the modulus by introducing (universal) sprouts, reusable modulus factors that optimize word-sized packing while allowing flexible rescaling. With the universal property, sprouts allow rescaling by arbitrary bit-lengths and key-switching at any modulus bit-length without requiring additional key-switching keys. Decoupling the scale factor from the modulus in Grafting yields significant efficiency gains: (1) Optimized RNS packing by decomposing the modulus into machine word-sized components, accelerating computations and reducing the ciphertext and encryption/evaluation key sizes; and (2) A freely adjustable scale factor independent of the modulus, unifying the ring structure across applications and reducing modulus consumption through adaptive scalings.\n\nOur experiments demonstrate that Grafting improves performance across standard SHE/FHE parameter sets for ring dimensions $2^{14}$-$2^{16}$ by up to $1.83\\times$ and $2.01\\times$ for key-switchings and multiplications, respectively, and up to $1.92\\times$ for bootstrapping. Grafting also reduces public key and ciphertext sizes by up to $62\\%$ without compressions, maintaining the same number of public keys as before. As an application, we showcase the CKKS gate bootstrapping for bits (Bae et al.; Eurocrypt'24), achieving $1.89\\times$ speed-up due to the reduced number of RNS factors. Finally, we revisit the homomorphic comparison (Cheon et al.; Asiacrypt'20), evaluating it with carefully chosen scale factors for each iteration, reporting up to $204$-bit fewer modulus consumption ($27\\%$ reduction) in the standard parameter set, without precision loss.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-06-24",
+    "pdf_url": "https://eprint.iacr.org/2024/1014.pdf",
+    "url": "https://eprint.iacr.org/2024/1014",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1874",
+    "title": "Multi-Holder Anonymous Credentials from BBS Signatures",
+    "authors": [
+      "Anna Lysyanskaya"
+    ],
+    "abstract": "The eIDAS 2.0 regulation aims to develop interoperable digital identities for European citizens, and it has recently become law.  One of its requirements is that credentials be unlinkable.  Anonymous credentials (AC) allow holders to prove statements about their identity in a way that does not require to reveal their identity and does not enable linking different usages of the same credential. As a result,  they are likely to become the technology that provides digital identity for Europeans.\n\nAny digital credential system, including anonymous credentials, needs to be secured against identity theft and fraud.  In this work, we introduce the notion of a multi-holder anonymous credential scheme that allows issuing shares of credentials to different authentication factors (or \"holders\"). To present the credential, the user's authentication factors jointly run a threshold presentation protocol.  Our definition of security requires that the scheme provide unforgeability: the adversary cannot succeed in presenting a credential with identity attributes that do not correspond to an identity for which the adversary controls at least $t$ shares; this is true even if the adversary can obtain credentials of its choice and cause concurrent executions of the presentation protocol.  Further, our definition requires that the presentation protocol provide security with identifiable abort.  Finally, presentations generated by all honest holders must be unlinkable and must not reveal the user's secret identity attributes even to an adversary that controls some of the user's authentication factors.\n\nWe design and prove the (concurrent) security of a multi-holder version of the BBS anonymous credential scheme. In our construction, each holder is issued a secret share of a BBS credential. Using these shares, the holders jointly compute a credential presentation that is identical to (and therefore compatible with) the traditional, single-holder variant (due to Tessaro and Zhu, Eurocrypt'23) of a BBS credential presentation.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-11-16",
+    "pdf_url": "https://eprint.iacr.org/2024/1874.pdf",
+    "url": "https://eprint.iacr.org/2024/1874",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "eCrime"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1247",
+    "title": "Practical Attacks on a Decentralized Secure Messenger Session",
+    "authors": [
+      "Takanori Isobe"
+    ],
+    "abstract": "Session is a widely deployed decentralized messenger application that emphasizes user anonymity and privacy through end-to-end encryption. Session currently employs its own uniquely designed messaging protocol, Session Protocol V1, having migrated from the extensively studied Signal Protocol. In this paper, we conduct a comprehensive, implementation-driven security analysis of the Session Protocol V1, focusing on its 1-to-1 and closed-group communication mechanisms. Our analysis reveals two fundamental design vulnerabilities: the absence of mutual public key authentication and the lack of cryptographic bindings to monotonic sequence counters. Exploiting these weaknesses within the context of actual application environments, we demonstrate three practical attacks: an impersonation attack, a message timestamp forgery attack, and message dropping and replay attacks. These attacks allow malicious server nodes or unprivileged malicious insiders to substitute public keys, silently suppress or duplicate messages, and manipulate the perceived chronological order of conversations. The findings highlight that these exploits severely undermine the fundamental security guarantees of the messenger. Finally, we propose immediate, actionable mitigation strategies to address the identified flaws and secure the protocol against these threats.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-12",
+    "pdf_url": "https://eprint.iacr.org/2026/1247.pdf",
+    "url": "https://eprint.iacr.org/2026/1247",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1232",
+    "title": "A Heuristic Subexponential Attack on the McEliece Cryptosystem",
+    "authors": [
+      "Jean-Pierre Tillich"
+    ],
+    "abstract": "We provide a new way of performing an algebraic attack on the McEliece cryptosystem based on binary Goppa codes. It also applies in general to the case where the field over which the Goppa code is defined is of even characteristic. It is based on a new algebraic modeling for finding as in [CMT23,M25,BLT26] matrices of rank $2$ in the code of quadratic relations related to the Goppa code that is attacked. Such matrices are then used to recover the secret algebraic structure of the code, from which an equivalent secret key can be efficiently derived, leading to a full key-recovery attack. A byproduct of our approach is a new distinguisher for Goppa codes in even characteristic which is as the syzygy distinguisher of [R25] subexponential in the security parameter of the scheme. We demonstrate the effectiveness of our attack on McEliece TII challenges, some of which having been studied in [BLT26], and aimed at having $83$,$89$,$119$,$166$, $210$ and even $248$ bit security respectively and CFS keys with parameters $r=9$ and $m=16$, corresponding to a security of $74.9$ bits according to [LS12]. This CFS key was not attacked in practice in [BLT26] and took us 14 hours of computation and 24GB of RAM. We make the conjecture that this attack has a complexity which is of the same nature as the distinguisher, namely subexponential in the security parameter.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-10",
+    "pdf_url": "https://eprint.iacr.org/2026/1232.pdf",
+    "url": "https://eprint.iacr.org/2026/1232",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/226",
+    "title": "Improved Subfield Curve Search For Specific Field Characteristics",
+    "authors": [
+      "Jesús-Javier Chi-Domínguez"
+    ],
+    "abstract": "Isogeny-based cryptography relies its security on the hardness of the supersingular isogeny problem: finding an isogeny between two supersingular curves defined over a quadratic field extension of $\\mathbb{F}_{p}$.\n\nThe Delfs-Galbraith algorithm is one of the most efficient procedures for solving the supersingular isogeny problem with a time complexity of $\\mathcal{\\tilde{O}}(p^{1/2})$ operations. The bottleneck of the Delfs-Galbraith algorithm is the so-called subfield curve search (i.e., finding an isogenous supersingular elliptic curve defined over the prime field), which determines the time complexity of the aforementioned algorithm.\n\nGiven that, for efficiency, most recent isogeny-based constructions propose using finite fields with field characteristics equal to $p = 2^a \\cdot f - 1$ for some positive integers $a$ and $f$.\nThis work primarily focuses on primes of that particular form and presents two heuristic algorithms for finding subfield curves with a time complexity of $\\mathcal{O}(p^{1/2})$ operations and a memory complexity polynomial in $\\log_2{p}$. We show how to adapt these algorithms to primes of the form $p = d^a \\cdot f - 1$ with $d$ being a small integer, with a particular focus on $d=12$. We provide concrete time-complexity bounds for both kinds of primes $p = 2^a\\cdot f - 1$ and $p = {12}^a \\cdot f - 1$. \nOur algorithms exploit the existence of large $d^a$-torsion points and extend the subfield root detection algorithm of Corte-Real Santos, Costello, and Shi (Crypto, 2022) to a projective scenario where one can work with the curve coefficients instead of their explicit j-invariants.\n\nWe highlight that our algorithms easily extend to primes of the form $p =2^a \\cdot f + 1$, $p =4 \\cdot d_1 \\cdot d_2 \\cdots d_n - 1$ for small odd primes $d_i$'s, and primes such that $p - 1$ and $p + 1$ are $B$-smooth for some integer $B$.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-02-14",
+    "pdf_url": "https://eprint.iacr.org/2025/226.pdf",
+    "url": "https://eprint.iacr.org/2025/226",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1243",
+    "title": "LendLocked: Privacy & Transparency for Digital Library Lending",
+    "authors": [
+      "Sunoo Park"
+    ],
+    "abstract": "Digital library lending is a critical resource for access to information.\nCurrently prevalent models of digital lending, however, involve\nopaque licensing schemes that entail serious drawbacks to reader\nprivacy and freedom of expression. In popular modern library apps,\npublishers and hidden intermediaries control a wealth of informa-\ntion about readers and reading habits, at a scale and level of detail\nthat would be essentially impossible in physical library lending.\n\nTo understand digital lending needs in practice, our work begins\nwith a series of interviews with library professionals (𝑁= 11). We\npresent thematic findings on their concerns with existing systems,\nincluding privacy, surveillance, preservation, and lack of library\ncontrol over resources. Many of the concerns raised are inherently\nunproblematic in the context of physical library lending—leading us\nto our central technical question: Can digital lending achieve privacy\nand transparency at least as strong as physical library lending?\n\nBased on our qualitative findings, we provide the first rigorous\nmodeling of security, privacy, and transparency requirements in\ndigital library lending. As existing systems fall short of the strong\nguarantees we model, we propose a new system design, LendLocked,\nbased on cryptography and trusted hardware, and prove it achieves\nthese guarantees in the random oracle model. We micro-benchmark\nour design’s key cryptographic functionalities, s",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-11",
+    "pdf_url": "https://eprint.iacr.org/2026/1243.pdf",
+    "url": "https://eprint.iacr.org/2026/1243",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1241",
+    "title": "PoW Micronomics: A Fine-Grained Model for the Economic Analysis of Proof-of-Work Blockchains",
+    "authors": [
+      "Vassilis Zikas"
+    ],
+    "abstract": "Following the cryptographic security analyses of proof-of-work (PoW) blockchain protocols, a line of research has focused on their economic robustness. The two core questions asked are: How resilient is the system to rational attacks, and how profitable it is for miners to execute it. However, to our knowledge, no work to date has attempted to address them considering the full complexity of the blockchain protocol, including difficulty readjustment, which is needed to handle dynamic participation, price fluctuations, and the impact of risk.\n\nIn this work, we provide a fine-grained game-theoretic analysis for Nakamoto-style PoW blockchains, which takes into account both incentives of parties to deviate and complications introduced by difficulty readjustment. Our results employ the Rational Protocol Design framework of Garay et al. [FOCS’13] and extend recent works on the economic robustness of the Bitcoin backbone protocol to the variable difficulty setting.\n\nNotably, our fine-grained specification of miners’ utility incorporates variable difficulty adjustment alongside factors like the average cost of mining and the depreciation factor, which, despite being common in economics, are typically either abstracted as exogenous parameters or ignored in the blockchain literature. We showcase the expressivity and usefulness of our formulation of utilities by using it to provide estimates and trends for such factors across several real-world cryptocurrencies.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-11",
+    "pdf_url": "https://eprint.iacr.org/2026/1241.pdf",
+    "url": "https://eprint.iacr.org/2026/1241",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1240",
+    "title": "Adaptive attacks on FESTA variants with masked-degree isogenies",
+    "authors": [
+      "Tomoki Moriya"
+    ],
+    "abstract": "FESTA is an isogeny-based trapdoor function proposed as a high-performance alternative in isogeny-based cryptography. Its core design principles have inspired a number of related constructions, collectively referred to as FESTA variants.\n\nThe MOXZ attack is an adaptive attack that exploits malicious ciphertexts together with access to a checking oracle, aiming to compromise FESTA and its variants. This attack applies to FESTA variants whose secret keys are derived from isogenies of known degree; however, it does not extend to variants employing masked-degree isogenies.\n\nIn this work, we present a novel adaptive attack that generalizes the MOXZ attack. Our attack successfully targets several FESTA variants even when their secret keys are isogenies of masked degree. We also identify POKE-4D as an exception for which our attack does not appear to be applicable.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-11",
+    "pdf_url": "https://eprint.iacr.org/2026/1240.pdf",
+    "url": "https://eprint.iacr.org/2026/1240",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/2111",
+    "title": "SoK: Secure Computation over Secret Shares",
+    "authors": [
+      "Arthur Zamarin"
+    ],
+    "abstract": "Secure multiparty computation (MPC) enables mutually distrustful parties to jointly compute functions over private data without revealing their inputs. A central paradigm in MPC is the secret-sharing-based model, where secret sharing underpins the efficient realization of arithmetic, comparison, numerical, and Boolean operations on shares of private inputs. In this paper, we systematize protocols for these operations, with particular attention to two foundational contributions \\cite{ChidaGHIKLN18,NO07} that devised secure multiplication and comparison. Our survey provides a unified, self-contained exposition that highlights the composability, performance trade-offs, and implementation choices of these protocols. We further demonstrate how they support practical privacy-preserving systems, including recommender systems, distributed optimization platforms, and e-voting infrastructures. By clarifying the protocol landscape and connecting it to deployed and emerging applications, we identify concrete avenues for improving efficiency, scalability, and integration into real-world MPC frameworks. Our goal is to bridge theory and practice, equipping both researchers and practitioners with a deeper understanding of secret-sharing-based MPC as a foundation for privacy technologies.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-11-17",
+    "pdf_url": "https://eprint.iacr.org/2025/2111.pdf",
+    "url": "https://eprint.iacr.org/2025/2111",
+    "citation_count": null,
+    "relevance_tags": [
+      "MEV",
+      "bridge",
+      "privacy",
+      "DAO"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1238",
+    "title": "On the Additive Sensitivity of LZ77 Under Consecutive Edits",
+    "authors": [
+      "Seunghoon Lee"
+    ],
+    "abstract": "We revisit the problem of mitigating information leakage in the widely used but insecure compress-then-encrypt paradigm. While encryption hides message contents, the ciphertext length is directly related to the length of the compressed message, which may, in turn, leak information about the {\\em content} of the message itself. Recent work of Blocki et al. (TCC 2025) proposed an $(\\varepsilon,\\delta)$-differentially private approach that adds randomized padding calibrated to the global sensitivity of the compression algorithm, and showed that the global sensitivity of LZ77 is $O(W^{2/3}\\log n)$, where $n$ is the input length and $W$ is the sliding\nwindow size. \n\nHowever, prior analysis focused only on sensitivity with respect to single-character edits, which leads to limited privacy guarantees when protecting longer substrings such as passwords, passphrases, cookies, or confidential user records.  A natural attempt to handle longer secrets is to appeal to group privacy, but for approximate differential privacy, this leads to very poor parameter degradation: in particular, the effective value of $\\delta$ can grow exponentially with the group size $g$.  In this work, we introduce and study the sensitivity of compression schemes under block edits. Specifically, we define two strings to be $g$-neighbors if they differ only within a contiguous interval of length $g$. \n\nOur main technical contribution is a nearly tight characterization of the $g$-consecutive sensitivity of LZ77. We show that the $g$-consecutive sensitivity of both LZ77 variants (with and without self-referencing) is at most $O((W^{2/3}+g+\\sqrt{Wg})\\log n)$. In particular, when $g \\leq W^{1/3}$, the bound simplifies to $O(W^{2/3}\\log n)$, matching the known bound for single-character edits. Thus, calibrating noise to the single-character sensitivity of LZ77 already suffices to protect much longer contiguous substrings. We provide matching lower bounds to demonstrate that our upper bound is tight, e.g., when $n=W=O(g^2)$, the $g$-consecutive sensitivity of LZ77 is at least $\\tilde{\\Omega}(g^{1.5})$, matching the $\\sqrt{Wg}=O(g^{1.5})$ term from our upper bound up to a logarithmic factor.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-10",
+    "pdf_url": "https://eprint.iacr.org/2026/1238.pdf",
+    "url": "https://eprint.iacr.org/2026/1238",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "TEE",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1211",
+    "title": "Private Information Retrieval: Share Conversions vs. Decoding Polynomials",
+    "authors": [
+      "Or Lasri"
+    ],
+    "abstract": "A private information retrieval (PIR) protocol enables a client to retrieve a bit from an $N$ bit database replicated among $k$ servers in such a way that each server learns no information about the retrieved bit. Modern PIR protocols with information-theoretic privacy (Efremenko, SICOMP, 2012; Dvir and Gopi, STOC, 2015; Ghasemi et al., STOC, 25) are based on matching vectors over a composite number $m$. To construct a PIR protocol from the matching vectors, these protocols use a decoding polynomial, a sparse polynomial that returns a non-zero value on 1 and returns zero on a certain set implied by the matching vectors.\n\nBeimel et al. (CCC, 2012) abstracted the properties required by the transformation computed by the decoding polynomial, defining the notion of share conversion. In such a conversion, a set of parties is given shares of a secret in one secret-sharing scheme, and each party locally computes a new share (without any communication) such that the new shares are shares in a second secret-sharing scheme of a related secret.\nBeimel et al. showed that share conversion can replace the decoding polynomial in the PIR protocol of Efremenko and constructed a share conversion from the ring $\\mathbb{Z}_6$ to the field $\\mathbb{F}_{2^2}$.  This share conversion cannot be computed by a decoding polynomial, as decoding polynomials convert shares from a ring $\\mathbb{Z}_m$ to a finite field of characteristic $p$ such that $p$ does not divide $m$. Alon et al. (TCC, 2025) simplified and generalized the PIR protocols of Dvir and Gopi and Ghasemi et al., using share conversion; however, in this protocol, the share conversion is from a ring $\\mathbb{Z}_m$ to a finite field of characteristic $p$ such that $p$ does not divide $m$.\n\nIn this paper, we study the power of share conversions. Our main result proves that if there is a $k$-party share conversion from a ring $\\mathbb{Z}_m$ to a finite field of characteristic $p$ such that $p$ does not divide $m$, then there is a $k$ sparse decoding polynomial from a ring $\\mathbb{Z}_m$ to a finite field of characteristic $p$. This result implies that using share conversion in the protocol of Alon et al. can only improve the communication complexity by a constant factor. \nIn addition, we show that if there is a $k$-party share conversion from a ring $\\mathbb{Z}_m$ to a finite field, where $m$ is a product of $r$ distinct primes, then $k\\geq r+1$, i.e., the number of servers in the resulting PIR protocols using the appropriate matching vectors is at least $r+1$. A similar result was recently proved by Ghasemi and Kopparty (ITCS 26); our lower bound also applies to the case in which the characteristic of the field divides $m$.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-08",
+    "pdf_url": "https://eprint.iacr.org/2026/1211.pdf",
+    "url": "https://eprint.iacr.org/2026/1211",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1235",
+    "title": "Authenticated Data Structures for Dynamic Workloads",
+    "authors": [
+      "Dahlia Malkhi"
+    ],
+    "abstract": "We introduce the Huffman-Merkle Tree (HMT), an authenticated data structure (ADS) optimized for dynamic workloads where some items may be more frequently accessed than others, and access frequencies change over time. An ADS allows proving item membership against a short commitment to a large mutable state, with applications including verifiable storage, Internet transparency services, and blockchains. Optimizing ADS performance under continuously changing access frequencies has not been fully addressed before, neither in theory nor in practice. HMT tackles access skew via tiering: \"hot\" items are stored according to a Huffman coding layout where frequently accessed items are closer to the root and thus contribute less to overall costs, while a binary Merkle Tree (MT) is used for cold and new elements to lower their update overhead. To efficiently handle dynamic workloads, we incrementally apply and batch layout changes, track access frequencies via count-min sketch, use a tier promotion cache, and consider various tier migration policies. We implement HMT and compare it on real-world data against Ethereum's Merkle Patricia Trie (MPT) ADS and its proposed replacement, the Unified Binary Tree (UBT). Our evaluation considers two metrics: the amount of hashing per ADS update and access-weighted membership-proof size. The latter metric captures both the cost of accessing each item and its access frequency. We find that the best HMT policy uses about 2.4x and 0.34x less average hash operations than MPT and UBT respectively, while featuring proofs shorter by 0.18x than MPT and 0.55x than UBT.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-10",
+    "pdf_url": "https://eprint.iacr.org/2026/1235.pdf",
+    "url": "https://eprint.iacr.org/2026/1235",
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1234",
+    "title": "Designing Incentives for Responsive Consensus Protocols",
+    "authors": [
+      "Tim Roughgarden"
+    ],
+    "abstract": "Modern consensus protocols often aspire to be responsive---that is, to confirm transactions in time proportional to the actual network delays as opposed to a (typically much larger) worst-case bound on network delays. \nResponsiveness can yield substantial practical improvements in both protocol latency and throughput.\n\nIn blockchain settings, however, block proposers commonly have economic incentives (most notably MEV) to delay their blocks, a phenomenon repeatedly observed in practice, e.g., in the block production supply chains for Ethereum and Solana. Such incentives clash with responsiveness in existing protocol designs.\n\nThis paper develops a rigorous framework for designing incentive-compatible responsive consensus protocols. We first consider the canonical case of single-leader protocols and establish feasibility results characterizing the conditions on the distribution of network latency under which responsiveness can be incentivized through a suitable reward function. We further quantify the amount of stake required from the leader to deter dishonest delays.\n\nWe then show strong positive results for protocols with multiple leaders, demonstrating that the multi-leader approach is fundamentally superior to single-leader designs for resolving the tension between responsiveness and incentive-compatibility: by forcing leaders to compete for rewards, much of the burden otherwise placed on the incentive mechanism is alleviated. Notably, this results in simpler reward mechanisms with no stake requirements that also remain feasible in parameter regimes which are provably impossible under a single leader.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-10",
+    "pdf_url": "https://eprint.iacr.org/2026/1234.pdf",
+    "url": "https://eprint.iacr.org/2026/1234",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "MEV",
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1221",
+    "title": "Achieving Shannon Capacity for Computationally Bounded Errors",
+    "authors": [
+      "Daniel Wichs"
+    ],
+    "abstract": "We study error correction in a computationally bounded world, where errors are introduced by an arbitrary polynomial-time adversarial channel. Recent works construct seeded codes in this model, where the encoding and decoding procedure share a public random seed. They achieve significantly better tradeoffs between rate and error tolerance than what is possible information theoretically for unique decoding, essentially matching the parameters of the best known efficiently list-decodable codes. Over the binary alphabet, however, this is still well short of the optimal Shannon capacity with rate $R \\approx 1 - H_2(p)$ for a $p < 1/4$ fraction of errors. Even heuristic constructions meeting this target were not previously known. We make progress towards this goal. \n\n- $\\textbf{Secret-Key Codes.}$ We first study secret-key codes, where the encoder and decoder share a secret key hidden from the adversarial channel.  Lipton (STACS '94) constructed one-time secure secret-key codes achieving Shannon capacity in this setting, but it was unknown whether one can get CPA (resp. CCA) security where the adversary may query an encoding oracle (resp. also a decoding oracle). We construct CCA-secure secret-key codes achieving Shannon capacity via pseudorandom codes (PRCs). \n    \n- $\\textbf{Seeded Codes (Heuristic).}$ We can heuristically upgrade the resulting secret-key codes to seeded codes by publishing an obfuscation of the encoding/decoding procedures with a hard-coded secret key as a seed. Security holds in the ideal obfuscation model. \n   \n - $\\textbf{Public-key Codes.}$ We also consider public-key codes, where the decoder has a secret key and the encoder has the corresponding public key. We construct such CPA-secure public-key codes achieving Shannon capacity with unique decoding for $p < 1/4$ errors, and list decoding all the way to $p < 1/2$ errors, assuming PRCs and the subexponential security of standard crypto assumptions (e.g., LWE or DDH or QR or DCR). We also show how to get CCA security in the random oracle model. \n\nOur secret-key and public-key codes meeting Shannon capacity are also simultaneously pseudorandom codes.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-09",
+    "pdf_url": "https://eprint.iacr.org/2026/1221.pdf",
+    "url": "https://eprint.iacr.org/2026/1221",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1228",
+    "title": "Advancing Pseudorandom Codes: Beyond Parity Checks and Standard-Model CCA1 Security",
+    "authors": [
+      "Hongxu Yi"
+    ],
+    "abstract": "Pseudorandom codes (PRCs) are error-correcting codes whose codewords are computationally indistinguishable from uniform random strings, \na primitive motivated by the need to robustly watermark generative AI models. While recent breakthroughs have established the feasibility of PRCs, \ncritical challenges remain regarding the diversity of their underlying cryptographic assumptions and their security against active adversaries. \nThis work advances the study of PRCs on two complementary fronts: structural diversity and advanced security.\n\nOn the structural side, we propose a novel PRC template that departs from the prior one based on sparse parity-check trapdoors. \nWe introduce a new LPN-type assumption, formalized as Dense-Planted LPN, \nwhich postulates $(\\mathbf{M}\\mathbf{T}, \\ \\mathbf{M}\\mathbf{T}\\mathbf{s}+\\mathbf{e})\\ \\approx_c\\ (\\mathbf{M}\\mathbf{T}, \\ \\mathbf{u})$,\nwhere $\\mathbf{T}$ is a random dense matrix and $\\mathbf{M}$ is sampled from a distribution containing a planted structure. \nThis hidden structure enables a completely new decoding mechanism based on a local-window search rather than global parity checks. \nNotably, this template provides a viable path toward constructing PRCs from assumptions beyond code-based ones, including Learning with Errors (LWE) assumptions.\n\nOn the security side, we construct the first public-key PRC secure against pre-challenge chosen-codeword attacks (CCA1) in the standard model. \nIn realistic watermarking deployments where detectors are exposed as public services, CCA security is essential. \nHowever, prior CCA-secure PRCs were only achievable in the random oracle model. \nBy formally introducing and instantiating a robust tag-based equivocal bit commitment scheme combined with robust hinting PRGs, \nwe demonstrate that CCA1 security can be achieved in the standard model without sacrificing decoding robustness.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-10",
+    "pdf_url": "https://eprint.iacr.org/2026/1228.pdf",
+    "url": "https://eprint.iacr.org/2026/1228",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1227",
+    "title": "Chosen Ciphertext Secure Pseudorandom Codes in the Standard Model",
+    "authors": [
+      "Hendrik Waldner"
+    ],
+    "abstract": "Pseudorandom codes (PRCs), recently proposed by Christ and Gunn (CRYPTO'24), are encryption schemes that have pseudorandom ciphertexts and a decryption algorithm which is resilient against a bounded number of Hamming errors. This notion provides a significant strengthening over standard PKE and has exciting applications in, e.g., watermarking LLMs. The recent work of Alrabiah et al. (STOC'25) initiated the study of CCA-secure public-key PRCs, where the adversary is additionally given access to a decoding oracle. In terms of realizations, they provide one that can be proven secure in the random oracle model. Constructing CCA-secure public-key PRCs in the standard model remained an open problem.\n\nIn this work, we resolve this problem and provide the first construction of CCA-secure public-key PRCs in the standard model. Our construction achieves a constant rate and can decode from a constant fraction of adversarial errors. In fact, our construction is a general blueprint that can be instantiated from a broad range of standard cryptographic assumptions.\n\nAs an additional contribution, we construct a strong adaptively robust public-key pseudorandom code with conjectured sub-exponential security based on a new family of assumptions we call Noisy McEliece. In a nutshell, these assumptions mask a scrambled generator matrix from an efficiently decodable inner-code family with sparse Bernoulli noise; this additional error is meant to obscure the algebraic structure targeted by known attacks and thereby permits candidate instantiations from broader classes of codes.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-10",
+    "pdf_url": "https://eprint.iacr.org/2026/1227.pdf",
+    "url": "https://eprint.iacr.org/2026/1227",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1214",
+    "title": "Faster Leader-Based Consensus via Certificates of Exclusivity and Overlapping Iterations",
+    "authors": [
+      "Matthieu Rambaud"
+    ],
+    "abstract": "Blockchain consensus protocols, also known as BFT state-machine replication, enable a system of $n$ players to decide an ever-growing chain of blocks. We consider partial synchrony: after an unknown time GST, messages sent by honest players are delivered within an unknown actual delay $\\delta$, and a known bound $\\Delta$ satisfies $\\delta \\leq \\Delta$. This setting imposes $t<n/3$ corruptions. We study leader-based consensus, a class with the smallest known latency metrics when sufficiently many designated leaders behave honestly.\nWe consider the mainstream metric of {expected latency in the view-based sense:} for a transaction known to all honest players having entered a post-GST iteration, this is the expected time until that transaction appears in a decided block, under independent random leaders.\nWe introduce Hamster, a rotating-leader consensus protocol, which reduces this expected latency to $\\Delta+4\\delta$, down from the previous $1.5\\Delta+3.5\\delta$ bound achieved by Simplex (Chan-Pass, TCC'23) for the same view-based metric.\nHamster also brings this latency further down to $\\Delta+3.5\\delta$ for adversaries that do not get publicly caught equivocating.\n\nThe main technical novelty is a certificate of exclusivity for a block $B$. It is shown by the next leader as evidence that players can safely vote for a child of $B$. A certificate of exclusivity is an interpolation between a quorum certificate and a timeout certificate, in that it is formed from a mix of votes for a unique block $B$ and complaint votes, proving that $B$ is the only non-dummy block that can still obtain a decision certificate for that iteration.\n\nThe other novelty of Hamster is the use of {overlapping iterations: after a process has supported a newer proposal, the protocol may still allow it to support a safe proposal of an earlier iteration}.\nThis overlap is what allows old honest proposals to be decided in time despite players advancing iterations faster.\n\nWe also analyze another metric, called the {pessimistic block proposal time}, which is the time during which a bad leader can delay the proposal of a transaction in a block which will be decided.\nHamster achieves a pessimistic block proposal time of $2\\Delta+2\\delta$, refined to $2\\Delta+\\delta$ for leaders not caught equivocating, down from $3\\Delta+\\delta$ for Simplex.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-09",
+    "pdf_url": "https://eprint.iacr.org/2026/1214.pdf",
+    "url": "https://eprint.iacr.org/2026/1214",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2023/1549",
+    "title": "Signature-Free Atomic Broadcast with Optimal $O(n^2)$ Messages and $O(1)$ Expected Time",
+    "authors": [
+      "Sisi Duan"
+    ],
+    "abstract": "Byzantine atomic broadcast (ABC) is at the heart of  permissioned blockchains and various multi-party computation protocols. We resolve a long-standing open problem in ABC, presenting the first information-theoretic (IT) and signature-free asynchronous ABC protocol that achieves optimal $O(n^2)$ messages and $O(1)$ expected time.  Our ABC protocol adopts a new design, relying on a reduction from---perhaps surprisingly---a somewhat neglected  primitive called multivalued Byzantine agreement (MBA).",
+    "venue": "IACR ePrint",
+    "year": 2023,
+    "date_published": "2023-10-09",
+    "pdf_url": "https://eprint.iacr.org/2023/1549.pdf",
+    "url": "https://eprint.iacr.org/2023/1549",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1223",
+    "title": "Neon NTT - (Auto)formalised",
+    "authors": [
+      "Hanno Becker"
+    ],
+    "abstract": "This document provides a machine-checked Isabelle/HOL formalisation of the modular-arithmetic core of the Neon NTT paper of Becker, Hwang, Kannwischer, Yang, and Yang. We develop parametric theories of Barrett and Montgomery reduction and multiplication; the equivalence of Barrett and Montgomery arithmetic; the doubling- and rounding-Montgomery variants; and correctness and bounds theorems for Neon assembly kernels, against a hand-written model of the word arithmetic underlying the relevant Neon instructions.\nThe development is a directed auto-formalisation: definitions, theorem statements, and proofs were produced by Claude Opus 4.7 and 4.8 using AutoCorrode's LLM-Isabelle integration layers. The human author set the architecture, chose abstractions and proof strategies, often nudged the model toward shorter or cleaner proofs, and controlled which output entered the development.\nThis document is auto-generated from the Isabelle sources through Isabelle’s document preparation system, eliminating drift between prose and formal artifact.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-10",
+    "pdf_url": "https://eprint.iacr.org/2026/1223.pdf",
+    "url": "https://eprint.iacr.org/2026/1223",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/383",
+    "title": "$\\mathsf{♯Pencil}$: A Domain-Extended Committing BBB PRF for Strengthening GCM",
+    "authors": [
+      "Chandranan Dhar"
+    ],
+    "abstract": "We consider the problem of constructing efficient committing pseudorandom functions with Beyond-Birthday-Bound (BBB) security from blockciphers. More specifically, we are interested in expanding pseudorandom functions (PRF) whose domain is roughly twice that of the underlying blockcipher. The main motivation behind our work is to construct an AES-based key derivation function (KDF) that can be combined with GCM in order to improve its security bound, accommodate larger nonces that can be generated randomly without risking collisions, and make it a committing AEAD scheme. NIST has recently announced a pre-draft call for comments to standardise AEAD schemes that can encrypt larger amounts of data and admit larger nonces. The call lists two approaches. The first is to define an analogue of GCM using a 256-bit blockcipher, and the second is based on a recent proposal by Gueron, to extend GCM with a key derivation function (KDF) called $\\mathsf{DNDK}$ to increase its security. The latter has clear benefits in terms of backwards compatibility and is likely to be the preferred interim solution. Moreover, $\\mathsf{DNDK}$-$\\mathsf{GCM}$ is already deployed in production at Meta. $\\mathsf{DNDK}$ is essentially a BBB-secure expanding weak pseudorandom function with a domain size of 192 bits realised from AES. We here propose an alternative AES-based KDF called $\\mathsf{♯Pencil}$ with comparable efficiency but stronger provable security guarantees. Specifically, $\\mathsf{♯Pencil}$ is a full PRF, whereas $\\mathsf{DNDK}$ is only a weak PRF, which allows us to prove the $\\mathsf{♯Pencil}$-$\\mathsf{GCM}$ composition secure as an AEAD scheme. Our most technically challenging result is to show that $\\mathsf{♯Pencil}$ is committing, whereas $\\mathsf{DNDK}$ claims this property without proof. Finally, in contrast to $\\mathsf{DNDK}$ and other alternatives, $\\mathsf{♯Pencil}$ can be safely used with arbitrary (non-random) nonces and remains committing even when the nonce is not included as part of the ciphertext.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-02-28",
+    "pdf_url": "https://eprint.iacr.org/2025/383.pdf",
+    "url": "https://eprint.iacr.org/2025/383",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1179",
+    "title": "Permissionless Consensus from a Common Random String",
+    "authors": [
+      "Aggelos Kiayias"
+    ],
+    "abstract": "Permissionless consensus enables parties to perform Byzantine agreement without any a priori knowledge about who is participating, except for an upper bound on the number of participants running the protocol (no PKI, etc.). Since Nakamoto’s Bitcoin paper, it has been widely believed that permissionless consensus is feasible provided the (Byzantine) adversary only controls a fraction of the collective computational power. However, all known protocols, including Nakamoto’s, rely on idealized assumptions (or ad hoc instantiations).\n\nIs permissionless consensus possible without such assumptions? Surprising little progress had been made towards solving this open question until the recent result by Ball et al. (Crypto 2024), which showed how to achieve permissionless consensus from proofs of work (PoWs) based on fine-grained complexity assumptions in a setting where a randomness beacon is available to all parties running the protocol. Their work left open whether it is possible to remove the beacon assumption; this question is the focus of our work, which we resolve via a new consensus protocol construction that relies on a novel class of distributed samplers and a common random string (that does not need to be structured or sampled precisely at the onset of the protocol execution).\n\nTo prove our protocol secure, we revisit the concept of distributed samplers and adapt it to a setting where multiple sampler executions need to be simultaneously secure. To address this challenge we introduce the primitive we call d-wise independent distributed samplers and put forward constructions for such samplers based on DDH and LWE. We then present our consensus protocol via a modular design that utilizes a new moderately hard cryptographic primitive we call multi-verifier signatures of work, a sort of “time-based signature” we construct by composing distributed samplers and (fine-grained complexity-based) PoWs, and which may be of independent interest.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-05",
+    "pdf_url": "https://eprint.iacr.org/2026/1179.pdf",
+    "url": "https://eprint.iacr.org/2026/1179",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1158",
+    "title": "A Geometric Approach to Quantum Distinguishers",
+    "authors": [
+      "Zhenzhen Bao"
+    ],
+    "abstract": "This paper introduces a geometric framework for Q2 quantum distinguishers by combining the geometric approach to classical symmetric-key cryptanalysis with the generalized correlation extraction algorithm. Our main technical tool shows that one superposition query, followed by appropriate (unitary) change-of-basis operations, prepares a ``correlation state'' whose amplitudes are the entries of the geometric correlation matrix in the chosen basis. This yields a unified preparation-measurement template that recovers several known quantum distinguishers:  (1) hidden structure detection via support constraints in Fourier-type bases (e.g., Simon, Bernstein-Vazirani, Deutsch-Jozsa), and (2) event probability deviation tests via amplitude estimation (covering standard quantizations of linear and differential distinguishers). We analyze when relevant distinguishing mass is diluted across many basis states, identify it as a cause of poor query efficiency in several recent distinguishers, and provide basis-specific mechanisms to concentrate the signal (phase-oracle row restriction in the Fourier setting; chosen-plaintext subset-state restriction in the quasidifferential setting) to restore quadratic advantage. We illustrate the framework on Fourier and quasidifferential instantiations and discuss obstacles for non-unitary integral bases.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-03",
+    "pdf_url": "https://eprint.iacr.org/2026/1158.pdf",
+    "url": "https://eprint.iacr.org/2026/1158",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1213",
+    "title": "Another Look at Non-Frameability in Group Signatures for Anonymous Auctions",
+    "authors": [
+      "Keita Emura"
+    ],
+    "abstract": "In addition to anonymity and traceability, which are the primary security properties of group signatures, non‑frameability is also defined (Bellare-Shi-Zhang, CT-RSA 2005). This property guarantees that even an adversary colluding with all authorities (the opener and the issuer) cannot produce a signature that frames an honest user, and it is regarded as a security notion that protects users. In this short note, we introduce a new perspective on non-frameability, namely that it can also protect the authorities, and we examine its significance in the context of anonymous auctions, a well‑known application of group signatures. We show that non-frameability serves as an effective countermeasure against situations in which a winning bidder falsely claims not to have placed a bid and accuses the organizer of forgery.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-09",
+    "pdf_url": "https://eprint.iacr.org/2026/1213.pdf",
+    "url": "https://eprint.iacr.org/2026/1213",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1212",
+    "title": "SecLoRA: Secure Aggregation of Low-Rank Matrix Products via Functional Encryption",
+    "authors": [
+      "Junqing Gong"
+    ],
+    "abstract": "Federated fine-tuning of Large Language Models via Low Rank Adaptation (LoRA) faces a critical privacy-efficiency trade-off: low-rank factors can leak sensitive data, yet standard secure aggregation is restricted to linear operations. Existing solutions for aggregating matrix products (e.g., $\\mathbf{B}_i \\mathbf{A}_i$) either sacrifice exactness, depend on a trusted third party, or incur prohibitive costs at scale. We present SecLoRA, the first decentralized framework achieving exact aggregation of LoRA updates with linear communication complexity. The core of SecLoRA is a novel cryptographic primitive: Pairwise Composable Multi-Client Functional Encryption (PC-DMCFE). Unlike traditional functional encryption, which treats ciphertext recombination as an attack, the dual-encryption architecture of PC-DMCFE ($\\mathsf{Enc}_A, \\mathsf{Enc}_B$) is intentionally designed to harness this property. It allows any ciphertexts $\\mathsf{ct}_A$ and $\\mathsf{ct}_B$ to be arbitrarily paired and evaluated via a functional key to reveal their inner product. This unique property enables secure and decentralized aggregation of matrix products without losing LoRA's linear communication advantages. Furthermore, SecLoRA ensures round-isolated decryption to prevent temporal leakage without extra interaction. Evaluation shows that SecLoRA is practical for cross-silo deployments.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-09",
+    "pdf_url": "https://eprint.iacr.org/2026/1212.pdf",
+    "url": "https://eprint.iacr.org/2026/1212",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1210",
+    "title": "Uncloneable Cryptography in Linear Quantum Memory",
+    "authors": [
+      "Mark Zhandry"
+    ],
+    "abstract": "Quantum cryptography is a rapidly developing area which leverages quantum information to accomplish classically impossible tasks. In many of these protocols, quantum states are used as long-term cryptographic keys, relying on the quantum no-cloning theorem to ensure that the keys cannot be copied by an adversary. Unfortunately, quantum state tend to decohere, and hence, persistent quantum memory is and will remain one of the most valuable and challenging resources for quantum computers. As such, it will be important to minimize the extent to which our protocols use persistent quantum memory.\n\nIn this work, we consider the case of one-shot signatures (OSS), and more general quantum signing tokens, important uncloneable primitives where quantum signing keys allow for signing a single message but not two. Very recently, the first OSS scheme was constructed unconditionally in a classical oracle model as well as in the standard model under cryptographic assumptions (Shmueli and Zhandry, CRYPTO 2025). We observe that the quantum memory required for these protocols is a large polynomial (in the security parameter). \n\nThe main contribution of this work is to significantly decrease the quantum secret key size, in some cases achieving the asymptotically optimal size. One of our schemes guarantees perfect correctness and the other one admits a parallel signing algorithm for long messages.  We also achieve strong signature incompressibility, which implies a public-key quantum fire scheme (Çakan, Goyal and Shmueli, QCrypt 2025) with perfect correctness.\n\nDuring the course of this work, we develop novel techniques for proving the security of cryptosystems using coset states, one of the main tools used in uncloneable cryptography.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-08",
+    "pdf_url": "https://eprint.iacr.org/2026/1210.pdf",
+    "url": "https://eprint.iacr.org/2026/1210",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "token",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3701041",
+    "title": "MISC: Flexible Data Management for Private Smart Contract",
+    "authors": [
+      "Yuxian Li",
+      "Xiaoguo Li",
+      "Guomin Yang",
+      "Haoxin Tu",
+      "Jianfei Sun",
+      "Robert H. Deng"
+    ],
+    "abstract": "Private Smart Contracts (PSCs) aim to settle the privacy protection issue for sensitive data on the blockchain (a.k.a., on-chain data) while inheriting the computation functionality of general smart contracts. However, most of the existing PSCs focus on secure computation and ignore the secure and flexible management of on-chain data, making it difficult to support flexible user permission modes efficiently. Further, although a few on-chain data management schemes have been proposed to manage data on the blockchain, they provide insufficient support for scenarios where data must be managed concurrently by managers with different privilege levels. This paper proposesMISC, a novel solution that features efficient and flexible data management capabilities for managing on-chain data in private smart contracts.MISCleverages a novel Double Trapdoor Homomorphic Proxy Re-encryption (DT-HPRE) scheme and Trusted Execution Environments (TEEs) to ensure (1) low-overhead, flexible permission control over on-chain data and (2) a harmonious mechanism for both privileged and constrained managers. We prove the security ofMISCunder the Universal Composability (UC) framework to demonstrate its data confidentiality guarantees, user revocation, and computation integrity. Further, we implementMISC, and the performance evaluation shows that on-chain data access for one hundred data points is practically achieved in 5.8 s (under privileged managers) and 9.7 s (under constrained managers) using its off-chain design.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tdsc.2026.3701041",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "privacy",
+      "TEE",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/tdsc.2026.3701837",
+    "title": "Private Metadata-Driven Retrieval-Augmented Reconstruction for Missing Modalities in Multimodal Federated Learning",
+    "authors": [
+      "Xiaokai Zhou",
+      "Jiayi Wang",
+      "Haoyu Zheng",
+      "Yuxiang Wang",
+      "Tieyun Qian",
+      "Hao Wang",
+      "Xiao Yan",
+      "Jiawei Jiang"
+    ],
+    "abstract": "Multimodal federated learning (MFL) enables clients with distributed multimodal data to collaboratively train models while preserving privacy, and has been widely used in multi-domain IoT and blockchain-enabled applications where clients collect heterogeneous data such as images, text, and sensor signals. A key challenge is missing modalities, i.e., only some samples have all modalities (i.e., aligned) while many samples lack one or more modalities. Existing reconstruction-based methods usually rely on scarce aligned samples or dispersed global semantic cues, but data heterogeneity and privacy constraints make such global cues difficult to retrieve and exploit effectively. We proposePRAR, which decouples learning into metadata prototype retrieval and prototype-augmented reconstruction. For retrieval, each client summarizes local missing-modality embeddings into compact metadata prototypes and perturbs them via the Gaussian mechanism. The noisy prototypes form a differentially private global metadata prototype pool, whose metadata records support access control and semantic top-$K$retrieval. For reconstruction, we train a prototype-augmented reconstructor that combines aligned supervision with retrieved metadata prototypes through a residual structure. We provide privacy and utility guarantees for retrieval, and show that the residual design minimizes the mean squared error (MSE) for missing-modality reconstruction. Experiments on four multimodal datasets against five strong baselines show thatPRARimproves cross-modal retrieval and multimodal classification by an average of 4.77% and 6.07% over the strongest baseline.",
+    "venue": "IEEE TDSC",
+    "year": 2026,
+    "date_published": "2026-01-01",
+    "pdf_url": null,
+    "url": "https://doi.org/10.1109/tdsc.2026.3701837",
+    "citation_count": 0,
+    "relevance_tags": [
+      "privacy",
+      "TEE",
+      "measurement",
+      "access-control"
+    ],
     "analyzed": false
   }
 ]
