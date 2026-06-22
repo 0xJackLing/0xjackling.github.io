@@ -32055,5 +32055,454 @@
       "access-control"
     ],
     "analyzed": false
+  },
+  {
+    "id": "arxiv:2606.20315",
+    "title": "bioETH-Beacon: A Confidential On-Chain Genomic Beacon with Encrypted Counts, Filters, and Bounded Noise over a Fully Homomorphic EVM",
+    "authors": [
+      "Christos Galanopoulos",
+      "Kimon Antonios Provatas",
+      "Ilias Georgakopoulos-Soares"
+    ],
+    "abstract": "The Global Alliance for Genomics and Health (GA4GH) Beacon protocol lets researchers ask whether a genomic variant has been observed in a participating cohort and receive aggregate variant-level counts. As Beacon networks grow, two privacy risks remain: host institutions can see plaintext queries, and repeated rare-variant queries can support membership-inference attacks. We present bioETH-Beacon, a smart-contract prototype that runs the Beacon \"aggregate count\" query over encrypted data on a fully homomorphic Ethereum Virtual Machine (fhEVM). Hospitals upload encrypted marker-count entries, authorized researchers submit encrypted marker queries, and the contract returns an encrypted answer that is released, via an off-chain key-management service, only to the requester named in the contract's on-chain ACL. The design is organized as a 3x4 tier-by-query-family grid spanning genotype, sex, age, and phenotype queries, with tiers that trade stronger confidentiality for lower query cost. For genotype paths, the prototype can add bounded on-chain noise to mitigate probing attacks. Experiments on synthetic panels derived from a Polygenic Score (PGS) catalog show the expected scaling behavior and demonstrate that pre-aggregation can substantially reduce query gas when public marker presence is an acceptable trade-off. Overall, bioETH-Beacon provides a research prototype for confidential Beacon-style genomic querying without a trusted compute evaluator.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-06-18",
+    "pdf_url": "https://arxiv.org/pdf/2606.20315v1",
+    "url": "https://arxiv.org/abs/2606.20315",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "MEV",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2606.18220",
+    "title": "Gatling: Rapid-Fire Consensus from Parallel Composition",
+    "authors": [
+      "Giulia Scaffino",
+      "Max Resnick",
+      "Joachim Neu"
+    ],
+    "abstract": "Consensus protocols form the core of blockchains and other replicated state machines, ensuring that all correct nodes process the same totally ordered log of input transactions. In fault-free executions, performance is driven by the good-case transaction latency -- the time between a transaction becoming known to all nodes and its confirmation by the consensus protocol -- which depends on both how frequently proposals are made and, once made, how quickly they are confirmed. While prior work has established tight lower bounds on confirmation latency that modern protocols already achieve, it remains open whether the inter-proposal time can be further reduced below the state-of-the-art of one network delay.\n  We introduce Gatling, an atomic broadcast protocol that achieves arbitrarily small inter-proposal times under rotating leader schedules; in particular, smaller than the network delay. Gatling runs multiple parallel instances of a black-box atomic broadcast protocol and staggers their proposal schedules to generate proposals in faster succession than state-of-the-art protocols. A deterministic interleaving rule merges the outputs of these instances into a single global log. We analyze the effects of head-of-line blocking caused by crashed leaders, and derive Gatling's optimal number of parallel instances. We further study the impact of Gatling on predictable validity and present two variants that retain this property. Finally, our experiments confirm that Gatling can be used with off-the-shelf component protocols to achieve low latency without fine-tuning the component protocol for minimum latency.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-16",
+    "pdf_url": "https://arxiv.org/pdf/2606.18220v1",
+    "url": "https://arxiv.org/abs/2606.18220",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2606.16852",
+    "title": "The Ghosts of Polymarket: When Off-Chain Matches Meet On-Chain Reverts",
+    "authors": [
+      "Yiming Shen",
+      "Yuhan Jin",
+      "Shuohan Wu",
+      "Yanlin Wang",
+      "Jiachi Chen"
+    ],
+    "abstract": "Polymarket has emerged as a prominent prediction market platform and one of the fastest-growing applications in DeFi. To achieve low-latency trading, it adopts a hybrid architecture that matches orders off-chain but settles them on-chain for final execution. This design creates a consistency gap we call Ghost Fills: an order that is successfully matched off-chain may later fail during on-chain settlement. To understand the security implications of this gap, we investigate such failed settlements by building GHOSTHUNTER, which reconstructs them from on-chain traces and attributes to concrete attack patterns. Across 1,952,440 reverted match-order transactions, we find that attackers exploit the time gap between matching and settlement to invalidate already matched orders before they are finalized on-chain. We then identify four attack vectors from these incidents: nonce bump, balance drain, allowance revoke, and proxy trap, realized via 35 evolving variants. These vectors allow attackers to selectively revert 980,133 filled orders, enabling risk-free prediction, arbitrage-bot hunting, and liquidity reward manipulation, realizing at least \\$1.49M in profit, which places \\$1.78 B USD at risk and 2.17 M POL (about \\$212 K) paid by operator. During peak hours, more than 24.3% of all filled orders reverted, causing de facto DoS attacks. We also find that code derived from the flawed contract still appears in 167 independent contracts across 10 chains holding at least \\$23 M in user funds, extending the impact beyond Polymarket. We have disclosed our evidence to affected parties, and the issue has been partially mitigated.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-06-15",
+    "pdf_url": "https://arxiv.org/pdf/2606.16852v1",
+    "url": "https://arxiv.org/abs/2606.16852",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2606.16740",
+    "title": "Robust and Automated Reconfiguration of Byzantine Wide-Area Replication",
+    "authors": [
+      "Rowdy Chotkan",
+      "Bulat Nasrulin",
+      "Johan Pouwelse",
+      "Jérémie Decouchant"
+    ],
+    "abstract": "Distributed systems handle adversarial nodes through redundancy, which imposes a significant performance overhead. In blockchain systems, Byzantine fault-tolerant state-machine replication (BFT-SMR) is the replicated service that totally orders client transactions before execution. While prior research has primarily focused on designing novel consensus algorithms with improved performance, recent studies have shown that further gains can be achieved through configuration optimization. More precisely, replicas can monitor network latency to dynamically assign the leader role and tune voting weights, thereby improving consensus performance. However, we identify three vulnerabilities in this process that Byzantine nodes can exploit. To address these weaknesses, we propose Beware, a reconfiguration framework that filters out falsified latency reports, computes robust weight distributions, and applies machine learning to converge towards Byzantine-resilient configurations. Our evaluation shows that Beware reduces consensus latency by up to 45% compared to existing solutions.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-06-15",
+    "pdf_url": "https://arxiv.org/pdf/2606.16740v1",
+    "url": "https://arxiv.org/abs/2606.16740",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "DAO"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2606.17111",
+    "title": "Fractional Verkle Trees: A Hypertree Decomposition and Verified Proof Serialization Architecture for High-Performance Blockchain State Accumulators",
+    "authors": [
+      "Ekleen Kaur",
+      "Everton Fraga"
+    ],
+    "abstract": "Modern blockchain state management faces a critical scalability bottleneck: maintaining cryptographic commitments over hundreds of millions of entries becomes computationally prohibitive. Ethereum's transition to Verkle Trees: polynomial commitment accumulators reducing proof sizes from O(width * depth) to O(depth) via constant-size IPA vector commitments, is a critical step toward stateless operation. Yet, current implementations exhibit pathological characteristics that burden home validators.\n  We identify four inefficiencies in the reference go-verkle implementation \\cite{kaur2025goverkle, kaur2025goethereum}: (1) phantom node creation during non-existent account deletion; (2) 64-byte database keys triggering excessive LSM-tree compaction; (3) redundant memory copying in proof deserialization; (4) a Proof of Absence wire format incompatibility causing non-deterministic serialization.\n  We present Fractional Verkle Trees (FVT), a hypertree decomposition partitioning global state into N independent sub-accumulators coordinated by a Merkle commitment tree, achieving improved cache locality, zero-lock-contention goroutine-parallel commitment computation, and faster root recomputation (91 $μ$s vs $\\sim$500 ms). We address each inefficiency via existence checks, 32-byte SHA256 node references, zero-copy reference-counted buffers, and HashMap-based lexicographic deduplication.\n  Benchmarks on Apple M1 Pro show 57\\% heap allocation reduction (566,760 to 242,004 bytes per 10K proofs), parallel insertion at 2,433 ns/op, and network-wide elimination of 4.85 PB/year across 6,000 full nodes, advancing the Ethereum stateless roadmap.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-06-15",
+    "pdf_url": "https://arxiv.org/pdf/2606.17111v1",
+    "url": "https://arxiv.org/abs/2606.17111",
+    "citation_count": null,
+    "relevance_tags": [],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2606.16223",
+    "title": "did:crdt: Coordination-Free Decentralised Identifiers via Signed CRDTs",
+    "authors": [
+      "Hugo O'Connor",
+      "Claire Barnes"
+    ],
+    "abstract": "Existing Decentralised Identifier (DID) methods require coordination, an agreed global order of operations, to update a DID document: blockchain-anchored methods incur fees and latency; lightweight peer methods (did:key, did:peer) offer no update mechanism; and Sidetree methods still require blockchain ordering for finality. We present did:crdt, a DID method that targets W3C DID Core and removes the need for coordination entirely: there is no ledger, no sequencer, and no global total order. Each DID document is composed of signed Conflict-Free Replicated Data Types (CRDTs), one per document field, each chosen so that concurrent edits merge deterministically. By the CALM Theorem, the state-merge path is then confluent: replicas that see the same updates reach the same document in any arrival order. The signed-delta path needs only causal delivery, applying an update after those it builds on, which is far weaker than the total ordering ledgers impose and needs no agreement protocol. We are explicit about scope: every untrusted-peer path is authenticated, so Byzantine fault tolerance (safety even when peers lie or send malformed data) holds for signed deltas and verified-bundle replay, while the unauthenticated state-merge path is a trusted-domain optimisation and key-compromise recovery is bounded by revocation semantics. We give the data and threat model, CRUD semantics, conflict resolution, and a Rust reference implementation with property-based convergence tests and microsecond-scale merge latency.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-06-15",
+    "pdf_url": "https://arxiv.org/pdf/2606.16223v1",
+    "url": "https://arxiv.org/abs/2606.16223",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2606.15465",
+    "title": "The Audit Gap in Blockchain Security: A Four-Year Empirical Study of Public Audit Findings and Real-World Exploit Incidents",
+    "authors": [
+      "Stefan Beyer"
+    ],
+    "abstract": "This paper presents an empirical analysis of the Web3 security landscape over the four-year and three-month period from 1 January 2022 to 27 March 2026. The dataset combines 23,818 public audit findings produced by 22 independent security firms with 218 real-world exploit incidents documented by rekt.news, representing aggregate losses of approximately US$7.76 billion. We report three central findings. First, the distribution of audit findings (by severity, category, and technology stack) is substantially stable across the observation window, with the Critical-plus-High share remaining within a 15-17% band in every complete year. Second, the categorical distribution of realised exploit losses does not correspond to the categorical distribution of audit findings: private-key compromise, phishing, and social-engineering vectors account for approximately 49.6% of cumulative losses yet represent a negligible share of published audit findings. Third, realised losses exhibit extreme concentration: the eight largest incidents account for 50.6% of cumulative dollar losses and the twenty largest for 71.4%, a distributional shape inconsistent with Gaussian assumptions. Throughout, we adopt the analytical convention that audit outputs and exploit outputs describe different populations and present the two datasets in parallel rather than as directly comparable samples.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-06-13",
+    "pdf_url": "https://arxiv.org/pdf/2606.15465v1",
+    "url": "https://arxiv.org/abs/2606.15465",
+    "citation_count": null,
+    "relevance_tags": [
+      "eCrime",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/508",
+    "title": "Towards Building Scalable Constant-Round MPC from Minimal Assumptions via Round Collapsing",
+    "authors": [
+      "Yifan Song"
+    ],
+    "abstract": "In this work, we study the communication complexity of constant-round secure multiparty computation (MPC) against a fully malicious adversary and consider both the honest majority setting and the dishonest majority setting. In the (strong) honest majority setting (where $t=(1/2-\\epsilon)n$ for a constant $\\epsilon$), the best-known result without relying on FHE is given by Beck et al. (CCS 2023) based on the LPN assumption that achieves $O(|C|\\kappa)$ communication, where $\\kappa$ is the security parameter and the achieved communication complexity is independent of the number of participants. \n    In the dishonest majority setting, the best-known result is achieved by Goyal et al. (ASIACRYPT 2024), which requires $O(|C|n\\kappa)$ bits of communication and is based on the DDH and LPN assumptions.\n\n    In this work, we achieve the following results: (1) For any constant $\\epsilon<1$, we give the first constant-round MPC in the dishonest majority setting for corruption threshold $t<(1-\\epsilon)n$ with $O(|C|\\kappa+D (n+\\kappa)^2\\kappa+n^3)$ communication assuming random oracles and oblivious transfers, where $D$ is the circuit depth. (2) We give the first constant-round MPC in the standard honest majority setting (where $t=(n-1)/2$) with $O(|C|\\kappa+D (n+\\kappa)^2\\kappa+n^3)$ communication only assuming random oracles. \n\n    Unlike most of the previous constructions of constant-round MPCs that are based on multiparty garbling, we achieve our result by letting each party garble his local computation in a non-constant-round MPC that meets certain requirements. We first design a constant-round MPC that achieves $O(|C|\\kappa + Dn^2\\kappa)$ communication assuming random oracles in the strong honest majority setting of $t=n/4$. Then, we combine the party virtualization technique and the idea of MPC-in-the-head to boost the corruption threshold to $t<(1-\\epsilon)n$ for any constant $\\epsilon<1$ assuming oblivious transfers to achieve our first result. Finally, our second result is obtained by instantiating oblivious transfers using a general honest-majority MPC and the OT extension technique built on random oracles.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-03-18",
+    "pdf_url": "https://eprint.iacr.org/2025/508.pdf",
+    "url": "https://eprint.iacr.org/2025/508",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1259",
+    "title": "Collaborative Rate Limiting Nullifier Signaling",
+    "authors": [
+      "Oğuz Yayla"
+    ],
+    "abstract": "Rate Limiting Nullifier (RLN) is a privacy-preserving and decentralized spam-prevention mechanism for anonymous broadcast networks: each member can emit at most $r$ signals per epoch, and any violation reveals a secret that enables the member's stake to be slashed. The standard construction binds each membership to a single secret key $\\mathsf{sk}_G$, so the unit of identity, the unit of authorization, and the unit of slashing all coincide with one party. This rules out settings in which a group should speak with one voice, share one rate budget, and stand behind one collective bond without any single member being able to act unilaterally.\nWe introduce Collaborative RLN Signaling (coRLN), a protocol that lets $n$ parties register as a single RLN member and signal only by acting jointly. The group secret $\\mathsf{sk}_G$ is held as additive shares under SPDZ and never reconstructed; the identity (or rate) commitment, the per-epoch RLN evaluation, and the broadcast proof are produced inside an MPC network using collaborative zk-SNARKs. The group occupies one leaf in the membership Merkle tree, locks one aggregated stake $\\mathsf{stake}_G$, and is bound by one rate limit. We present the construction in both the rate-limit-1 and the general $r \\geq 1$ settings, and we extend the protocol with a collaborative withdrawal procedure that lets the group exit without ever reconstructing $\\mathsf{sk}_G$.\nWe prove three security properties of coRLN by reduction to the collaborative-SNARK composition and the standard primitives underneath: (i) no PPT adversary corrupting up to $n-1$ parties recovers $\\mathsf{sk}_G$ as long as one party is honest; (ii) two signals in the same epoch with the same $\\mathsf{messageId}$ yield an efficient extractor that recovers $\\mathsf{sk}_G$ and triggers forfeiture of $\\mathsf{stake}_G$; and (iii) no strict subset of $G$ can produce a verifying signal. The verifier interface and signal shape match classical RLN at the byte level, so coRLN deploys on existing RLN-aware infrastructure with only the verification key updated.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-15",
+    "pdf_url": "https://eprint.iacr.org/2026/1259.pdf",
+    "url": "https://eprint.iacr.org/2026/1259",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP",
+      "privacy",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1269",
+    "title": "Linear Prover IOPs in Log Star Rounds",
+    "authors": [
+      "Ron D. Rothblum"
+    ],
+    "abstract": "Interactive Oracle Proofs (IOPs) form the backbone of some of the most efficient general-purpose cryptographic proof-systems. In an IOP, the prover can interact with the verifier over multiple rounds, where in each round the prover sends a long message, from which the verifier only queries a few symbols. \n\nState-of-the-art IOPs achieve a linear-size prover and a poly-logarithmic verifier but require a relatively large, logarithmic, number of rounds. While the Fiat-Shamir heuristic can be used to eliminate the need for actual interaction, in modern highly-parallelizable computer architectures such as GPUs, the large number of rounds still translates into a major bottleneck for the prover, since it needs to alternate between computing the IOP messages and the Fiat-Shamir hashes. Motivated by this fact, in this work we study the round complexity of linear-prover IOPs. \n\nOur main result is an IOP for a large class of Boolean circuits, with only $O(\\log^*(S))$ rounds, where $\\log^*$ denotes the iterated logarithm function (and $S$ is the circuit size). The prover has linear size $O(S)$ and the verifier runs in time $\\mathrm{polylog}(S)$ and has query complexity $O(\\log^*(S))$. The protocol is both conceptually simpler, and strictly more efficient, than prior linear prover IOPs for Boolean circuits.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-07-10",
+    "pdf_url": "https://eprint.iacr.org/2025/1269.pdf",
+    "url": "https://eprint.iacr.org/2025/1269",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/006",
+    "title": "Nearly Quadratic Asynchronous Distributed Key Generation from Recursive Consensus",
+    "authors": [
+      "Gilad Stern"
+    ],
+    "abstract": "Distributed key generation (DKG) is a Byzantine fault tolerant protocol among a set of $n$ parties that enables generation of a public-secret key pair for threshold cryptosystems without a trusted third party. It serves as a building block for many decentralized protocols, such as randomness beacons, threshold encryption and signing, consensus, and general multi-party computation. Of particular importance are asynchronous DKG protocols with low communication and round complexity. However, all existing constructions for asynchronous DKG require cubic or higher communication costs in the number of parties (including setup costs) to terminate. This severely limits their practicality, especially in large-scale systems such as the internet or blockchains, where communication and round complexity are the main bottlenecks to efficiency.  \n        In this paper, we present the first asynchronous DKG protocol that overcomes this limitation. Our protocol has the following desirable properties. It is resilient to a strongly adaptive adversary that can corrupt up to $f < n/3$ parties. Parameterized by a natural number $1 \\leq k \\leq \\log{n}$, it has an expected communication cost of $O(\\lambda^2 n^{2+1/k})$ bits and terminates in expected $O(k)$ rounds, where $\\lambda$ denotes the security parameter. Furthermore, for setup, it requires a plain public key infrastructure (PKI) and random oracles, which is standard in the literature on DKG protocols. From a conceptual perspective, our main contribution is to adapt the classical recursive paradigm (for distributed protocols) from the synchronous to the asynchronous model and to apply it to asynchronous DKG.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-01-01",
+    "pdf_url": "https://eprint.iacr.org/2025/006.pdf",
+    "url": "https://eprint.iacr.org/2025/006",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/753",
+    "title": "Linear-Time Accumulation Schemes",
+    "authors": [
+      "William Wang"
+    ],
+    "abstract": "Proof-carrying data (PCD) is a powerful cryptographic primitive for computational integrity in a distributed setting. State-of-the-art constructions of PCD are based on accumulation schemes (and, closely related, folding schemes).\n\nWe present WARP, the first accumulation scheme with linear prover time and logarithmic verifier time. Our scheme is hash-based (secure in the random oracle model), plausibly post-quantum secure, and supports unbounded accumulation depth.\n\nWe achieve our result by constructing an interactive oracle reduction of proximity that works with any linear code over a sufficiently large field. We take a novel approach by constructing a straightline extractor that relies on erasure correction, rather than error-tolerant decoding like prior extractors. Along the way, we introduce a variant of straightline round-by-round knowledge soundness that is compatible with our extraction strategy.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-04-27",
+    "pdf_url": "https://eprint.iacr.org/2025/753.pdf",
+    "url": "https://eprint.iacr.org/2025/753",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1278",
+    "title": "Barriers for Transparent Algebraic Generation of Hard Supersingular Curves",
+    "authors": [
+      "Anis Bkakria"
+    ],
+    "abstract": "We study transparent public generation of hard supersingular curves: a public, seeded, rerunnable algorithm outputs a supersingular curve while exposing the seed, verification transcript, and all algebraic information reconstructible from the implementation.  This setting is distinct from trusted or distributed ceremonies, where a witness may be hidden, erased, or zero-knowledge protected.  We define a transcript-security model for this setting and develop barriers for several modeled algebraic generation routes.  For modular-conjugacy samplers, we analyze loci of supersingular invariants admitting an isogeny to their Frobenius conjugate; small public parameters give efficiently recognizable sparse support, while extractable high-parameter witnesses yield non-scalar endomorphisms by Frobenius composition.  We extend this leakage principle to bounded correspondence witnesses, including kernel, rational-map, Hecke--Brandt, and elliptic-return detour traces.  For direct samplers, we separate predicate-only search, local-neighbor exploration, bounded-relation witnesses, low-formal-degree ambient algebraic maps, and degree-one indexed maps from \\(\\F_p\\) to \\(\\F_{p^2}\\).  The resulting theorems are deliberately model-bounded: they do not rule out hidden-witness ceremonies, higher-degree indexed maps, compact high-degree root indexing, endpoint-only mechanisms, or nonlocal aggregate sampling.  Full proofs are deferred to the appendices.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-17",
+    "pdf_url": "https://eprint.iacr.org/2026/1278.pdf",
+    "url": "https://eprint.iacr.org/2026/1278",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/309",
+    "title": "A Unified Treatment of Anamorphic Encryption",
+    "authors": [
+      "Vassilis Zikas"
+    ],
+    "abstract": "(Receiver) anamorphic encryption, introduced by Persiano et al. [Eurocrypt'22], allows for hiding a covert message $\\hat{m}$ (dubbed the anamorphic message) within a public-key ciphertext encrypting another message $m$ so that: (1) a \"dictator\" adversary with access to the associated secret key cannot detect that such an $\\hat{m}$ has been hidden, let alone learn information about it, and (2) knowledge of an additional key (called the double key), which is kept hidden from the dictator, allows to fully recover $\\hat{m}$. Anamorphic encryption schemes are typically constructed by mixing symmetric-key and public-key encryption in a clever way, and existing instantiations achieve a variety of novel security guarantees. This has resulted in a disparate landscape of security notions for anamorphic encryption with no systematization and fragmented knowledge about the relationships between them. \n\nWe put forth a systematic study of anamorphic encryption and summarize our findings as follows. We begin by developing a template for defining indistinguishability-based security for anamorphic encryption. From this, we systematically obtain several new but meaningful definitions for anamorphic encryption. We contextualize all existing and new security notions by proving implications and separations between them. Our methodology also covers asymmetric anamorphic encryption---where the anamorphic message $\\hat{m}$ is hidden using public-key techniques---and uncovers a security setting not previously considered: when the dictator and the anamorphic sender collude. Finally, we apply our treatment to capture chosen-ciphertext attacks, which were recently introduced to anamorphic cryptography by Jaeger and Stracovsky [Asiacrypt'24], and propose the first construction of anamorphic encryption that achieves all desirable security properties in this setting.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-02-20",
+    "pdf_url": "https://eprint.iacr.org/2025/309.pdf",
+    "url": "https://eprint.iacr.org/2025/309",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1886",
+    "title": "Blind Signatures from Arguments of Inequality",
+    "authors": [
+      "Michael Reichle"
+    ],
+    "abstract": "Abstract. Blind signatures are an important tool for privacy-preserving applications with a long history dating back to Chaum’s seminal work in Crypto’82. In this work, we present the first pairing-free blind signature in the random oracle model that is concurrently-secure under the discrete logarithm assumption (without the algebraic group model).\nOn a technical level, our work extends the recent proofs of inequality technique (Klooß and Reichle, Crypto’25) to arguments of inequality. The original technique relies on puncturing the verification key to make forgeries statistically impossible. We show how computational puncturing can be used, which opens the possibilities of applying the technique under weaker assumptions, at the cost of requiring a rewinding-based security reduction. In particular, this demonstrates that (notoriously difficult) rewinding-based techniques are still a viable path to Fiat–Shamir-based blind signatures.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-09",
+    "pdf_url": "https://eprint.iacr.org/2025/1886.pdf",
+    "url": "https://eprint.iacr.org/2025/1886",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1275",
+    "title": "The Indifferentiability of the Duplex and its Practical Applications",
+    "authors": [
+      "Jérôme Govinden"
+    ],
+    "abstract": "The Duplex construction, introduced by Bertoni et al. (SAC 2011), is the Swiss Army knife of permutation-based cryptography. It can be used to realise a variety of cryptographic objects—ranging from hash functions and MACs, to authenticated encryption and symmetric ratchets. Testament to this is the STROBE protocol framework which is a software cryptographic library based solely on the Duplex combined with a rich set of function calls. While prior works have typically focused their attention on specific uses of the Duplex, our focus here is its indifferentiability. More specifically, we consider the indifferentiability of the Duplex construction from an online random oracle—an idealisation which shares its same interface. As one of our main results we establish the indifferentiability of the Duplex from an online random oracle. However indifferentiability only holds for the standard Duplex construction and we show that the full-state variant of the Duplex cannot meet this notion. Our indifferentiability theorem provides the theoretical justification for the security of the Duplex in a variety of scenarios, amongst others, its use as a general-purpose cryptographic primitive in the STROBE framework. Next we move our attention to AEAD schemes based on the Duplex, namely SpongeWrap, which is the basis for NIST's Lightweight Cryptography standard Ascon. We harness the power of indifferentiability by establishing that SpongeWrap offers security against key-dependent message inputs, related-key attacks, and is also committing.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-17",
+    "pdf_url": "https://eprint.iacr.org/2026/1275.pdf",
+    "url": "https://eprint.iacr.org/2026/1275",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1271",
+    "title": "Boosting Efficiency and Security in Arithmetization-Oriented Hashing for Zero-Knowledge Proof Systems",
+    "authors": [
+      "Arnab Roy"
+    ],
+    "abstract": "Cryptographic compression functions are a core component of vector commitment schemes, including Merkle tree commitments, which are widely used in modern ZK-SNARK and STARK frameworks. Arithmetization-Oriented (AO) compression functions minimize multiplicative complexity over the framework's native field F_p, making them significantly more efficient than bit-oriented designs in algebraic circuits. To date, AO compression functions have been almost exclusively constructed by applying the Sponge mode to an AO permutation.\n\nIn this work, we introduce two novel approaches for building permutation-based AO compression modes: the PA family, based on a Permutation with feedforward Addition, and PAX, as an eXtension of the PA family. We formally establish that, in contrast to the Sponge construction, our modes achieve optimal collision and preimage resistance. We also prove that PAX is indifferentiable from a random oracle, further strengthening its security and composability guarantees. We further show that variable-input-length hash functions can be safely instantiated from the PA(X) modes by applying appropriate domain extenders.\n\nBeyond their strong security guarantees, our modes provide a framework that unifies and extends the description of several recently proposed modes that have been studied via cryptanalysis but do not come with provable security guarantees, including Jive and Trunc, as used in the AO designs Anemoi and Poseidon2.\n\nFinally, through extensive experimental evaluation, we compare the concrete efficiency improvement that our modes offer compared to the Sponge approach over two popular AO permutation designs, Poseidon permutation and Rescue. For 128 bits of collision resistance, our modes can achieve up to a 2x speed-up over Sponge for equivalent compression rates in a software implementation. When considering R1CS arithmetization in the Groth16 framework, the PA(X) preimage-verification circuit can be 10% faster than Sponge. In the Plonky2 framework, PA(X) can achieve up to a 60% speed-up",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-17",
+    "pdf_url": "https://eprint.iacr.org/2026/1271.pdf",
+    "url": "https://eprint.iacr.org/2026/1271",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "ZKP",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1253",
+    "title": "GumSwap: Griefing-Free Universal Multi-Party Atomic Swaps",
+    "authors": [
+      "Jiangshan Yu"
+    ],
+    "abstract": "Universal multi-party swaps were proposed for secure cross-chain cryptocurrency exchanges across multiple blockchains that require only signature verification from the underlying blockchains. However, existing universal swap protocols remain vulnerable to griefing attacks, where a deviating party aborts the swap to lock a compliant party’s assets for a long period, potentially causing indirect economic losses. A natural approach is to lift existing griefing-free solutions to the universal setting; however, we observe that this direct approach still faces three key challenges: (i) a timeout race attack, which arises from the absence of an upper bound on the transaction validity; (ii) a premium escape attack, which results from multiple refund transactions for the same assets being simultaneously valid; and (iii) a topological limitation, which implies that universal multi-party swaps can support only a special class of strongly connected digraphs, called reuniclus graphs.\n\nIn this paper, we propose GumSwap, a Griefing-free universal multi-party atomic Swap, which guarantees that a compliant party receives a premium if its asset is locked but not redeemed. To mitigate the timeout race attack and the premium escape attack, we impose minimum timeout intervals for the principal and premium timeouts, respectively, and introduce an asset migration mechanism that ensures that, during any time interval, at most one refund transaction is valid.  Given the topological limitations of universal swap protocols, we further design a novel premium distribution mechanism that accommodates two classes of leaders in reuniclus graphs. Our experimental results demonstrate that GumSwap can be performed in less than 0.5 seconds per party, while reducing gas costs by 10.3X compared with existing contract-based solutions.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-14",
+    "pdf_url": "https://eprint.iacr.org/2026/1253.pdf",
+    "url": "https://eprint.iacr.org/2026/1253",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1268",
+    "title": "Decentralized Multi-Authority (Attribute-Based) Traitor Tracing",
+    "authors": [
+      "Erkan Tairi"
+    ],
+    "abstract": "We initiate the study of multi-authority traitor tracing (MA-TT), a decentralized variant of traitor tracing in which tracing capabilities are distributed across multiple independent authorities rather than concentrated in a single trusted entity. Ciphertexts are associated with tracing policies over a collection of authorities, specifying which subsets of authorities are authorized to jointly accuse a user of contributing to a pirate decoder. This enables fine-grained control over tracing capabilities, prevents unilateral accusations, and reduces the surveillance risks inherent in centralized tracing systems. Our scheme naturally supports conjunction, disjunction, threshold, and more general monotone tracing policies.\n\nWe further introduce multi-authority attribute-based traitor tracing (MA-AB-TT), which combines distributed tracing in MA-TT with decentralized access control from multi-authority attribute-based encryption (MA-ABE). Ciphertexts are therefore equipped with two orthogonal policies: an attribute policy governing decryption and a tracing policy governing which tracing authorities may jointly identify traitors.\n\nOur main contribution is a construction of MA-AB-TT for arbitrary monotone access structures from the standard matrix decisional Diffie-Hellman (MDDH) assumption in prime-order pairing groups. Our construction achieves adaptive security under static corruption of authorities in the random oracle model. All system parameters are independent of the number of authorities and users in the system, while ciphertexts grow linearly with the size of the associated policies. Our framework also yields a publicly traceable variant, in which tracing can be performed using only the authorities' public keys, albeit with weaker asymptotic efficiency guarantees.\n\nTechnically, we extend the blueprint for pairing-based traitor tracing based on private linear broadcast encryption (PLBE) [Boneh et al., Eurocrypt 2006] to the multi-authority setting. The key technical ingredient is a new multi-authority PLBE construction, which we instantiate from slotted inner-product function encryption (sIPFE) [Lin and Luo, Eurocrypt 2020]. As an intermediate step, we provide a new attribute-based sIPFE scheme supporting arithmetic branching programs, which may be of independent interest.\n\nOur techniques also yield a new modular construction of adaptively secure MA-ABE under static corruptions from sIPFE, improving on a prior construction by Ambrona and Gay [PKC 2023]. Finally, when specialized to a single authority, our framework gives the first ciphertext-policy attribute-based traitor tracing scheme with asymptotically optimal parameters and exponentially large user spaces.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-16",
+    "pdf_url": "https://eprint.iacr.org/2026/1268.pdf",
+    "url": "https://eprint.iacr.org/2026/1268",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "TEE",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1261",
+    "title": "RondoMPC: Asynchronous MPC with G.O.D. made More Practical",
+    "authors": [
+      "Aggelos Kiayias"
+    ],
+    "abstract": "Asynchronous multi-party computation (AMPC) en-\nables a set of mutually distrustful parties to securely compute\nany joint function on their private inputs under arbitrary\nnetwork delays. The guaranteed output delivery (i.e., G.O.D.)\nproperty is essential for availability, but can be very challenging\nto achieve in practice. HoneyBadgerMPC (CCS 2019), the\nfirst practical AMPC protocol, follows Beaver’s paradigm that\ngenerates Beaver triples offline to simplify online computation.\nOne of the underlying building blocks, the random double\nsharing protocol that generates random double shares, how-\never, implicitly assumes a synchronous network. DumboMPC\n(Usenix Sec 2025) overcomes the issue by adopting a two-phase\nworkflow where the underlying consensus protocol has to be\nexecuted twice, and thus incurs high latency. Velox (CCS 2025)\nachieves lower latency and weaker cryptographic assumptions\nat the cost of sacrificing G.O.D. It remains an open question\nwhether there exists a more practical AMPC protocol with the\nG.O.D. property.\nIn this paper, we present RondoMPC, a practical AMPC\nprotocol with G.O.D. with only one phase of consensus. To\nachieve this goal, we build a practical asynchronous and\ncomplete random double sharing (ACRDS) protocol. Our\nACRDS protocol supports batching, so a batch of random\ndouble shares can be generated simultaneously. Furthermore,\nACRDS supports efficient verification of aggregated secret\nshares, allowing the random double shares to be used for\nBeaver triple generation using only one phase of consensus.\nOur experimentation results show that RondoMPC is highly\npractical, achieving both higher throughput and lower latency\nfor Beaver triple generation compared to existing protocols.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-15",
+    "pdf_url": "https://eprint.iacr.org/2026/1261.pdf",
+    "url": "https://eprint.iacr.org/2026/1261",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1258",
+    "title": "Beyond Anonymity Sets: A Security Model for Distributed Shuffling in Adversarial Environments",
+    "authors": [
+      "Filip Zagorski"
+    ],
+    "abstract": "Distributed shuffling is a core primitive underlying mix-nets, electronic voting, and, more recently, single secret leader election (SSLE) protocols for proof-of-stake blockchains. In these settings, a collection of resource-constrained parties jointly permutes a list of ciphertexts or commitments in order to conceal the correspondence between inputs and outputs. Existing security analyzes of such protocols typically rely on heuristic anonymity measures or implicitly assume honest behavior; therefore, they fail to capture statistical dependencies that arise when shuffling is partial and some participants are corrupted.\n\nIn this work, we introduce a new security model for distributed shuffling that explicitly accounts for adversarial corruption and information leakage. Our model allows an adversary to corrupt a subset of shufflers and to track selected elements throughout the execution, and defines anonymity in terms of statistical distance from the uniform distribution over permutations. This yields a quantitative, composable notion of security that subsumes commonly used anonymity-set arguments and aligns with standard cryptographic indistinguishability frameworks.\n\nUsing this model, we analyze Whisk, the shuffle-based SSLE mechanism proposed for Ethereum. We show that, under realistic protocol parameters and even in the absence of adaptive attacks, the induced distribution over permutations deviates significantly from the uniform distribution. Consequently, the resulting anonymity guaranties are substantially weaker than what is suggested by heuristic analyzes.  We show how to modify the scheme parameters to meet the security requirements.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-15",
+    "pdf_url": "https://eprint.iacr.org/2026/1258.pdf",
+    "url": "https://eprint.iacr.org/2026/1258",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "DAO"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/335",
+    "title": "Sumcheck-based zkSNARKs are Non-Malleable",
+    "authors": [
+      "Luigi Russo"
+    ],
+    "abstract": "Simulation extractability ensures that any adversary who produces a valid proof must possess a corresponding witness, even after seeing simulated proofs for potentially false statements. This property is vital for preventing malleability attacks and is therefore essential for securely deploying zero-knowledge succinct non-interactive arguments of knowledge (zkSNARKs) in distributed systems. While prior work, particularly the frameworks by Faonio et al. (CCS’24, TCC’23) and Kohlweiss et al. (TCC’23), has established simulation extractability for a wide class of pairing-based zkSNARKs using the KZG univariate polynomial commitment scheme (Kate et al., Asiacrypt’10), we initiate a systematic study of simulation extractability for zkSNARKs based on the celebrated sumcheck protocol and the PST multivariate polynomial commitment scheme (Papamanthou et al., TCC’13). PST cannot be simulation extractable, due to its linear homomorphism, however, we show that it satisfies a refined notion of controlled malleability similar to the notion of Chase et al. (EUROCRYPT’12), which informally captures that linear homomorphism is essentially the only admissible malleability. We demonstrate that our notion of controlled malleability suffices to ensure security within the widely adopted design paradigm of compiling polynomial interactive oracle proofs into zkSNARKs, covering several state-of-the-art schemes such as HyperPlonk (EUROCRYPT’23), Spartan (CRYPTO’20) and Libra (CRYPTO’19).",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-02-20",
+    "pdf_url": "https://eprint.iacr.org/2026/335.pdf",
+    "url": "https://eprint.iacr.org/2026/335",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1165",
+    "title": "On the State-Compromise Security of End-to-End Real-Time Group Communication",
+    "authors": [
+      "Qian Wang"
+    ],
+    "abstract": "Real-time group communication protocols, such as Zoom and Microsoft Teams, aim to provide end-to-end security for audio and video conferences even in the presence of a malicious server. Despite their widespread deployment, particularly since the COVID-19 pandemic, their intended security guarantees lack comprehensive formalization. Prior work largely focuses on Zoom, and analyzes its security in models that rely on restrictive assumptions, such as the existence of a trusted server at certain points in time or a long-lived leader that never leaves the group. Moreover, existing analyses assume that group-specific session states of group members are secure and incorruptible, leaving the impact of potential full state compromise on group security unexplored.\n\nIn this work, we propose a set of essential security guarantees for real time group communication with state-compromise resilience against fully malicious servers and provide the first construction that provably satisfies all of these guarantees. To formally prove that our design achieves its goal, we formalize a novel continuous group key distribution protocol and introduce an associated security model that captures all the intended guarantees. We propose a generic construction that is provably secure in this model and suggest both classical and post-quantum secure instantiations.\n\nBesides these main design goals, we introduce a novel multi-recipient authenticated key encapsulation mechanism, which serves as a building block for our generic construction. We define two core security notions for maKEM, propose both concrete and generic constructions, and prove their security in the random oracle model and the standard model, respectively.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-04",
+    "pdf_url": "https://eprint.iacr.org/2026/1165.pdf",
+    "url": "https://eprint.iacr.org/2026/1165",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "TEE"
+    ],
+    "analyzed": false
   }
 ]
