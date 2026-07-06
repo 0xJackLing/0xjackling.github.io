@@ -27859,7 +27859,7 @@
       "Navid Azimi"
     ],
     "abstract": "While public blockchains provide transparent and auditable transaction histories, they inherently compromise user privacy. Existing privacy-enhancing protocols, such as those deployed on Ethereum, typically rely on succinct zero-knowledge proofs (zk-SNARKs) to obscure the transaction graph. However, implementing comparable cryptographic guarantees on high-throughput blockchains like Algorand is challenging due to strict per-call execution budgets and the state contention introduced by global Merkle accumulators. This paper presents Obscura, a decentralized, non-custodial privacy protocol tailored for constrained smart contract environments. Obscura achieves transaction anonymity using Linkable Spontaneous Anonymous Group (LSAG) signatures over the BN254 elliptic curve, verified entirely on-chain. To overcome limitations of the Algorand Virtual Machine (AVM), we introduce a novel state model that leverages Algorand's Box Storage for $O(1)$ commitment membership checks, eliminating the need for global Merkle accumulators, and a dynamic opcode-budget expansion mechanism via pooled inner application calls. Our implementation demonstrates that signer-ambiguous privacy is practical and efficient on Algorand without relying on trusted setups or succinct proofs. Obscura provides a robust privacy layer for transparent ledgers, bridging the gap between high-throughput blockchain architectures and the dual requirements of cryptographic privacy and selective auditability.",
-    "venue": "arXiv",
+    "venue": "IACR ePrint",
     "year": 2026,
     "date_published": "2026-05-03",
     "pdf_url": "https://arxiv.org/pdf/2605.02077v1",
@@ -33175,6 +33175,402 @@
     "citation_count": null,
     "relevance_tags": [
       "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2607.01742",
+    "title": "Knowledge Over Parameters: Evolving Smart Contract Vulnerability Detection",
+    "authors": [
+      "Yuqiang Sun",
+      "Han Liu",
+      "Ying Li",
+      "Yiran Zhang",
+      "Zong Cao",
+      "Ziyun Guo",
+      "Yang Liu"
+    ],
+    "abstract": "Smart contract vulnerabilities are predominantly logic bugs whose detection requires structured, step-by-step procedural knowledge of attack patterns and contract semantics. Existing LLM-based methods struggle to generate this knowledge automatically: prompt-based methods rely on manually crafted detection rules, while fine-tuning requires massive labeled datasets that are inherently scarce in this domain. We present EvoVuln, an automated framework that reformulates vulnerability detection as a procedural knowledge evolution problem, synthesizing and refining detection logic using only a minimal number of labeled samples.\n  To achieve this, EvoVuln introduces two key mechanisms. First, a Runtime with an Inversion of Control (IoC) architecture compiles detection rules into Executable Policies. This strictly decouples deterministic control flow from LLM semantic reasoning, ensuring faithful logical adherence and producing dense diagnostic telemetry for precise error localization. Second, a two-phase evolution pipeline refines the rule via abductive semantic debugging without any parameter updates: Cold Start bootstraps and stress-tests an initial rule using auto-synthesized corner cases; Few-Shot Evolving then grounds the policy in real-world semantics using only five vulnerable and five safe examples per vulnerability type.\n  Evaluated across five real-world vulnerability types, EvoVuln achieves a 71% macro-average F1-score, outperforming all baselines. The evolved procedural knowledge is portable across models: it enables a lightweight, low-cost model to surpass a much larger zero-shot model by 19 percentage points, and transfers to other LLMs without retraining, at a one-time evolution cost under $50.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-07-02",
+    "pdf_url": "https://arxiv.org/pdf/2607.01742v1",
+    "url": "https://arxiv.org/abs/2607.01742",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2607.01209",
+    "title": "All-out Attack: Optimal Block Withholding Under Pay-Per-Share Scheme",
+    "authors": [
+      "Mustafa Doger",
+      "Sennur Ulukus"
+    ],
+    "abstract": "Classical Block Withholding (BWH) attacks have been extensively studied in block-dependent reward schemes, where pool members are compensated upon a block discovery within the pool. However, most contemporary mining pools operate under share-based scheme wherein participants are paid immediately upon submission of valid shares. In this paper, we analyze BWH under Pay-Per-Share (PPS) and Full-PPS (FPPS) schemes for Nakamoto-style blockchains and prove that these mechanisms are not incentive compatible -- contrary to claims in prior literature. Under PPS/FPPS, the optimal strategy for a BWH attacker is the All-out Attack (AoA): the adversary allocates its entire hashpower toward the victim pool, submitting only partial Proof-of-Work shares (pPoW) while withholding all valid blocks, i.e., full Proof-of-Work (fPoW).\n  Under AoA, prior to the first difficulty adjustment, the adversary incurs negligible loss due to the withheld fPoWs. After the first difficulty adjustment, which reduces block difficulty, the adversary generates more pPoWs per unit time, achieving a relative gain of $\\fracα{1-α}$ compared to pre-adjustment rates, where $α$ is the fraction of adversarial hashpower. Moreover, per unit time and per unit hashpower, all honest miners benefit at the same rate as the adversary. In contrast, the victim pool operator incurs losses: it pays the attacker out-of-pocket for pPoW submissions but receives no fPoW compensation in return. Finally, advanced variants of BWH, such as Fork After Withholding (FAW), do not yield additional profit to the attacker.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-07-01",
+    "pdf_url": "https://arxiv.org/pdf/2607.01209v1",
+    "url": "https://arxiv.org/abs/2607.01209",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2607.00772",
+    "title": "No Country for Old Privacy: The Evolving Challenges of Anonymity in Bitcoin",
+    "authors": [
+      "Ben Hawkins",
+      "Joshua Levett",
+      "Siamak F. Shahandashti"
+    ],
+    "abstract": "We present a longitudinal measurement study on the adoption of detectable, second-generation anonymisation protocols in the Bitcoin network, including CoinJoin, CoinSwap, CoinShuffle and Stealth Addresses. By implementing and refining a suite of heuristic filters, we identify over 5.94 million CoinJoin and 23.3 million CoinSwap transactions. Besides, the use of CoinShuffle was unexpectedly found to be closely aligned with the Wasabi wallet operation period. Our analysis reveals consistently low adoption rates, with these protocols constituting less than 1% of network transactions, and a sharp decline in detectable usage following key regulatory events. Furthermore, we find no evidence of standardised Stealth Address adoption, indicating a failure to converge on a common privacy standard. This study provides a comprehensive picture of a niche ecosystem whose on-chain visibility has been largely suppressed, strongly suggesting the migration of privacy-seeking users to less transparent and less detectable methods.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-07-01",
+    "pdf_url": "https://arxiv.org/pdf/2607.00772v1",
+    "url": "https://arxiv.org/abs/2607.00772",
+    "citation_count": null,
+    "relevance_tags": [
+      "privacy",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2606.31462",
+    "title": "A forgery attack on the Block.co blockchain-based digital credential certification system",
+    "authors": [
+      "Giacomo Zonneveld",
+      "Giulia Rafaiani",
+      "Marco Baldi"
+    ],
+    "abstract": "Certification of digital documents, such as academic credentials, seems a particularly suitable application for the use of blockchain and distributed ledger technologies. Indeed, these technologies enable decentralized certification systems that rely on the immutability and persistence of their distributed ledgers. However, in the absence of a central trusted authority, it is not easy to guarantee the authenticity of the connection between the real identity of an academic institution and the digital identity of the certificate issuer. In this paper, we demonstrate that one of such systems, known as Block.co, has a vulnerability that allows the production of forged certificates that are recognized as valid by the system. Since this is an inherent limitation of the approach used for blockchain-based certification, our attack is likely to be extendable to other systems adopting the same approach.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-06-30",
+    "pdf_url": "https://arxiv.org/pdf/2606.31462v1",
+    "url": "https://arxiv.org/abs/2606.31462",
+    "citation_count": null,
+    "relevance_tags": [
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "arxiv:2606.29826",
+    "title": "Rethinking Collaborative Trust for Verifiably Decentralized Blockchain Systems",
+    "authors": [
+      "Yunqi Zhang",
+      "Shaileshh Bojja Venkatakrishnan"
+    ],
+    "abstract": "Despite the promise of decentralization, measurement studies have identified a conspicuous lack of decentralization in blockchains. Centralization has been observed in almost all layers of the blockchain, in decentralized applications, and in decentralized autonomous organizations. In many cases, it is practically impossible to definitively determine the extent of centralization in the system. While multiple works have proposed methods to decrease centralization, by and large blockchains continue to be significantly centralized.\n  In this paper, we develop a general framework for building verifiably decentralized blockchain systems. Our framework is motivated by the core observation that the richness and diversity of collaborative interactions between users -- rather than resource uniformity -- captures the essence and extent of decentralization in a blockchain system. Existing blockchains do not have any incentive mechanisms to encourage inter-coalition collaboration, which directly contributes to centralization. We propose a novel reward design that incentivizes users to collaborate with other users without forming isolated coalitions. Technically, our method uses a Sybil-resistant asymmetric Shapley value for reward attribution within a collaboration group, and the theory of expander graphs for measuring and enforcing decentralization.\n  Our framework is general and can be adapted to alleviate centralization in any layer, application, or decentralized organization. It also has important implications beyond the topic of centralization. For example, we show that our solution can naturally address the blockchain scalability problem. We also identify a new class of decentralized collaborative applications that have hitherto been unexplored in blockchains.",
+    "venue": "arXiv",
+    "year": 2026,
+    "date_published": "2026-06-29",
+    "pdf_url": "https://arxiv.org/pdf/2606.29826v1",
+    "url": "https://arxiv.org/abs/2606.29826",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "DAO",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2023/1702",
+    "title": "On Quantum Simulation-Soundness",
+    "authors": [
+      "Quoc-Huy Vu"
+    ],
+    "abstract": "Non-interactive zero-knowledge (NIZK) proof systems are a cornerstone of modern cryptography, but their security has received little attention in the quantum settings. Motivated by improving our understanding of this fundamental primitive against quantum adversaries, we propose a new definition of security against quantum adversary. Specifically, we define the notion of quantum simulation soundness (SS-NIZK), that allows the adversary to access the simulator in superposition.\n\nWe show a separation between post-quantum and quantum security of SS-NIZK, and prove that Sahai’s construction for SS-NIZK (in the CRS model) can be made quantumly-simulation-sound. As an immediate application of our new notion, we prove the security of the Naor-Yung paradigm in the quantum settings, with respect to a strong quantum IND-CCA security notion. This provides the quantum analogue of the classical dual key approach to prove the security of encryption schemes. Along the way, we introduce a new notion of quantum-query advantage functions, which may be used as a general framework to show classical/quantum separation for other cryptographic primitives, and it may be of independent interest.",
+    "venue": "IACR ePrint",
+    "year": 2023,
+    "date_published": "2023-11-02",
+    "pdf_url": "https://eprint.iacr.org/2023/1702.pdf",
+    "url": "https://eprint.iacr.org/2023/1702",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/592",
+    "title": "Deterministic State Machines as Guarded Linear Constraint Systems: Precommitment Forking, Guard Algebra, Explicit Resource Consumption, Tripwire, Morphism Detection, and Consensus Free Fork Exclusion",
+    "authors": [
+      "Brandon Ramsay"
+    ],
+    "abstract": "This paper formalizes the Deterministic State Machine, or DSM, as a guarded, linear, forward only, constraint based computation model. DSM does not require a blockchain, validator set, sequencer, gas market, mempool, clock based ordering rule, or global consensus layer for ordinary state evolution. State validity is determined by local verification of cryptographically precommitted candidate futures, deterministic fulfillment guards, explicit resource consumption keys, canonical encodings, signatures, and Sparse Merkle Tree commitments.\n\nThe central claim is not that DSM forbids all branching at the level of precommitment. DSM explicitly permits precommitment forking. Multiple candidate futures may be prepared for a common parent, including Deterministic Limbo Vault release paths, refund paths, hash fulfillment paths, recovery paths, abort paths, contingent payment paths, CPTA token operations, offline bearer steps, and other mutually exclusive branches. The invariant is:\n\nmultiple futures may be described, but for a fixed consumed resource, at most one may be realized.\n\nA resource is the thing that produces exactly one realized successor. A relationship parent, spendable object, vault generation, token balance object, source vault generation, recovery generation, or offline anchor step is a resource in this sense. Candidate branches are only possible futures. Realization consumes the resource.\n\nA generation is a logical version of a resource family. It is not a time period, not a clock interval, not a scheduling unit, and not an external ordering coordinate. Generations are ordered only by DSM derivability and resource consumption.\n\nThis paper makes explicit the machinery required for that statement. Guard exclusivity is not left as convention. A DSM precommit set is valid only if its guard family is well formed. A well formed guard family gives either a deterministic branch selector, a mechanically proven exclusive guard class, or a set of branch predicates that are structurally tied to the same consumed resource. Parent consumption is modeled through canonical resource consumption keys and a consumed parent set committed by the DSM root. Branch local keys may exist for indexing or audit, but the shared resource key is what enforces linear exclusion.\n\nA hardened form of the model is also stated: for any conflict class, all conflicting candidates must resolve to an identical canonical resource consumption set, and those keys must be derived from the committed parent state rather than supplied as discretionary branch data. This removes the implementation hazard where release, refund, recovery, or policy branches accidentally consume different keys.\n\nThe role of guard exclusivity is clarified. Pairwise guard exclusivity is useful and required for guard classes that claim exclusive fulfillment, but it is not the only safety mechanism. When conflicting branches share the same derived resource consumption key set, linearity alone prevents co realization even if several guards are simultaneously fulfilled. Thus the load bearing safety rule is not merely that guards should not overlap. The load bearing safety rule is that conflicting futures must fight over the same derived resource.\n\nTripwire is formalized as the theorem that two conflicting realized successors from the same consumed resource cannot both be derivable. More precisely, conflicting candidates may be constructed or transmitted as bytes, but they cannot both validate under the DSM step predicate and cannot both go through as accepted state transitions for the same consumed resource. Forks are therefore not selected against by consensus. They are excluded by guarded realization and exposed by reconciliation if conflicting invalid bytes are presented outside the valid model.\n\nThe safety theorems of this paper are supported by machine checked artifacts. The general key scoped fork exclusion theorems are proved in Lean~4 over an abstract guarded model, with the uniqueness and Tripwire core depending on no axioms. A companion TLA${}^{+}$ development model checks the same statements in both a per state form and a realized history form on concrete guard families, and by deliberate falsification of a malformed family confirms that guard family well formedness is load bearing. A relationship scoped model checks that same parent multi receiver forks are unconstructible in online DSM. Appendices A and B point to these artifacts. Their exact scope and boundary are stated in the Claim Boundary section.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-04-01",
+    "pdf_url": "https://eprint.iacr.org/2025/592.pdf",
+    "url": "https://eprint.iacr.org/2025/592",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "DeFi",
+      "token"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/1826",
+    "title": "Cloning Games, Black Holes and Cryptography",
+    "authors": [
+      "Vinod Vaikuntanathan"
+    ],
+    "abstract": "In this work, we introduce a new toolkit for analyzing \\emph{cloning games}, a notion that captures stronger and more quantitative versions of the celebrated quantum no-cloning theorem. This framework allows us to analyze a new cloning game based on \\emph{binary phase states}. Our results provide evidence that these games may be able to overcome important limitations of previous candidates based on BB84 states and subspace coset states: in a model where the adversaries are restricted to making a single oracle query, we show that the binary phase variant is $t$-copy secure when $t=o(n/\\log n)$. Moreover, for constant $t$, we obtain the \\emph{first} optimal bounds of $O(2^{-n})$, asymptotically matching the value attained by a trivial adversarial strategy. We also show a worst-case to average-case reduction which allows us to show the same quantitative results for the new and natural notion of \\emph{Haar cloning games}.\n\nOur analytic toolkit, which we believe will find further applications, is based on binary subtypes and uses novel bounds on the operator norms of block-wise tensor products of matrices. To illustrate the effectiveness of these new techniques, we present two applications: first, in black-hole physics, where our asymptotically optimal bound offers quantitative insights into information scrambling in idealized models of black holes; and second, in unclonable cryptography, where we (a) construct succinct unclonable encryption schemes from the existence of pseudorandom unitaries, and (b) propose and provide evidence for the security of multi-copy unclonable encryption schemes.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-11-07",
+    "pdf_url": "https://eprint.iacr.org/2024/1826.pdf",
+    "url": "https://eprint.iacr.org/2024/1826",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1355",
+    "title": "Compressing Correlations via Secret Replication: PCFs from Symmetric Cryptography",
+    "authors": [
+      "Tal Rabin"
+    ],
+    "abstract": "We revisit the question of securely compressing multiparty correlations using only symmetric cryptography. A *linear correlation* ${\\cal C}$, defined by a linear subspace $C\\subseteq \\mathbb F^n$, samples a secret random ${\\bf c}\\in C$ and assigns to each party a fixed subset of the entries of ${\\bf c}$. Gilboa and Ishai (Crypto 1999) and Cramer, Damgård and Ishai (TCC 2005) provide a general technique for securely compressing many independent samples from $\\cal C$ by replicating independent keys of a pseudorandom function (PRF) among the parties. This implies a *pseudorandom correlation function* (PCF) for $\\cal C$ from any PRF, where the PCF key size scales with the number of minimal-support codewords in $C$.\n\nWe observe that the above generalizes to other types of useful target correlations ${\\cal C}_T$ by using a *secret* replication pattern obtained via a random secret assignment of parties in $\\cal C$ to parties in ${\\cal C}_T$. \n\nWe present several corollaries of this general blueprint. These include a re-derivation of two-party PCF constructions for VOLE and subfield-VOLE over small domains (Roy, Crypto 2022) as well as new multiparty PCFs for small-domain VOLE-style correlations, including scalar-vector multiplication triples and their authenticated variants. Finally, we discuss applications to secure computation.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-01",
+    "pdf_url": "https://eprint.iacr.org/2026/1355.pdf",
+    "url": "https://eprint.iacr.org/2026/1355",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1354",
+    "title": "Adaptive Quantum-Resistant Hybrid Encryption Framework for Secure IoMT Edge Data Sharing",
+    "authors": [
+      "Farhad Rahmati"
+    ],
+    "abstract": "The Internet of Medical Things (IoMT) is revolutionizing healthcare through real-time monitoring and personalized care, yet existing security solutions for resource-constrained IoMT devices often compromise between robust protection and computational efficiency. Additionally, various IoMT systems utilize different sets of encryption schemes, ranging from classical to post-quantum algorithms, tailored to their computational resources, operational constraints, and specific privacy challenges. This diversity highlights an urgent need for an adaptive and efficient, quantum-resistant security protocol applicable to these systems. We propose the Privacy-Preserving Hybrid Data Sharing ($P^2HDS$) framework, which integrates multiple classical and post-quantum encryption schemes to achieve strong security with enhanced efficiency. $P^2HDS$ formalizes a generalized hybrid encryption protocol that enables adaptive configuration based on security requirements and computational constraints. We employ game-theoretic analysis to model interactions between data owners and adversaries, determining the optimal combination of encryption schemes for data outsourcing to mitigate adversarial threats. Rigorous security analysis proves that $P^2HDS$ achieves indistinguishability under chosen-plaintext attack (IND-CPA) security in the random oracle model, provided at least one constituent scheme is IND-CPA-secure. Experimental results demonstrate that $P^2HDS$ delivers performance approximating the average of its constituent schemes while maintaining security comparable to the most secure component, making it a scalable, quantum-resistant, and adaptive solution for privacy-preserving IoMT edge applications.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-01",
+    "pdf_url": "https://eprint.iacr.org/2026/1354.pdf",
+    "url": "https://eprint.iacr.org/2026/1354",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/1995",
+    "title": "Device-Bound Anonymous Credentials With(out) Trusted Hardware",
+    "authors": [
+      "Anna Lysyanskaya"
+    ],
+    "abstract": "Anonymous credentials enable unlinkable and privacy-preserving user authentication. To ensure non-transferability of credentials among corrupt users, they can additionally be device-bound. Therein, a credential is tied to a key protected by a secure element (SE), usually a hardware component, and any presentation of the credential requires a fresh contribution of the SE. Interestingly, despite being a fundamental aspect of user credentials, device binding for anonymous credentials is relatively unstudied. Existing constructions either require multiple calls to the SE, or need the SE to keep a credential-specific state -- violating core design principles of shielded SEs. Further, constructions that are compatible with the most mature credential scheme BBS rely on the honesty of the SE for privacy, which is hard to vet given that SEs are black-box components.\nIn this work, we thoroughly study and solve the problem of device-bound anonymous credentials (DBACs). We model DBACs to ensure the unforgeability and non-transferability of credentials, and to guarantee user privacy at the same time.  Our definitions cover a range of SE trust levels, including the case of a subverted or fully corrupted SE. We also define blind DBACs, in which the SE learns nothing about the credential presentations it helped compute. This targets the design of a remote, cloud-based SE which is a deployment model considered for the EU Digital Identity (EUDI) wallet to address the fact that most user phones are not equipped with a sufficiently secure SE. Finally, we present three simple and round-optimal constructions for device binding of BBS credentials, and prove their security in the AGM+ROM and privacy unconditionally. The SE therein is extremely lightweight: it only has to compute a BLS or Schnorr signature in a single call. We also give the BLS-based construction in a blind variant, yielding the first protocol that enables privacy-preserving device binding for anonymous credentials when being used with a remote SE.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-24",
+    "pdf_url": "https://eprint.iacr.org/2025/1995.pdf",
+    "url": "https://eprint.iacr.org/2025/1995",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/398",
+    "title": "Orthus: Practical Sublinear Batch-Verification of Lattice Relations from Standard Assumptions",
+    "authors": [
+      "Gregor Seiler"
+    ],
+    "abstract": "The past several years have seen a rapid rise in practical lattice-based proof systems with linear-sized zero-knowledge proofs forming the foundation of many of the most efficient quantum-safe privacy protocols, and succinct proofs rapidly catching up and surpassing other quantum-safe alternatives in many metrics.  A recent comparison of lattice-based aggregate signatures (Ethereum Foundation, 2025) involving the hash-based aggregate signature scheme Plonky3 and the instantiation of aggregate signatures from Falcon from the LaZer lattice library (Lyubashevsky, Seiler, Steuer, CCS 2024) using LaBRADOR (Beullens, Seiler, Crypto 2023), showed that lattice-based constructions have an advantage in terms of proof size and prover time, but are around an order of magnitude slower with regards to verification time. In general, it appears that slower verification times are the main obstacle to the adoption of succinct lattice-based proof systems.\n    \nIn this work, we introduce and implement Orthus, a proof system with sub-linear verification designed for relations that naturally arise in lattice-based constructions. Asymptotically, the verification time grows with the square root of the witness size, and for a concrete example of aggregating Falcon signatures our implementation reduces the verifier running time by a factor of $9X$ when aggregating $2^{17}$ signatures.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-02-26",
+    "pdf_url": "https://eprint.iacr.org/2026/398.pdf",
+    "url": "https://eprint.iacr.org/2026/398",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1347",
+    "title": "Revisiting the Quantum Indifferentiability of Merkle-Damgård: Proof Limitations and Optimal Consistency",
+    "authors": [
+      "Chun Guo"
+    ],
+    "abstract": "The quantum indifferentiability of the Merkle-Damgård (MD) domain extender is a foundational problem in post-quantum cryptography. \nRecently, Gorjan et al. identified critical flaws in existing consistency proofs for this construction, invalidating prior security guarantees.\n\nQuantum indifferentiability proofs typically reduce to two oracle-indistinguishability games: the indistinguishability game and the consistency game. \nTo analyze the systems arising in these games, we formalize and generalize Zhandry's compressed oracle proof technique into a modular quantum game-playing framework for systems constructed from random functions. \n\nOn the positive side, we develop an error-propagation technique within our framework to track coherence penalties and bad sampling branches for the consistency game.\nThis yields a tight consistency bound of $O(q_s^{3/2}/2^{n/2})$, matching the optimal complexity of generic quantum collision attacks.\n\nBenefiting from the same formalization, we also identify a fundamental obstruction in the indistinguishability game---a gap also present in Zhandry's original proof.\nSpecifically, under sequential adaptive queries, the simulated quantum state inevitably leaks into the ``bad database'' subspace and yields a lower bound on the corresponding oracle deviation.\nThis clarifies why completing the full quantum indifferentiability proof requires additional ideas.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-30",
+    "pdf_url": "https://eprint.iacr.org/2026/1347.pdf",
+    "url": "https://eprint.iacr.org/2026/1347",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1346",
+    "title": "Almost Scriptless Adaptor Signatures from any Signature Scheme",
+    "authors": [
+      "Kristina Hostáková"
+    ],
+    "abstract": "An adaptor signature (AS) scheme extends a digital signature by tying together message authentication with the exchange of a secret. Such atomic exchange of a secret for a signature has key applications in blockchain protocols, e.g., payment channels, atomic swaps or coin-mixing. To ensure compatibility with the environments, AS schemes should be scriptless -- that is, their signatures should be verifiable using the same procedure used to validate transactions' signatures, without auxiliary logic or scripts.\n\nAs shown by Erwig et al. (PKC'21), it is impossible to construct scriptless AS for standard signature schemes with unique signatures. In contrast, Liu et al.  (ASIACRYPT'24) demonstrated that dropping the scriptless requirement entirely makes AS construction for any EUF-CMA secure signature scheme straightforward.This raises a fundamental question: must we abandon scriptlessness entirely to construct AS for any signature scheme?\n\nWe answer this question in the negative by introducing the notion of almost scriptless AS. Here, the only relaxation is that the signature is applied to an extended message -- specifically, the concatenation of the original message and a random string (i.e., signing $m \\| r$ instead of $m$). We argue that this mild extension preserves the core benefits of scriptlessness in blockchain applications.\n\nWe present a generic compiler that transforms any functional signature scheme into an AS, almost preserving the signature verification. In turn, show how indistinguishability obfuscation (in the CRS model) or witness encryption (in the ROM) allow turning any signature into a functional signature in a scriptless fashion. Both constructions  ultimately yield almost scriptless AS for unique-witness (hard) relations and for any base signature.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-30",
+    "pdf_url": "https://eprint.iacr.org/2026/1346.pdf",
+    "url": "https://eprint.iacr.org/2026/1346",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1342",
+    "title": "Accountable Anonymous Cross-Chain Atomic Swaps via Threshold-Openable Linkable Ring Adaptor Signatures",
+    "authors": [
+      "Hui Li"
+    ],
+    "abstract": "Cross-chain atomic swaps enable decentralized asset exchange across independent ledgers, but their public transcripts may expose transaction flows, signer identities, and business relationships. Existing scriptless swap mechanisms based on adaptor signatures provide witness-coupled execution, yet the signer is public. Linkable ring adaptor signatures further hide the signer within a ring, but they do not support controlled opening when a completed swap becomes disputed. In this paper, we put forward ALRAS, an accountable anonymous cross-chain atomic-swap mechanism based on Pair-Consistent Threshold-Openable Linkable Ring Adaptor Signatures. We design a pair-consistent opening mechanism that binds a ring-adaptor pre-signature, an opening ciphertext, a scoped link tag, and the completed full signature to the same hidden signer. This mechanism prevents false-opening, ciphertext-substitution, and transcript-splicing attacks while requiring a threshold-governed and publicly verifiable opening in the dispute path. We construct a generic compiler from a NIZK-compatible, index-hiding LRAS using threshold ElGamal opening, consistency proofs, and public pair verification. We further formalize the signing-layer interface and security goals and analyze signer anonymity, scoped linkability, witness extractability, non-frameability, and pair-consistent opening soundness. A reproducible Python artifact provides reference modules, attack-oriented sanity tests, and operation-count benchmarks. The results show the expected linear scaling with ring size and isolate the accountability overhead introduced by threshold opening and transcript binding.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-30",
+    "pdf_url": "https://eprint.iacr.org/2026/1342.pdf",
+    "url": "https://eprint.iacr.org/2026/1342",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "bridge",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1337",
+    "title": "Elliptic Extraction and Pushable Hints for Higher-Dimensional SQIsign",
+    "authors": [
+      "Anis Bkakria"
+    ],
+    "abstract": "Higher-dimensional SQIsign variants use product and Kani-style isogeny representations to make response isogenies compact, checkable, or compatible with non-smooth degrees.  These representations raise a foundations question: do they introduce genuinely higher-dimensional hardness, or do they preserve elliptic extraction while moving the additional assumptions into simulation?  This paper gives a proof-theoretic separation between these two layers.  We identify a recoverability condition under which an accepted higher-dimensional response publicly induces an elliptic Hom element; under the usual challenge-separation hypotheses, special soundness then extracts an elliptic \\OneEnd witness.  The remaining higher-dimensional assumptions are simulation assumptions, and we formulate them as non-interactive hint distributions.\n\nThe separation yields two concrete theorem packages.  First, SQIsign2D--West admits an exact Fiat--Shamir-with-hints EUF-CMA theorem: the security loss is expressed through a simulation-hint \\OneEnd assumption, the statistical simulator loss, the challenge-space term, and the commitment min-entropy term; a pushable uniform-hint corollary gives the EndRing-compatible interpretation under a named hint-indistinguishability assumption.  Second, for SQIPrime2D we do not claim a proof for the published auxiliary sampler.  We define and analyze \\(\\mathsf{SQIPrime2D\\text{-}UAux}\\), a foundations variant that replaces the published Algorithm-context AIO layer by a context-independent uniform auxiliary hint distribution.  UAux is an ideal proof-model distribution unless an efficient represented sampler is separately supplied; an approximate sampler instantiates the theorems with an explicit additive sampling loss.\n\nFor this SQIPrime2D-UAux foundations variant, UAux gives a context-independent and exactly pushable replacement for the auxiliary AIO layer.  We then introduce challenge-carrying uniform hints that additionally reveal the non-smooth challenge isogeny, the residual response isogeny, and the UAux auxiliary isogeny.  These hints are stronger than ordinary SQIPrime auxiliary information, but they are fully pushable through the smooth self-reduction isogenies used in EndRing-style reductions.  Consequently SQIPrime2D-UAux admits a fully pushable EndRing-compatible challenge-carrying hint layer, with a q-HintDist assumption separating simulation-shaped hints from the pushable distribution.  None of these SQIPrime-side statements is a claim of plain EndRing security or a claim that the published SQIPrime2D AIO sampler itself is pushable.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-29",
+    "pdf_url": "https://eprint.iacr.org/2026/1337.pdf",
+    "url": "https://eprint.iacr.org/2026/1337",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1334",
+    "title": "Principles for pRHL Proofs of Cryptographic Protocols: How to Convince EasyCrypt that your Protocol is Secure",
+    "authors": [
+      "Théo Vignon"
+    ],
+    "abstract": "The EasyCrypt proof assistant has been used to\nsuccessfully formalize security proofs for a wide variety of crypto-\ngraphic primitives. However, attempts at formalizing objects with\ninteractivity, such as protocols, have fared much worse. In this\npaper, we investigate (some of) the reasons for this difficulty by\nformalizing a simple interactive key agreement protocol. From\na first complete but exploratory proof, to a failed attempt at\na structured proof, and to what we believe is an “essential”\nproof, we identify which proof features contribute most to the\ncomplexity of formalization in pRHL. In particular, we argue that\ndifficulties in formalizing the security of interactive protocols in\nthe computational model arise from the fact that such proofs rely\non both state and temporal invariants—the former to support\ncryptographic reasoning, and the latter to support reasoning\nabout the protocol’s structure. We believe that this observation\ncan help build new reasoning tools that can bridge the gap that\ncurrently exists between primitive-focused tools and protocol-\nfocused tools.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-29",
+    "pdf_url": "https://eprint.iacr.org/2026/1334.pdf",
+    "url": "https://eprint.iacr.org/2026/1334",
+    "citation_count": null,
+    "relevance_tags": [
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1330",
+    "title": "Real-world Qualification Proof: A Protocol for Supporting Real-world Assets in DeFi",
+    "authors": [
+      "Yong Yu"
+    ],
+    "abstract": "Integrating Real-World Assets (RWA) into Decentralized Finance (DeFi) enables borrowers to leverage off-chain assets for on-chain transactions.  However, this integration faces a critical security challenge: ensuring that private asset data, utilized within cryptographic proofs, is authenticated by and cryptographically bound to a trusted issuer. Existing solutions, such as decentralized identifiers (DIDs) and oracles, fail to simultaneously satisfy the requisite security standards and performance constraints.  To address this, we propose Real-world Qualification Proof (RQP), a cryptographic protocol designed for the privacy-preserving verification of off-chain asset qualifications.\n        RQP introduces a new primitive, Witness-Hiding Authentication (WHA), which operates in conjunction with zk-SNARKs.  WHA enables asset issuers to authenticate RWA data, allowing the on-chain smart contract to efficiently verify the binding relationship between the issuer's authentication and the borrower's zero-knowledge proof. The proposed WHA effectively anchors the data privacy guarantee of RQP within the zero-knowledge property of the proof system while ensuring source authenticity.  Furthermore, to ensure scalability and minimize on-chain gas costs, we adopt zk-rollup methodologies and employ the Inner Product Argument (specifically MIPP) to aggregate multiple RQP proofs.  This yields a protocol that is not only secure and private but also computationally efficient for high-throughput DeFi applications. Experiments show that logarithmic verification efficiency optimization can be achieved in the multi-borrower proof scenario.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-28",
+    "pdf_url": "https://eprint.iacr.org/2026/1330.pdf",
+    "url": "https://eprint.iacr.org/2026/1330",
+    "citation_count": null,
+    "relevance_tags": [
+      "smart-contract",
+      "DeFi",
+      "oracle",
+      "ZKP",
+      "privacy",
+      "layer2",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1325",
+    "title": "The Generalised Tate Pairing over any field",
+    "authors": [
+      "Jonathan Komada Eriksen"
+    ],
+    "abstract": "We generalise a pairing on elliptic curves over finite fields, called the generalised Tate pairing, which is defined in terms of an arbitrary endomorphism of the curve, with certain trace requirements. We rederive this pairing from group cohomology, which allows us to generalise the pairing to principally polarized abelian varieties over any field, endomorphisms of any trace, and prove perfectness using a general duality theorem.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-26",
+    "pdf_url": "https://eprint.iacr.org/2026/1325.pdf",
+    "url": "https://eprint.iacr.org/2026/1325",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1324",
+    "title": "Efficient Parallelization of Large-Scale Modular Multiplication via Low-Latency LogJumps",
+    "authors": [
+      "Sujoy Sinha Roy"
+    ],
+    "abstract": "Elliptic-Curve Cryptography (ECC) found in Zero-Knowledge Proofs (ZKPs) protects assets worth more than a billion dollars on privacy-preserving blockchain networks. There, the transaction rate is mostly limited by the computational cost of Multi-Scalar Multiplications (MSMs). Thus, hardware acceleration of these operations, for instance, using FPGAs, is of interest. Current accelerators leverage the Pippenger algorithm to compute the MSMs. Due to data dependencies, the algorithm’s performance is affected by the latency of the internal modular multipliers. Typically, these multiplications are realized using Montgomery multipliers. A promising variant of this algorithm is LogJumps, which offers potential for parallelism and lower latency. This is achieved by reducing data dependencies within the Montgomery reduction. Yet, prior work has neither formalized nor explored a low-latency, hardware-friendly parallel realization of this method. We address this gap by formalizing parallelism in LogJumps and presenting the first practical, truly parallel LogJumps architecture for the BLS12-377 prime. Our modular multiplication design achieves up to 56% lower latency than the lowest-latency multiplier in the ZPRIZE 2022, while maintaining a 250 MHz frequency and throughput. Furthermore, we reduce the MSM latency by up to 1.85× using a full-point adder pipeline, while our logic consumption increases by only 1.32×.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-06-26",
+    "pdf_url": "https://eprint.iacr.org/2026/1324.pdf",
+    "url": "https://eprint.iacr.org/2026/1324",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP",
+      "privacy"
     ],
     "analyzed": false
   }
