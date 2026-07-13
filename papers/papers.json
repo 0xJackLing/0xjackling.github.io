@@ -27867,9 +27867,9 @@
     "citation_count": null,
     "relevance_tags": [
       "smart-contract",
-      "ZKP",
       "privacy",
-      "TEE"
+      "TEE",
+      "ZKP"
     ],
     "analyzed": false
   },
@@ -33572,6 +33572,432 @@
       "ZKP",
       "privacy"
     ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/766",
+    "title": "Breaking Verifiable Delay Functions in the Random Oracle Model",
+    "authors": [
+      "Weiqiang Yuan"
+    ],
+    "abstract": "This work resolves the open problem of whether verifiable delay functions (VDFs) can be constructed in the random oracle model.A VDF is a cryptographic primitive that requires a long time to compute (even with parallelization), but produces a unique output that is efficiently and publicly verifiable. \n\nWe prove that VDFs do not exist in the random oracle model. This also rules out black-box constructions of VDFs from other cryptographic primitives, such as one-way functions, one-way permutations and collision-resistant hash functions.\n\nPrior to our work, Mahmoody, Smith and Wu (ICALP 2020) prove that \\emph{perfectly unique} VDFs (a much stronger form of VDFs) do not exist in the random oracle model; on the other hand, Ephraim, Freitag, Komargodski, and Pass (Eurocrypt 2020) construct VDFs in the random oracle model assuming the hardness of repeated squaring. Our result is optimal -- we bridge the current gap between previously known impossibility results and existing constructions.\n\nWe initiate the study of \\emph{proof of work functions}, a new cryptographic primitive that shares similarities with both VDFs and proof of works. We show that a stronger form of it does not exist in the random oracle model, leaving open the fascinating possibility of a random-oracle-based construction.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-05-19",
+    "pdf_url": "https://eprint.iacr.org/2024/766.pdf",
+    "url": "https://eprint.iacr.org/2024/766",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "oracle",
+      "bridge"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2023/1705",
+    "title": "BaseFold: Efficient Field-Agnostic Polynomial Commitment Schemes from Foldable Codes",
+    "authors": [
+      "Ben Fisch"
+    ],
+    "abstract": "This works introduces Basefold, a new $\\textit{field-agnostic}$ Polynomial Commitment Scheme (PCS) for multilinear polynomials that has $O(\\log^{2}(n))$ verifier costs and $O(n \\log n)$ prover time. An important application of a multilinear PCS is constructing Succinct Non-interactive Arguments (SNARKs) from multilinear polynomial interactive oracle proofs (PIOPs). Furthermore, field-agnosticism is a major boon to SNARK efficiency in applications that require (or benefit from) a certain field choice.\n\n\nOur inspiration for Basefold is the Fast Reed-Solomon Interactive-Oracle Proof of Proximity (FRI IOPP), which leverages two properties of Reed-Solomon (RS) codes defined over \"FFT-friendly'' fields: $O(n \\log n)$ encoding time, and a second property that we call foldability. We first introduce a generalization of the FRI IOPP that works over any foldable linear code in linear time. Second, we construct a new family of linear codes which we call $\\textit{random foldable codes}$, that are a special type of punctured Reed-Muller codes, and prove tight bounds on their minimum distance. Unlike RS codes, our new codes are foldable and have $O(n \\log n)$ encoding time over ${any}$ sufficiently large field. Finally, we construct a new multilinear PCS by carefully interleaving our IOPP with the classical sumcheck protocol, which also gives a new multilinear PCS from FRI.\n\n\nBasefold is 2-3 times faster than prior multilinear PCS constructions from FRI when defined over the same finite field. More significantly, using Hyperplonk (Eurocrypt, 2022) as a multilinear PIOP backend for apples-to-apples comparison, we show that Basefold results in a SNARK that has better concrete efficiency across a range of field choices than with any prior multilinear PCS in the literature. Hyperplonk with Basefold has a proof size that is more than $10$ times smaller than Hyperplonk with Brakedown and its verifier is over $30$ times faster for circuits with more than $2^{20}$ gates. Compared to FRI, Hyperplonk with Basefold retains efficiency over any sufficiently large field. For illustration, with Basefold we can prove ECDSA signature verification over the secp256k1 curve more than $20$ times faster than Hyperplonk with FRI and the verifier is also twice as fast. Proofs of signature verification have many useful applications, including offloading blockchain transactions and enabling anonymous credentials over the web.",
+    "venue": "IACR ePrint",
+    "year": 2023,
+    "date_published": "2023-11-03",
+    "pdf_url": "https://eprint.iacr.org/2023/1705.pdf",
+    "url": "https://eprint.iacr.org/2023/1705",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle",
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1360",
+    "title": "A Prototype-Based Study of Zero-Knowledge Proof Verification for Privacy-Preserving Blockchain Interoperability",
+    "authors": [
+      "Kabo Nkabiti"
+    ],
+    "abstract": "Blockchain networks need to exchange messages and assets across independent systems, but cross-chain verification can expose private validation data to relayers, bridge logic, validators, or destination-chain components. This paper presents a prototype-based zero-knowledge verification layer for privacy-preserving blockchain interoperability. The prototype uses Circom and SnarkJS to generate Groth16 proofs, verifies those proofs in Rust using arkworks BN254, and maps the result into a Substrate-style interoperability decision model. The work addresses a practical implementation gap between common zero-knowledge proof tools and Rust-based blockchain interoperability environments. Private values stay off-chain, while only the proof, public commitment, verification metadata, and final decision are passed to the runtime-facing layer. The prototype includes valid-proof acceptance, tampered-input rejection, runtime-compatible verification records, and a simulated interoperability decision layer. Experimental results show proof generation at 199 ms, SnarkJS valid-proof verification at 161 ms, tampered-input rejection at 160 ms, and Rust verifier execution at 340 ms. These results show that a SnarkJS-generated Groth16 proof can be verified in Rust and used to control whether a simulated cross-chain action is accepted or rejected. The current scope does not include a full FRAME pallet or live Cross-Consensus Messaging (XCM) dispatch. In Polkadot, XCM is the message format used to send instructions between different chains. The prototype is not intended to replace Polkadot's existing parachain auditing mechanisms. Instead, it explores a complementary privacy-preserving verification path for selected interoperability conditions where private inputs should not be exposed. The prototype provides a repeatable technical path for building privacy-preserving verification in Polkadot/Substrate-style interoperability workflows.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-02",
+    "pdf_url": "https://eprint.iacr.org/2026/1360.pdf",
+    "url": "https://eprint.iacr.org/2026/1360",
+    "citation_count": null,
+    "relevance_tags": [
+      "consensus",
+      "bridge",
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1402",
+    "title": "On Extending Integral Distinguishers",
+    "authors": [
+      "Simon Gerhalter"
+    ],
+    "abstract": "Integral cryptanalysis analyzes block ciphers using input structures for which the sum of a chosen function of the output bits becomes key-independent. However, most methods still test one output expression at a time, so they can miss distinguishers that emerge only when several outputs are combined, either linearly or nonlinearly. They are also not designed to capture key-dependent integral combinations, which may hold deterministically on part of the key space. \nIn this work, we develop Split-and-Cancel, a method that combines exact expansion in a short final part with an oracle on the preceding rounds to determine which suffix monomials can survive from the chosen structure and records them in a binary matrix. Key-independent combinations are then extracted from the left kernel of this matrix. We first apply the method in a reduced model with omitted boundary key additions, where linear dependencies in this matrix yield certified key-independent sum combinations among output bits and higher-degree output products.\nWhen the omitted boundary key is restored, the same combinations yield deterministic weak-key distinguishers. \nWe apply the method to SIMON, SIMECK, SPECK, PRESENT, and GIFT. Our strongest deterministic results add one round to the best integral distinguishers for SIMON-32, SIMON-48, SIMON-64, SIMON-96, SIMON-128, all standard SIMECK variants, and SPECK from block sizes 32 to 128. For PRESENT and GIFT, we obtain one-round improvements for deterministic weak-key integral distinguishers. In each case, the exact weak-key class covers at least a quarter of the key space: $2^{78}$ of $2^{80}$ keys for PRESENT-80, $2^{126}$ of $2^{128}$ keys for PRESENT-128, GIFT-64 and GIFT-128. These results show that exact modeling of a short final part can reveal key-independent and weak-key integral behavior missed by single-observable searches.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-09",
+    "pdf_url": "https://eprint.iacr.org/2026/1402.pdf",
+    "url": "https://eprint.iacr.org/2026/1402",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/2015",
+    "title": "Proving Authenticated Key Exchange via Memory-Efficient Reductions",
+    "authors": [
+      "Runzhi Zeng"
+    ],
+    "abstract": "We initiate the study of memory efficiency in proving the security of authenticated key exchange (AKE) protocols: We first revise the security model for AKE protocols in order to prove their security in a memory-efficient manner without compromising its capability of capturing usual attacks. We formally show that security in our model implies previous ones, and thus our model captures the same security as before.\n    After that we propose a generic construction of AKE from key encapsulation mechanisms (KEMs) and digital signature schemes, motivated by the signed Diffie-Hellman protocol. Under the multi-user security of the signature scheme and (relatively weak) oneway-security against plaintext checking attacks of the KEM, our generic construction is proven to be tightly secure (in terms of success probability) via memory-tight reductions in the random oracle model. This gives us the first memory-tight AKE protocol, and it largely reduces the memory consumption of proving AKE protocols. Given that most post-quantum assumptions (e.g., the Learning-With-Errors and Short-Integer-Solution assumptions) are memory-sensitive, our improvement on memory consumption holds significant value for post-quantum AKE protocols.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-10-29",
+    "pdf_url": "https://eprint.iacr.org/2025/2015.pdf",
+    "url": "https://eprint.iacr.org/2025/2015",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2025/220",
+    "title": "The Quantum Decoherence Model: Everlasting Composable Secure Computation and More",
+    "authors": [
+      "Marcel Tiepelt"
+    ],
+    "abstract": "Quantum cryptography allows to achieve security goals which are unobtainable using classical cryptography alone: it offers the promise of everlasting privacy. Thatis, an adversary trying to attack a protocol must succeed during the run of the protocol.\nAfter the protocol has terminated, security holds unconditionally.\nIn this work, we initiate the study of a new model which we call the quantum decoherence model (QDM). In a nutshell, this model captures adversaries that are computationally bounded during the run of a protocol (and some time after), but become computationally unbounded long after the protocol terminates. Importantly, once the adversary becomes computationally unbounded, he can only remember a bounded number of qubits from before the computational bound was lifted.\nWe provide a variant of the Universal Composability framework which captures the new notion of quantum decoherence and augment it with quantum random oracles. As our main contribution, we construct a non-interactive commitment scheme achieving unconditional and statistical security against malicious senders and everlasting security against malicious receivers under our new security notion. Such commitments imply general secure multiparty computation with everlasting security.\nFinally, we show that our core technique can be applied to a broader spectrum of problems. We show that it gives rise to everlasting public key encryption and OT in the QDM. Finally, we also consider the weaker notion of incompressible encryption in the setting of quantum decoherence, and show that post-quantum IND-CPA secure public\nkey encryption is sufficient to realize this notion without resorting to random oracles.\nAt the technical core of our constructions is a new, conceptually simple yet powerful reverse entropic uncertainty relation.",
+    "venue": "IACR ePrint",
+    "year": 2025,
+    "date_published": "2025-02-13",
+    "pdf_url": "https://eprint.iacr.org/2025/220.pdf",
+    "url": "https://eprint.iacr.org/2025/220",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1394",
+    "title": "Adaptor Signatures Meet BLS: Enabling Efficient Blockchain Applications with Unique Adaptor Signatures",
+    "authors": [
+      "Clara Schneidewind"
+    ],
+    "abstract": "Blockchain-based cryptocurrencies give rise to a plenitude of advanced applications (such as cross-currency transfers or privacy-preserving payments) through blockchain protocols - cryptographic protocols that orchestrate the processing of financial transactions on the blockchain. To enable a modular design and to enhance reusability across different cryptocurrencies, many blockchain protocols are built upon adaptor signatures (AS), a well-studied cryptographic building block, which is natively supported by most digital signature schemes used for authorizing cryptocurrency transactions. An inherent limitation of AS-based blockchain protocols is the known impossibility to realize AS for unique signature schemes, such as BLS signatures. As a consequence, existing AS-based protocols cannot be executed on cryptocurrencies that base transaction authorization on BLS signatures (such as the Chia Network).\n\nFor such cryptocurrencies, instead, new custom blockchain protocols need to be created, as recently done for the case of coin mixing (S&amp;P'24) or atomic swaps between two cryptocurrencies with BLS-based transaction authorization (ESORICS'24). To avoid such complex and error-prone redesigns, in this work, we develop a novel notion of AS called Two-Party Asymmetric-Input Solitary-Output Adaptor Signature (2P-AISO-AS) that sidesteps the known impossibility result and that can be realized from both randomized (i.e., plain) and unique signature schemes. We provide efficient instantiations of 2P-AISO-AS from BLS and show that we can obtain performant, BLS-compatible blockchain protocols by replacing AS with 2P-AISO-AS in known AS-based protocols, including zero-knowledge contingent payments, atomic swaps, and coin mixing.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-08",
+    "pdf_url": "https://eprint.iacr.org/2026/1394.pdf",
+    "url": "https://eprint.iacr.org/2026/1394",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP",
+      "privacy",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1393",
+    "title": "On the Differential Uniformity of Polynomials over Galois Rings",
+    "authors": [
+      "Arne Sandrib"
+    ],
+    "abstract": "Design of hash functions and pseudo-random permutations over Galois extensions of $\\mathbb Z_q$ for prime powers $q$ has recently gained some interest in relation to recent directions in advanced cryptography, such as multiparty computation and zero-knowledge protocol design. Thus investigating optimality of cryptographic properties of S-boxes defined by polynomials over Galois rings is of interest. Of particular interest is the differential uniformity of such functions. To our knowledge, there are very few results on the differential uniformity for polynomials over Galois rings $\\mathrm{GR}(p^k,m)$ when $k,m\\geq 2$. Motivated by designing secure hash functions and block ciphers over Galois rings, a main contribution of this paper is an investigation into the differential properties of polynomials over Galois rings. Finally, we provide a classification of APN permutations in $\\mathrm{GR}(4,2)$ up to affine and CCZ-equivalence.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-08",
+    "pdf_url": "https://eprint.iacr.org/2026/1393.pdf",
+    "url": "https://eprint.iacr.org/2026/1393",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2024/883",
+    "title": "Low-Latency Linear Transformations with Small Key Transmission for Private Neural Network on Homomorphic Encryption",
+    "authors": [
+      "Joon-Woo Lee"
+    ],
+    "abstract": "As Machine Learning as a Service expands, protecting client data has become a critical challenge. Homomorphic Encryption (HE) enables computation on encrypted data, but practical HE-based AI still suffers from high latency and large key sizes. Among neural network operations, convolution remains a central target for optimization, as it is fundamental to CNNs and increasingly used in transformers and state-space models. To realize HE convolution, various packing strategies—defining the data layout within a ciphertext—have been introduced, leading to state-of-the-art methods such as multiplexed parallel convolution (MPConv), which is implemented with multiplexed parallel packing. In this paper, we propose Rotation-Optimized Multiplexed Parallel Convolution (RO-MPConv), which enhances usability by reducing the number of rotation operations and rotation keys—major contributors to latency and key sizes in MPConv. Additionally, we introduce a small-level key system to further decrease key sizes and a parallel baby-step giant-step matrix-vector multiplication, which reduces rotations for packing strategies with multiple identical data entries, including multiplexed parallel packing. Experimental results demonstrate that RO-MPConv achieves up to an 81% reduction in convolution latency compared to MPConv. For key transmission, combining RO-MPConv with the hierarchical rotation key system and our small-level key system achieves a 29× reduction in rotation key size compared to MPConv. Furthermore, integrating RO-MPConv into existing state-of-the-art models reduces their total latency by up to 26%, and our proposed matrix-vector multiplication method reduces latency by 69%. Our code is fully available from https://github.com/byeongseomin51/RO-MPConv.git.",
+    "venue": "IACR ePrint",
+    "year": 2024,
+    "date_published": "2024-06-03",
+    "pdf_url": "https://eprint.iacr.org/2024/883.pdf",
+    "url": "https://eprint.iacr.org/2024/883",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1388",
+    "title": "Chimera: A Hybrid GPU Backend for Sumcheck Acceleration in Zero Knowledge Provers",
+    "authors": [
+      "Nektarios Georgios Tsoutsos"
+    ],
+    "abstract": "Zero-knowledge proof systems are increasingly relying on the Sumcheck protocol to avoid the FFT-heavy structure of earlier SNARK designs. Sumcheck is well suited for GPU acceleration; it consists of sequential rounds where each round performs regular, parallelizable operations over large multilinear evaluation tables. The focus is on how to organize this work across rounds: intuitively, the active polynomial state should remain close to the device that processes it, the CPU-GPU boundary should only expose values that are needed to transition, and various cryptographic settings should be kept stable.\n\nThis paper presents Chimera, a GPU-CPU framework for accelerating Sumcheck in Spartan-style SNARK provers. Chimera uses a hybrid execution model: large polynomial evaluation and folding work runs on the GPU, active polynomial state remains resident on GPU across profitable rounds, compact round messages return to Spartan's host transcript, and small domains fall back to CPU execution. Chimera also specializes the wrappers around Spartan's small round-polynomial commitments and proof objects, and introduces a memory-aware chunking path.\n\n\nOn BN254 Spartan R1CS instances, Chimera demonstrates a \\(7.96\\times\\) improvement of the committed-Sumcheck region at \\(N=2^{17}\\),  relative to clean Spartan. Across full Spartan proving runs from \\(2^{12}\\) to \\(2^{27}\\) constraints, Chimera improves end-to-end prover time for all measured sizes, reaching \\(1.27\\times\\)-\\(1.64\\times\\) speedup for sizes \\(2^{24}\\)-\\(2^{27}\\). Ablation studies show that Chimera's gains come from choosing the right execution boundary rather than from any single optimization. The GPU handles the large, regular Sumcheck work, while Spartan keeps the protocol state needed for transcript and verifier compatibility. This reduces movement of polynomial data without disrupting the proof system. The remaining gap between Sumcheck-region and end-to-end speedup shows that, after Sumcheck is accelerated, polynomial commitment and proof-wrapper costs become the next bottleneck.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-07",
+    "pdf_url": "https://eprint.iacr.org/2026/1388.pdf",
+    "url": "https://eprint.iacr.org/2026/1388",
+    "citation_count": null,
+    "relevance_tags": [
+      "ZKP"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/284",
+    "title": "Knowledge Soundness of Polynomial Commitments in the Algebraic Group Model Does Not Guarantee Extractability",
+    "authors": [
+      "Dominik Stejskal"
+    ],
+    "abstract": "The Algebraic Group Model (AGM) has become a standard framework for analyzing the knowledge soundness of group-based polynomial commitment schemes. In this work, we formally establish inherent limitations of this methodology. We isolate a structural property satisfied by essentially all practical group-based polynomial commitments, which we term AGM-clarity. We prove that for AGM-clear schemes, evaluation binding implies knowledge soundness in the AGM. This collapse reveals that the AGM definition of knowledge soundness does not capture a distinct security property, but is merely a structural consequence of evaluation binding.\n\nTo precisely characterize the guarantees on extractability provided by the AGM, we introduce Weak Interpolation Knowledge Soundness (WIKS) in the standard model, which is an extreme relaxation of extractability. We show that WIKS is implied by standard evaluation binding and prove that, for AGM-clear schemes, knowledge soundness in the AGM is equivalent to WIKS. We further reformulate WIKS as Correct-Interpolation Binding and use this binding-style characterization to establish that, for binding polynomial commitments, special soundness is strictly stronger than WIKS. Together, these results calibrate AGM knowledge soundness for practical polynomial commitment schemes against two standard-model notions: for AGM-clear schemes, it is already implied by evaluation binding, while for binding schemes, it remains strictly weaker than special soundness. In particular, AGM proofs of knowledge soundness do not certify \"knowledge\" in the sense of immediate extractability.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-02-17",
+    "pdf_url": "https://eprint.iacr.org/2026/284.pdf",
+    "url": "https://eprint.iacr.org/2026/284",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "TEE",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1384",
+    "title": "Lower Bounds for PIR with Preprocessing from Blackbox Cryptography",
+    "authors": [
+      "Kevin Yeo"
+    ],
+    "abstract": "We study the limits of single-server private information retrieval (PIR) with preprocessing. Prior work has shown that single-server PIR with sublinear communication requires a linear number of (public-key) server operations per query [DMO00, DH24]. Recent breakthrough works, including [CHK22, ZPZS24, LMW23], circumvent these lower bounds by critically leveraging preprocessing to construct single-server PIR with sublinear query computation.\n\nOur work presents computation lower bounds for any single-server PIR with preprocessing that makes blackbox usage of any cryptography (such as random oracles and virtual blackbox obfuscation). For any client preprocessing scheme where the client stores $s$ bits about an $n$-bit database, we prove the online amortized computation must be $\\Omega(n/s)$ across $k = \\Omega(s)$ queries (even if performed in a single batch query). In more detail, we prove that they must have either $\\Omega(n/s)$ amortized online communication or the server must perform $\\Omega(n/s)$ cryptographic operations. Our lower bounds are optimal as there exist PIRs with client preprocessing  matching exactly one of the above requirements while outperforming the other. Furthermore, our lower bounds also rule out the existence of doubly efficient PIR from blackbox cryptography with sublinear query computation (current constructions use ring LWE). We note our lower bounds are widely applicable to any single-server PIR scheme that makes blackbox usage of cryptography including those with weaker privacy guarantees. In contrast, prior works only proved computation lower bounds for restricted classes of single-server PIR constructions (e.g., non-encoding servers or single-roundtrip queries).\n\nOur proof framework also supports $\\Omega(n/s)$ communication lower bounds for the following three classes of single-server PIR: schemes where the server performs $o(n/s)$ cryptographic operations, schemes where the server's cryptographic operations depend only on query communication and schemes with perfect privacy in the idealized model. Our results hold unconditionally whereas prior communication lower bounds required additional complexity assumptions.\n\nWe also prove lower bounds for symmetric private information retrieval (SPIR) with client preprocessing in the random oracle model and present a matching SPIR construction with client preprocessing using only OWFs during queries.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-07",
+    "pdf_url": "https://eprint.iacr.org/2026/1384.pdf",
+    "url": "https://eprint.iacr.org/2026/1384",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2023/1435",
+    "title": "Identity-Based Matchmaking Encryption with Enhanced Privacy Against Chosen-Ciphertext Attacks",
+    "authors": [
+      "Junji Shikata"
+    ],
+    "abstract": "Identity-based matchmaking encryption (IB-ME) proposed by Ateniese et al. [CRYPTO 2019; Journal of Cryptology 2021] enables users to communicate privately, anonymously, and authentically. Following the seminal work of Ateniese et al., considerable research has been conducted on the security and construction of IB-ME schemes, but no scheme with enhanced privacy against chosen-ciphertext attacks is known.\nIn this paper, we propose two IB-ME schemes that simultaneously achieve enhanced privacy against chosen-ciphertext attacks. The first scheme is built on the bilinear Diffie–Hellman assumption in the random oracle model. Inspired by the scheme of Ateniese et al., our construction attains stronger security guarantees while providing more compact decryption keys and ciphertexts than the scheme of Ateniese et al.\nThe second scheme is a generic construction built upon anonymous identity-based encryption, digital signatures, NIZK systems, and reusable extractors. This scheme is obtained by generalizing the specific scheme of Francati et al. [INDOCRYPT 2021] with several technique to solve CCA-related issues. It constitutes the first IB-ME scheme achieving the stronger security notions in the standard model.\nAs an additional contribution, we classify existing authenticity notions for IB-ME into four categories—no message attacks (NMA) and chosen message attacks (CMA), each considered against both insiders and outsiders. This taxonomy enables a precise comparison among existing IB-ME schemes.",
+    "venue": "IACR ePrint",
+    "year": 2023,
+    "date_published": "2023-09-21",
+    "pdf_url": "https://eprint.iacr.org/2023/1435.pdf",
+    "url": "https://eprint.iacr.org/2023/1435",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "privacy",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1373",
+    "title": "Formalizing Privacy of Anonymous Credentials: A Provably Secure Framework with Predicate Proofs",
+    "authors": [
+      "Jian Hou"
+    ],
+    "abstract": "Anonymous credentials enable privacy-preserving authentication but existing systems either lack support for predicate proofs or are tied to specific signature schemes without a formal framework. We propose the first constructive framework for anonymous credentials with native predicate proof support. The framework provides definitions of entities, operations, adversary models, and security properties—unforgeability, unlinkability, and minimal disclosure. To demonstrate its feasibility, we instantiate the framework with BBS signatures, Pedersen commitments, and ring signature based proofs. The instantiation yields compact credentials and efficient zero-knowledge predicate proofs. We prove that the instantiation satisfies all security properties under standard assumptions (q-SDH, discrete logarithm, and the zero-knowledge of the ring signature based proof). A performance evaluation confirms that credential issuance, verification, and predicate prove/verify are practical on standard hardware, with compact credentials and proofs whose communication cost grows modestly with the number and encoding length of proved attributes, and favorable runtime and storage relative to a CL-based baseline. Our framework provides a modular foundation for designing and analyzing anonymous credential systems with fine-grained attribute disclosure.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-03",
+    "pdf_url": "https://eprint.iacr.org/2026/1373.pdf",
+    "url": "https://eprint.iacr.org/2026/1373",
+    "citation_count": null,
+    "relevance_tags": [
+      "DeFi",
+      "ZKP",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "eprint:2026/1370",
+    "title": "smklhs: Succinct Multi key Linearly Homomorphic Signatures for Certified Statistics",
+    "authors": [
+      "Elena Pagnin"
+    ],
+    "abstract": "We study the problem of certifying statistical claims over datasets contributed by multiple independent sources.  In this setting, an untrusted server aggregates signed data records and publishes claims such as sums, averages, or rates, while any third party can verify that these claims are correct with respect to the authenticated input data, without needing access to the underlying records. A central challenge is to achieve public verifiability without requiring trust in the aggregator, while keeping both the proof size and the verification cost small enough for practical deployment.  This problem is motivated by applications in which reliable and scalable certification of published statistics is essential, including official health and demographic reporting.\n\nIn this work, we present smklhs, a multi-key linearly homomorphic signature scheme for this setting.  Compared to the state of the art, smklhs is the first practical construction to enjoy evaluated signatures of size logarithmic in the number of distinct signers involved in the computation, and else independent on the total number of input messages.  We prove smklhs secure against fully adaptive adversaries in the random oracle and algebraic group models, under well-studied hardness assumptions in bilinear groups.\n\nWe implement our scheme using the high-performance pairing library RELIC and compare it with prior work.  To demonstrate practicality, we consider a case study on authenticated mortality statistics related to the impact of COVID-19 in Spain.  At the 128-bit security level, our experiments show that an authenticated claim covering a 180-day nationwide dataset with over 300,000 signed records generated by 190 distinct signers can be verified in approximately 22 seconds on a commodity desktop machine. These results indicate that our approach is fast, lightweight, and practical for real-world deployment.",
+    "venue": "IACR ePrint",
+    "year": 2026,
+    "date_published": "2026-07-03",
+    "pdf_url": "https://eprint.iacr.org/2026/1370.pdf",
+    "url": "https://eprint.iacr.org/2026/1370",
+    "citation_count": null,
+    "relevance_tags": [
+      "oracle",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/JIOT.2026.3686857",
+    "title": "Layer 0 and Layer 1 Integrated Smart Contract Kill Switch for Cross-Chain Security in Decentralized Systems",
+    "authors": [
+      "Soonhong Kwon",
+      "Wooyoung Son",
+      "Jong-Hyouk Lee"
+    ],
+    "abstract": "The revised EU Data Act requires the incorporation of smart contract kill switch (KS) mechanisms. Nevertheless, most existing designs are either confined to single-chain architectures or dependent on centralized control, thereby conflicting with the decentralization principles of blockchain systems and limiting their applicability in cross-chain environments. This limitation becomes particularly critical in IoT-driven industrial contexts, where security incidents demand synchronized execution control across multiple chains. Under such circumstances, single-chain oriented KS mechanisms inherently suffer from structural constraints. To address these challenges, we propose an integrated Layer 0 and Layer 1 smart contract KS framework. The proposed framework enables distributed decision-making across heterogeneous blockchain systems by supporting diverse consensus algorithms, including proof of work (PoW), proof of stake (PoS), practical byzantine fault tolerance (PBFT), Paxos, and Raft. Cross-chain propagation of KS activation signals is securely facilitated through interoperability solutions such as CCMP and LayerZero. Importantly, activation decisions made on one chain are not mandatorily enforced on others; instead, each chain independently determines whether to execute the KS via its own consensus process, thereby preserving both autonomy and decentralization. For performance evaluation, repeated experiments were conducted across 50 use cases derived from exhaustive combinations of two interoperability mechanisms and five consensus algorithms. The analysis considered average activation time, gas consumption, and message delay, alongside time to activation (TTA) and tail-latency metrics to assess real-time responsiveness. Network experiments using Linux tc-netem demonstrate that even under severely degraded network conditions, the cross-chain p99 TTA is bounded at 12.2596 s, establishing a predictable worst case upper limit. These results highlight the structural robustness of the proposed framework by guaranteeing a bounded reaction time even in environments characterized by increased latency and consensus overhead, rather than merely improving average-case performance.",
+    "venue": "IEEE IoT Journal",
+    "year": 2026,
+    "date_published": "2026-07-15",
+    "pdf_url": null,
+    "url": "https://www.semanticscholar.org/paper/c9533a8a96618e6c6adf7cfd52556c1f82f26c52",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "consensus",
+      "bridge",
+      "TEE"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1186/s42400-026-00618-y",
+    "title": "Sccodebert: an automatic vulnerability detection and repair method for smart contracts",
+    "authors": [
+      "Jinlong Bai",
+      "Lifeng Cao",
+      "Xingchen Li",
+      "Hengyi Lv",
+      "Xuehui Du"
+    ],
+    "abstract": "A smart contract fundamentally consists of code deployed on the blockchain, noted for its transparent and unchangeable execution. These characteristics, however, also expose it to attackers once any weaknesses are present. In recent years, attacks targeting smart contracts have caused substantial financial losses, highlighting the importance of robust vulnerability detection approaches. Conventional detection techniques, which rely on contextual semantics or symbolic execution, often face limitations in efficiency. Although neural network-based approaches have enhanced detection speed, they frequently compromise accuracy. This study introduces a framework for identifying and repairing vulnerabilities in smart contracts by utilizing multi-relational graphs combined with a pre-trained model. Initially, a Multi-Relational Graph (MRG) is constructed to represent the multi-dimensional aspects of execution logic and data dependencies by integrating multiple program feature graphs. To reduce interference from extraneous code, contract slices are then generated according to node and edge types defined within the MRG. These vectorized slices are subsequently processed by a pre-trained model called SCCodeBERT for both detection and repair of potential vulnerabilities. Experiments show that SCCodeBERT achieves an average accuracy of 96.06% and an F1-score of 90.90% on mainstream vulnerability datasets. Moreover, it reaches an average repair effectiveness of 86.42%, significantly outperforming current baseline approaches. This work presents a highly effective automated solution for enhancing smart contract security, offering notable theoretical and practical contributions.",
+    "venue": "Cybersecurity",
+    "year": 2026,
+    "date_published": "2026-07-10",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1186/s42400-026-00618-y.pdf",
+    "url": "https://www.semanticscholar.org/paper/2bd997c87ee5dfb1b96ed9364344dba6413d39be",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "DeFi",
+      "formal-verification",
+      "measurement"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/JIOT.2026.3686364",
+    "title": "ConfidSPEC-V2X: A Quantum-Blockchain Intelligence for Mitigating Confidentiality Threats in Vehicle-to-Everything Networks",
+    "authors": [
+      "C. Okafor",
+      "Love Allen Chijioke Ahakonye",
+      "Dong-Seong Kim",
+      "Jae-Min Lee"
+    ],
+    "abstract": "Vehicular-to-everything (V2X) communications promise unprecedented safety and efficiency gains but remain vulnerable to confidentiality breaches such as eavesdropping, traffic analysis, and man-in-the-middle (MITM) attacks. We propose ConfidSPEC-V2X, a focused hybrid framework that integrates continuous-variable quantum key distribution (CV-QKD), a multiagent deep reinforcement learning (MADRL), and an Ethereum-based permissioned blockchain PureChain public-key infrastructure (PKI) to deliver information-theoretic secrecy, dynamic traffic obfuscation, and tamper-proof key management. In the quantum module, CV-QKD transceivers embedded in on-board units (OBUs) and roadside units (RSUs) establish symmetric keys resilient to passive interception and capable of immediate eavesdropping detection. The artificial intelligence (AI) module employs multiagent DRL agents at RSUs to learn optimal dummy-traffic injection policies that obfuscate real V2X message patterns against statistical inference. The blockchain module leverages PureChain smart contracts to register, rotate, and timestamp vehicle public keys, ensuring that any MITM attempt to forge or replay keys is invalidated. We implement and evaluate ConfidSPEC-V2X within an OMNeT++/Veins simulation under realistic urban mobility scenarios, measuring the quantum bit error rate (QBER), key generation throughput, obfuscation entropy, and key management latency. Results demonstrate that our framework achieves robust confidentiality protection with minimal performance overhead.",
+    "venue": "IEEE IoT Journal",
+    "year": 2026,
+    "date_published": "2026-07-15",
+    "pdf_url": "https://doi.org/10.1109/jiot.2026.3686364",
+    "url": "https://www.semanticscholar.org/paper/4a23dc56acb85029b23ac260eb045b7e9116b7d9",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "privacy",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/JIOT.2026.3693149",
+    "title": "Blockchain-Based Heterogeneous Signcryption With Proxy Re-Encryption and CRF for Secure WBANs",
+    "authors": [
+      "N. Hundera",
+      "Yikun Li",
+      "Rashad Elhabob",
+      "Adhikari Deepak",
+      "Hu Xiong"
+    ],
+    "abstract": "Wireless body area networks (WBANs) enable continuous and remote monitoring of medical information in modern healthcare systems. However, ensuring the security and privacy of WBAN data remains a significant challenge, especially with the rise of algorithm substitution attacks (ASAs) that enable adversaries to perform filtering attacks during data sharing. To address these challenges, we introduce a novel blockchain-based heterogeneous certificateless online/offline signcryption scheme with proxy re-encryption and a cryptographic reverse firewall (BHCOSP-CRF). The scheme establishes secure data exchange between a sender using a certificateless cryptosystem (CLC) and a receiver operating in an identity-based cryptosystem (IBC), with a CRF integrated to protect against ASAs. To reduce the computational overload on WBAN nodes, BHCOSP-CRF divides signcryption into offline and online phases. Most computationally intensive operations are performed in the offline phase without the message, whereas only lightweight computations are executed in the online phase once the message becomes available. Furthermore, a consortium blockchain service center (CBSC) stores the initial ciphertext and re-encrypts it via smart contracts, which avoids single points of failure and improves efficiency compared to traditional proxy servers. Moreover, we prove the security of BHCOSP-CRF in the random oracle model, and performance evaluation shows that BHCOSP-CRF achieves better performance than existing schemes in terms of communication cost, computational efficiency, energy consumption, and latency. Therefore, BHCOSP-CRF is well-suited for WBAN environments.",
+    "venue": "IEEE IoT Journal",
+    "year": 2026,
+    "date_published": "2026-07-15",
+    "pdf_url": null,
+    "url": "https://www.semanticscholar.org/paper/db1116ae6ad25e0b2b46fd8a49bda02b1e65e419",
+    "citation_count": 0,
+    "relevance_tags": [
+      "smart-contract",
+      "oracle",
+      "privacy"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1109/JIOT.2026.3690448",
+    "title": "DCAChain: A Decentralized Cross-Domain Access-Control Architecture With Key-Abuse Resistance for the Metaverse",
+    "authors": [
+      "Chien-Ming Chen",
+      "Bohao Xiang",
+      "Saru Kumari"
+    ],
+    "abstract": "The rapid convergence of the Internet of Things (IoT) and the metaverse has intensified cross-domain data exchange and digital asset sharing, raising new challenges in access control, key-abuse prevention, and interoperability across heterogeneous domains. Existing blockchain-based solutions still rely on centralized authorities or isolated single-chain architectures, which limit scalability and flexible cross-domain coordination. To address these issues, this article proposes DCAChain, a decentralized cross-domain access-control architecture for the metaverse. DCAChain integrates a relay-chain (RC)–parachain (PC) model with hashed timelock contract (HTLC) to enable verifiable cross-domain coordination, and builds upon accountable ciphertext-policy attribute-based encryption (CP-ABE)/noninteractive zero-knowledge (NIZK)-based authorization to resist key abuse without trusted intermediaries. The framework further supports dynamic attribute lifecycle management, including expiration, revocation, and key update, and introduces smart-contract-based policy reuse and attribute-set deduplication to reduce repeated encryption redundancy in asynchronous multiuser scenarios. Experimental results on Ethereum and Hyperledger Sawtooth show that DCAChain achieves lower operational cost, reduced latency, and improved scalability compared with representative frameworks. These results indicate that DCAChain is a practical solution for privacy-preserving cross-domain access control in metaverse environments.",
+    "venue": "IEEE IoT Journal",
+    "year": 2026,
+    "date_published": "2026-07-15",
+    "pdf_url": null,
+    "url": "https://www.semanticscholar.org/paper/b4d606e542e1789c44878f1a58c7f70be7fae6cd",
+    "citation_count": 0,
+    "relevance_tags": [
+      "bridge",
+      "ZKP",
+      "privacy",
+      "access-control"
+    ],
+    "analyzed": false
+  },
+  {
+    "id": "doi:10.1145/3788882.3788899",
+    "title": "Towards Understanding the Role of Feedback in Online Learning",
+    "authors": [
+      "Duo Cheng"
+    ],
+    "abstract": "Online learning provides a simple yet powerful way to model sequential decision-making under uncertainty. The process repeats: make a choice, observe feedback, and update strategy. This cycle appears in many areas - from recommendation system, to reconfiguring resources in large networks, to managing financial portfolios. One thing that determines the effectiveness of learning is the feedback the learner receives. Feedback comes in many forms. In the bandit setting, only the outcome of the chosen action is revealed. In the fullinformation setting, the outcomes of all actions are visible. In practice, feedback can also be partial, noisy, delayed, or heavy-tailed. Each variation fundamentally changes what the learner can achieve.",
+    "venue": "ACM SIGMETRICS",
+    "year": 2026,
+    "date_published": "2026-01-09",
+    "pdf_url": "https://vtechworks.lib.vt.edu/bitstreams/ed6cacb7-56da-4db8-85a9-29b184b7ed78/download",
+    "url": "https://doi.org/10.1145/3788882.3788899",
+    "citation_count": 0,
+    "relevance_tags": [],
     "analyzed": false
   }
 ]
