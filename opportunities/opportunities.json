@@ -1,345 +1,5 @@
 [
   {
-    "title": "Solana Startup Pitch Contest Kraków",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/solana-startup-pitch-contest-krakow",
-    "prize": "1000 USDG",
-    "deadline": "2026-04-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260330_75",
-    "fetched": "2026-03-30"
-  },
-  {
-    "title": "SurfCash Video Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/surfcash-video-bounty",
-    "prize": "1500 USDG",
-    "deadline": "2026-04-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260406_113",
-    "fetched": "2026-04-06"
-  },
-  {
-    "title": "Xpend X Solana Video Content Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/xpend-x-solana-video-content-bounty",
-    "prize": "1500 USDG",
-    "deadline": "2026-04-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260406_114",
-    "fetched": "2026-04-06"
-  },
-  {
-    "title": "Xpend X Solana Writers Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/xpend-x-solana-writers-bounty",
-    "prize": "1500 USDG",
-    "deadline": "2026-04-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260406_115",
-    "fetched": "2026-04-06"
-  },
-  {
-    "title": "GetBlock Solana Low-Latency Infrastructure Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/getblock-solana-low-latency-infrastructure-bounty",
-    "prize": "500 USDT",
-    "deadline": "2026-04-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260413_135",
-    "fetched": "2026-04-13"
-  },
-  {
-    "title": "Motion Designer for UI/UX Frontend Trailers for Perena",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/project/motion-designer-for-uiux-frontend-trailers-for-perena",
-    "prize": "160 USDC",
-    "deadline": "2026-04-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260420_163",
-    "fetched": "2026-04-20"
-  },
-  {
-    "title": "Superteam KZ Bootcamp - AlmaU Bounty Program",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/superteam-kz-bootcamp-almau-bounty-program",
-    "prize": "2100 USDG",
-    "deadline": "2026-04-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260420_164",
-    "fetched": "2026-04-20"
-  },
-  {
-    "title": "JET STATION: O primeiro evento da JET LATAM",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/jet-station-o-primeiro-evento-da-jet-latam",
-    "prize": "500 USDC",
-    "deadline": "2026-04-22",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260413_136",
-    "fetched": "2026-04-13"
-  },
-  {
-    "title": "Pitch Your Startup Idea to Superteam Ukraine | Offline in Kyiv",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/pitch-your-startup-idea-to-superteam-ukraine-offline-in-kyiv",
-    "prize": "400 USDG",
-    "deadline": "2026-04-22",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260420_165",
-    "fetched": "2026-04-20"
-  },
-  {
-    "title": "Solana P2P NFC Adapter: Cross-Platform APDU Module for Solana Pay",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/solana-p2p-nfc-adapter-cross-platform-apdu-module-for-solana-pay",
-    "prize": "1000 USDG",
-    "deadline": "2026-04-22",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260420_166",
-    "fetched": "2026-04-20"
-  },
-  {
-    "id": "dorahacks_hashkey",
-    "title": "HashKey Chain On-Chain Horizon Hackathon",
-    "category": "hackathon",
-    "platform": "DoraHacks",
-    "url": "https://dorahacks.io/hackathon/2045",
-    "prize": "40,000 USDT",
-    "deadline": "2026-04-23",
-    "start_date": "2026-03-10",
-    "location": "Online",
-    "description": "Build on HashKey Chain across three tracks: DeFi, PayFi, and AI. Registration deadline April 15.",
-    "tags": [
-      "HashKey",
-      "DeFi",
-      "PayFi",
-      "AI"
-    ],
-    "fetched": "2026-03-28"
-  },
-  {
-    "title": "BE BULLISH ABOUT COLDSTAR - Star our Github, Follow our X & Join our Community",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/be-bullish-about-coldstar-star-our-github-follow-our-x-and-join-our-community",
-    "prize": "190 USDC",
-    "deadline": "2026-04-23",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260406_116",
-    "fetched": "2026-04-06"
-  },
-  {
-    "title": "Kazakhstan Solana Projects Spotlight — Content Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/kazakhstan-solana-projects-spotlight-content-bounty",
-    "prize": "950 USDG",
-    "deadline": "2026-04-24",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260330_76",
-    "fetched": "2026-03-30"
-  },
-  {
-    "title": "Superteam Australia | Merch Design Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/superteam-australia-merch-design-bounty",
-    "prize": "1000 USDG",
-    "deadline": "2026-04-24",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260413_137",
-    "fetched": "2026-04-13"
-  },
-  {
-    "title": "Spread the Word About The Garage — Superteam Brasil's Solana Build Station",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/spread-the-word-about-the-garage-superteam-brasils-solana-build-station",
-    "prize": "1000 USDG",
-    "deadline": "2026-04-24",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260420_167",
-    "fetched": "2026-04-20"
-  },
-  {
-    "title": "Birdeye Data 4-Week BIP Competition — Sprint 1",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/birdeye-data-4-week-bip-competition-sprint-1",
-    "prize": "500 USDC",
-    "deadline": "2026-04-25",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260420_168",
-    "fetched": "2026-04-20"
-  },
-  {
-    "id": "lablab_arc_circle",
-    "title": "Arc & Circle Agentic Hackathon",
-    "category": "ai",
-    "platform": "Lablab.ai",
-    "url": "https://lablab.ai/ai-hackathons",
-    "prize": "$10,000",
-    "deadline": "2026-04-26",
-    "start_date": "2026-04-20",
-    "location": "Online + SF",
-    "description": "Build agentic AI apps. Online build Apr 20-25, hybrid build day Apr 25 in San Francisco, demos & awards Apr 26.",
-    "tags": [
-      "AI",
-      "Agents"
-    ],
-    "fetched": "2026-03-28"
-  },
-  {
-    "title": "Design a Comprehensive Brand Kit for Superteam Turkey",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/design-a-comprehensive-brand-kit-for-superteam-turkey",
-    "prize": "1500 USDG",
-    "deadline": "2026-04-26",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260420_169",
-    "fetched": "2026-04-20"
-  },
-  {
-    "title": "Write an X Thread: Yieldbay Protocol Health Dashboard Feedback",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/write-an-x-thread-yieldbay-protocol-health-dashboard-feedback",
-    "prize": "1000 USDG",
-    "deadline": "2026-04-26",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260420_170",
-    "fetched": "2026-04-20"
-  },
-  {
-    "title": "Hyperlooping Challenge - Zodial.xyz",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/zodial",
-    "prize": "1500 USDG",
-    "deadline": "2026-04-27",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260413_138",
-    "fetched": "2026-04-13"
-  },
-  {
-    "title": "Build on Solana: Ideation Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/outline-a-solana-project-concept-for-colosseum-frontier-hackathon",
-    "prize": "1500 USDC",
-    "deadline": "2026-04-27",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260420_171",
-    "fetched": "2026-04-20"
-  },
-  {
     "title": "Airbills Video Bounty - Ad Content",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2570,6 +2230,22 @@
     "fetched": "2026-07-20"
   },
   {
+    "title": "Poste Sobre o Youth Challenge Blockchain no X — UNICEF x Superteam Brasil",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/poste-sobre-o-youth-challenge-blockchain-no-x-unicef-x-superteam-brasil",
+    "prize": "2000 USDG",
+    "deadline": "2026-07-27",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260727_371",
+    "fetched": "2026-07-27"
+  },
+  {
     "title": "Learn how to borrow better, leave product feedback and earn with Zodial",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2634,6 +2310,38 @@
     "fetched": "2026-07-20"
   },
   {
+    "title": "Linkedin Post About Solana Summit Serbia",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/linkedin-post-about-solana-summit-serbia",
+    "prize": "500 USDG",
+    "deadline": "2026-07-30",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260727_372",
+    "fetched": "2026-07-27"
+  },
+  {
+    "title": "Craft an Engaging Tweet for Solana Summit Serbia to Excite Turkish Attendance",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/craft-an-engaging-tweet-for-solana-summit-serbia-to-excite-turkish-attendance",
+    "prize": "500 USDG",
+    "deadline": "2026-07-30",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260727_373",
+    "fetched": "2026-07-27"
+  },
+  {
     "title": "Become a ROSEN Global Ambassador (Cohort 4) – Earn, Create, & Build!",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2666,6 +2374,22 @@
     "fetched": "2026-07-20"
   },
   {
+    "title": "Analyze Long-Term NFT Community Growth & Survival Strategy",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/analyze-long-term-nft-community-growth-and-survival-strategy",
+    "prize": "350 USDC",
+    "deadline": "2026-07-31",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260727_374",
+    "fetched": "2026-07-27"
+  },
+  {
     "title": "Write a Twitter Thread on Eva Mainnet",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2696,6 +2420,38 @@
     ],
     "id": "opp_20260720_371",
     "fetched": "2026-07-20"
+  },
+  {
+    "title": "Write a Twitter thread on the PMM Litepaper",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/write-a-twitter-thread-on-the-pmm-litepaper",
+    "prize": "250 USDC",
+    "deadline": "2026-08-05",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260727_375",
+    "fetched": "2026-07-27"
+  },
+  {
+    "title": "Write About the Brain Drain Wall",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/write-about-the-brain-drain-wall",
+    "prize": "875 USDG",
+    "deadline": "2026-08-05",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260727_376",
+    "fetched": "2026-07-27"
   },
   {
     "title": "Polish Startup Icons: The NextGen Founders Challenge",
@@ -2776,6 +2532,22 @@
     ],
     "id": "opp_20260720_385",
     "fetched": "2026-07-20"
+  },
+  {
+    "title": "Ask the Suits: TradFi's reaction to RWA",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/ask-the-suits",
+    "prize": "1750 USDC",
+    "deadline": "2026-08-11",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260727_377",
+    "fetched": "2026-07-27"
   },
   {
     "title": "Manic PnL Challenge (UGC Contest)",
@@ -4391,6 +4163,24 @@
     "fetched": "2026-07-20"
   },
   {
+    "title": "The Blueprint Hackathon  (For All Ages, July 17th-31st)",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://the-blueprint-hackathon.devpost.com/",
+    "prize": "$<span data-currency-value>8,176</span>",
+    "deadline": "Jul 17 - 3",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Education",
+      "Open Ended"
+    ],
+    "id": "opp_20260727_370",
+    "fetched": "2026-07-27"
+  },
+  {
     "title": "Evorozen Apex: NextGen AI Buildathon",
     "category": "hackathon",
     "platform": "Devpost",
@@ -4407,6 +4197,24 @@
     ],
     "id": "opp_20260720_364",
     "fetched": "2026-07-20"
+  },
+  {
+    "title": "Code Carnage",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://code-carnage.devpost.com/",
+    "prize": "$<span data-currency-value>10,000</span>",
+    "deadline": "Jul 18 - A",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Education",
+      "Machine Learning/AI"
+    ],
+    "id": "opp_20260727_367",
+    "fetched": "2026-07-27"
   },
   {
     "title": "Ventura Challenge",
@@ -4660,6 +4468,24 @@
     "fetched": "2026-07-13"
   },
   {
+    "title": "India High School Exoplanet Data Challenge",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://celesta-exoplanet-challenge.devpost.com/",
+    "prize": "$<span data-currency-value>10,300</span>",
+    "deadline": "Jun 15 - J",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Low/No Code",
+      "Machine Learning/AI"
+    ],
+    "id": "opp_20260727_366",
+    "fetched": "2026-07-27"
+  },
+  {
     "title": "Hack-A-Agent",
     "category": "hackathon",
     "platform": "Devpost",
@@ -4873,6 +4699,24 @@
     ],
     "id": "opp_20260622_321",
     "fetched": "2026-06-22"
+  },
+  {
+    "title": "Girls In STEM Global Hackathon",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://girlsinstemhackathon.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Jun 23 - A",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Low/No Code",
+      "Social Good"
+    ],
+    "id": "opp_20260727_369",
+    "fetched": "2026-07-27"
   },
   {
     "title": "The Rice University Urban Sustainability Hackathon",
@@ -5551,6 +5395,24 @@
     ],
     "id": "opp_20260504_207",
     "fetched": "2026-05-04"
+  },
+  {
+    "title": "Assistive Innovation Challenge 2026",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://assistive-innovation-challenge.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "May 04 - A",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Health",
+      "Social Good"
+    ],
+    "id": "opp_20260727_368",
+    "fetched": "2026-07-27"
   },
   {
     "title": "Easygo Mini Hackathon - Powered by KICK",
