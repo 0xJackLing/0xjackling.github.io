@@ -1,85 +1,5 @@
 [
   {
-    "title": "Autonomous Agent Bounty: OOBE × Ace Data Cloud",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/autonomous-agent-bounty-oobe-ace-data-cloud",
-    "prize": "2400 USDC",
-    "deadline": "2026-06-03",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260518_248",
-    "fetched": "2026-05-18"
-  },
-  {
-    "title": "Write a Pre-Seed Fundraising Guide for Ukrainian Solana Startups",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/write-a-pre-seed-fundraising-guide-for-ukrainian-solana-startups",
-    "prize": "1300 USDG",
-    "deadline": "2026-06-03",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260525_259",
-    "fetched": "2026-05-25"
-  },
-  {
-    "title": "Create Content about the Solana Summit in Germany",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/create-content-about-the-solana-summit-in-germany",
-    "prize": "10000 USDG",
-    "deadline": "2026-06-05",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260511_231",
-    "fetched": "2026-05-11"
-  },
-  {
-    "title": "Write an X Thread: Advice on Surviving Your First Hackathon",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/write-an-x-thread-advice-on-surviving-your-first-hackathon",
-    "prize": "800 USDG",
-    "deadline": "2026-06-06",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_275",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "Create a Short Video Explaining Totalis (Vertical Format)",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/create-a-short-video-explaining-totalis-vertical-format",
-    "prize": "1000 USDC",
-    "deadline": "2026-06-08",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_276",
-    "fetched": "2026-06-01"
-  },
-  {
     "title": "BENTO [Security layer for AI Agents] - Beta Bounty",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2450,6 +2370,22 @@
     "fetched": "2026-08-17"
   },
   {
+    "title": "Create a Video About Swap.io",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/create-a-video-about-swapio",
+    "prize": "500 USDC",
+    "deadline": "2026-09-13",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260907_403",
+    "fetched": "2026-09-07"
+  },
+  {
     "title": "NectarFi x Dominion Market",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2482,6 +2418,22 @@
     "fetched": "2026-08-24"
   },
   {
+    "title": "X Post About Grow App",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/x-post-about-grow-app",
+    "prize": "500 USDG",
+    "deadline": "2026-09-15",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260907_404",
+    "fetched": "2026-09-07"
+  },
+  {
     "title": "Try out new docs to build a trusted agent with T3N that we can distribute / host",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2496,6 +2448,22 @@
     ],
     "id": "opp_20260831_402",
     "fetched": "2026-08-31"
+  },
+  {
+    "title": "Trade on KriptoK League and Share Your Round Experience | $2,000 USDC",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/kriptok-league-trading-experience-bounty",
+    "prize": "2000 USDC",
+    "deadline": "2026-09-17",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260907_405",
+    "fetched": "2026-09-07"
   },
   {
     "title": "Solana Summit Creator Grant",
@@ -2548,6 +2516,22 @@
     "fetched": "2026-08-24"
   },
   {
+    "title": "Steve Agent Arena: Launch Your Agent & Win 500 USDC",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/steve-agent-arena-launch-your-agent-and-win-500-usdc",
+    "prize": "500 USDC",
+    "deadline": "2026-09-20",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260907_406",
+    "fetched": "2026-09-07"
+  },
+  {
     "title": "Solana Summit Canada Creator Challenge - part 1",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2562,6 +2546,38 @@
     ],
     "id": "opp_20260824_396",
     "fetched": "2026-08-24"
+  },
+  {
+    "title": "BAXUS Creators: Film Real Vending Machine Spins",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/baxus-creators-film-real-vending-machine-spins",
+    "prize": "7000 USDC",
+    "deadline": "2026-09-22",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260907_407",
+    "fetched": "2026-09-07"
+  },
+  {
+    "title": "Create an App on Cookie Chain",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/create-an-app-on-cookie-chain-app",
+    "prize": "1000 USDC",
+    "deadline": "2026-09-22",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260907_408",
+    "fetched": "2026-09-07"
   },
   {
     "title": "Build and Demo a Mermail Agent Skill",
@@ -2594,6 +2610,22 @@
       "Ethereum"
     ],
     "fetched": "2026-03-28"
+  },
+  {
+    "title": "Trading Content Partner for KriptoK League | 2-Month Project",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/project/kriptok-league-trading-content-partner",
+    "prize": "",
+    "deadline": "2026-09-30",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260907_409",
+    "fetched": "2026-09-07"
   },
   {
     "title": "Pitch & Demo Your Product at Online Demo Day",
@@ -6836,6 +6868,24 @@
     ],
     "id": "opp_20260824_374",
     "fetched": "2026-08-24"
+  },
+  {
+    "title": "UPAI-Hackdays",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://upai-hackdays.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Sep 07 - 1",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Blockchain",
+      "Open Ended"
+    ],
+    "id": "opp_20260907_402",
+    "fetched": "2026-09-07"
   },
   {
     "title": "Cyber Hawk Hack Days",
