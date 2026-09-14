@@ -1,167 +1,5 @@
 [
   {
-    "title": "BENTO [Security layer for AI Agents] - Beta Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/bento-beta-bounty",
-    "prize": "200 USDC",
-    "deadline": "2026-06-09",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_277",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "Develop Solana Yield Adapter Standard",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/develop-solana-yield-adapter-standard",
-    "prize": "1000 USDC",
-    "deadline": "2026-06-09",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260608_293",
-    "fetched": "2026-06-08"
-  },
-  {
-    "title": "Stake $GMYLD  & Play PumpCat.FUN - Get Paid Up to $100 for Honest Feedback",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/stake-dollargmyld-and-play-pumpcatfun-get-paid-up-to-dollar100-for-honest-feedback-1",
-    "prize": "2000 USDC",
-    "deadline": "2026-06-10",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260518_249",
-    "fetched": "2026-05-18"
-  },
-  {
-    "title": "Create Content About Amulets & Earn Rewards",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/create-content-about-amulets-and-earn-rewards",
-    "prize": "2000 USDC",
-    "deadline": "2026-06-11",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260525_260",
-    "fetched": "2026-05-25"
-  },
-  {
-    "title": "Solana IRL: Real-World Use Cases Research",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/solana-irl-real-world-use-cases-research",
-    "prize": "500 USDG",
-    "deadline": "2026-06-11",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_278",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "Growth Marketer for Onchainhunt",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/project/growth-marketer-for-an-indie-solana-saas",
-    "prize": "",
-    "deadline": "2026-06-13",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_279",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "SolPoint Germany Summit Connect",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/solpoint-germany-summit-connect",
-    "prize": "220 USDC",
-    "deadline": "2026-06-13",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_280",
-    "fetched": "2026-06-01"
-  },
-  {
-    "id": "ethglobal_newyork_2026",
-    "title": "ETHGlobal New York",
-    "category": "hackathon",
-    "platform": "ETHGlobal",
-    "url": "https://ethglobal.com/events/newyork",
-    "prize": "$275,000+ (est.)",
-    "deadline": "2026-06-14",
-    "start_date": "2026-06-12",
-    "location": "New York City, USA",
-    "description": "Flagship in-person Ethereum hackathon at Metropolitan Pavilion. 36-hour hacking window.",
-    "tags": [
-      "Ethereum",
-      "DeFi",
-      "L2"
-    ],
-    "fetched": "2026-03-28"
-  },
-  {
-    "title": "RampHub Creator Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/ramphub-creator-bounty",
-    "prize": "7500 USDG",
-    "deadline": "2026-06-14",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_271",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "Compose a Twitter/X Post or Thread Promoting JagPool World Cup",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/compose-a-twitterx-post-or-thread-promoting-jagpool-world-cup",
-    "prize": "500 USDC",
-    "deadline": "2026-06-15",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260608_294",
-    "fetched": "2026-06-08"
-  },
-  {
     "title": "Build SDK that improves RPC and transaction reliability for Solana dApps",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2466,6 +2304,22 @@
     "fetched": "2026-09-07"
   },
   {
+    "title": "Design a T-Shirt for Superteam Türkiye Inspired by Colosseum/Crypto World's Fair",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/design-a-t-shirt-for-superteam-turkiye-inspired-by-colosseumcrypto-worlds-fair",
+    "prize": "250 USDG",
+    "deadline": "2026-09-18",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260914_406",
+    "fetched": "2026-09-14"
+  },
+  {
     "title": "Solana Summit Creator Grant",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2480,6 +2334,22 @@
     ],
     "id": "opp_20260824_394",
     "fetched": "2026-08-24"
+  },
+  {
+    "title": "Solana Summit Video Challenge",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/summitvideos",
+    "prize": "500 USDC",
+    "deadline": "2026-09-19",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260914_407",
+    "fetched": "2026-09-14"
   },
   {
     "id": "dorahacks_munichtech",
@@ -2530,6 +2400,22 @@
     ],
     "id": "opp_20260907_406",
     "fetched": "2026-09-07"
+  },
+  {
+    "title": "Show the world SOLARA — Content + Seeker dApp reviews",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/show-the-world-solara-content-seeker-dapp-reviews-1",
+    "prize": "500 USDC",
+    "deadline": "2026-09-21",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260914_408",
+    "fetched": "2026-09-14"
   },
   {
     "title": "Solana Summit Canada Creator Challenge - part 1",
@@ -2596,6 +2482,70 @@
     "fetched": "2026-08-31"
   },
   {
+    "title": "Business Track Milestone — Pitch Deck & Checkpoint",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/business-track-milestone-pitch-deck-and-checkpoint",
+    "prize": "320 USDG",
+    "deadline": "2026-09-23",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260914_409",
+    "fetched": "2026-09-14"
+  },
+  {
+    "title": "Spout Finance Product Feedback",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/product-feedback-spout-finance",
+    "prize": "1000 USDC",
+    "deadline": "2026-09-23",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260914_410",
+    "fetched": "2026-09-14"
+  },
+  {
+    "title": "Diseña el Merch Oficial de El Encuentro 2026",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/disena-el-merch-oficial-de-el-encuentro-2026",
+    "prize": "500 USDG",
+    "deadline": "2026-09-24",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260914_411",
+    "fetched": "2026-09-14"
+  },
+  {
+    "title": "Record X Video Reaction to Solana Ecosystem News",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/record-x-video-reaction-to-solana-ecosystem-news",
+    "prize": "200 USDG",
+    "deadline": "2026-09-24",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260914_412",
+    "fetched": "2026-09-14"
+  },
+  {
     "id": "ethglobal_tokyo_2026",
     "title": "ETHGlobal Tokyo",
     "category": "hackathon",
@@ -2626,6 +2576,22 @@
     ],
     "id": "opp_20260907_409",
     "fetched": "2026-09-07"
+  },
+  {
+    "title": "Create a post about Stealf",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/stealf-bounty",
+    "prize": "500 USDC",
+    "deadline": "2026-09-30",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260914_413",
+    "fetched": "2026-09-14"
   },
   {
     "title": "Pitch & Demo Your Product at Online Demo Day",
@@ -6886,6 +6852,23 @@
     ],
     "id": "opp_20260907_402",
     "fetched": "2026-09-07"
+  },
+  {
+    "title": "ACM Marketsphere 2026",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://acm-marketsphere-2026.devpost.com/",
+    "prize": "₹ <span data-currency-value>20,000</span>",
+    "deadline": "Sep 17 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Enterprise",
+      "Fintech"
+    ],
+    "id": "opp_20260914_405",
+    "fetched": "2026-09-14"
   },
   {
     "title": "Cyber Hawk Hack Days",
