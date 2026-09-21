@@ -1,213 +1,5 @@
 [
   {
-    "title": "Build SDK that improves RPC and transaction reliability for Solana dApps",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/build-sdk-that-improves-rpc-and-transaction-reliability-for-solana-dapps",
-    "prize": "1000 USDC",
-    "deadline": "2026-06-16",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260615_300",
-    "fetched": "2026-06-15"
-  },
-  {
-    "title": "Create a Video on Archer",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/archer-video-bounty",
-    "prize": "500 USDC",
-    "deadline": "2026-06-17",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_281",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "Design the Official Solana Summit Nigeria 2026 Merchandise Collection",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/design-the-official-solana-summit-nigeria-2026-merchandise-collection",
-    "prize": "3500 USDG",
-    "deadline": "2026-06-17",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260608_295",
-    "fetched": "2026-06-08"
-  },
-  {
-    "title": "Solana Summit Animation Bounty",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/solana-summit-animation-bounty",
-    "prize": "5000 USDG",
-    "deadline": "2026-06-17",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260608_296",
-    "fetched": "2026-06-08"
-  },
-  {
-    "title": "Build everyday real-world systems as on-chain Rust programs",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/build-everyday-real-world-systems-as-on-chain-rust-programs",
-    "prize": "1000 USDG",
-    "deadline": "2026-06-18",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_282",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "Founders Fridays Graphic Design Challenge",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/founders-fridays-graphic-design-challenge",
-    "prize": "500 USDG",
-    "deadline": "2026-06-18",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260608_297",
-    "fetched": "2026-06-08"
-  },
-  {
-    "title": "Write a Twitter Thread on Eva",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/write-a-twitter-thread-on-eva",
-    "prize": "120 USDC",
-    "deadline": "2026-06-19",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260608_298",
-    "fetched": "2026-06-08"
-  },
-  {
-    "title": "Post Feedback on Superteam Ukraine Incrypted Conference 2026 on Threads",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/post-feedback-on-superteam-ukraine-incrypted-conference-2026-on-threads",
-    "prize": "500 USDG",
-    "deadline": "2026-06-20",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260615_301",
-    "fetched": "2026-06-15"
-  },
-  {
-    "title": "Creator Challenge: Promote a UK Colosseum Frontier Project",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/creator-challenge-promote-a-uk-colosseum-frontier-project",
-    "prize": "750 USDG",
-    "deadline": "2026-06-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_283",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "Business Challenge: Institutional Competitor Analysis",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/business-challenge-institutional-competitor-analysis",
-    "prize": "750 USDG",
-    "deadline": "2026-06-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_284",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "Developer Challenge: Blueshift – Assembly Timeout",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/developer-challenge-blueshift-assembly-timeout",
-    "prize": "750 USDG",
-    "deadline": "2026-06-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260601_285",
-    "fetched": "2026-06-01"
-  },
-  {
-    "title": "Create Vertical Video Content Explaining Superteam Earn Bounties",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/create-an-instagram-reel-explaining-superteam-earn-bounties",
-    "prize": "1000 USDG",
-    "deadline": "2026-06-21",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260615_302",
-    "fetched": "2026-06-15"
-  },
-  {
-    "title": "Hobba - Learn how to Borrow better, leave product feedback and earn!",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/hobba-product-bounty",
-    "prize": "1500 USDC",
-    "deadline": "2026-06-22",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260615_303",
-    "fetched": "2026-06-15"
-  },
-  {
     "title": "Publish Technical Deep Dive on Solana Subscriptions & Allowances Primitive",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2546,6 +2338,22 @@
     "fetched": "2026-09-14"
   },
   {
+    "title": "Get a realistic dev roadmap for your project",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/get-a-realistic-dev-roadmap-for-your-project",
+    "prize": "150 USDG",
+    "deadline": "2026-09-24",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_407",
+    "fetched": "2026-09-21"
+  },
+  {
     "id": "ethglobal_tokyo_2026",
     "title": "ETHGlobal Tokyo",
     "category": "hackathon",
@@ -2592,6 +2400,166 @@
     ],
     "id": "opp_20260914_413",
     "fetched": "2026-09-14"
+  },
+  {
+    "title": "Create a Short Video Explainer for Hisa: $5000 up for grabs.",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/create-a-short-video-explainer-for-hisa-dollar5000-up-for-grabs",
+    "prize": "5002 USDG",
+    "deadline": "2026-09-30",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_405",
+    "fetched": "2026-09-21"
+  },
+  {
+    "title": "Anti Brain Drain Content Bounty - Colosseum Push",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/anti-brain-drain-content-bounty-colosseum-push",
+    "prize": "500 USDC",
+    "deadline": "2026-09-30",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_408",
+    "fetched": "2026-09-21"
+  },
+  {
+    "title": "Solana Summit Canada Creator Challenge - part 2",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/solana-summit-canada-creator-challenge-part-2",
+    "prize": "10000 USDG",
+    "deadline": "2026-10-01",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_409",
+    "fetched": "2026-09-21"
+  },
+  {
+    "title": "Create X Thread About Moony Tips With Flipcash",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/moonyfoundationtipcards",
+    "prize": "300 USDC",
+    "deadline": "2026-10-01",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_410",
+    "fetched": "2026-09-21"
+  },
+  {
+    "title": "Road to Colosseum Hackathon: Build your MVP",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/road-to-colosseum-hackathon-build-your-mvp",
+    "prize": "8000 USDG",
+    "deadline": "2026-10-02",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_406",
+    "fetched": "2026-09-21"
+  },
+  {
+    "title": "Colosseum: Show Us What You Got",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/colosseum-show-us-what-got",
+    "prize": "1500 USDG",
+    "deadline": "2026-10-04",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_411",
+    "fetched": "2026-09-21"
+  },
+  {
+    "title": "Introduce Web3 Projects to Segmento",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/introduce-web3-projects-to-segmento",
+    "prize": "300 USDC",
+    "deadline": "2026-10-06",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_412",
+    "fetched": "2026-09-21"
+  },
+  {
+    "title": "Blockchain Hack Warsaw - Submissions",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/blockchain-hack-warsaw-submissions",
+    "prize": "2000 USDG",
+    "deadline": "2026-10-11",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_413",
+    "fetched": "2026-09-21"
+  },
+  {
+    "title": "Blockchain Hack Kraków - Submissions",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/blockchain-hack-krakow-submissions",
+    "prize": "2000 USDG",
+    "deadline": "2026-10-11",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_414",
+    "fetched": "2026-09-21"
+  },
+  {
+    "title": "Road to Colosseum | Builders Reflect & Share",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/road-to-colosseum-builders-reflect-and-share",
+    "prize": "1000 USDC",
+    "deadline": "2026-10-12",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20260921_415",
+    "fetched": "2026-09-21"
   },
   {
     "title": "Pitch & Demo Your Product at Online Demo Day",
@@ -6869,6 +6837,24 @@
     ],
     "id": "opp_20260914_405",
     "fetched": "2026-09-14"
+  },
+  {
+    "title": "Hack Days Turbhe ",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hack-days-turbhe.devpost.com/",
+    "prize": "₹ <span data-currency-value>0</span>",
+    "deadline": "Sep 20 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Education",
+      "Lifehacks"
+    ],
+    "id": "opp_20260921_404",
+    "fetched": "2026-09-21"
   },
   {
     "title": "Cyber Hawk Hack Days",
