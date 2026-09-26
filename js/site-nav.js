@@ -11,9 +11,7 @@
 
   var items = [
     ["home", "Homepage", root + "index.html"],
-    ["links", "Related Links", root + "related.html"],
     ["papers", "Paper Tracker", root + "papers/"],
-    ["dashboard", "Dashboard", root + "dashboard/"],
     ["opportunities", "Opportunities", root + "opportunities/"],
     ["benchmark", "Benchmark", root + "benchmark/ranking.html"]
   ];
@@ -26,7 +24,7 @@
   document.documentElement.classList.add("site-has-nav");
   document.write(
     '<header class="site-nav">' +
-      '<a class="site-brand" href="' + root + 'index.html">Shengchen Ling</a>' +
+      '<a class="site-brand" href="' + root + 'index.html">Jack\'s Website</a>' +
       '<button class="site-toggle" type="button" aria-expanded="false" aria-controls="site-links" aria-label="Open menu">' +
         "<span></span><span></span><span></span>" +
       "</button>" +
