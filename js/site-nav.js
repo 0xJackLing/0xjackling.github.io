@@ -11,7 +11,6 @@
 
   var items = [
     ["home", "Homepage", root + "index.html"],
-    ["papers", "Paper Tracker", root + "papers/"],
     ["opportunities", "Opportunities", root + "opportunities/"],
     ["benchmark", "Benchmark", root + "benchmark/ranking.html"]
   ];
