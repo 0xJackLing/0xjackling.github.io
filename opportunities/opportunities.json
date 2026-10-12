@@ -1,181 +1,5 @@
 [
   {
-    "title": "Make a Short Video on Lavarage V2 - Leverage Frontier Assets on Solana",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/make-a-short-video-on-lavarage-v2-leverage-frontier-assets-on-solana",
-    "prize": "1000 USDC",
-    "deadline": "2026-07-08",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260629_351",
-    "fetched": "2026-06-29"
-  },
-  {
-    "title": "Content Creator - Ambassador",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/project/nolus-amb",
-    "prize": "",
-    "deadline": "2026-07-09",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260629_352",
-    "fetched": "2026-06-29"
-  },
-  {
-    "title": "Research Active Platforms for Ukrainian Founders Exposure",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/research-active-platforms-for-ukrainian-founders-exposure",
-    "prize": "650 USDG",
-    "deadline": "2026-07-09",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260706_365",
-    "fetched": "2026-07-06"
-  },
-  {
-    "title": "Deep Dive on Kaching Football WC Campaign",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/deep-dive-on-kaching-football-wc-campaign",
-    "prize": "1000 USDC",
-    "deadline": "2026-07-10",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260622_335",
-    "fetched": "2026-06-22"
-  },
-  {
-    "title": "Break It Before Users Do: MultiHopper Agentic Flow Bugs & Fixes",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/break-it-before-users-do-multihopper-agentic-flow-bugs-and-fixes",
-    "prize": "1000 USDC",
-    "deadline": "2026-07-10",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260622_336",
-    "fetched": "2026-06-22"
-  },
-  {
-    "title": "Share & Win: The Amulets Logo Challenge",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/share-and-win-the-first-swipe-challenge",
-    "prize": "200 USDC",
-    "deadline": "2026-07-10",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260629_353",
-    "fetched": "2026-06-29"
-  },
-  {
-    "title": "Front-End Developer for Echoes Fans",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/project/front-end-developer-for-echoes-fans",
-    "prize": "5000 USDC",
-    "deadline": "2026-07-12",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260706_362",
-    "fetched": "2026-07-06"
-  },
-  {
-    "title": "Back-End Developer For Echoes Fans",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/project/back-end-developer-for-echoes-fans",
-    "prize": "5000 USDC",
-    "deadline": "2026-07-12",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260706_366",
-    "fetched": "2026-07-06"
-  },
-  {
-    "title": "Create Content on Umbra's Private Wallet on Solana",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/create-content-on-umbras-private-wallet-on-solana",
-    "prize": "1000 USDC",
-    "deadline": "2026-07-13",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260706_367",
-    "fetched": "2026-07-06"
-  },
-  {
-    "title": "Solana Workshop 101 Mini Hack",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/solana-workshop-101-mini-hack",
-    "prize": "50 USDC",
-    "deadline": "2026-07-13",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260713_369",
-    "fetched": "2026-07-13"
-  },
-  {
-    "title": "TxODDS World Cup India Buildathon",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/txodds-world-cup-buildathon-india",
-    "prize": "1000 USDC",
-    "deadline": "2026-07-13",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260713_370",
-    "fetched": "2026-07-13"
-  },
-  {
     "title": "Create a video | Why Build in Australia?",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2226,6 +2050,22 @@
     "fetched": "2026-09-21"
   },
   {
+    "title": "Develop Solana web3 Project MVP & Pitch for KUBG UNI Vibeathon",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/develop-solana-web3-project-mvp-and-pitch-for-kubg-uni-vibeathon",
+    "prize": "500 USDC",
+    "deadline": "2026-10-12",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261012_435",
+    "fetched": "2026-10-12"
+  },
+  {
     "title": "Crypto World's Fair Pakistan Track",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2306,6 +2146,22 @@
     "fetched": "2026-10-05"
   },
   {
+    "title": "Write a Thread or Long Post: Price Comparison",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/write-a-thread-or-long-post-price-comparison",
+    "prize": "500 USDC",
+    "deadline": "2026-10-14",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261012_436",
+    "fetched": "2026-10-12"
+  },
+  {
     "title": "Pitch & Demo Your Product at Online Demo Day",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2336,6 +2192,38 @@
     ],
     "id": "opp_20260831_405",
     "fetched": "2026-08-31"
+  },
+  {
+    "title": "Arf × Superteam Türkiye — University Track",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/arf-superteam-turkiye-university-track",
+    "prize": "3000 USDG",
+    "deadline": "2026-10-15",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261012_437",
+    "fetched": "2026-10-12"
+  },
+  {
+    "title": "Pitch & Demo Your Product at the Demo Day",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/pitch-and-demo-your-product-at-online-demo-day",
+    "prize": "1800 USDG",
+    "deadline": "2026-10-15",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261012_438",
+    "fetched": "2026-10-12"
   },
   {
     "title": "Grow Rewards: Make Your First Move",
@@ -2370,6 +2258,54 @@
     "fetched": "2026-10-05"
   },
   {
+    "title": "Get your Seeker app to Mainnet 📱🇧🇷 Solana Mobile Brazil special track",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/mobile",
+    "prize": "1600 USDG",
+    "deadline": "2026-10-17",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261012_439",
+    "fetched": "2026-10-12"
+  },
+  {
+    "title": "Colosseum: Founder Support - Talk to 5 Users",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/colosseum-founder-support-talk-to-5-users",
+    "prize": "1000 USDG",
+    "deadline": "2026-10-18",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261012_440",
+    "fetched": "2026-10-12"
+  },
+  {
+    "title": "Bring Your Friends to Segmento",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/bring-your-friends-to-segmento",
+    "prize": "500 USDG",
+    "deadline": "2026-10-21",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261012_441",
+    "fetched": "2026-10-12"
+  },
+  {
     "title": "Launch & Trade on Daejin: Write a Twitter Thread and Create a Market",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -2402,6 +2338,22 @@
     "fetched": "2026-10-05"
   },
   {
+    "title": "Vaultline Security Audit Grants for Colosseum Projects: Up to 4,000 USDC Each",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/vaultline-security-audit-grants-for-colosseum-projects-up-to-4000-usdc-each",
+    "prize": "40000 USDC",
+    "deadline": "2026-10-31",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261012_434",
+    "fetched": "2026-10-12"
+  },
+  {
     "id": "lablab_ai_genesis",
     "title": "AI Genesis 2026",
     "category": "ai",
@@ -2417,6 +2369,22 @@
       "Startup"
     ],
     "fetched": "2026-03-28"
+  },
+  {
+    "title": "Create Content on Premier League Predictions with worm 🪱⚽",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/create-content-on-premier-league-predictions-with-worm",
+    "prize": "500 USDC",
+    "deadline": "2026-11-24",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261012_442",
+    "fetched": "2026-10-12"
   },
   {
     "id": "dorahacks_ethoxford",
@@ -6702,6 +6670,24 @@
     "fetched": "2026-10-05"
   },
   {
+    "title": "IceHacks",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://icehacks.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Nov 08 - 1",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Low/No Code",
+      "Open Ended"
+    ],
+    "id": "opp_20261012_425",
+    "fetched": "2026-10-12"
+  },
+  {
     "title": "Digital Innovation Challenge 2025 - Finance Track",
     "category": "hackathon",
     "platform": "Devpost",
@@ -6810,6 +6796,24 @@
     "fetched": "2026-10-05"
   },
   {
+    "title": "InternWell Hack2.0",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://interwell-hack2-0.devpost.com/",
+    "prize": "₹ <span data-currency-value>1,000</span>",
+    "deadline": "Oct 03 - 3",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Communication",
+      "Machine Learning/AI",
+      "Web"
+    ],
+    "id": "opp_20261012_424",
+    "fetched": "2026-10-12"
+  },
+  {
     "title": "IEEE ClimateChain Global Hackathon",
     "category": "hackathon",
     "platform": "Devpost",
@@ -6828,6 +6832,24 @@
     "fetched": "2026-07-20"
   },
   {
+    "title": "Life After Code",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://gitlab-transcend.devpost.com/",
+    "prize": "$<span data-currency-value>45,000</span>",
+    "deadline": "Oct 05 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "DevOps",
+      "Machine Learning/AI",
+      "Productivity"
+    ],
+    "id": "opp_20261012_427",
+    "fetched": "2026-10-12"
+  },
+  {
     "title": "Reality Check(Meet-up)",
     "category": "hackathon",
     "platform": "Devpost",
@@ -6843,6 +6865,24 @@
     ],
     "id": "opp_20261005_418",
     "fetched": "2026-10-05"
+  },
+  {
+    "title": "Next Byte Hacks V5",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://next-byte-hacks-v5.devpost.com/",
+    "prize": "$<span data-currency-value>100</span>",
+    "deadline": "Oct 06 - 3",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Low/No Code",
+      "Open Ended"
+    ],
+    "id": "opp_20261012_428",
+    "fetched": "2026-10-12"
   },
   {
     "title": "All you can do with AI ",
@@ -6899,6 +6939,24 @@
     "fetched": "2026-10-05"
   },
   {
+    "title": "2026 International CodeTheCure Hackathon",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://codethecure-hackathon-26.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Oct 10 - 2",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Education",
+      "Health"
+    ],
+    "id": "opp_20261012_430",
+    "fetched": "2026-10-12"
+  },
+  {
     "title": "Seattle GiveCamp 2026",
     "category": "hackathon",
     "platform": "Devpost",
@@ -6931,6 +6989,40 @@
     ],
     "id": "opp_20260713_358",
     "fetched": "2026-07-13"
+  },
+  {
+    "title": "MLH Hacktoberfest Hack Day Teens Delhi X ElevenLabs",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hacktoberfest-teens.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Oct 17, 20",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Low/No Code",
+      "Social Good"
+    ],
+    "id": "opp_20261012_432",
+    "fetched": "2026-10-12"
+  },
+  {
+    "title": "Zoftware AgentHack",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://zoftware-agenthack.devpost.com/",
+    "prize": "$<span data-currency-value>500</span>",
+    "deadline": "Oct 17, 20",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Enterprise"
+    ],
+    "id": "opp_20261012_433",
+    "fetched": "2026-10-12"
   },
   {
     "title": "LarpHacks",
@@ -6967,6 +7059,24 @@
     ],
     "id": "opp_20260824_374",
     "fetched": "2026-08-24"
+  },
+  {
+    "title": "Gear Up Hacks 2026",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://gear-up-hacks-2026.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Oct 24, 20",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Mobile",
+      "Social Good",
+      "Web"
+    ],
+    "id": "opp_20261012_426",
+    "fetched": "2026-10-12"
   },
   {
     "title": "SUSTAIN-A-THON 2.0",
@@ -7039,6 +7149,23 @@
     ],
     "id": "opp_20260907_402",
     "fetched": "2026-09-07"
+  },
+  {
+    "title": "HackIT 2026",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://hackit-2026.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Sep 14 - O",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Open Ended"
+    ],
+    "id": "opp_20261012_431",
+    "fetched": "2026-10-12"
   },
   {
     "title": "ACM Marketsphere 2026",
@@ -7128,6 +7255,22 @@
     ],
     "id": "opp_20261005_423",
     "fetched": "2026-10-05"
+  },
+  {
+    "title": "AI Lodge Hackathon 2026",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://ai-lodge-hackathon-2026.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Sep 22 - O",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly"
+    ],
+    "id": "opp_20261012_429",
+    "fetched": "2026-10-12"
   },
   {
     "title": "DecentraHack 2.0",
