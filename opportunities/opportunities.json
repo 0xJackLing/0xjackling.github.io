@@ -1,149 +1,5 @@
 [
   {
-    "title": "Write a Twitter thread on the PMM Litepaper",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/write-a-twitter-thread-on-the-pmm-litepaper",
-    "prize": "250 USDC",
-    "deadline": "2026-08-05",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260727_375",
-    "fetched": "2026-07-27"
-  },
-  {
-    "title": "Write About the Brain Drain Wall",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/write-about-the-brain-drain-wall",
-    "prize": "875 USDG",
-    "deadline": "2026-08-05",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260727_376",
-    "fetched": "2026-07-27"
-  },
-  {
-    "title": "Polish Startup Icons: The NextGen Founders Challenge",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/polish-startup-icons-the-nextgen-founders-challenge",
-    "prize": "500 USDG",
-    "deadline": "2026-08-07",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260713_377",
-    "fetched": "2026-07-13"
-  },
-  {
-    "title": "Superteam Poland Ecosystem Infographic Challenge",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/superteam-poland-ecosystem-infographic-challenge",
-    "prize": "500 USDG",
-    "deadline": "2026-08-07",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260713_378",
-    "fetched": "2026-07-13"
-  },
-  {
-    "title": "On-Chain Loyalty Rewards System Challenge",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/on-chain-loyalty-rewards-system-challenge",
-    "prize": "1000 USDG",
-    "deadline": "2026-08-07",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260713_379",
-    "fetched": "2026-07-13"
-  },
-  {
-    "title": "Build Solana-native plugins for Zeroclaw 🦞",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/zeroclaw",
-    "prize": "5000 USDG",
-    "deadline": "2026-08-07",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260720_372",
-    "fetched": "2026-07-20"
-  },
-  {
-    "title": "Deep dive on P2Pdotme: A decentralized On/Off Ramp protocol",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/deep-dive-on-p2pdotme-a-decentralized-on-off-ramp-protocol",
-    "prize": "250 USDC",
-    "deadline": "2026-08-07",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260720_385",
-    "fetched": "2026-07-20"
-  },
-  {
-    "title": "Write Twitter Thread: Dutch Solana Ecosystem & Superteam NL Progress",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/write-twitter-thread-dutch-solana-ecosystem-and-superteam-nl-progress",
-    "prize": "1000 USDG",
-    "deadline": "2026-08-09",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260803_368",
-    "fetched": "2026-08-03"
-  },
-  {
-    "title": "Analyze Trader Behavior: CEX vs. Solana DEX Perpetual Futures Report",
-    "category": "quest",
-    "platform": "Superteam Earn",
-    "url": "https://earn.superteam.fun/listings/bounty/analyze-trader-behavior-cex-vs-solana-dex-perpetual-futures-report",
-    "prize": "500 USDC",
-    "deadline": "2026-08-10",
-    "start_date": "",
-    "location": "Online",
-    "description": "",
-    "tags": [
-      "Solana"
-    ],
-    "id": "opp_20260810_365",
-    "fetched": "2026-08-10"
-  },
-  {
     "title": "Ask the Suits: TradFi's reaction to RWA",
     "category": "quest",
     "platform": "Superteam Earn",
@@ -1985,6 +1841,22 @@
     ],
     "id": "opp_20261019_447",
     "fetched": "2026-10-19"
+  },
+  {
+    "title": "Make a video about our x402 Feature",
+    "category": "quest",
+    "platform": "Superteam Earn",
+    "url": "https://earn.superteam.fun/listings/bounty/make-a-video-about-our-x402-feature",
+    "prize": "500 USDC",
+    "deadline": "2026-11-14",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Solana"
+    ],
+    "id": "opp_20261109_435",
+    "fetched": "2026-11-09"
   },
   {
     "title": "Create Content About KriptoK · 200 USDC Creator Challenge",
@@ -6296,6 +6168,41 @@
     ],
     "id": "opp_20260601_267",
     "fetched": "2026-06-01"
+  },
+  {
+    "title": "PhysTech 2027: Physical Activity and Technology Hack Day",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://phystech2027.devpost.com/",
+    "prize": "$<span data-currency-value>0</span>",
+    "deadline": "Nov 04, 20",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Beginner Friendly",
+      "Health",
+      "Open Ended"
+    ],
+    "id": "opp_20261109_434",
+    "fetched": "2026-11-09"
+  },
+  {
+    "title": "Blockchain Innovation Challenge powered by Stellar",
+    "category": "hackathon",
+    "platform": "Devpost",
+    "url": "https://blockchain-stellar-ic.devpost.com/",
+    "prize": "$CAD <span data-currency-value>15,000</span>",
+    "deadline": "Nov 06 - 1",
+    "start_date": "",
+    "location": "Online",
+    "description": "",
+    "tags": [
+      "Blockchain",
+      "Fintech"
+    ],
+    "id": "opp_20261109_433",
+    "fetched": "2026-11-09"
   },
   {
     "title": "MakeUC 2026 ",
