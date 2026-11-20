@@ -1,9 +1,8 @@
 name: Weekly Opportunity Fetch
 
+# The Monday fetch is retired. Manual dispatch remains, but nothing is scheduled.
 on:
-  schedule:
-    - cron: '0 2 * * 1'  # Every Monday at UTC 02:00
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:
 
 jobs:
   fetch:
